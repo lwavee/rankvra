@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, type ReactNode } from "react";
-import { Menu, X, Zap } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -24,13 +25,15 @@ export function SiteShell({ children }: { children: ReactNode }) {
       <header className="sticky top-0 z-50 border-b border-[#e2e8f0] bg-white/90 backdrop-blur-xl">
         <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-[#4f46e5] to-[#0891b2] shadow-md shadow-[#4f46e5]/20">
-              <Zap size={15} className="text-white" />
-            </div>
-            <span className="text-base font-bold tracking-tight text-[#0f172a] group-hover:text-[#4f46e5] transition-colors">
-              Rankvra
-            </span>
+          <Link href="/" className="flex items-center group py-1" aria-label="Rankvra Home">
+            <Image
+              src="/logo-icon.png"
+              alt="Rankvra"
+              width={54}
+              height={40}
+              className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}
@@ -160,11 +163,14 @@ export function SiteShell({ children }: { children: ReactNode }) {
 
           {/* Footer Bottom */}
           <div className="mt-12 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <Link href="/" className="flex items-center gap-2.5">
-              <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-br from-[#4f46e5] to-[#0891b2]">
-                <Zap size={13} className="text-white" />
-              </div>
-              <span className="text-sm font-bold text-[#0f172a]">Rankvra</span>
+            <Link href="/" className="flex items-center group" aria-label="Rankvra Home">
+              <Image
+                src="/logo-icon.png"
+                alt="Rankvra"
+                width={46}
+                height={34}
+                className="h-8 w-auto object-contain opacity-90 group-hover:opacity-100 transition-opacity"
+              />
             </Link>
 
             <nav className="flex items-center gap-6 text-sm text-[#94a3b8]">

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, BarChart3, ShieldCheck, Sparkles, TrendingUp, Zap } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export function HeroSection() {
   return (
@@ -112,10 +113,14 @@ export function HeroSection() {
               <div className="rounded-[30px] border border-[#f1f5f9] bg-gradient-to-b from-[#f8fafc] to-white p-7 sm:p-10">
                 {/* Header */}
                 <div className="flex items-center gap-4 mb-8">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-[18px] bg-white shadow-sm border border-[#f1f5f9]">
-                    <div className="h-8 w-8 rounded-xl bg-gradient-to-br from-[#4f46e5] to-[#0891b2] flex items-center justify-center">
-                      <Zap size={14} className="text-white" />
-                    </div>
+                  <div className="flex h-12 w-12 items-center justify-center rounded-[18px] bg-white shadow-sm border border-[#f1f5f9] p-2">
+                    <Image
+                      src="/logo-icon.png"
+                      alt="Rankvra"
+                      width={36}
+                      height={36}
+                      className="h-8 w-8 object-contain"
+                    />
                   </div>
                   <div>
                     <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-[#4f46e5]">
