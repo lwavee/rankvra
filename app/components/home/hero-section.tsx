@@ -100,73 +100,95 @@ export function HeroSection() {
           <div className="absolute inset-4 rounded-[36px] bg-[#4f46e5]/5 blur-2xl" />
 
           {/* Main card */}
-          <div className="relative z-10 w-full max-w-[480px] mx-auto rounded-[32px] border border-[#e2e8f0] bg-white p-1.5 shadow-[0_32px_80px_rgba(15,23,42,0.08)]">
-            <div className="rounded-[28px] border border-[#f1f5f9] bg-[#f8fafc] p-6 sm:p-8">
-              {/* Header */}
-              <div className="flex items-start justify-between mb-7">
-                <div>
-                  <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#4f46e5]">
-                    Growth Engine
-                  </p>
-                  <p className="mt-2 text-xl font-bold tracking-tight text-[#0f172a]">
-                    Your performance, live.
-                  </p>
-                </div>
-                <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-[#4f46e5] to-[#0891b2] shadow-md shadow-[#4f46e5]/20">
-                  <Zap size={18} className="text-white" />
-                </div>
-              </div>
+          <div className="relative z-10 w-full max-w-[500px] mx-auto">
+            
+            {/* Overlapping floating elements for a human-crafted feel */}
+            <div className="absolute -top-10 -right-8 z-20 flex h-24 w-24 flex-col items-center justify-center rounded-full bg-gradient-to-br from-[#4f46e5] to-[#4338ca] shadow-[0_10px_40px_rgba(79,70,229,0.3)] border-4 border-white transform rotate-6">
+              <span className="text-white font-black text-2xl tracking-tighter">#1</span>
+              <span className="text-[9px] font-bold text-indigo-100 uppercase tracking-widest text-center leading-tight">Growth<br/>Partner</span>
+            </div>
 
-              {/* Bento grid */}
-              <div className="grid gap-3 sm:grid-cols-2 mb-3">
-                {/* Main highlight */}
-                <div className="col-span-1 sm:col-span-2 relative overflow-hidden rounded-[22px] bg-gradient-to-br from-[#4f46e5] to-[#4338ca] p-6 text-white shadow-lg shadow-[#4f46e5]/20">
-                  <div className="absolute -right-6 -top-6 h-28 w-28 rounded-full bg-white/10 blur-2xl" />
-                  <div className="absolute -left-4 bottom-0 h-20 w-20 rounded-full bg-[#0891b2]/25 blur-xl" />
-                  <p className="text-xs font-semibold text-indigo-200 uppercase tracking-widest">
-                    Monthly Revenue Impact
-                  </p>
-                  <p className="mt-2 text-5xl font-black tracking-tight">+462%</p>
-                  <div className="mt-5 flex items-center gap-2 border-t border-white/20 pt-4 text-xs font-semibold text-indigo-200/80">
-                    <BarChart3 size={13} />
-                    <span>Zenith Commerce — 6 months</span>
-                  </div>
-                </div>
-
-                {/* Secondary cards */}
-                <div className="rounded-[18px] border border-[#e2e8f0] bg-white p-5 shadow-sm">
-                  <p className="text-xs font-bold text-[#94a3b8] uppercase tracking-widest">ROAS</p>
-                  <p className="mt-1 text-3xl font-black text-[#0f172a]">6.2×</p>
-                  <p className="mt-1 text-xs text-[#4f46e5] font-medium">Luminary Skincare</p>
-                </div>
-
-                <div className="rounded-[18px] border border-[#e2e8f0] bg-white p-5 shadow-sm flex flex-col justify-center">
-                  <div className="flex items-center gap-3">
-                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#eef2ff] text-[#4f46e5]">
-                      <ShieldCheck size={16} />
+            <div className="rounded-[36px] border border-[#e2e8f0] bg-white p-2 shadow-[0_40px_100px_rgba(15,23,42,0.06)] relative">
+              <div className="rounded-[30px] border border-[#f1f5f9] bg-gradient-to-b from-[#f8fafc] to-white p-7 sm:p-10">
+                {/* Header */}
+                <div className="flex items-center gap-4 mb-8">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-[18px] bg-white shadow-sm border border-[#f1f5f9]">
+                    <div className="h-8 w-8 rounded-xl bg-gradient-to-br from-[#4f46e5] to-[#0891b2] flex items-center justify-center">
+                      <Zap size={14} className="text-white" />
                     </div>
-                    <span className="text-sm font-bold leading-tight text-[#0f172a]">
-                      96%<br />
-                      <span className="text-xs font-medium text-[#94a3b8]">Retention rate</span>
-                    </span>
+                  </div>
+                  <div>
+                    <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-[#4f46e5]">
+                      Performance Hub
+                    </p>
+                    <p className="mt-1 text-lg font-bold tracking-tight text-[#0f172a]">
+                      Your Growth, Visualized.
+                    </p>
                   </div>
                 </div>
-              </div>
 
-              {/* Pills */}
-              <div className="flex flex-wrap gap-2 mt-1">
-                {[
-                  { label: "Performance SEO", icon: <Sparkles size={11} className="text-[#4f46e5]" /> },
-                  { label: "Paid Growth", icon: <BarChart3 size={11} className="text-[#0891b2]" /> },
-                  { label: "CRO", icon: <TrendingUp size={11} className="text-[#7c3aed]" /> },
-                ].map((pill) => (
-                  <span
-                    key={pill.label}
-                    className="inline-flex items-center gap-1.5 rounded-full border border-[#e2e8f0] bg-white px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider text-[#475569] shadow-sm"
-                  >
-                    {pill.icon} {pill.label}
-                  </span>
-                ))}
+                {/* Main highlight */}
+                <div className="relative overflow-hidden rounded-[24px] bg-[#0f172a] p-8 text-white shadow-2xl shadow-[#0f172a]/10 mb-5">
+                  {/* Subtle noise/gradient background */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none" />
+                  <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-[#4f46e5]/40 blur-3xl" />
+                  
+                  <div className="relative z-10 flex justify-between items-end">
+                    <div>
+                      <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-1">
+                        Monthly Revenue Lift
+                      </p>
+                      <p className="text-5xl sm:text-6xl font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-300">+462%</p>
+                    </div>
+                    <div className="flex items-center gap-1.5 pb-2 text-emerald-400">
+                      <TrendingUp size={20} strokeWidth={3} />
+                    </div>
+                  </div>
+                  
+                  <div className="mt-8 flex items-center justify-between border-t border-white/10 pt-5 text-sm font-medium">
+                    <span className="text-slate-300">Zenith Commerce</span>
+                    <span className="text-white font-semibold rounded-full bg-white/10 px-3 py-1 text-xs">6 months</span>
+                  </div>
+                </div>
+
+                {/* Secondary row */}
+                <div className="flex gap-4 mb-6">
+                  <div className="flex-1 rounded-[20px] bg-white p-5 shadow-sm border border-[#f1f5f9] flex flex-col justify-center relative overflow-hidden">
+                    <div className="absolute top-0 right-0 p-3 opacity-10 text-[#4f46e5]">
+                       <BarChart3 size={40} />
+                    </div>
+                    <p className="text-[10px] font-bold text-[#94a3b8] uppercase tracking-widest">Target ROAS</p>
+                    <p className="mt-1.5 text-3xl font-black text-[#0f172a] tracking-tight">6.2<span className="text-lg text-[#64748b]">x</span></p>
+                  </div>
+                  
+                  <div className="flex-1 rounded-[20px] bg-gradient-to-b from-[#eef2ff] to-[#f8fafc] p-5 border border-[#e0e7ff] flex flex-col justify-center">
+                    <div className="flex items-center gap-2 mb-1.5">
+                      <ShieldCheck size={14} className="text-[#4f46e5]" />
+                      <span className="text-[10px] font-bold text-[#4f46e5] uppercase tracking-widest">Retention</span>
+                    </div>
+                    <p className="text-3xl font-black text-[#0f172a] tracking-tight">96<span className="text-lg text-[#64748b]">%</span></p>
+                  </div>
+                </div>
+
+                {/* Capabilities */}
+                <div className="pt-2">
+                  <p className="text-[11px] font-semibold text-[#94a3b8] mb-3 text-center uppercase tracking-widest">Proven Capabilities</p>
+                  <div className="flex flex-wrap justify-center gap-2">
+                    {[
+                      "Technical SEO",
+                      "Conversion Ads",
+                      "Revenue Ops",
+                      "Web Strategy"
+                    ].map((label) => (
+                      <span
+                        key={label}
+                        className="inline-flex items-center rounded-full bg-[#f8fafc] border border-[#e2e8f0] px-3.5 py-1.5 text-xs font-semibold text-[#475569] shadow-sm hover:shadow hover:bg-white hover:text-[#0f172a] transition-all cursor-default"
+                      >
+                        {label}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -9,6 +9,8 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
   { href: "/about", label: "About" },
+  { href: "/portfolio", label: "Portfolio" },
+  { href: "/blogs", label: "Blogs" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -131,19 +133,27 @@ export function SiteShell({ children }: { children: ReactNode }) {
                 We take on a limited number of new clients each month to ensure
                 every partnership gets the focus and intensity it deserves.
               </p>
-              <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+              <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6">
                 <Link
                   href="/contact"
                   className="inline-flex items-center gap-2 rounded-full bg-[#4f46e5] px-8 py-4 text-sm font-semibold text-white shadow-lg shadow-[#4f46e5]/20 transition-all duration-300 hover:-translate-y-1 hover:bg-[#4338ca] hover:shadow-[#4f46e5]/30 hover:shadow-xl"
                 >
                   Book a Strategy Call
                 </Link>
-                <a
-                  href="mailto:info@rankvra.com"
-                  className="text-sm font-medium text-[#64748b] hover:text-[#4f46e5] transition-colors"
-                >
-                  info@rankvra.com
-                </a>
+                <div className="flex flex-col items-center sm:items-start gap-1 text-sm font-medium">
+                  <a
+                    href="tel:+917297875798"
+                    className="text-[#64748b] hover:text-[#4f46e5] transition-colors"
+                  >
+                    +91 7297875798
+                  </a>
+                  <a
+                    href="mailto:info@rankvra.com"
+                    className="text-[#64748b] hover:text-[#4f46e5] transition-colors"
+                  >
+                    info@rankvra.com
+                  </a>
+                </div>
               </div>
             </div>
           </div>

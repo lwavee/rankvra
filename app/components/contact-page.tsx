@@ -330,16 +330,16 @@ export function ContactPage() {
                     info@rankvra.com
                   </a>
                   <a
-                    href="tel:+919999999999"
+                    href="tel:+917297875798"
                     className="flex items-center gap-3 text-sm text-[#475569] hover:text-[#4f46e5] transition-colors"
                   >
                     <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#f1f5f9]">
                       <Phone size={14} className="text-[#4f46e5]" />
                     </div>
-                    +91 99999 99999
+                    +91 7297875798
                   </a>
                   <a
-                    href="https://wa.me/919999999999"
+                    href="https://wa.me/917297875798"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 text-sm text-[#475569] hover:text-[#4f46e5] transition-colors"
