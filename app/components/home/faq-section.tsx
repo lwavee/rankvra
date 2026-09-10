@@ -14,13 +14,13 @@ export function FAQSection() {
           {/* Left */}
           <div className="lg:max-w-xs lg:shrink-0">
             <p className="text-sm font-semibold tracking-[0.2em] uppercase text-[#4f46e5]">
-              Udaipur &amp; Rajasthan FAQ
+              Frequently Asked Questions
             </p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-[#0f172a] sm:text-4xl">
-              Questions from Local Business Owners.
+              Questions from Ambitious Founders &amp; Leaders.
             </h2>
             <p className="mt-4 text-sm leading-7 text-[#64748b]">
-              Have a specific question about your website or Google rankings in Udaipur? Message Naveen on WhatsApp at{" "}
+              Have a specific question about your web architecture, national SEO rankings, or global B2B pipeline? Message Naveen on WhatsApp at{" "}
               <a
                 href="https://wa.me/917297875798"
                 target="_blank"

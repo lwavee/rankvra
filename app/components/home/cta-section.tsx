@@ -38,12 +38,12 @@ export function CTASection() {
 
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/contact"
+              href="/free-growth-audit"
               id="cta-book-call"
               className="group inline-flex items-center gap-2.5 rounded-full bg-white px-10 py-4 text-sm font-bold text-[#4f46e5] shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl"
             >
               <Sparkles size={15} className="text-[#4f46e5]" />
-              Book Your Free Strategy Call
+              Claim Free Website Growth Audit
               <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
             <a

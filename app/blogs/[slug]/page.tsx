@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ArrowRight, Calendar, Clock, User, CheckCircle2, Share2, Sparkles } from "lucide-react";
+import { ArrowLeft, ArrowRight, Calendar, Clock, CheckCircle2, Sparkles } from "lucide-react";
 import { SiteShell } from "@/app/components/site-shell";
 import { BLOG_POSTS, getBlogPostBySlug } from "../data";
 

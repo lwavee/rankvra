@@ -148,18 +148,31 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
+interface GitHubRepoData {
+  name?: string;
+  description?: string;
+  html_url?: string;
+  homepage?: string | null;
+  language?: string | null;
+  stargazers_count?: number;
+  forks_count?: number;
+  open_issues_count?: number;
+  topics?: string[];
+  [key: string]: unknown;
+}
+
 export default async function ProjectDetailPage({ params }: PageProps) {
   // In Next.js 15/16, params is a Promise that must be awaited
   const { name } = await params;
 
-  let repoData: any = null;
+  let repoData: GitHubRepoData | null = null;
   try {
     const res = await fetch(`https://api.github.com/repos/lwavee/${name}`, {
       headers: { "User-Agent": "Rankvra-Portfolio-App" },
       next: { revalidate: 3600 },
     });
     if (res.ok) {
-      repoData = await res.json();
+      repoData = (await res.json()) as GitHubRepoData;
     }
   } catch (err) {
     console.warn("GitHub fetch note:", err);

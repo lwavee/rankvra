@@ -27,12 +27,12 @@ export const BLOG_POSTS: BlogPost[] = [
     id: 1,
     slug: "future-of-seo-ai-overviews",
     title: "The Future of SEO: AI Overviews and How to Adapt",
-    subtitle: "How generative search and AI overviews are reshaping organic discovery, and what high-growth brands must do to dominate citations.",
+    subtitle: "How generative search and AI overviews are reshaping organic discovery, and what businesses must do to dominate citations.",
     excerpt:
       "Search is changing rapidly. Learn how to optimize your content for Google's new AI overviews and maintain your organic traffic.",
     author: {
-      name: "Arjun Mehta",
-      role: "Head of Organic Strategy",
+      name: "Naveen Panchal (lw_avee)",
+      role: "Founder & Technical Architect, RankVRA",
     },
     date: "Sep 4, 2026",
     category: "SEO & Search",
@@ -44,27 +44,27 @@ export const BLOG_POSTS: BlogPost[] = [
         {
           heading: "1. The Mechanics of AI Overviews",
           paragraphs: [
-            "AI Overviews synthesize data across dozens of reputable sources to assemble a direct, coherent answer to complex queries. They prioritize topical authority, clear entity relationships, and factual consensus.",
-            "Rather than ranking purely on keyword density and backlink volume, the algorithms evaluate information gain — how much unique, verifiable perspective your article adds to the topic compared to existing web corpus."
+            "AI Overviews synthesize data across reputable sources to assemble a direct, coherent answer to complex queries. They prioritize topical authority, clear entity relationships, and factual consensus.",
+            "Rather than ranking purely on keyword density and backlink volume, the algorithms evaluate information gain — how much unique, verifiable perspective your article adds to the topic compared to the existing web corpus."
           ],
           keyTakeaways: [
-            "Optimize for Information Gain: Avoid generic restatements; provide original research or data.",
+            "Optimize for Information Gain: Avoid generic restatements; provide original research or first-hand experience.",
             "Direct-to-answer formatting: Structure summaries and FAQs in concise, unambiguous language.",
-            "Strengthen brand entity authority: Ensure schema markup and cross-platform consistency are flawless."
+            "Strengthen brand entity authority: Ensure schema markup and cross-platform consistency are accurate."
           ]
         },
         {
           heading: "2. Structuring Content for Generative AI Citations",
           paragraphs: [
-            "To be chosen as a cited source in generative answers, your content must be easy for large language models to extract and cite. Bulleted summaries, well-defined definition blocks, and comparative tables perform significantly better than wall-to-wall narrative paragraphs.",
+            "To be chosen as a cited source in generative answers, your content must be easy for search crawlers to extract. Bulleted summaries, well-defined definition blocks, and comparative tables perform significantly better than wall-to-wall narrative paragraphs.",
             "Include high-contrast data points, proprietary benchmarks, and first-hand operational insights that AI models cannot infer on their own."
           ]
         },
         {
           heading: "3. The Pivot from Volume to High-Intent Quality",
           paragraphs: [
-            "Top-of-funnel informational queries will experience traffic compression. However, mid-to-bottom funnel queries — where buyers seek tailored solutions, software benchmarks, and agency partners — will yield significantly higher conversion rates.",
-            "Agencies and brands that shift focus toward high-intent commercial keywords and brand-driven organic search will see qualified leads increase even as superficial traffic numbers adjust."
+            "Top-of-funnel informational queries will experience traffic compression. However, bottom-funnel queries — where buyers seek tailored services, software solutions, and verified agency partners — will yield significantly higher conversion rates.",
+            "Businesses that shift focus toward high-intent commercial keywords and brand-driven local search (such as our clients using our localized SEO services) will see qualified leads increase even as superficial traffic numbers adjust."
           ],
           keyTakeaways: [
             "Prioritize transactional and solution-focused queries over broad curiosity keywords.",
@@ -73,7 +73,7 @@ export const BLOG_POSTS: BlogPost[] = [
         }
       ],
       conclusion:
-        "The brands that win in the AI era won't be those that churn out hundreds of automated articles. The winners will be those who publish undeniable authority, unique case studies, and structured technical data that AI models trust as authoritative sources."
+        "The brands that win in the AI era won't be those that churn out hundreds of automated articles. The winners will be those who publish undeniable authority, unique case studies, and structured technical data that AI models trust as authoritative sources. If you want to audit your website's readiness for AI Overviews, explore our dedicated SEO services or claim a free website audit."
     }
   },
   {
@@ -84,8 +84,8 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Throwing money at ads without a plan is a quick way to burn cash. Here's a data-driven framework for scaling your ad spend profitably.",
     author: {
-      name: "Priya Sharma",
-      role: "VP of Performance Marketing",
+      name: "Naveen Panchal (lw_avee)",
+      role: "Founder & Lead Growth Operator, RankVRA",
     },
     date: "Aug 28, 2026",
     category: "Paid Advertising",
@@ -97,13 +97,13 @@ export const BLOG_POSTS: BlogPost[] = [
         {
           heading: "1. The 3 Pre-Flight Checks Before Increasing Budget",
           paragraphs: [
-            "Before injecting additional capital into Meta, Google, or LinkedIn campaigns, verify that your foundational funnel metrics are stable.",
-            "First, your blended Customer Acquisition Cost (CAC) must be at least 25% below your target threshold over a 30-day trailing window to absorb expected marginal cost increases. Second, your sales team or conversion funnels must have proven capacity to handle influx without delayed follow-up. Third, your tracking architecture (Server-Side GTM / Conversions API) must show zero data leakage."
+            "Before injecting additional capital into Meta or Google campaigns, verify that your foundational funnel metrics are stable.",
+            "First, your blended Customer Acquisition Cost (CAC) must be at least 25% below your target threshold over a 30-day trailing window. Second, your sales team or conversion funnels must have proven capacity to handle influx without delayed follow-up. Third, your tracking architecture (Server-Side GTM / Conversions API) must show zero data leakage."
           ],
           keyTakeaways: [
             "Buffer rule: Only scale campaigns delivering ROAS 20-30% above your break-even point.",
             "Server-Side CAPI: Verify attribution match rates are above 85% to prevent algorithmic misdirection.",
-            "Follow-up latency: Ensure new inbound leads are contacted within 5 minutes."
+            "Follow-up latency: Ensure new inbound leads are contacted within 5 minutes on WhatsApp or phone."
           ]
         },
         {
@@ -117,16 +117,16 @@ export const BLOG_POSTS: BlogPost[] = [
           heading: "3. Creative Velocity: The Real Secret to Scaling",
           paragraphs: [
             "In modern algorithmic advertising, creative is your primary targeting tool. As spend increases, audience fatigue accelerates rapidly. If you do not have a steady stream of fresh ad variations, performance will degrade within weeks.",
-            "At Rankvra, we deploy creative sprint batches: testing 4-6 hook variations, 3 visual styles, and tailored messaging for specific audience segments every two weeks."
+            "At RankVRA, we deploy creative sprint batches: testing 4-6 hook variations, 3 visual styles, and tailored messaging for specific audience segments every two weeks."
           ],
           keyTakeaways: [
-            "Introduce new creative batches weekly when spending over $10,000/month.",
+            "Introduce new creative batches regularly to prevent ad fatigue.",
             "Iterate on the first 3 seconds of video assets — 70% of viewers drop off in the opening frame."
           ]
         }
       ],
       conclusion:
-        "Scaling paid campaigns is not about blind spending; it is an iterative optimization of creative velocity, tracking integrity, and disciplined budget pacing. When done correctly, doubling your budget translates directly into predictable, compounding revenue."
+        "Scaling paid campaigns is not about blind spending; it is an iterative optimization of creative velocity, tracking integrity, and disciplined budget pacing. When done correctly, doubling your budget translates directly into predictable revenue. Check out our Google Ads management services to see how we manage ad accounts."
     }
   },
   {
@@ -137,8 +137,8 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "You don't always need more traffic. Sometimes you just need to convert the traffic you already have. Discover 5 high-impact CRO strategies.",
     author: {
-      name: "Karan Desai",
-      role: "Lead Conversion Engineer",
+      name: "Naveen Panchal (lw_avee)",
+      role: "Founder & Full-Stack Developer, RankVRA",
     },
     date: "Aug 15, 2026",
     category: "CRO & UX",
@@ -161,24 +161,24 @@ export const BLOG_POSTS: BlogPost[] = [
         {
           heading: "2. Frictionless Forms and Low-Risk Commitments",
           paragraphs: [
-            "Every extra input field on your lead capture form reduces conversions by 8% to 15%. If you only need their business email and company name to start a conversation, do not ask for phone numbers, company size, and budget on step one.",
-            "Consider multi-step progressive profiling forms. Users are far more likely to complete a 2-step interactive questionnaire than be confronted with a daunting 8-field form."
+            "Every extra input field on your lead capture form reduces conversions by 8% to 15%. If you only need their business email and website to start a conversation, do not ask for unnecessary details on step one.",
+            "Consider multi-step progressive profiling forms. Users are far more likely to complete a brief questionnaire than be confronted with a daunting 8-field form."
           ]
         },
         {
           heading: "3. Social Proof Embedded in the Decision Zone",
           paragraphs: [
             "Don't isolate testimonials on a lonely 'Testimonials' page. Place specific, metrics-driven proof points directly next to your booking forms and CTA buttons.",
-            "Client logos, verified badges, rating stars, and short 1-sentence outcome metrics provide instant psychological safety right at the moment of commitment."
+            "Verified badges, rating stars, and short 1-sentence outcome metrics provide instant psychological safety right at the moment of commitment."
           ],
           keyTakeaways: [
             "Position social proof beside buttons and form fields.",
-            "Highlight measurable results: '+462% revenue lift in 6 months' beats 'great team to work with'."
+            "Highlight measurable results: '+200% direct bookings' beats vague praise."
           ]
         }
       ],
       conclusion:
-        "CRO is an ongoing cycle of user testing, heat-mapping, and hypothesis validation. Start by fixing the friction points in your highest-traffic conversion funnels, and watch your marketing efficiency multiply."
+        "CRO is an ongoing cycle of user testing, heat-mapping, and hypothesis validation. Start by fixing the friction points in your highest-traffic conversion funnels, and watch your marketing efficiency multiply. Explore our custom web development services to see how we build high-converting websites."
     }
   }
 ];

@@ -187,7 +187,7 @@ export function ServicesPage() {
       <section id="services-list" className="bg-[#f8fafc]">
         <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24">
           <div className="space-y-8">
-            {services.map((service, i) => {
+            {services.map((service) => {
               const Icon = service.icon;
               return (
                 <motion.div

@@ -1,4 +1,4 @@
-import { BarChart3, Bot, Globe, Megaphone, PanelsTopLeft, Sparkles, Target } from "lucide-react";
+import { Bot, Globe, Megaphone, PanelsTopLeft, Sparkles, Target } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 export type Service = {
@@ -119,28 +119,28 @@ export const testimonials = [
 
 export const faqs = [
   {
-    q: "Which is the best web development agency in Udaipur?",
-    a: "Rankvra is widely recognized as the best web development agency in Udaipur, Rajasthan. Founded by full-stack developer and educator Naveen Panchal (lw_avee), we build custom Next.js websites engineered for 1-second load times, mobile responsiveness, and high Google rankings — rather than using slow, cookie-cutter WordPress templates.",
+    q: "Do you work with clients across India and internationally?",
+    a: "Yes! While our engineering headquarters are in Udaipur, RankVRA operates nationally and internationally. We partner with B2B enterprises, industrial manufacturers, healthcare chains, and digital brands across Mumbai, Delhi NCR, Bengaluru, Hyderabad, Pune, and Jaipur, as well as overseas clients in the United States, UK, UAE (Dubai), and Europe.",
   },
   {
-    q: "Why should businesses in Udaipur and Rajasthan choose Rankvra for digital marketing?",
-    a: "Unlike typical marketing agencies that focus on vanity metrics like 'likes' and 'impressions', Rankvra focuses exclusively on commercial revenue: phone calls, WhatsApp leads, booking inquiries, and verified sales. Plus, you get direct access to our core technical team based right here in Udaipur.",
+    q: "How is RankVRA different from standard digital marketing agencies?",
+    a: "Most agencies run vanity campaigns focused on 'impressions' and 'likes' using slow WordPress templates. RankVRA takes a software-engineering approach: we build custom Next.js web applications that load in under 1 second, build technical search architectures that rank for high-intent buyer queries, and track verified pipeline revenue and sales inquiries.",
   },
   {
-    q: "How much does a custom website cost in Udaipur?",
-    a: "Website development costs depend on your requirements. A high-converting business website typically ranges from ₹15,000 to ₹45,000, while complex e-commerce stores or custom web applications start from ₹40,000+. We provide transparent, fixed quotes with no hidden charges.",
+    q: "How much does a custom high-performance website cost?",
+    a: "Investments depend on your technical scope and business goals. High-converting custom corporate and lead-generation websites typically range from ₹25,000 to ₹65,000 ($350 - $900 USD), while scalable web applications and enterprise e-commerce platforms start from ₹60,000+ ($800+ USD). We provide clear, milestone-based quotes with 100% intellectual property ownership.",
   },
   {
-    q: "How long does it take for SEO to rank my business on Google in Udaipur?",
-    a: "Local SEO and Google Maps (Google Business Profile) optimizations usually start showing prominent movement within 4 to 8 weeks. For competitive organic search terms across Rajasthan and India, solid rankings typically compound within 3 to 6 months. We provide monthly tracking reports so you can see your ranking climb.",
+    q: "How long does it take to rank on Google nationally or internationally?",
+    a: "Initial crawl and index improvements often reflect within 3 to 6 weeks. For competitive national commercial keywords across India and international markets, organic dominance compounds over 3 to 6 months through rigorous technical SEO, programmatic page speed optimization, and topical authority clusters.",
   },
   {
-    q: "Do you work with businesses outside Udaipur across Rajasthan?",
-    a: "Yes! While our headquarters and leadership are in Udaipur, we actively serve clients across all of Rajasthan — including Jaipur, Jodhpur, Kota, Bhilwara, Bikaner, and Ajmer — as well as national and international clients.",
+    q: "How do you coordinate with clients in different time zones?",
+    a: "We maintain streamlined asynchronous and direct communication via WhatsApp, Slack, Google Meet, and email. Our team regularly supports clients operating across IST (India), EST/PST (United States), GMT (United Kingdom), and GST (United Arab Emirates).",
   },
   {
-    q: "Can you handle both web development and ongoing digital marketing together?",
-    a: "Absolutely. In fact, that is our biggest strength. When your website developers and marketing strategists are on the same team, your landing pages are built specifically to convert the traffic your ad campaigns generate, maximizing your return on investment.",
+    q: "Can you handle both web development and continuous growth marketing together?",
+    a: "Yes, this full-stack integration is our core competitive edge. Because the same technical engineers build your web infrastructure and manage your conversion funnels, your landing pages load instantly and convert incoming traffic into paying customers at the highest possible rate.",
   },
 ];
 

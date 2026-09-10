@@ -61,9 +61,9 @@ const ceoProfile = {
   location: "Udaipur, Rajasthan, India",
   experience: "3+ Years of Hands-on Experience",
   photo: "/ceo-naveen.png",
-  bio: "Full-stack web engineer, AI developer, performance digital marketer, and educator based in Udaipur, Rajasthan. Naveen started 'Learn with Avee' to teach practical coding and AI skills to thousands of learners online. Realizing that local businesses in Udaipur and Rajasthan were wasting lakhs on slow, outdated websites and ineffective agency retainers, Naveen founded Rankvra to deliver world-class web development and real lead-generating marketing right here in Udaipur.",
+  bio: "Full-stack web engineer, AI developer, performance digital marketer, and educator. Naveen founded RankVRA to deliver enterprise-grade web development, technical SEO, and ROI-driven marketing to ambitious brands across India (Mumbai, Delhi NCR, Bengaluru, Hyderabad, Jaipur) and worldwide (United States, UK, UAE, and Europe). With an engineering-first philosophy, Naveen has guided businesses from local beginnings to multi-crore national and international digital sales funnels.",
   quote:
-    "A business in Udaipur shouldn't have to hire an agency from Mumbai or Delhi just to get a website that actually loads fast and ranks on Google. We build custom technology and run ads that generate real calls and profit for local businesses.",
+    "High-performance digital engineering shouldn't be confined to expensive metro agencies in Mumbai, Bangalore, or London. We build world-class web applications, technical SEO architectures, and automated B2B sales pipelines that compete and win in any market worldwide.",
   socials: [
     {
       name: "Instagram",
@@ -519,16 +519,16 @@ export function AboutPage() {
             <div className="lg:col-span-6">
               <div className="inline-flex items-center gap-2 rounded-full border border-[#e0e7ff] bg-[#eef2ff] px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-[#4f46e5] mb-4">
                 <Compass size={13} className="text-[#4f46e5]" />
-                Why We Built Rankvra in Udaipur
+                Our Vision &amp; Origin
               </div>
               <h2 className="text-3xl font-extrabold tracking-tight text-[#0f172a] sm:text-4xl lg:text-5xl">
-                We believe Rajasthan businesses deserve world-class technology.
+                We believe ambitious businesses deserve world-class technology.
               </h2>
               <p className="mt-6 text-base sm:text-lg leading-8 text-[#475569]">
-                Rajasthan is one of the most vibrant business hubs in India — from Udaipur&apos;s world-renowned hospitality and destination weddings to the bustling marble, textile, and handicraft sectors of Rajsamand, Bhilwara, Jaipur, and Jodhpur.
+                RankVRA was founded on a simple principle: high-performance digital engineering shouldn&apos;t be confined to expensive legacy agencies in Mumbai, Bengaluru, or London.
               </p>
               <p className="mt-4 text-base leading-7 text-[#64748b]">
-                Yet, most local business owners were forced to choose between inexperienced local freelancers who couldn&apos;t build proper SEO architecture or overpriced metro agencies who didn&apos;t understand the local market. Rankvra gives you the best of both worlds: local presence in Udaipur with top-tier modern tech capabilities.
+                Headquartered in Udaipur, Rajasthan, and serving brands nationally across India and internationally across the US, UK, and UAE, RankVRA engineers custom Next.js web applications, technical SEO systems, and B2B growth pipelines that deliver undeniable commercial results.
               </p>
 
               <div className="mt-8 space-y-3.5">

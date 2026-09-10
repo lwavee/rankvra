@@ -8,22 +8,22 @@ export function WhyRankvraSection() {
         {/* Left — Problem framing */}
         <div>
           <p className="text-sm font-semibold tracking-[0.2em] uppercase text-[#4f46e5]">
-            Why Choose Rankvra in Udaipur
+            Why High-Growth Brands Choose RankVRA
           </p>
           <h2 className="mt-4 text-3xl font-bold tracking-tight text-[#0f172a] sm:text-4xl leading-[1.15]">
             Tired of vanity metrics?{" "}
-            <span className="text-[#64748b] font-medium">We deliver real customer calls &amp; inquiries.</span>
+            <span className="text-[#64748b] font-medium">We deliver real customer calls, inquiries &amp; pipeline.</span>
           </h2>
           <p className="mt-5 text-base leading-8 text-[#475569] max-w-xl">
-            Whether you run a resort in Udaipur, a stone &amp; marble export firm, or a retail brand in Rajasthan, you don&apos;t need complicated 30-page PDF reports showing &ldquo;impressions&rdquo;. You need high-intent buyers finding your business on Google, messaging you on WhatsApp, and paying for your services.
+            Whether you operate an industrial plant in Gujarat, a multi-specialty healthcare network in Delhi or Mumbai, an export business shipping worldwide, or a premier resort, you don&apos;t need fluffy reports showing &ldquo;impressions&rdquo;. You need high-intent buyers finding your business on Google, messaging on WhatsApp, and purchasing your services.
           </p>
 
           <div className="mt-8 space-y-3">
             {[
-              "Custom Next.js websites built from scratch — zero slow, bloated WordPress templates",
-              "Local SEO & Google Maps optimization to rank #1 in Udaipur & Rajasthan",
-              "Direct communication with founder Naveen Panchal (lw_avee) & core operators",
-              "Transparent monthly reporting in plain language — you own 100% of your assets",
+              "Custom Next.js & React architectures — zero slow, bloated WordPress templates",
+              "National & International SEO frameworks to capture high-value buyer search intent",
+              "Direct engineering consultation with founder Naveen Panchal (lw_avee) & core builders",
+              "Transparent weekly reporting in plain language — you own 100% of your digital IP",
             ].map((point) => (
               <div key={point} className="flex items-start gap-3">
                 <CheckCircle2 size={17} className="text-[#4f46e5] mt-0.5 shrink-0" />
