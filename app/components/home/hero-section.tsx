@@ -36,24 +36,20 @@ export function HeroSection() {
             initial={{ opacity: 0, scale: 0.93 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="mb-7 inline-flex w-fit items-center gap-2 rounded-full border border-[#e0e7ff] bg-[#eef2ff] px-4 py-2 text-sm font-medium text-[#4f46e5]"
+            className="mb-7 inline-flex w-fit items-center gap-2 rounded-full border border-[#e0e7ff] bg-[#eef2ff] px-4 py-2 text-sm font-semibold text-[#4f46e5]"
           >
-            <ShieldCheck size={14} className="text-[#4f46e5]" />
-            Trusted by 40+ growing brands worldwide
+            <ShieldCheck size={15} className="text-[#4f46e5]" />
+            📍 Rooted in Udaipur • Scaling Brands Across Rajasthan & India
           </motion.div>
 
-          <h1 className="hero-copy max-w-3xl text-5xl font-extrabold leading-[1.05] tracking-[-0.04em] text-[#0f172a] sm:text-6xl lg:text-[70px]">
-            We Turn{" "}
-            <span className="text-gradient">Clicks</span>{" "}
-            Into Clients.{" "}
-            <br className="hidden lg:block" />
-            <span className="text-[#64748b] font-semibold">Every Single Time.</span>
+          <h1 className="hero-copy max-w-3xl text-4xl font-extrabold leading-[1.1] tracking-[-0.03em] text-[#0f172a] sm:text-5xl lg:text-[62px]">
+            Best Web Development &{" "}
+            <span className="text-gradient">Digital Marketing</span>{" "}
+            Agency in Udaipur.
           </h1>
 
-          <p className="hero-copy mt-7 max-w-2xl text-lg leading-8 text-[#475569] sm:text-xl">
-            Rankvra is a full-service digital marketing agency that builds
-            performance-obsessed systems — SEO, paid ads, and web design —
-            engineered to turn attention into predictable revenue.
+          <p className="hero-copy mt-6 max-w-2xl text-base leading-8 text-[#475569] sm:text-lg">
+            Stop wasting money on slow template websites that crash on mobile or social media agencies that only deliver empty &ldquo;likes&rdquo;. Founded in Udaipur by <strong>Naveen Panchal (lw_avee)</strong>, Rankvra builds custom, ultra-fast websites and runs high-ROI Google &amp; Meta ad campaigns that get your phone ringing with genuine customer inquiries.
           </p>
 
           <div className="hero-copy mt-9 flex flex-wrap gap-4">
@@ -61,24 +57,26 @@ export function HeroSection() {
               href="/contact"
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-[#4f46e5] px-8 py-4 text-[15px] font-semibold text-white shadow-lg shadow-[#4f46e5]/20 transition-all duration-300 hover:-translate-y-1 hover:bg-[#4338ca] hover:shadow-[#4f46e5]/30 hover:shadow-xl"
             >
-              Book a Strategy Call
+              Get Free Website &amp; SEO Audit
               <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
             <a
-              href="#results"
+              href="https://wa.me/917297875798"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group inline-flex items-center justify-center gap-2 rounded-full border border-[#e2e8f0] bg-white px-8 py-4 text-[15px] font-semibold text-[#475569] transition-all duration-300 hover:-translate-y-1 hover:border-[#4f46e5]/30 hover:bg-[#f8fafc] hover:text-[#0f172a] hover:shadow-md"
             >
               <TrendingUp size={16} className="text-[#4f46e5]" />
-              See Our Results
+              WhatsApp Us (+91 7297875798)
             </a>
           </div>
 
           {/* Mini stats row */}
-          <div className="hero-copy mt-12 flex flex-wrap gap-10">
+          <div className="hero-copy mt-12 flex flex-wrap gap-8 sm:gap-10">
             {[
-              { value: "+89%", label: "Avg lead increase" },
-              { value: "96%", label: "Client retention" },
-              { value: "40+", label: "Brands scaled" },
+              { value: "+140%", label: "Local Inquiry Growth" },
+              { value: "85+", label: "Google Page 1 Ranks" },
+              { value: "40+", label: "Rajasthan Brands Scaled" },
             ].map((stat) => (
               <div key={stat.label}>
                 <p className="text-2xl font-black text-[#0f172a]">{stat.value}</p>
@@ -106,7 +104,7 @@ export function HeroSection() {
             {/* Overlapping floating elements for a human-crafted feel */}
             <div className="absolute -top-10 -right-8 z-20 flex h-24 w-24 flex-col items-center justify-center rounded-full bg-gradient-to-br from-[#4f46e5] to-[#4338ca] shadow-[0_10px_40px_rgba(79,70,229,0.3)] border-4 border-white transform rotate-6">
               <span className="text-white font-black text-2xl tracking-tighter">#1</span>
-              <span className="text-[9px] font-bold text-indigo-100 uppercase tracking-widest text-center leading-tight">Growth<br/>Partner</span>
+              <span className="text-[9px] font-bold text-indigo-100 uppercase tracking-widest text-center leading-tight">Udaipur &amp;<br/>Rajasthan</span>
             </div>
 
             <div className="rounded-[36px] border border-[#e2e8f0] bg-white p-2 shadow-[0_40px_100px_rgba(15,23,42,0.06)] relative">
@@ -124,10 +122,10 @@ export function HeroSection() {
                   </div>
                   <div>
                     <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-[#4f46e5]">
-                      Performance Hub
+                      Local Impact Hub
                     </p>
                     <p className="mt-1 text-lg font-bold tracking-tight text-[#0f172a]">
-                      Your Growth, Visualized.
+                      Real Revenue &amp; Phone Inquiries
                     </p>
                   </div>
                 </div>
@@ -141,9 +139,9 @@ export function HeroSection() {
                   <div className="relative z-10 flex justify-between items-end">
                     <div>
                       <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-1">
-                        Monthly Revenue Lift
+                        Direct Booking Lift (Udaipur)
                       </p>
-                      <p className="text-5xl sm:text-6xl font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-300">+462%</p>
+                      <p className="text-5xl sm:text-6xl font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-300">+200%</p>
                     </div>
                     <div className="flex items-center gap-1.5 pb-2 text-emerald-400">
                       <TrendingUp size={20} strokeWidth={3} />
@@ -151,8 +149,8 @@ export function HeroSection() {
                   </div>
                   
                   <div className="mt-8 flex items-center justify-between border-t border-white/10 pt-5 text-sm font-medium">
-                    <span className="text-slate-300">Zenith Commerce</span>
-                    <span className="text-white font-semibold rounded-full bg-white/10 px-3 py-1 text-xs">6 months</span>
+                    <span className="text-slate-300">Lakeview Heritage Resort</span>
+                    <span className="text-white font-semibold rounded-full bg-white/10 px-3 py-1 text-xs">90 days</span>
                   </div>
                 </div>
 
@@ -162,8 +160,8 @@ export function HeroSection() {
                     <div className="absolute top-0 right-0 p-3 opacity-10 text-[#4f46e5]">
                        <BarChart3 size={40} />
                     </div>
-                    <p className="text-[10px] font-bold text-[#94a3b8] uppercase tracking-widest">Target ROAS</p>
-                    <p className="mt-1.5 text-3xl font-black text-[#0f172a] tracking-tight">6.2<span className="text-lg text-[#64748b]">x</span></p>
+                    <p className="text-[10px] font-bold text-[#94a3b8] uppercase tracking-widest">Google ROAS</p>
+                    <p className="mt-1.5 text-3xl font-black text-[#0f172a] tracking-tight">5.4<span className="text-lg text-[#64748b]">x</span></p>
                   </div>
                   
                   <div className="flex-1 rounded-[20px] bg-gradient-to-b from-[#eef2ff] to-[#f8fafc] p-5 border border-[#e0e7ff] flex flex-col justify-center">

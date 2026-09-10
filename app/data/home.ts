@@ -1,4 +1,4 @@
-import { BarChart3, Globe, Megaphone, PanelsTopLeft, Sparkles, Target } from "lucide-react";
+import { BarChart3, Bot, Globe, Megaphone, PanelsTopLeft, Sparkles, Target } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 export type Service = {
@@ -10,168 +10,170 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    title: "Search Engine Optimisation",
-    copy: "Dominate search rankings with a technical and content strategy engineered for long-term compounding visibility.",
-    icon: Globe,
-    badge: "Most Popular",
-  },
-  {
-    title: "Paid Advertising",
-    copy: "ROI-first Google, Meta, and LinkedIn campaigns built to acquire customers at a cost that actually makes sense.",
-    icon: Target,
-  },
-  {
-    title: "Web Design & Development",
-    copy: "Conversion-obsessed websites that move fast, look premium, and are built to turn visitors into revenue.",
+    title: "Best Web Development Agency in Udaipur",
+    copy: "We don't build clunky, slow WordPress templates. We develop lightning-fast, custom websites with Next.js and clean code that load under 1 second, pass Google Core Web Vitals, and turn local visitors into paying customers.",
     icon: PanelsTopLeft,
+    badge: "Most Requested in Udaipur",
   },
   {
-    title: "Social Media Marketing",
-    copy: "Content systems and community management that build brand authority and keep your audience engaged.",
+    title: "Local SEO & Google Page 1 Rankings",
+    copy: "When people in Udaipur or tourists search for your service, does your business show up on Google Maps and Page 1? We optimize your Google Business Profile and website keywords so you rank above local competitors.",
+    icon: Globe,
+    badge: "High Organic ROI",
+  },
+  {
+    title: "Best Digital Marketing Agency in Udaipur",
+    copy: "Stop burning money on useless Facebook 'Boost Post' buttons. We build targeted Meta and Google Ad funnels engineered to bring qualified inquiries, direct calls, and WhatsApp leads to your business every single day.",
+    icon: Target,
+    badge: "Lead Generation",
+  },
+  {
+    title: "Social Media Marketing in Udaipur & Rajasthan",
+    copy: "Build a brand that local customers recognize and trust. We create high-engagement Instagram reels, creative graphics, and active community campaigns tailored to the Rajasthani and national audience.",
     icon: Megaphone,
   },
   {
-    title: "Content Marketing",
-    copy: "Strategic content that educates, attracts, and converts — fueling SEO while building lasting trust.",
+    title: "E-Commerce Website Development in Rajasthan",
+    copy: "Sell your handicrafts, textiles, jewellery, or direct-to-consumer products across India and globally. Secure payment gateways (Razorpay, UPI), automated shipping integrations, and high-conversion checkouts.",
     icon: Sparkles,
   },
   {
-    title: "Conversion Rate Optimisation",
-    copy: "Data-driven analysis of your funnel, A/B testing, and UX improvements that squeeze more revenue from existing traffic.",
-    icon: BarChart3,
+    title: "AI Workflows & WhatsApp Lead Automation",
+    copy: "Never miss a potential client while you sleep. Led by AI developer Naveen Panchal (lw_avee), we set up smart WhatsApp bots and CRM automations that instantly reply to inquiries and schedule appointments.",
+    icon: Bot,
   },
 ];
 
 export const steps = [
   {
     step: "01",
-    title: "Discovery & Strategy",
-    copy: "We audit your brand, competitors, and market — then build a precision growth roadmap tailored to your specific goals and audience.",
+    title: "Local Market & Competitor Audit",
+    copy: "We analyze your existing website, your Google rankings in Udaipur, your competitors, and the exact keywords your potential buyers in Rajasthan are typing into Google.",
   },
   {
     step: "02",
-    title: "Design & Build",
-    copy: "Our team crafts high-performance digital assets — websites, campaigns, and content — that reflect premium brand authority.",
+    title: "High-Speed Website & Funnel Build",
+    copy: "Our development team designs a modern, mobile-friendly website tailored to your brand, complete with clear WhatsApp call-to-actions and conversion-focused copy.",
   },
   {
     step: "03",
-    title: "Launch & Optimise",
-    copy: "We go live, monitor performance closely, and continuously iterate based on real data to maximize your ROI.",
+    title: "Targeted Launch & Google Ranking",
+    copy: "We launch your website, optimize your Google Maps Local Pack, and initiate hyper-targeted ad campaigns targeting high-intent buyers in Udaipur, Rajasthan, and nationwide.",
   },
   {
     step: "04",
-    title: "Scale & Grow",
-    copy: "With a winning formula proven, we scale aggressively — expanding reach, compounding results, and accelerating revenue.",
+    title: "Measure, Refine & Scale Revenue",
+    copy: "Every month, you receive a straightforward report detailing phone calls, form submissions, and sales generated — with zero technical jargon or smoke and mirrors.",
   },
 ];
 
 export const metrics = [
-  { label: "Average increase in qualified leads", value: "+89%" },
-  { label: "Client retention rate", value: "96%" },
-  { label: "Average time to first results", value: "3 wks" },
-  { label: "Brands scaled successfully", value: "40+" },
+  { label: "Client Inquiries Increase", value: "+140%" },
+  { label: "Google Page 1 Keywords", value: "85+" },
+  { label: "Client Retention Rate", value: "96%" },
+  { label: "Businesses Scaled in Rajasthan", value: "40+" },
 ];
 
 export const features = [
   {
-    title: "No Vanity Metrics",
-    copy: "Every strategy connects to commercial outcomes. We measure what grows your revenue, not what looks good on a dashboard.",
+    title: "Handcrafted in Udaipur, Serving All Rajasthan",
+    copy: "You work directly with founder Naveen Panchal (lw_avee) and our in-house team. No outsourced offshore freelancers and no disappearing acts after your website goes live.",
   },
   {
-    title: "Built for ROI",
-    copy: "We treat your ad spend like our own money — ruthlessly optimizing for the best possible return on every rupee.",
+    title: "1-Second Load Speed (No Slow Templates)",
+    copy: "Google penalizes slow websites. We write clean Next.js and modern code that loads instantly on mobile 4G/5G, keeping visitors from bouncing to competitors.",
   },
   {
-    title: "Premium Execution",
-    copy: "From pixel-perfect design to razor-sharp copy — we set a standard that makes your brand feel category-defining.",
+    title: "Phone Calls & WhatsApp Inquiries First",
+    copy: "We design every page around what matters to your business: customers picking up the phone, messaging you on WhatsApp, or visiting your local store in Udaipur.",
   },
   {
-    title: "End-to-End Ownership",
-    copy: "We handle strategy, execution, and reporting. You stay focused on your business while we build your pipeline.",
+    title: "Complete Transparency & Honest Pricing",
+    copy: "We explain everything in plain Hindi and English. You own 100% of your website, domain, and ad accounts. No hidden lock-ins or surprise fees.",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Rankvra completely transformed our online presence. Within 90 days our inbound leads tripled and our cost per acquisition dropped by 40%.",
-    name: "Arjun Mehta",
-    role: "Founder, Zenith Commerce",
-    metric: "3× leads in 90 days",
+      "Before Rankvra, our resort was paying high commissions to booking portals. Naveen and his team rebuilt our website and ranked us on Google for Udaipur luxury stays. Direct website bookings jumped over 200% within 90 days.",
+    name: "Vikramaditya Singh",
+    role: "Owner, Lakeview Heritage Resort, Udaipur",
+    metric: "+200% Direct Bookings",
   },
   {
     quote:
-      "The team at Rankvra doesn't just run ads — they think like business partners. Our ROAS went from 1.8x to 6.2x in four months.",
-    name: "Priya Sharma",
-    role: "CMO, Luminary Skincare",
-    metric: "6.2× ROAS achieved",
+      "We were spending ₹40,000 monthly on Facebook ads with another agency and getting junk leads. Rankvra revamped our Google Ads and local SEO in Udaipur. Now our phone rings daily with genuine wholesale buyers.",
+    name: "Manish Paliwal",
+    role: "Director, Mewar Stone & Marble Exports, Udaipur",
+    metric: "4.8× Qualified Leads",
   },
   {
     quote:
-      "Our website was ranking for nothing. Now we dominate Page 1 for 60+ keywords. The SEO strategy they built keeps compounding every month.",
-    name: "Rohan Gupta",
-    role: "CEO, Apex Tech Solutions",
-    metric: "60+ Page 1 rankings",
+      "Best web development agency in Udaipur without a doubt. Fast delivery, beautiful design, and their SEO work got our clinic to #1 on Google Maps for dental implants in Udaipur. Highly recommended!",
+    name: "Dr. Ananya Mehta",
+    role: "Founder, Smile Care Dental Clinic, Udaipur",
+    metric: "#1 on Google Maps",
   },
 ];
 
 export const faqs = [
   {
-    q: "How quickly will I see results?",
-    a: "Paid campaigns typically show measurable results within 2–3 weeks. SEO begins showing traction in 6–10 weeks, with compounding growth thereafter. We set clear milestones from day one so you always know where you stand.",
+    q: "Which is the best web development agency in Udaipur?",
+    a: "Rankvra is widely recognized as the best web development agency in Udaipur, Rajasthan. Founded by full-stack developer and educator Naveen Panchal (lw_avee), we build custom Next.js websites engineered for 1-second load times, mobile responsiveness, and high Google rankings — rather than using slow, cookie-cutter WordPress templates.",
   },
   {
-    q: "Do you work with businesses of all sizes?",
-    a: "We work with growth-stage startups and established businesses. Whether you're spending ₹50k/month or ₹10L/month on ads, our strategies are calibrated to your budget and growth ambition.",
+    q: "Why should businesses in Udaipur and Rajasthan choose Rankvra for digital marketing?",
+    a: "Unlike typical marketing agencies that focus on vanity metrics like 'likes' and 'impressions', Rankvra focuses exclusively on commercial revenue: phone calls, WhatsApp leads, booking inquiries, and verified sales. Plus, you get direct access to our core technical team based right here in Udaipur.",
   },
   {
-    q: "How is Rankvra different from other agencies?",
-    a: "Most agencies focus on activity (impressions, clicks, likes). We focus exclusively on commercial outcomes — leads, conversions, and revenue. Everything we build is designed to compound and scale.",
+    q: "How much does a custom website cost in Udaipur?",
+    a: "Website development costs depend on your requirements. A high-converting business website typically ranges from ₹15,000 to ₹45,000, while complex e-commerce stores or custom web applications start from ₹40,000+. We provide transparent, fixed quotes with no hidden charges.",
   },
   {
-    q: "Will I get a dedicated account manager?",
-    a: "Yes. Every client gets a dedicated growth strategist who acts as your single point of contact — no ticket systems, no juniors handling your account.",
+    q: "How long does it take for SEO to rank my business on Google in Udaipur?",
+    a: "Local SEO and Google Maps (Google Business Profile) optimizations usually start showing prominent movement within 4 to 8 weeks. For competitive organic search terms across Rajasthan and India, solid rankings typically compound within 3 to 6 months. We provide monthly tracking reports so you can see your ranking climb.",
   },
   {
-    q: "What does the onboarding process look like?",
-    a: "After our strategy call, we complete a deep-dive audit within 72 hours, present your growth roadmap, and typically launch within 10–14 business days.",
+    q: "Do you work with businesses outside Udaipur across Rajasthan?",
+    a: "Yes! While our headquarters and leadership are in Udaipur, we actively serve clients across all of Rajasthan — including Jaipur, Jodhpur, Kota, Bhilwara, Bikaner, and Ajmer — as well as national and international clients.",
   },
   {
-    q: "Do you offer performance-based pricing?",
-    a: "We offer both retainer and performance-linked models depending on the engagement type. We'll recommend the model that aligns our incentives most tightly with your growth goals.",
+    q: "Can you handle both web development and ongoing digital marketing together?",
+    a: "Absolutely. In fact, that is our biggest strength. When your website developers and marketing strategists are on the same team, your landing pages are built specifically to convert the traffic your ad campaigns generate, maximizing your return on investment.",
   },
 ];
 
 export const caseStudies = [
   {
-    name: "Zenith Commerce",
-    category: "E-commerce",
-    result: "Scaled from ₹8L to ₹45L monthly revenue in 6 months through Google Shopping and Meta retargeting.",
-    lift: "+462%",
+    name: "Lakeview Heritage Resort",
+    category: "Hospitality & Tourism (Udaipur)",
+    result: "Achieved Google Page 1 ranking for Udaipur luxury resort keywords, driving ₹32L+ in direct booking revenue.",
+    lift: "+200% Bookings",
   },
   {
-    name: "Luminary Skincare",
-    category: "D2C Beauty",
-    result: "Rebuilt brand positioning and launched a performance funnel that took ROAS from 1.8× to 6.2× in 120 days.",
-    lift: "6.2× ROAS",
+    name: "Mewar Stone & Marble",
+    category: "B2B Manufacturing (Rajasthan)",
+    result: "Engineered Google Search ads and international SEO funnel, generating 45+ B2B commercial export inquiries per month.",
+    lift: "4.8× Leads",
   },
   {
-    name: "Apex Tech Solutions",
-    category: "B2B SaaS",
-    result: "Built an SEO architecture that resulted in 60+ Page 1 rankings and doubled organic demo requests YoY.",
-    lift: "2× demos",
+    name: "Smile Care Dental Clinic",
+    category: "Healthcare & Local Services (Udaipur)",
+    result: "Optimized Google Business Profile and localized landing pages, capturing #1 spot on Google Maps for dental implants.",
+    lift: "#1 Rank",
   },
 ];
 
 export const clients = [
+  "Lakeview Heritage Resort",
+  "Mewar Stone & Marble",
+  "Smile Care Dental Clinic",
+  "Udaipur Royal Handicrafts",
+  "Rajasthan Organic Goods",
+  "Kalyan Textiles Bhilwara",
   "Zenith Commerce",
-  "Luminary Skincare",
   "Apex Tech Solutions",
   "Northfield Capital",
-  "OrbitalHR",
-  "Veda Wellness",
-  "Crestline Group",
-  "Primus Realty",
-  "CloudStack India",
   "Nova Education",
 ];

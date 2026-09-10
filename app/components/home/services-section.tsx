@@ -8,17 +8,16 @@ export function ServicesSection() {
           {/* Header */}
           <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between mb-12">
             <div>
-              <p className="text-sm font-semibold tracking-[0.2em] uppercase text-[#64748b]">
-                What we do
+              <p className="text-sm font-semibold tracking-[0.2em] uppercase text-[#4f46e5]">
+                Our Core Services in Udaipur &amp; Rajasthan
               </p>
               <h2 className="mt-4 max-w-2xl text-3xl font-bold tracking-tight text-[#0f172a] sm:text-4xl leading-[1.15]">
-                Full-spectrum digital marketing.{" "}
-                <span className="text-[#64748b] font-medium">Zero fluff.</span>
+                Custom Web Development &amp;{" "}
+                <span className="text-[#64748b] font-medium">ROI-Focused Digital Marketing.</span>
               </h2>
             </div>
             <p className="max-w-md text-sm leading-7 text-[#64748b]">
-              Every service is designed to generate measurable commercial impact —
-              not to look busy.
+              Everything your business needs to rank on Google Page 1, generate daily customer inquiries, and outpace local competitors in Udaipur and across Rajasthan.
             </p>
           </div>
 

@@ -3,9 +3,10 @@ import { SiteShell } from "@/app/components/site-shell";
 import { AboutPage } from "@/app/components/about-page";
 
 export const metadata: Metadata = {
-  title: "About Us | Rankvra Digital Marketing Agency",
+  title:
+    "About Us | Best Web Development & Digital Marketing Agency in Udaipur | Naveen Panchal (lw_avee)",
   description:
-    "Meet the team behind Rankvra. We are a growth-obsessed digital marketing agency built on the belief that great strategy and relentless execution change businesses.",
+    "Meet Founder & CEO Naveen Panchal (lw_avee) and the team behind Rankvra — the best web development and digital marketing agency in Udaipur, serving brands across Rajasthan.",
 };
 
 export default function About() {

@@ -14,20 +14,28 @@ export function FAQSection() {
           {/* Left */}
           <div className="lg:max-w-xs lg:shrink-0">
             <p className="text-sm font-semibold tracking-[0.2em] uppercase text-[#4f46e5]">
-              Common questions
+              Udaipur &amp; Rajasthan FAQ
             </p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-[#0f172a] sm:text-4xl">
-              Everything you need to know.
+              Questions from Local Business Owners.
             </h2>
             <p className="mt-4 text-sm leading-7 text-[#64748b]">
-              Still have questions? Drop us a line at{" "}
+              Have a specific question about your website or Google rankings in Udaipur? Message Naveen on WhatsApp at{" "}
+              <a
+                href="https://wa.me/917297875798"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#4f46e5] hover:text-[#4338ca] transition-colors font-medium underline"
+              >
+                +91 7297875798
+              </a>{" "}
+              or email{" "}
               <a
                 href="mailto:info@rankvra.com"
                 className="text-[#4f46e5] hover:text-[#4338ca] transition-colors font-medium"
               >
                 info@rankvra.com
-              </a>{" "}
-              and we&apos;ll reply within 24 hours.
+              </a>.
             </p>
           </div>
 

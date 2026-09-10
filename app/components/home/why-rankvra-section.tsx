@@ -8,31 +8,26 @@ export function WhyRankvraSection() {
         {/* Left — Problem framing */}
         <div>
           <p className="text-sm font-semibold tracking-[0.2em] uppercase text-[#4f46e5]">
-            Why Rankvra
+            Why Choose Rankvra in Udaipur
           </p>
           <h2 className="mt-4 text-3xl font-bold tracking-tight text-[#0f172a] sm:text-4xl leading-[1.15]">
-            Most agencies ship reports.{" "}
-            <span className="text-[#64748b] font-medium">We ship revenue.</span>
+            Tired of vanity metrics?{" "}
+            <span className="text-[#64748b] font-medium">We deliver real customer calls &amp; inquiries.</span>
           </h2>
           <p className="mt-5 text-base leading-8 text-[#475569] max-w-xl">
-            The digital marketing industry is flooded with agencies that optimise for
-            impressions, follower counts, and vanity metrics. We think differently —
-            every decision traces back to one question:{" "}
-            <strong className="text-[#0f172a] font-semibold">
-              does this grow your revenue?
-            </strong>
+            Whether you run a resort in Udaipur, a stone &amp; marble export firm, or a retail brand in Rajasthan, you don&apos;t need complicated 30-page PDF reports showing &ldquo;impressions&rdquo;. You need high-intent buyers finding your business on Google, messaging you on WhatsApp, and paying for your services.
           </p>
 
           <div className="mt-8 space-y-3">
             {[
-              "Commercial outcomes over vanity metrics",
-              "Dedicated strategist, not a revolving door of juniors",
-              "Transparent reporting with actual ROI data",
-              "Strategy that compounds — not just short-term spikes",
+              "Custom Next.js websites built from scratch — zero slow, bloated WordPress templates",
+              "Local SEO & Google Maps optimization to rank #1 in Udaipur & Rajasthan",
+              "Direct communication with founder Naveen Panchal (lw_avee) & core operators",
+              "Transparent monthly reporting in plain language — you own 100% of your assets",
             ].map((point) => (
               <div key={point} className="flex items-start gap-3">
                 <CheckCircle2 size={17} className="text-[#4f46e5] mt-0.5 shrink-0" />
-                <span className="text-sm text-[#475569]">{point}</span>
+                <span className="text-sm text-[#475569] font-medium">{point}</span>
               </div>
             ))}
           </div>

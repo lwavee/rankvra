@@ -11,20 +11,26 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://rankvra.com"),
-  title: "Rankvra | Top Digital Marketing Agency",
+  title: "Best Web Development & Digital Marketing Agency in Udaipur, Rajasthan | Rankvra",
   description:
-    "Rankvra is an elite digital marketing agency specializing in high-performance SEO, paid advertising, and conversion-focused web design. We scale ambitious brands to the top.",
+    "Looking for the best web development agency in Udaipur or top digital marketing company in Rajasthan? Rankvra, founded by Naveen Panchal (lw_avee), builds fast custom websites, Google Page 1 SEO, and high-ROI ad campaigns that generate real local leads.",
   keywords: [
-    "digital marketing agency",
-    "SEO services",
-    "paid ads agency",
-    "PPC management",
-    "web design agency",
-    "conversion rate optimization",
-    "marketing strategy",
-    "lead generation",
+    "best web development agency in udaipur",
+    "best digital marketing agency in udaipur",
+    "web development company in udaipur",
+    "website design in udaipur",
+    "seo agency in udaipur",
+    "best seo company in udaipur",
+    "digital marketing company in udaipur",
+    "digital marketing agency in rajasthan",
+    "web development agency in rajasthan",
+    "social media marketing in udaipur",
+    "google ads agency in udaipur",
+    "naveen panchal",
+    "lw_avee",
+    "learn with avee",
   ],
-  authors: [{ name: "Rankvra Team" }],
+  authors: [{ name: "Naveen Panchal (lw_avee)" }, { name: "Rankvra Team" }],
   creator: "Rankvra",
   publisher: "Rankvra",
   robots: {
@@ -40,37 +46,128 @@ export const metadata: Metadata = {
   },
   icons: { icon: "/favicon.ico" },
   openGraph: {
-    title: "Rankvra | Top Digital Marketing Agency",
+    title: "Best Web Development & Digital Marketing Agency in Udaipur | Rankvra",
     description:
-      "We turn clicks into clients. Full-service digital marketing — SEO, Paid Ads, Web Design, and Growth Strategy for ambitious brands.",
+      "Rankvra builds ultra-fast custom websites and high-ROI digital marketing campaigns for businesses in Udaipur and all over Rajasthan. Led by Naveen Panchal (lw_avee).",
     url: "https://rankvra.com",
     siteName: "Rankvra",
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
     images: [
       {
-        url: "https://rankvra.com/og-image.jpg", // Placeholder for future OG image
+        url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Rankvra Digital Marketing Agency",
+        alt: "Rankvra - Best Web Development & Digital Marketing Agency in Udaipur",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rankvra | Elite Digital Marketing Agency",
+    title: "Best Web Development & Digital Marketing Agency in Udaipur | Rankvra",
     description:
-      "We build performance-obsessed systems that turn attention into predictable revenue. SEO, paid ads, and web design.",
-    images: ["https://rankvra.com/twitter-image.jpg"],
+      "High-speed websites, Google Page 1 SEO, and performance ads for businesses in Udaipur and across Rajasthan.",
+    images: ["/logo.png"],
   },
   alternates: {
     canonical: "https://rankvra.com",
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://rankvra.com/#localbusiness",
+      name: "Rankvra - Best Web Development & Digital Marketing Agency in Udaipur",
+      alternateName: ["Rankvra Digital", "Rankvra Udaipur"],
+      url: "https://rankvra.com",
+      telephone: "+917297875798",
+      email: "info@rankvra.com",
+      priceRange: "₹₹",
+      image: "https://rankvra.com/logo.png",
+      founder: {
+        "@type": "Person",
+        name: "Naveen Panchal",
+        alternateName: "lw_avee",
+        jobTitle: "Founder & CEO",
+        sameAs: [
+          "https://www.instagram.com/lw_avee/?__pwa=1",
+          "https://www.youtube.com/@Lw_avee",
+          "https://www.facebook.com/lwavee?locale=hi_IN",
+        ],
+      },
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Udaipur",
+        addressRegion: "Rajasthan",
+        postalCode: "313001",
+        addressCountry: "IN",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 24.5854,
+        longitude: 73.7125,
+      },
+      areaServed: [
+        { "@type": "City", name: "Udaipur" },
+        { "@type": "State", name: "Rajasthan" },
+        { "@type": "City", name: "Jaipur" },
+        { "@type": "City", name: "Jodhpur" },
+        { "@type": "City", name: "Kota" },
+        { "@type": "City", name: "Bhilwara" },
+        { "@type": "Country", name: "India" },
+      ],
+      description:
+        "Rankvra is the premier web development and digital marketing agency based in Udaipur, Rajasthan. We offer custom website design, local SEO, Google Ads, Meta Ads, and AI automations to help local businesses scale.",
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Agency Services",
+        itemListElement: [
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Custom Web Development & Website Design in Udaipur",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Local SEO & Google My Business Optimization in Udaipur",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Digital Marketing & Performance Paid Advertising (Meta & Google Ads)",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Social Media Marketing & Brand Strategy in Rajasthan",
+            },
+          },
+        ],
+      },
+    },
+  ],
+};
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${inter.variable} h-full`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="min-h-full flex flex-col bg-white text-[#0f172a] antialiased">
         {children}
       </body>

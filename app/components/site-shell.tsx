@@ -126,27 +126,28 @@ export function SiteShell({ children }: { children: ReactNode }) {
 
             <div className="relative z-10">
               <p className="text-sm font-semibold tracking-[0.2em] text-[#4f46e5] uppercase">
-                Ready to grow?
+                📍 Udaipur, Rajasthan • Ready to Grow?
               </p>
               <h2 className="mt-4 text-3xl font-bold tracking-tight text-[#0f172a] sm:text-4xl lg:text-5xl">
-                Let&apos;s build something{" "}
-                <span className="text-gradient">remarkable</span>.
+                Rank #1 on Google &amp;{" "}
+                <span className="text-gradient">Scale Your Inquiries</span>.
               </h2>
               <p className="mt-5 mx-auto max-w-xl text-base leading-7 text-[#475569]">
-                We take on a limited number of new clients each month to ensure
-                every partnership gets the focus and intensity it deserves.
+                Based in Udaipur, we build custom high-speed websites and run profit-generating digital marketing campaigns for businesses across Udaipur and all over Rajasthan.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6">
-                <Link
-                  href="/contact"
+                <a
+                  href="https://wa.me/917297875798"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-full bg-[#4f46e5] px-8 py-4 text-sm font-semibold text-white shadow-lg shadow-[#4f46e5]/20 transition-all duration-300 hover:-translate-y-1 hover:bg-[#4338ca] hover:shadow-[#4f46e5]/30 hover:shadow-xl"
                 >
-                  Book a Strategy Call
-                </Link>
+                  WhatsApp Us (+91 7297875798)
+                </a>
                 <div className="flex flex-col items-center sm:items-start gap-1 text-sm font-medium">
                   <a
                     href="tel:+917297875798"
-                    className="text-[#64748b] hover:text-[#4f46e5] transition-colors"
+                    className="text-[#0f172a] font-semibold hover:text-[#4f46e5] transition-colors"
                   >
                     +91 7297875798
                   </a>
@@ -156,6 +157,9 @@ export function SiteShell({ children }: { children: ReactNode }) {
                   >
                     info@rankvra.com
                   </a>
+                  <span className="text-xs text-[#94a3b8]">
+                    Udaipur, Rajasthan 313001
+                  </span>
                 </div>
               </div>
             </div>
@@ -166,7 +170,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
             <Link href="/" className="flex items-center group" aria-label="Rankvra Home">
               <Image
                 src="/logo-icon.png"
-                alt="Rankvra"
+                alt="Rankvra - Best Web Development Agency in Udaipur"
                 width={46}
                 height={34}
                 className="h-8 w-auto object-contain opacity-90 group-hover:opacity-100 transition-opacity"
@@ -185,8 +189,8 @@ export function SiteShell({ children }: { children: ReactNode }) {
               ))}
             </nav>
 
-            <p className="text-sm text-[#94a3b8]">
-              © 2025 Rankvra. All rights reserved.
+            <p className="text-xs text-[#94a3b8] text-center sm:text-right">
+              © 2025 Rankvra • Best Web Development &amp; Digital Marketing Agency in Udaipur, Rajasthan.
             </p>
           </div>
         </div>
