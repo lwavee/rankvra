@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Healthcare & Clinic Marketing in Udaipur & Rajasthan | RankVRA",
   description:
     "We help dental clinics, doctors, and healthcare centers in Udaipur rank #1 on Google Maps and attract qualified patients through ethical local SEO.",
-  alternates: { canonical: "https://rankvra.com/industries/clinics" },
+  alternates: { canonical: "https://www.rankvra.com/industries/clinics" },
 };
 
 export default function ClinicsIndustryPage() {

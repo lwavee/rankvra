@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { BLOG_POSTS } from "@/app/blogs/data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://rankvra.com";
+  const baseUrl = "https://www.rankvra.com";
   const lastModified = new Date();
 
   const staticRoutes = [
@@ -25,7 +25,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/b2b-lead-generation",
     "/international-seo",
     "/free-growth-audit",
-    "/growth-audit",
     "/portfolio",
     "/blogs",
     "/contact",

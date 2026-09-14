@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/", "/thank-you"],
     },
-    sitemap: "https://rankvra.com/sitemap.xml",
+    sitemap: "https://www.rankvra.com/sitemap.xml",
   };
 }

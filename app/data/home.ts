@@ -68,16 +68,16 @@ export const steps = [
 ];
 
 export const metrics = [
-  { label: "Client Inquiries Increase", value: "+140%" },
-  { label: "Google Page 1 Keywords", value: "85+" },
-  { label: "Client Retention Rate", value: "96%" },
-  { label: "Businesses Scaled in Rajasthan", value: "40+" },
+  { label: "Custom Next.js Engineering", value: "100%" },
+  { label: "Target Load Speed", value: "<1.0s" },
+  { label: "Direct Founder Architecture", value: "Direct" },
+  { label: "Technical SEO Compliance", value: "100%" },
 ];
 
 export const features = [
   {
-    title: "Handcrafted in Udaipur, Serving All Rajasthan",
-    copy: "You work directly with founder Naveen Panchal (lw_avee) and our in-house team. No outsourced offshore freelancers and no disappearing acts after your website goes live.",
+    title: "Handcrafted in Udaipur, Serving Nationwide & Global Clients",
+    copy: "You work directly with founder Naveen Panchal (lw_avee) and our technical team. No outsourced offshore freelancers and no disappearing acts after your website goes live.",
   },
   {
     title: "1-Second Load Speed (No Slow Templates)",
@@ -85,95 +85,93 @@ export const features = [
   },
   {
     title: "Phone Calls & WhatsApp Inquiries First",
-    copy: "We design every page around what matters to your business: customers picking up the phone, messaging you on WhatsApp, or visiting your local store in Udaipur.",
+    copy: "We design every page around what matters to your business: customers picking up the phone, messaging you on WhatsApp, or requesting an audit.",
   },
   {
-    title: "Complete Transparency & Honest Pricing",
-    copy: "We explain everything in plain Hindi and English. You own 100% of your website, domain, and ad accounts. No hidden lock-ins or surprise fees.",
+    title: "Complete Transparency & Direct Ownership",
+    copy: "We explain everything clearly in plain Hindi and English. You own 100% of your website code, domain, and ad accounts. No hidden lock-ins or surprise fees.",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Before Rankvra, our resort was paying high commissions to booking portals. Naveen and his team rebuilt our website and ranked us on Google for Udaipur luxury stays. Direct website bookings jumped over 200% within 90 days.",
-    name: "Vikramaditya Singh",
-    role: "Owner, Lakeview Heritage Resort, Udaipur",
-    metric: "+200% Direct Bookings",
+      "Every website we engineer is built on clean Next.js architecture with sub-second page speeds, technical SEO schema, and direct conversion funnels tailored to real commercial queries.",
+    name: "Engineering-First Standard",
+    role: "RankVRA Quality Protocol",
+    metric: "Sub-Second Speed",
   },
   {
     quote:
-      "We were spending ₹40,000 monthly on Facebook ads with another agency and getting junk leads. Rankvra revamped our Google Ads and local SEO in Udaipur. Now our phone rings daily with genuine wholesale buyers.",
-    name: "Manish Paliwal",
-    role: "Director, Mewar Stone & Marble Exports, Udaipur",
-    metric: "4.8× Qualified Leads",
+      "We operate with complete transparency. Clients receive full source code ownership, clean DNS/hosting setups, and direct founder collaboration with zero outsourced runaround.",
+    name: "Direct Client Collaboration",
+    role: "Led by Founder Naveen Panchal",
+    metric: "100% Code Ownership",
   },
   {
     quote:
-      "Best web development agency in Udaipur without a doubt. Fast delivery, beautiful design, and their SEO work got our clinic to #1 on Google Maps for dental implants in Udaipur. Highly recommended!",
-    name: "Dr. Ananya Mehta",
-    role: "Founder, Smile Care Dental Clinic, Udaipur",
-    metric: "#1 on Google Maps",
+      "Our search engine optimization and digital campaigns focus strictly on business outcomes: qualified phone inquiries, WhatsApp leads, and high-intent commercial keyword rankings.",
+    name: "Commercial Strategy",
+    role: "Outcome-Driven Focus",
+    metric: "High-Intent SEO",
   },
 ];
 
 export const faqs = [
   {
-    q: "Do you work with clients across India and internationally?",
-    a: "Yes! While our engineering headquarters are in Udaipur, RankVRA operates nationally and internationally. We partner with B2B enterprises, industrial manufacturers, healthcare chains, and digital brands across Mumbai, Delhi NCR, Bengaluru, Hyderabad, Pune, and Jaipur, as well as overseas clients in the United States, UK, UAE (Dubai), and Europe.",
+    q: "Who is RankVRA and where is it located?",
+    a: "RankVRA is a web development, SEO, and digital growth agency founded by Naveen Panchal. Our engineering headquarters are located in Udaipur, Rajasthan 313001, India. We partner with ambitious businesses locally in Udaipur, across Rajasthan and India, and internationally across the US, UK, and UAE.",
+  },
+  {
+    q: "Who founded RankVRA?",
+    a: "RankVRA was founded by Naveen Panchal (known online as lw_avee), a full-stack engineer and technical digital marketer based in Udaipur, Rajasthan. Naveen personally architects the web platforms and search strategies for all RankVRA clients.",
+  },
+  {
+    q: "What core services does RankVRA provide?",
+    a: "RankVRA provides custom web development (Next.js, TypeScript, modern React), technical Google SEO, local SEO and Google Business Profile optimization, Google Ads PPC campaigns, and AI/WhatsApp lead automation funnels.",
+  },
+  {
+    q: "How can businesses contact RankVRA?",
+    a: "You can reach Founder Naveen Panchal directly via phone or WhatsApp at +91 7297875798, email us at info@rankvra.com, or request a free review of your current website at https://www.rankvra.com/free-growth-audit.",
   },
   {
     q: "How is RankVRA different from standard digital marketing agencies?",
-    a: "Most agencies run vanity campaigns focused on 'impressions' and 'likes' using slow WordPress templates. RankVRA takes a software-engineering approach: we build custom Next.js web applications that load in under 1 second, build technical search architectures that rank for high-intent buyer queries, and track verified pipeline revenue and sales inquiries.",
+    a: "Most agencies run vanity campaigns using slow, clunky WordPress templates. RankVRA takes a software-engineering approach: we build custom Next.js web applications that load in under 1 second, build technical search architectures that rank for high-intent buyer queries, and track verified pipeline revenue and sales inquiries.",
   },
   {
-    q: "How much does a custom high-performance website cost?",
-    a: "Investments depend on your technical scope and business goals. High-converting custom corporate and lead-generation websites typically range from ₹25,000 to ₹65,000 ($350 - $900 USD), while scalable web applications and enterprise e-commerce platforms start from ₹60,000+ ($800+ USD). We provide clear, milestone-based quotes with 100% intellectual property ownership.",
-  },
-  {
-    q: "How long does it take to rank on Google nationally or internationally?",
-    a: "Initial crawl and index improvements often reflect within 3 to 6 weeks. For competitive national commercial keywords across India and international markets, organic dominance compounds over 3 to 6 months through rigorous technical SEO, programmatic page speed optimization, and topical authority clusters.",
-  },
-  {
-    q: "How do you coordinate with clients in different time zones?",
-    a: "We maintain streamlined asynchronous and direct communication via WhatsApp, Slack, Google Meet, and email. Our team regularly supports clients operating across IST (India), EST/PST (United States), GMT (United Kingdom), and GST (United Arab Emirates).",
-  },
-  {
-    q: "Can you handle both web development and continuous growth marketing together?",
-    a: "Yes, this full-stack integration is our core competitive edge. Because the same technical engineers build your web infrastructure and manage your conversion funnels, your landing pages load instantly and convert incoming traffic into paying customers at the highest possible rate.",
+    q: "How do you coordinate with clients in different locations or time zones?",
+    a: "We maintain streamlined direct communication via WhatsApp, Google Meet, email, and phone. Our team regularly coordinates with clients across IST (India), EST/PST (United States), GMT (United Kingdom), and GST (United Arab Emirates).",
   },
 ];
 
 export const caseStudies = [
   {
-    name: "Lakeview Heritage Resort",
-    category: "Hospitality & Tourism (Udaipur)",
-    result: "Achieved Google Page 1 ranking for Udaipur luxury resort keywords, driving ₹32L+ in direct booking revenue.",
-    lift: "+200% Bookings",
+    name: "AMS 360 Agency Management System",
+    category: "Enterprise Cloud Application",
+    result: "Automated insurance brokerage management with unified client profiles, policy lifecycles, and sub-second Next.js dashboards.",
+    lift: "Enterprise Cloud",
   },
   {
-    name: "Mewar Stone & Marble",
-    category: "B2B Manufacturing (Rajasthan)",
-    result: "Engineered Google Search ads and international SEO funnel, generating 45+ B2B commercial export inquiries per month.",
-    lift: "4.8× Leads",
+    name: "Sarala AI Platform",
+    category: "AI & Operational Automation",
+    result: "Built real-time conversational AI and smart automation workflows for business intelligence and instant query resolution.",
+    lift: "AI Workflow",
   },
   {
-    name: "Smile Care Dental Clinic",
-    category: "Healthcare & Local Services (Udaipur)",
-    result: "Optimized Google Business Profile and localized landing pages, capturing #1 spot on Google Maps for dental implants.",
-    lift: "#1 Rank",
+    name: "Client Acquisition CRM Engine",
+    category: "Sales Automation & Funnels",
+    result: "Architected high-performance lead pipeline management with automated follow-ups and client activity history.",
+    lift: "CRM Engine",
   },
 ];
 
 export const clients = [
-  "Lakeview Heritage Resort",
-  "Mewar Stone & Marble",
-  "Smile Care Dental Clinic",
-  "Udaipur Royal Handicrafts",
-  "Rajasthan Organic Goods",
-  "Kalyan Textiles Bhilwara",
-  "Zenith Commerce",
-  "Apex Tech Solutions",
-  "Northfield Capital",
-  "Nova Education",
+  "Next.js Engineering",
+  "Technical SEO",
+  "Google Maps 3-Pack",
+  "Core Web Vitals",
+  "B2B Lead Generation",
+  "Google Ads PPC",
+  "WhatsApp Lead Automation",
+  "Conversion Rate Optimization",
 ];

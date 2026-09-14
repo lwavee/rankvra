@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Web Development & Digital Marketing Agency in Rajasthan | RankVRA",
   description:
     "Serving ambitious businesses across Jaipur, Jodhpur, Udaipur, Kota, and Bhilwara with high-speed custom web development, Google SEO, and paid ad management.",
-  alternates: { canonical: "https://rankvra.com/locations/rajasthan" },
+  alternates: { canonical: "https://www.rankvra.com/locations/rajasthan" },
 };
 
 export default function RajasthanLocationPage() {

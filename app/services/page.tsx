@@ -3,9 +3,10 @@ import { SiteShell } from "@/app/components/site-shell";
 import { ServicesPage } from "@/app/components/services-page";
 
 export const metadata: Metadata = {
-  title: "Services | Rankvra Digital Marketing Agency",
+  title: "Services | Web Development, SEO & Digital Growth | RankVRA",
   description:
-    "From SEO and paid ads to web design and conversion optimisation — explore Rankvra full suite of digital marketing services engineered for ROI.",
+    "Explore RankVRA's core digital growth services: high-speed Next.js web development, technical Google SEO, local Maps 3-Pack, Google Ads PPC, and AI automation.",
+  alternates: { canonical: "https://www.rankvra.com/services" },
 };
 
 export default function Services() {

@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Terms and Conditions | RankVRA",
   description: "Terms of service and project engagement policies for RankVRA.",
   robots: { index: true, follow: true },
+  alternates: { canonical: "https://www.rankvra.com/terms-and-conditions" },
 };
 
 export default function TermsPage() {

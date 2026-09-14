@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "International SEO & Digital Marketing for Exporters | RankVRA",
   description:
     "Help your stone, marble, handicraft, or textile export business rank on Google in the USA, UK, UAE, and Europe to attract high-value international buyers.",
-  alternates: { canonical: "https://rankvra.com/industries/exporters" },
+  alternates: { canonical: "https://www.rankvra.com/industries/exporters" },
 };
 
 export default function ExportersIndustryPage() {

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description:
     "RankVRA is a premier web development and digital growth agency in India. We engineer ultra-fast Next.js websites, technical SEO architectures, and B2B lead generation funnels for enterprises and SMEs nationwide.",
   alternates: {
-    canonical: "https://rankvra.com/locations/india",
+    canonical: "https://www.rankvra.com/locations/india",
   },
 };
 

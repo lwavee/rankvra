@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "SEO Agency in Udaipur & Rajasthan | Search Engine Optimization | RankVRA",
   description:
     "Dominate Google Page 1 for high-intent search terms. RankVRA delivers technical SEO, topical authority, and organic conversion strategies for businesses in Rajasthan and India.",
-  alternates: { canonical: "https://rankvra.com/services/seo" },
+  alternates: { canonical: "https://www.rankvra.com/services/seo" },
 };
 
 export default function SeoServicePage() {

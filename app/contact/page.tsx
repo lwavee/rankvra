@@ -3,9 +3,10 @@ import { SiteShell } from "@/app/components/site-shell";
 import { ContactPage } from "@/app/components/contact-page";
 
 export const metadata: Metadata = {
-  title: "Contact | Book a Strategy Call | Rankvra",
+  title: "Contact RankVRA | Web Development & SEO Agency Udaipur",
   description:
-    "Ready to grow? Book a free strategy call with Rankvra. We will audit your current marketing, identify your biggest opportunities, and map a clear path to results.",
+    "Get in touch with RankVRA in Udaipur, Rajasthan. Speak directly with Founder Naveen Panchal (+91 7297875798 / info@rankvra.com) to discuss web development, SEO, and digital growth.",
+  alternates: { canonical: "https://www.rankvra.com/contact" },
 };
 
 export default function Contact() {

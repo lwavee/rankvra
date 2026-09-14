@@ -143,8 +143,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { name } = await params;
   const project = projectShowcaseData[name];
   return {
-    title: `${project ? project.title : name} | Rankvra Portfolio`,
-    description: project ? project.tagline : `Explore the work and features of ${name} built by Rankvra.`,
+    title: `${project ? project.title : name} | RankVRA Portfolio`,
+    description: project ? project.tagline : `Explore the work and features of ${name} built by RankVRA.`,
+    alternates: { canonical: `https://www.rankvra.com/portfolio/${name}` },
   };
 }
 

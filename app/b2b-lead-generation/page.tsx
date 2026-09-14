@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "B2B Lead Generation Agency for High-Value Services | RankVRA",
   description:
     "We build reliable B2B customer acquisition funnels for service providers, industrial manufacturers, and tech firms using Google Search and intent data.",
-  alternates: { canonical: "https://rankvra.com/b2b-lead-generation" },
+  alternates: { canonical: "https://www.rankvra.com/b2b-lead-generation" },
 };
 
 export default function B2bLeadGenerationPage() {

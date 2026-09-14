@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090b10"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Subtle Grid Lines -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.4">
+    <line x1="100" y1="0" x2="100" y2="630"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="500" y1="0" x2="500" y2="630"/>
+    <line x1="700" y1="0" x2="700" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1100" y1="0" x2="1100" y2="630"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="260" x2="1200" y2="260"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+  </g>
+
+  <!-- Ambient Glow Spheres -->
+  <circle cx="200" cy="180" r="140" fill="#38bdf8" opacity="0.12" filter="url(#glow)"/>
+  <circle cx="1000" cy="450" r="180" fill="#818cf8" opacity="0.15" filter="url(#glow)"/>
+
+  <!-- Left Content Box: Badge & Headlines -->
+  <g transform="translate(80, 100)">
+    <!-- Badge -->
+    <rect width="190" height="36" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="1.5"/>
+    <circle cx="20" cy="18" r="5" fill="#38bdf8"/>
+    <text x="35" y="23" fill="#93c5fd" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" letter-spacing="1">UX &amp; CRO BLUEPRINT</text>
+
+    <!-- Title -->
+    <text x="0" y="90" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="800" line-height="1.2">
+      <tspan x="0" dy="0">Building a High-Converting</tspan>
+      <tspan x="0" dy="54" fill="url(#primaryGrad)">Website Architecture</tspan>
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="210" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="400">
+      Turn passive search visits into qualified buyers with speed, clarity, and trust.
+    </text>
+
+    <!-- 3 Pillar Tags -->
+    <g transform="translate(0, 260)">
+      <rect width="145" height="38" rx="8" fill="#1e293b" stroke="#334155"/>
+      <text x="72" y="24" fill="#38bdf8" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="600">Sub-1s Speeds</text>
+
+      <rect x="160" width="165" height="38" rx="8" fill="#1e293b" stroke="#334155"/>
+      <text x="242" y="24" fill="#10b981" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="600">Intent Hero CTA</text>
+
+      <rect x="340" width="160" height="38" rx="8" fill="#1e293b" stroke="#334155"/>
+      <text x="420" y="24" fill="#a78bfa" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="600">Proof Architecture</text>
+    </g>
+
+    <!-- Brand Author -->
+    <g transform="translate(0, 360)">
+      <text x="0" y="0" fill="#cbd5e1" font-family="sans-serif" font-size="15" font-weight="600">RankVRA Growth Engineering</text>
+      <text x="0" y="22" fill="#64748b" font-family="sans-serif" font-size="13">By Naveen Panchal • Technical Guide</text>
+    </g>
+  </g>
+
+  <!-- Right Visual: Browser Wireframe + Conversion Funnel Flow -->
+  <g transform="translate(680, 110)">
+    <!-- Browser Window Card -->
+    <rect width="440" height="420" rx="16" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+    
+    <!-- Window Header -->
+    <rect width="440" height="40" rx="16" fill="#1e293b"/>
+    <rect y="24" width="440" height="16" fill="#1e293b"/>
+    <circle cx="25" cy="20" r="5" fill="#ef4444"/>
+    <circle cx="45" cy="20" r="5" fill="#f59e0b"/>
+    <circle cx="65" cy="20" r="5" fill="#10b981"/>
+    <rect x="110" y="10" width="220" height="20" rx="6" fill="#0f172a"/>
+    <text x="220" y="24" fill="#64748b" font-family="sans-serif" font-size="11" text-anchor="middle">rankvra.com/high-converting-framework</text>
+
+    <!-- Hero Mockup Section inside Browser -->
+    <g transform="translate(25, 60)">
+      <!-- Mini Nav -->
+      <rect width="60" height="12" rx="3" fill="#38bdf8"/>
+      <rect x="250" width="40" height="10" rx="2" fill="#334155"/>
+      <rect x="300" width="40" height="10" rx="2" fill="#334155"/>
+      <rect x="350" width="40" height="12" rx="4" fill="#38bdf8" opacity="0.8"/>
+
+      <!-- Headline Skeleton -->
+      <rect y="35" width="260" height="18" rx="4" fill="#ffffff" opacity="0.9"/>
+      <rect y="60" width="200" height="14" rx="4" fill="#94a3b8" opacity="0.7"/>
+      
+      <!-- Primary CTA button with pulse glow -->
+      <rect y="90" width="130" height="32" rx="6" fill="url(#primaryGrad)"/>
+      <text x="65" y="111" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="700" text-anchor="middle">Get Direct Quote →</text>
+
+      <!-- Trust Signals Row -->
+      <g transform="translate(0, 140)">
+        <rect width="115" height="45" rx="6" fill="#1e293b" stroke="#334155"/>
+        <text x="57" y="22" fill="#38bdf8" font-family="sans-serif" font-size="14" font-weight="700" text-anchor="middle">99.8%</text>
+        <text x="57" y="36" fill="#64748b" font-family="sans-serif" font-size="9" text-anchor="middle">Core Web Vitals</text>
+
+        <rect x="130" width="125" height="45" rx="6" fill="#1e293b" stroke="#334155"/>
+        <text x="192" y="22" fill="#10b981" font-family="sans-serif" font-size="14" font-weight="700" text-anchor="middle">3.4x</text>
+        <text x="192" y="36" fill="#64748b" font-family="sans-serif" font-size="9" text-anchor="middle">Conversion Lift</text>
+
+        <rect x="270" width="115" height="45" rx="6" fill="#1e293b" stroke="#334155"/>
+        <text x="327" y="22" fill="#f59e0b" font-family="sans-serif" font-size="14" font-weight="700" text-anchor="middle">&lt; 0.8s</text>
+        <text x="327" y="36" fill="#64748b" font-family="sans-serif" font-size="9" text-anchor="middle">Server LCP</text>
+      </g>
+
+      <!-- Form Mockup -->
+      <g transform="translate(0, 205)">
+        <rect width="390" height="120" rx="8" fill="#1e293b" stroke="#475569" stroke-dasharray="3 3"/>
+        <text x="20" y="26" fill="#cbd5e1" font-family="sans-serif" font-size="13" font-weight="700">Frictionless 2-Field Inquiry Flow</text>
+        
+        <rect x="20" y="42" width="165" height="30" rx="4" fill="#0f172a" stroke="#334155"/>
+        <text x="32" y="61" fill="#64748b" font-family="sans-serif" font-size="11">Your Business WhatsApp</text>
+
+        <rect x="195" y="42" width="175" height="30" rx="4" fill="#0f172a" stroke="#334155"/>
+        <text x="207" y="61" fill="#64748b" font-family="sans-serif" font-size="11">Project / Website URL</text>
+
+        <rect x="20" y="82" width="350" height="28" rx="5" fill="url(#accentGrad)"/>
+        <text x="195" y="101" fill="#042f2e" font-family="sans-serif" font-size="12" font-weight="800" text-anchor="middle">SUBMIT PROPOSAL REQUEST (ZERO SPAM)</text>
+      </g>
+    </g>
+  </g>
+</svg>

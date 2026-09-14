@@ -11,7 +11,7 @@ const navLinks = [
   { href: "/services", label: "Services" },
   { href: "/portfolio", label: "Case Studies" },
   { href: "/about", label: "About" },
-  { href: "/blogs", label: "Insights" },
+  { href: "/blogs", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -25,10 +25,10 @@ export function SiteShell({ children }: { children: ReactNode }) {
       <header className="sticky top-0 z-50 border-b border-[#e2e8f0] bg-white/95 backdrop-blur-xl">
         <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-3.5 lg:px-8">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group py-1" aria-label="Rankvra Home">
+          <Link href="/" className="flex items-center gap-3 group py-1" aria-label="RankVRA Home">
             <Image
               src="/logo-icon.png"
-              alt="Rankvra"
+              alt="RankVRA - Web Development & SEO Agency"
               width={54}
               height={40}
               className="h-9 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
@@ -143,13 +143,13 @@ export function SiteShell({ children }: { children: ReactNode }) {
       <footer className="border-t border-[#e2e8f0] bg-[#f8fafc] text-sm text-[#475569]">
         {/* Main Footer Links */}
         <div className="mx-auto max-w-7xl px-6 pt-16 pb-12 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
             {/* Col 1: Brand & Contact */}
             <div className="lg:col-span-2 space-y-4">
-              <Link href="/" className="flex items-center gap-3" aria-label="Rankvra Home">
+              <Link href="/" className="flex items-center gap-3" aria-label="RankVRA Home">
                 <Image
                   src="/logo-icon.png"
-                  alt="Rankvra"
+                  alt="RankVRA - Web Development, SEO & Digital Growth Agency"
                   width={46}
                   height={34}
                   className="h-8 w-auto object-contain"
@@ -159,10 +159,10 @@ export function SiteShell({ children }: { children: ReactNode }) {
                 </span>
               </Link>
               <p className="text-sm leading-relaxed text-[#64748b] max-w-sm">
-                Websites That Generate Customers — Not Just Traffic. High-speed web applications, technical SEO, and B2B growth funnels serving ambitious brands across India, the US, UK, UAE, and worldwide. Engineering headquarters in Udaipur, India.
+                RankVRA helps businesses build high-converting websites, improve search visibility and generate qualified enquiries through SEO, digital marketing and technology. Engineering headquarters in Udaipur, Rajasthan.
               </p>
               <div className="space-y-1.5 text-xs text-[#64748b] pt-1">
-                <p><strong>Founder &amp; Architect:</strong> Naveen Panchal (lw_avee)</p>
+                <p><strong>Founder &amp; Technical Lead:</strong> Naveen Panchal (lw_avee)</p>
                 <p><strong>Headquarters:</strong> Udaipur, Rajasthan 313001, India</p>
                 <p><strong>Serving:</strong> India (Nationwide) &bull; Global (US, UK, UAE)</p>
                 <p><strong>Direct Call / WhatsApp:</strong> <a href="tel:+917297875798" className="text-[#0f172a] font-semibold hover:text-[#4f46e5]">+91 7297875798</a></p>
@@ -172,6 +172,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
                 <a href="https://www.instagram.com/lw_avee/?__pwa=1" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-slate-600 hover:text-indigo-600">Instagram</a>
                 <a href="https://www.youtube.com/@Lw_avee" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-slate-600 hover:text-indigo-600">YouTube</a>
                 <a href="https://www.facebook.com/lwavee?locale=hi_IN" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-slate-600 hover:text-indigo-600">Facebook</a>
+                <a href="https://github.com/lwavee" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-slate-600 hover:text-indigo-600">GitHub</a>
               </div>
             </div>
 
@@ -179,38 +180,51 @@ export function SiteShell({ children }: { children: ReactNode }) {
             <div className="space-y-3">
               <h3 className="text-xs font-bold uppercase tracking-wider text-[#0f172a]">Core Services</h3>
               <ul className="space-y-2 text-xs">
-                <li><Link href="/services/web-development" className="hover:text-[#4f46e5] transition-colors">High-Speed Web Development</Link></li>
-                <li><Link href="/services/seo" className="hover:text-[#4f46e5] transition-colors">Technical &amp; Content SEO</Link></li>
-                <li><Link href="/services/local-seo" className="hover:text-[#4f46e5] transition-colors">Local SEO &amp; Maps 3-Pack</Link></li>
-                <li><Link href="/services/google-ads" className="hover:text-[#4f46e5] transition-colors">Google Ads Management</Link></li>
-                <li><Link href="/services/digital-marketing" className="hover:text-[#4f46e5] transition-colors">Performance Digital Marketing</Link></li>
-                <li><Link href="/services/ai-automation" className="hover:text-[#4f46e5] transition-colors">AI &amp; WhatsApp Automation</Link></li>
+                <li><Link href="/services/web-development" className="hover:text-[#4f46e5] transition-colors">Web Development</Link></li>
+                <li><Link href="/services/seo" className="hover:text-[#4f46e5] transition-colors">Technical &amp; Local SEO</Link></li>
+                <li><Link href="/services/local-seo" className="hover:text-[#4f46e5] transition-colors">Maps 3-Pack SEO</Link></li>
+                <li><Link href="/services/google-ads" className="hover:text-[#4f46e5] transition-colors">Google Ads (PPC)</Link></li>
+                <li><Link href="/services/digital-marketing" className="hover:text-[#4f46e5] transition-colors">Digital Marketing</Link></li>
+                <li><Link href="/services/ai-automation" className="hover:text-[#4f46e5] transition-colors">AI &amp; Automation</Link></li>
               </ul>
             </div>
 
             {/* Col 3: Industry Solutions */}
             <div className="space-y-3">
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#0f172a]">Industry Solutions</h3>
+              <h3 className="text-xs font-bold uppercase tracking-wider text-[#0f172a]">Industries</h3>
               <ul className="space-y-2 text-xs">
-                <li><Link href="/industries/hotels" className="hover:text-[#4f46e5] transition-colors">Hotels &amp; Heritage Resorts</Link></li>
-                <li><Link href="/industries/manufacturers" className="hover:text-[#4f46e5] transition-colors">Industrial Manufacturers</Link></li>
-                <li><Link href="/industries/exporters" className="hover:text-[#4f46e5] transition-colors">Exporters &amp; Stone/Marble</Link></li>
+                <li><Link href="/industries/hotels" className="hover:text-[#4f46e5] transition-colors">Hotels &amp; Resorts</Link></li>
+                <li><Link href="/industries/manufacturers" className="hover:text-[#4f46e5] transition-colors">Manufacturers</Link></li>
+                <li><Link href="/industries/exporters" className="hover:text-[#4f46e5] transition-colors">Exporters &amp; Marble</Link></li>
                 <li><Link href="/industries/clinics" className="hover:text-[#4f46e5] transition-colors">Clinics &amp; Healthcare</Link></li>
                 <li><Link href="/b2b-lead-generation" className="hover:text-[#4f46e5] transition-colors">B2B Lead Generation</Link></li>
                 <li><Link href="/international-seo" className="hover:text-[#4f46e5] transition-colors">International SEO</Link></li>
               </ul>
             </div>
 
-            {/* Col 4: National & Global Presence */}
+            {/* Col 4: Presence & Locations */}
             <div className="space-y-3">
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#0f172a]">Presence &amp; Audits</h3>
+              <h3 className="text-xs font-bold uppercase tracking-wider text-[#0f172a]">Locations</h3>
               <ul className="space-y-2 text-xs">
-                <li><Link href="/locations/india" className="text-[#4f46e5] font-semibold hover:underline">All India (Nationwide)</Link></li>
-                <li><Link href="/international-seo" className="hover:text-[#4f46e5] transition-colors">Global Markets (US, UK, UAE)</Link></li>
-                <li><Link href="/locations/udaipur" className="hover:text-[#4f46e5] transition-colors">Headquarters (Udaipur)</Link></li>
-                <li><Link href="/locations/rajasthan" className="hover:text-[#4f46e5] transition-colors">Rajasthan Regional Coverage</Link></li>
-                <li><Link href="/free-growth-audit" className="text-[#4f46e5] font-semibold hover:underline">Free Website Growth Audit</Link></li>
+                <li><Link href="/locations/udaipur" className="text-[#4f46e5] font-semibold hover:underline">Udaipur (HQ)</Link></li>
+                <li><Link href="/locations/rajasthan" className="hover:text-[#4f46e5] transition-colors">Rajasthan Regional</Link></li>
+                <li><Link href="/locations/india" className="hover:text-[#4f46e5] transition-colors">India (Nationwide)</Link></li>
+                <li><Link href="/international-seo" className="hover:text-[#4f46e5] transition-colors">US, UK &amp; UAE Global</Link></li>
                 <li><Link href="/portfolio" className="hover:text-[#4f46e5] transition-colors">Client Case Studies</Link></li>
+                <li><Link href="/free-growth-audit" className="text-[#4f46e5] font-semibold hover:underline">Free Website Audit</Link></li>
+              </ul>
+            </div>
+
+            {/* Col 5: Blog & Strategic Guides */}
+            <div className="space-y-3">
+              <h3 className="text-xs font-bold uppercase tracking-wider text-[#0f172a]">Blog &amp; Guides</h3>
+              <ul className="space-y-2 text-xs">
+                <li><Link href="/blogs" className="text-[#4f46e5] font-bold hover:underline flex items-center gap-1">All Blog Articles <ArrowUpRight className="w-3 h-3" /></Link></li>
+                <li><Link href="/blogs/seo-agency-udaipur" className="hover:text-[#4f46e5] transition-colors">SEO Agency in Udaipur</Link></li>
+                <li><Link href="/blogs/seo-cost-udaipur" className="hover:text-[#4f46e5] transition-colors">SEO Cost &amp; Pricing</Link></li>
+                <li><Link href="/blogs/hotel-marketing-udaipur-direct-bookings" className="hover:text-[#4f46e5] transition-colors">Direct Hotel Bookings</Link></li>
+                <li><Link href="/blogs/web-development-company-udaipur" className="hover:text-[#4f46e5] transition-colors">Web Development Guide</Link></li>
+                <li><Link href="/blogs/local-seo-udaipur" className="hover:text-[#4f46e5] transition-colors">Local SEO 3-Pack Guide</Link></li>
               </ul>
             </div>
           </div>
@@ -219,6 +233,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
           <div className="mt-12 pt-8 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#94a3b8]">
             <p>© {new Date().getFullYear()} RankVRA. All rights reserved. Registered in Udaipur, Rajasthan.</p>
             <div className="flex items-center gap-6">
+              <Link href="/blogs" className="text-[#4f46e5] font-semibold hover:underline">Blog</Link>
               <Link href="/privacy-policy" className="hover:text-slate-600 transition-colors">Privacy Policy</Link>
               <Link href="/terms-and-conditions" className="hover:text-slate-600 transition-colors">Terms of Service</Link>
               <a href="/sitemap.xml" className="hover:text-slate-600 transition-colors">Sitemap</a>

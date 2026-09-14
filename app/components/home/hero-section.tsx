@@ -39,16 +39,15 @@ export function HeroSection() {
             className="mb-7 inline-flex w-fit items-center gap-2 rounded-full border border-[#e0e7ff] bg-[#eef2ff] px-4 py-2 text-sm font-semibold text-[#4f46e5]"
           >
             <Globe size={15} className="text-[#4f46e5]" />
-            National &amp; Global Growth Agency • Serving Brands Across India &amp; Worldwide
+            RankVRA • Web Development, SEO &amp; Digital Growth Agency (Udaipur, India)
           </motion.div>
 
-          <h1 className="hero-copy max-w-3xl text-4xl font-extrabold leading-[1.1] tracking-[-0.03em] text-[#0f172a] sm:text-5xl lg:text-[62px]">
-            Websites That Generate Customers —{" "}
-            <span className="text-gradient">Not Just Traffic</span>.
+          <h1 className="hero-copy max-w-3xl text-4xl font-extrabold leading-[1.1] tracking-[-0.03em] text-[#0f172a] sm:text-5xl lg:text-[58px]">
+            RankVRA — <span className="text-gradient">Web Development, SEO &amp; Digital Growth</span>.
           </h1>
 
           <p className="hero-copy mt-6 max-w-2xl text-base leading-8 text-[#475569] sm:text-lg">
-            RankVRA engineers high-speed web architectures, technical Google SEO, and B2B growth pipelines that convert searches into qualified calls, WhatsApp inquiries, and paying clients. Founded by <strong>Naveen Panchal (lw_avee)</strong>, we partner with manufacturers, hotels, healthcare groups, and service businesses across India and global markets.
+            RankVRA helps businesses build high-converting websites, improve search visibility and generate qualified enquiries through SEO, digital marketing and technology. Founded by <strong>Naveen Panchal (lw_avee)</strong> in Udaipur, Rajasthan, we engineer ultra-fast Next.js web applications, Google Page 1 search architectures, and automated client acquisition funnels.
           </p>
 
           <div className="hero-copy mt-9 flex flex-wrap gap-4">
@@ -60,22 +59,22 @@ export function HeroSection() {
               <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
             <a
-              href="https://wa.me/917297875798?text=Hi%20Naveen,%20I%20would%20like%20to%20discuss%20growing%20my%20business."
+              href="https://wa.me/917297875798?text=Hi%20Naveen,%20I%20would%20like%20to%20discuss%20growing%20my%20business%20with%20RankVRA."
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center justify-center gap-2 rounded-full border border-[#e2e8f0] bg-white px-8 py-4 text-[15px] font-semibold text-[#475569] transition-all duration-300 hover:-translate-y-1 hover:border-[#4f46e5]/30 hover:bg-[#f8fafc] hover:text-[#0f172a] hover:shadow-md"
             >
               <Phone size={16} className="text-[#4f46e5]" />
-              WhatsApp Us (+91 7297875798)
+              WhatsApp RankVRA (+91 7297875798)
             </a>
           </div>
 
           {/* Mini stats row */}
           <div className="hero-copy mt-12 flex flex-wrap gap-8 sm:gap-10">
             {[
-              { value: "+140%", label: "Inquiry Growth" },
-              { value: "0.8s", label: "Avg Mobile Load Speed" },
-              { value: "40+", label: "Brands Scaled" },
+              { value: "<1.0s", label: "Mobile Speed" },
+              { value: "100%", label: "Custom Code" },
+              { value: "Udaipur", label: "HQ & Worldwide" },
             ].map((stat) => (
               <div key={stat.label}>
                 <p className="text-2xl font-black text-[#0f172a]">{stat.value}</p>

@@ -1,6 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteShell } from "@/app/components/site-shell";
 import { ArrowRight, CheckCircle2, Phone } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Thank You | RankVRA",
+  robots: { index: false, follow: false },
+};
 
 export default function ThankYouPage() {
   return (

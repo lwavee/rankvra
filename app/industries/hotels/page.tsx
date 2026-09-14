@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Hotel & Resort Marketing Agency in Udaipur & Rajasthan | RankVRA",
   description:
     "We help hotels, heritage resorts, and luxury stays in Udaipur and Rajasthan increase direct website bookings, cut OTA commissions, and rank #1 on Google.",
-  alternates: { canonical: "https://rankvra.com/industries/hotels" },
+  alternates: { canonical: "https://www.rankvra.com/industries/hotels" },
 };
 
 export default function HotelsIndustryPage() {

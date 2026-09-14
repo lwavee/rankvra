@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Web Development & Digital Marketing Agency in Udaipur | RankVRA",
   description:
     "RankVRA is your local growth partner in Udaipur, Rajasthan. We build custom 1-second Next.js websites and high-ROI Google & Meta ad campaigns for local businesses.",
-  alternates: { canonical: "https://rankvra.com/locations/udaipur" },
+  alternates: { canonical: "https://www.rankvra.com/locations/udaipur" },
 };
 
 export default function UdaipurLocationPage() {

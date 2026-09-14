@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Google Ads & PPC Management Agency in Udaipur | RankVRA",
   description:
     "Generate qualified phone calls and direct inquiries with precision Google Ads. We manage search campaigns, call-only ads, and conversion tracking to maximize your ROAS.",
-  alternates: { canonical: "https://rankvra.com/services/google-ads" },
+  alternates: { canonical: "https://www.rankvra.com/services/google-ads" },
 };
 
 export default function GoogleAdsServicePage() {

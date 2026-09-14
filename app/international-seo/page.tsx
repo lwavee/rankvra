@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "International SEO Agency for Global Markets | RankVRA",
   description:
     "Expand your search visibility across the USA, UK, UAE, and Europe. RankVRA engineers multi-country international SEO architectures that capture overseas buyers.",
-  alternates: { canonical: "https://rankvra.com/international-seo" },
+  alternates: { canonical: "https://www.rankvra.com/international-seo" },
 };
 
 export default function InternationalSeoPage() {

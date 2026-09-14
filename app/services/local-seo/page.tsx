@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Local SEO & Google Maps Agency in Udaipur | RankVRA",
   description:
     "Rank in the top 3 on Google Maps in Udaipur and across Rajasthan. We optimize your Google Business Profile to drive local customer phone calls and store visits.",
-  alternates: { canonical: "https://rankvra.com/services/local-seo" },
+  alternates: { canonical: "https://www.rankvra.com/services/local-seo" },
 };
 
 export default function LocalSeoServicePage() {

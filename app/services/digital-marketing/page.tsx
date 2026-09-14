@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "Digital Marketing Agency in Udaipur & Rajasthan | RankVRA",
   description:
     "We build performance-driven digital marketing campaigns across Google, Meta, and SEO that turn traffic into verified customer calls and WhatsApp inquiries.",
-  alternates: { canonical: "https://rankvra.com/services/digital-marketing" },
+  alternates: { canonical: "https://www.rankvra.com/services/digital-marketing" },
 };
 
 export default function DigitalMarketingServicePage() {

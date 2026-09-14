@@ -1,0 +1,69 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" rx="24" fill="#0f172a"/>
+  <!-- Subtle Grid -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+  <defs>
+    <filter id="b1" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="80"/>
+    </filter>
+    <filter id="b2" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="90"/>
+    </filter>
+  </defs>
+  <!-- Glow Accents -->
+  <circle cx="200" cy="180" r="220" fill="#3b82f6" opacity="0.2" filter="url(#b1)"/>
+  <circle cx="1000" cy="420" r="220" fill="#6366f1" opacity="0.18" filter="url(#b2)"/>
+
+  <!-- Badge -->
+  <rect x="80" y="70" width="230" height="38" rx="19" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="100" y="94" fill="#93c5fd" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" letter-spacing="1">WEB DEVELOPMENT UDAIPUR</text>
+
+  <!-- Title & Subtitle -->
+  <text x="80" y="160" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" letter-spacing="-1">Hiring a Web Development</text>
+  <text x="80" y="215" fill="#60a5fa" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" letter-spacing="-1">Company in Udaipur</text>
+  <text x="80" y="265" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="400">Custom code vs. templates, Core Web Vitals performance, SEO structure &amp; 100% IP ownership.</text>
+
+  <!-- Comparison Architecture -->
+  <g transform="translate(80, 310)">
+    <!-- Column 1: Slow WordPress Template -->
+    <rect width="490" height="240" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <rect x="24" y="24" width="36" height="36" rx="8" fill="#451a03"/>
+    <text x="36" y="48" fill="#f59e0b" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="800">&#215;</text>
+    <text x="75" y="48" fill="#f59e0b" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700">Generic Template Web Dev</text>
+    <text x="24" y="95" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">4.5s+ Load Speed &amp; Plugin Bloat</text>
+    <text x="24" y="125" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">&#8226; 40+ third-party vulnerable plugins</text>
+    <text x="24" y="150" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">&#8226; Fails Google mobile Core Web Vitals</text>
+    <text x="24" y="175" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">&#8226; Agency holds hosting &amp; source code hostage</text>
+    <rect x="24" y="195" width="130" height="24" rx="6" fill="#f59e0b" opacity="0.15"/>
+    <text x="34" y="211" fill="#fcd34d" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">HIGH BOUNCE RATE</text>
+  </g>
+
+  <g transform="translate(610, 310)">
+    <!-- Column 2: Modern Next.js Engineering -->
+    <rect width="510" height="240" rx="18" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+    <rect x="24" y="24" width="36" height="36" rx="8" fill="#1e3a8a"/>
+    <text x="36" y="48" fill="#60a5fa" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="800">&#10003;</text>
+    <text x="75" y="48" fill="#60a5fa" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700">RankVRA Custom Engineering</text>
+    <text x="24" y="95" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">&lt; 1.0s Load Speed &amp; Clean React Code</text>
+    <text x="24" y="125" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">&#8226; Next.js SSR &amp; 100/100 Core Web Vitals</text>
+    <text x="24" y="150" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">&#8226; Built-in technical SEO &amp; Schema.org graph</text>
+    <text x="24" y="175" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">&#8226; Client owns 100% of IP, GitHub &amp; server accounts</text>
+    <rect x="24" y="195" width="140" height="24" rx="6" fill="#3b82f6" opacity="0.2"/>
+    <text x="34" y="211" fill="#93c5fd" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">MAXIMUM CONVERSIONS</text>
+  </g>
+
+  <!-- RankVRA Signature -->
+  <text x="1120" y="585" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" text-anchor="end">RankVRA Research &#8226; Udaipur</text>
+</svg>

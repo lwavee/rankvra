@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Privacy Policy | RankVRA",
   description: "Privacy policy and data protection terms for RankVRA website visitors and clients.",
   robots: { index: true, follow: true },
+  alternates: { canonical: "https://www.rankvra.com/privacy-policy" },
 };
 
 export default function PrivacyPolicyPage() {
@@ -26,7 +27,7 @@ export default function PrivacyPolicyPage() {
             <section>
               <h2 className="text-xl font-bold text-[#0f172a] mb-3">1. Information We Collect</h2>
               <p>
-                When you request a free website audit, strategy call, or submit an inquiry through RankVRA (https://rankvra.com), we collect contact information you voluntarily provide, including:
+                When you request a free website audit, strategy call, or submit an inquiry through RankVRA (https://www.rankvra.com), we collect contact information you voluntarily provide, including:
               </p>
               <ul className="list-disc pl-6 space-y-1 mt-2 text-sm text-[#334155]">
                 <li>Full name and email address</li>

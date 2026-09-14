@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "B2B Lead Generation for Manufacturers in Rajasthan & India | RankVRA",
   description:
     "Generate qualified wholesale inquiries and RFQs for your manufacturing business. We build digital spec catalogs and targeted B2B Google Ads that reach buyers.",
-  alternates: { canonical: "https://rankvra.com/industries/manufacturers" },
+  alternates: { canonical: "https://www.rankvra.com/industries/manufacturers" },
 };
 
 export default function ManufacturersIndustryPage() {

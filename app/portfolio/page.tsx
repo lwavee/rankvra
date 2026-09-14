@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Case Studies & Work Portfolio | RankVRA",
   description:
     "Explore outcome-driven case studies, client websites, search ranking systems, and technical open-source builds engineered by RankVRA.",
-  alternates: { canonical: "https://rankvra.com/portfolio" },
+  alternates: { canonical: "https://www.rankvra.com/portfolio" },
 };
 
 export const revalidate = 3600;
@@ -70,20 +70,139 @@ export default async function PortfolioPage() {
   return (
     <SiteShell>
       <main className="min-h-screen bg-[#f8fafc]">
-        {/* Header Section */}
-        <section className="bg-white border-b border-[#e2e8f0] pt-20 pb-16">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="max-w-3xl">
-              <div className="inline-flex items-center gap-2 rounded-full border border-[#e0e7ff] bg-[#eef2ff] px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-[#4f46e5] mb-4">
-                <Sparkles size={14} />
-                Client Outcomes &amp; Engineering
+        {/* Editorial & Performance Hero Section */}
+        <section className="relative overflow-hidden border-b border-[#e2e8f0] bg-gradient-to-b from-[#f8fafc] via-white to-white pt-10 pb-14 sm:pt-14 sm:pb-16">
+          {/* Subtle engineering grid background */}
+          <div
+            className="absolute inset-0 opacity-[0.03] pointer-events-none"
+            style={{
+              backgroundImage:
+                "linear-gradient(#4f46e5 1px, transparent 1px), linear-gradient(90deg, #4f46e5 1px, transparent 1px)",
+              backgroundSize: "64px 64px",
+            }}
+          />
+          {/* Soft ambient glow accents */}
+          <div className="absolute -top-24 right-1/4 h-96 w-96 rounded-full bg-[#4f46e5]/5 blur-3xl pointer-events-none" />
+          <div className="absolute top-1/2 -left-20 h-80 w-80 rounded-full bg-[#06b6d4]/5 blur-3xl pointer-events-none" />
+
+          <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+              
+              {/* Left Column: Narrative & Action */}
+              <div className="lg:col-span-7 space-y-5">
+                <div className="inline-flex items-center gap-2 rounded-full border border-[#c7d2fe] bg-[#eef2ff] px-4 py-1.5 text-xs font-bold tracking-wide text-[#4f46e5] shadow-sm">
+                  <Sparkles size={14} className="text-[#4f46e5]" />
+                  <span>Verified Client Outcomes &amp; Engineering</span>
+                </div>
+
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#0f172a] leading-[1.12]">
+                  Work Engineered for <span className="text-gradient">Measurable Growth</span>.
+                </h1>
+
+                <p className="text-base sm:text-lg text-[#475569] leading-relaxed max-w-2xl font-normal">
+                  We don't build generic brochure websites. We engineer high-speed Next.js web platforms, Google Maps 3-Pack rankings, and B2B inquiry funnels that generate verified revenue pipeline for ambitious brands.
+                </p>
+
+                {/* Primary Action Buttons */}
+                <div className="flex flex-wrap gap-4 pt-2">
+                  <Link
+                    href="/free-growth-audit"
+                    className="inline-flex items-center gap-2 rounded-full bg-[#4f46e5] px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#4f46e5]/25 hover:bg-[#4338ca] transition-all"
+                  >
+                    Claim Free Growth Audit
+                    <ArrowRight size={15} />
+                  </Link>
+                  <a
+                    href="https://wa.me/917297875798?text=Hi%20Naveen,%20I%20reviewed%20your%20case%20studies%20and%20would%20like%20to%20discuss%20our%20project."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-full border border-[#e2e8f0] bg-white px-7 py-3.5 text-sm font-bold text-[#334155] hover:bg-[#f8fafc] hover:border-[#c7d2fe] transition-all shadow-sm"
+                  >
+                    WhatsApp Founder (+91 7297875798)
+                  </a>
+                </div>
+
+                {/* Proof Metrics Strip */}
+                <div className="pt-5 border-t border-[#f1f5f9] grid grid-cols-3 gap-4 max-w-lg">
+                  <div>
+                    <div className="text-xl sm:text-2xl font-black text-[#0f172a]">&lt; 0.8s</div>
+                    <div className="text-[11px] font-semibold uppercase tracking-wider text-[#94a3b8]">Mobile LCP Speed</div>
+                  </div>
+                  <div>
+                    <div className="text-xl sm:text-2xl font-black text-[#4f46e5]">+200%</div>
+                    <div className="text-[11px] font-semibold uppercase tracking-wider text-[#94a3b8]">Direct Inquiry Lift</div>
+                  </div>
+                  <div>
+                    <div className="text-xl sm:text-2xl font-black text-[#0f172a]">100%</div>
+                    <div className="text-[11px] font-semibold uppercase tracking-wider text-[#94a3b8]">Modern Code IP</div>
+                  </div>
+                </div>
               </div>
-              <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-[#0f172a]">
-                Work Engineered for <span className="text-gradient">Measurable Growth</span>.
-              </h1>
-              <p className="mt-5 text-base sm:text-lg leading-8 text-[#475569]">
-                We judge our work by commercial results: faster load times, higher Google rankings, and genuine customer inquiries. Explore our client case studies and technical builds below.
-              </p>
+
+              {/* Right Column: Live Telemetry / Result Benchmark Card */}
+              <div className="lg:col-span-5">
+                <div className="rounded-[28px] bg-gradient-to-br from-[#0f172a] via-[#1e1b4b] to-[#0f172a] p-7 text-white shadow-2xl border border-[#334155] relative overflow-hidden">
+                  <div className="absolute top-0 right-0 h-40 w-40 bg-[#4f46e5]/20 rounded-full blur-3xl pointer-events-none" />
+
+                  {/* Header with live status badge */}
+                  <div className="flex items-center justify-between pb-5 border-b border-white/10">
+                    <div>
+                      <div className="text-xs font-bold uppercase tracking-widest text-[#818cf8]">
+                        Production Benchmark
+                      </div>
+                      <div className="text-sm font-extrabold text-white mt-0.5">
+                        Lakeview Heritage Resort
+                      </div>
+                    </div>
+                    <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/20 border border-emerald-500/30 px-3 py-1 text-[11px] font-bold text-emerald-300">
+                      <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                      Live Case Study
+                    </span>
+                  </div>
+
+                  {/* Before vs After Metric Bars */}
+                  <div className="my-5 space-y-3.5">
+                    <div>
+                      <div className="flex justify-between text-xs font-medium mb-1.5">
+                        <span className="text-slate-400">Legacy WordPress Mobile LCP:</span>
+                        <span className="text-rose-400 font-bold">5.2s (Failed Core Web Vitals)</span>
+                      </div>
+                      <div className="h-2 w-full rounded-full bg-white/10 overflow-hidden">
+                        <div className="h-full bg-rose-500 rounded-full w-[85%]" />
+                      </div>
+                    </div>
+
+                    <div>
+                      <div className="flex justify-between text-xs font-medium mb-1.5">
+                        <span className="text-slate-300">RankVRA Next.js Engine:</span>
+                        <span className="text-emerald-400 font-bold">0.8s (-84% Load Time)</span>
+                      </div>
+                      <div className="h-2 w-full rounded-full bg-white/10 overflow-hidden">
+                        <div className="h-full bg-emerald-400 rounded-full w-[16%]" />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Result Highlight Box */}
+                  <div className="rounded-xl bg-white/5 border border-white/10 p-4">
+                    <div className="flex items-start gap-3">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#4f46e5] text-white font-black text-xs flex-shrink-0">
+                        ROI
+                      </div>
+                      <div className="text-xs text-slate-300 leading-relaxed">
+                        <strong className="text-white">Commercial Result:</strong> Direct guest WhatsApp booking engine replaced 20% OTA commission dependency across peak tourist season.
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Footer Tag */}
+                  <div className="mt-5 pt-4 border-t border-white/10 flex items-center justify-between text-[11px] text-slate-400">
+                    <span>Target: Direct Inquiries &amp; Speed</span>
+                    <span className="text-indigo-300 font-semibold">Udaipur, Rajasthan</span>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </section>

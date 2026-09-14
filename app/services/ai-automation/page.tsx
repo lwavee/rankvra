@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "AI Workflows & WhatsApp Automation Agency | RankVRA",
   description:
     "Automate your customer inquiries, appointment booking, and CRM lead capture with custom AI agents and WhatsApp Business automations built by RankVRA.",
-  alternates: { canonical: "https://rankvra.com/services/ai-automation" },
+  alternates: { canonical: "https://www.rankvra.com/services/ai-automation" },
 };
 
 export default function AiAutomationServicePage() {

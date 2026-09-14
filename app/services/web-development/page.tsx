@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Custom Web Development Company in Udaipur & Rajasthan | RankVRA",
   description:
     "We build custom, lightning-fast Next.js and React websites that load under 1 second, pass Core Web Vitals, and turn Google traffic into paying clients.",
-  alternates: { canonical: "https://rankvra.com/services/web-development" },
+  alternates: { canonical: "https://www.rankvra.com/services/web-development" },
 };
 
 export default function WebDevelopmentServicePage() {
