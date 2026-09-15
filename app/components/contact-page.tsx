@@ -42,11 +42,15 @@ export function ContactPage() {
   const [formState, setFormState] = useState({
     name: "",
     email: "",
+    phone: "",
     company: "",
     budget: "",
     message: "",
     service: "",
+    honeypot: "",
   });
+  const [loading, setLoading] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (
@@ -57,10 +61,38 @@ export function ContactPage() {
     setFormState((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    // In production: send to API route or form service
-    setSubmitted(true);
+    setLoading(true);
+    setErrorMsg("");
+
+    try {
+      const res = await fetch("/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formState.name,
+          email: formState.email,
+          phone: formState.phone,
+          company: formState.company,
+          primaryGoal: formState.service ? `Service: ${formState.service} (Budget: ${formState.budget})` : "General Growth Inquiry",
+          notes: formState.message,
+          source: "contact-page",
+          honeypot: formState.honeypot,
+        }),
+      });
+
+      const data = await res.json();
+      if (res.ok && data.success) {
+        setSubmitted(true);
+      } else {
+        setErrorMsg(data.error || "Unable to send message. Please reach us via WhatsApp or email directly.");
+      }
+    } catch {
+      setErrorMsg("Network error. Please try messaging us on WhatsApp (+91 7297875798).");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -178,23 +210,43 @@ export function ContactPage() {
                     </div>
                   </div>
 
-                  {/* Company */}
-                  <div>
-                    <label
-                      htmlFor="contact-company"
-                      className="block text-xs font-semibold text-[#475569] mb-1.5"
-                    >
-                      Company name
-                    </label>
-                    <input
-                      id="contact-company"
-                      name="company"
-                      type="text"
-                      value={formState.company}
-                      onChange={handleChange}
-                      placeholder="Zenith Commerce Pvt. Ltd."
-                      className="w-full rounded-xl border border-[#e2e8f0] bg-[#f8fafc] px-4 py-3 text-sm text-[#0f172a] placeholder:text-[#94a3b8] focus:border-[#4f46e5] focus:outline-none focus:ring-2 focus:ring-[#4f46e5]/10 transition-all"
-                    />
+                  {/* Phone + Company row */}
+                  <div className="grid gap-4 sm:grid-cols-2">
+                    <div>
+                      <label
+                        htmlFor="contact-phone"
+                        className="block text-xs font-semibold text-[#475569] mb-1.5"
+                      >
+                        Phone / WhatsApp *
+                      </label>
+                      <input
+                        id="contact-phone"
+                        name="phone"
+                        type="tel"
+                        required
+                        value={formState.phone}
+                        onChange={handleChange}
+                        placeholder="+91 98765 43210"
+                        className="w-full rounded-xl border border-[#e2e8f0] bg-[#f8fafc] px-4 py-3 text-sm text-[#0f172a] placeholder:text-[#94a3b8] focus:border-[#4f46e5] focus:outline-none focus:ring-2 focus:ring-[#4f46e5]/10 transition-all"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="contact-company"
+                        className="block text-xs font-semibold text-[#475569] mb-1.5"
+                      >
+                        Company name
+                      </label>
+                      <input
+                        id="contact-company"
+                        name="company"
+                        type="text"
+                        value={formState.company}
+                        onChange={handleChange}
+                        placeholder="Zenith Commerce Pvt. Ltd."
+                        className="w-full rounded-xl border border-[#e2e8f0] bg-[#f8fafc] px-4 py-3 text-sm text-[#0f172a] placeholder:text-[#94a3b8] focus:border-[#4f46e5] focus:outline-none focus:ring-2 focus:ring-[#4f46e5]/10 transition-all"
+                      />
+                    </div>
                   </div>
 
                   {/* Service + Budget row */}
@@ -258,23 +310,43 @@ export function ContactPage() {
                     <textarea
                       id="contact-message"
                       name="message"
-                      required
                       rows={4}
+                      required
                       value={formState.message}
                       onChange={handleChange}
-                      placeholder="We're looking to scale our e-commerce sales through paid ads and SEO. Currently getting X visitors a month but struggling to convert..."
-                      className="w-full resize-none rounded-xl border border-[#e2e8f0] bg-[#f8fafc] px-4 py-3 text-sm text-[#0f172a] placeholder:text-[#94a3b8] focus:border-[#4f46e5] focus:outline-none focus:ring-2 focus:ring-[#4f46e5]/10 transition-all"
+                      placeholder="Share your current challenges, current website URL, or target keywords..."
+                      className="w-full rounded-xl border border-[#e2e8f0] bg-[#f8fafc] px-4 py-3 text-sm text-[#0f172a] placeholder:text-[#94a3b8] focus:border-[#4f46e5] focus:outline-none focus:ring-2 focus:ring-[#4f46e5]/10 transition-all resize-none"
                     />
                   </div>
 
+                  {/* Honeypot spam trap */}
+                  <div className="hidden" aria-hidden="true">
+                    <input
+                      type="text"
+                      name="honeypot"
+                      tabIndex={-1}
+                      autoComplete="off"
+                      value={formState.honeypot}
+                      onChange={handleChange}
+                    />
+                  </div>
+
+                  {errorMsg && (
+                    <div className="p-3.5 rounded-xl bg-rose-50 border border-rose-200 text-rose-700 text-xs font-medium">
+                      {errorMsg}
+                    </div>
+                  )}
+
+                  {/* Submit */}
                   <button
                     type="submit"
-                    id="contact-submit"
-                    className="group flex w-full items-center justify-center gap-2.5 rounded-xl bg-[#4f46e5] py-4 text-sm font-bold text-white shadow-md shadow-[#4f46e5]/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#4338ca] hover:shadow-[#4f46e5]/30 hover:shadow-lg"
+                    id="contact-submit-btn"
+                    disabled={loading}
+                    className="group inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#4f46e5] px-6 py-4 text-sm font-bold text-white shadow-lg shadow-[#4f46e5]/25 transition-all duration-300 hover:bg-[#4338ca] hover:shadow-xl hover:shadow-[#4f46e5]/30 cursor-pointer disabled:opacity-50"
                   >
                     <Send size={15} />
-                    Send Message & Book a Call
-                    <ArrowRight size={15} className="transition-transform duration-300 group-hover:translate-x-1" />
+                    {loading ? "Sending Details..." : "Send Message & Request Strategy Call"}
+                    <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
                   </button>
 
                   <p className="text-center text-xs text-[#94a3b8]">
@@ -356,8 +428,8 @@ export function ContactPage() {
               <div className="grid grid-cols-3 gap-3">
                 {[
                   { icon: Zap, value: "4hr", label: "Response" },
-                  { icon: BarChart3, value: "40+", label: "Brands" },
-                  { icon: Globe, value: "96%", label: "Retention" },
+                  { icon: BarChart3, value: "<1.0s", label: "Speed" },
+                  { icon: Globe, value: "Direct", label: "Founder Led" },
                 ].map((stat) => {
                   const Icon = stat.icon;
                   return (

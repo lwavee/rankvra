@@ -4,6 +4,7 @@ import { SiteShell } from "@/app/components/site-shell";
 import {
   ArrowRight,
   CheckCircle2,
+  ChevronRight,
   Code2,
   Phone,
 } from "lucide-react";
@@ -11,15 +12,95 @@ import {
 export const metadata: Metadata = {
   title: "Custom Web Development Company in Udaipur & Rajasthan | RankVRA",
   description:
-    "We build custom, lightning-fast Next.js and React websites that load under 1 second, pass Core Web Vitals, and turn Google traffic into paying clients.",
+    "We build custom, lightning-fast Next.js and React websites that load under 1 second, pass Core Web Vitals, and turn Google traffic into paying clients. Led by Naveen Panchal.",
   alternates: { canonical: "https://www.rankvra.com/services/web-development" },
+  openGraph: {
+    title: "Custom Web Development Company in Udaipur & Rajasthan | RankVRA",
+    description:
+      "We build custom, lightning-fast Next.js and React websites that load under 1 second, pass Core Web Vitals, and turn Google traffic into paying clients.",
+    url: "https://www.rankvra.com/services/web-development",
+    siteName: "RankVRA",
+    locale: "en_IN",
+    type: "website",
+  },
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://www.rankvra.com/services/web-development#service",
+      name: "Custom Web Development & Next.js Engineering",
+      serviceType: "Web Development",
+      provider: {
+        "@id": "https://www.rankvra.com/#organization",
+      },
+      areaServed: [
+        { "@type": "City", name: "Udaipur" },
+        { "@type": "AdministrativeArea", name: "Rajasthan" },
+        { "@type": "Country", name: "India" },
+        { "@type": "Country", name: "United States" },
+        { "@type": "Country", name: "United Kingdom" },
+        { "@type": "Country", name: "United Arab Emirates" },
+      ],
+      description:
+        "High-performance custom web development built with Next.js, React, and TypeScript. Engineered for sub-second speeds, flawless mobile Core Web Vitals, and direct conversion funnels.",
+      offers: {
+        "@type": "Offer",
+        url: "https://www.rankvra.com/services/web-development",
+        priceCurrency: "INR",
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.rankvra.com/services/web-development#breadcrumb",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.rankvra.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Services",
+          item: "https://www.rankvra.com/services",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Web Development",
+          item: "https://www.rankvra.com/services/web-development",
+        },
+      ],
+    },
+  ],
 };
 
 export default function WebDevelopmentServicePage() {
   return (
     <SiteShell>
-      <main className="bg-white py-16 lg:py-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <main className="bg-white py-12 lg:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          {/* Breadcrumb Navigation */}
+          <nav aria-label="Breadcrumbs" className="mb-6 flex items-center gap-2 text-xs font-medium text-[#64748b]">
+            <Link href="/" className="hover:text-[#4f46e5] transition-colors">
+              Home
+            </Link>
+            <ChevronRight size={12} className="text-[#94a3b8]" />
+            <Link href="/services" className="hover:text-[#4f46e5] transition-colors">
+              Services
+            </Link>
+            <ChevronRight size={12} className="text-[#94a3b8]" />
+            <span className="text-[#4f46e5] font-semibold">Web Development</span>
+          </nav>
+
           {/* Hero */}
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-[#e0e7ff] bg-[#eef2ff] px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-[#4f46e5] mb-6">
@@ -27,13 +108,13 @@ export default function WebDevelopmentServicePage() {
               Full-Stack Engineering
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#0f172a] tracking-tight leading-[1.1]">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-[#0f172a] tracking-tight leading-[1.12]">
               Custom Web Development That{" "}
               <span className="text-gradient">Generates Customers</span>.
             </h1>
 
-            <p className="mt-6 text-base sm:text-lg text-[#475569] leading-8">
-              Slow websites kill conversions. If your website takes more than 3 seconds to load on a mobile phone, half of your potential clients click back to Google and call your competitor instead. At RankVRA, led by full-stack developer Naveen Panchal (lw_avee), we build clean, custom Next.js websites built for speed and sales.
+            <p className="mt-6 text-base sm:text-lg text-[#475569] leading-relaxed">
+              Slow websites kill conversions. If your website takes more than 3 seconds to load on a mobile phone, half of your potential clients click back to Google and call your competitor instead. At RankVRA, led by full-stack developer Naveen Panchal (lw_avee), we build clean, custom Next.js websites engineered for sub-second load times and customer conversions.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -48,17 +129,17 @@ export default function WebDevelopmentServicePage() {
                 href="https://wa.me/917297875798?text=Hi%20Naveen,%20I%20am%20interested%20in%20custom%20web%20development."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-[#cbd5e1] bg-white px-8 py-4 text-sm font-semibold text-[#334155] hover:border-[#4f46e5] hover:text-[#4f46e5] transition-all"
+                className="inline-flex items-center gap-2 rounded-full border border-[#cbd5e1] bg-white px-8 py-4 text-sm font-semibold text-[#334155] hover:border-[#4f46e5] hover:text-[#4f46e5] transition-all shadow-sm"
               >
                 <Phone size={15} />
-                WhatsApp Naveen
+                WhatsApp Naveen (+91 7297875798)
               </a>
             </div>
           </div>
 
           {/* Why Custom Next.js Beats WordPress */}
           <div className="mt-20 grid lg:grid-cols-2 gap-10 items-center">
-            <div className="p-8 rounded-[32px] bg-[#f8fafc] border border-[#e2e8f0]">
+            <div className="p-8 sm:p-10 rounded-[32px] bg-[#f8fafc] border border-[#e2e8f0]">
               <h2 className="text-2xl font-bold text-[#0f172a] mb-4">
                 Why We Never Use Slow WordPress Page Builders
               </h2>
@@ -67,8 +148,8 @@ export default function WebDevelopmentServicePage() {
               </p>
               <div className="space-y-3">
                 {[
-                  "1-Second Load Times: Built with Next.js, React, and modern CSS architecture.",
-                  "100% Responsive: Flawless layout on every screen from iPhone to 4K displays.",
+                  "Sub-1-Second Load Times: Built with Next.js, React, and modern CSS architecture.",
+                  "100% Responsive: Flawless layout on every screen from smartphone to 4K desktop.",
                   "SEO-Engineered DOM: Clean HTML markup structured specifically for Googlebot crawlers.",
                   "Zero Plugin Vulnerabilities: Custom code eliminates security holes and frequent crashes.",
                 ].map((point, i) => (
@@ -110,11 +191,30 @@ export default function WebDevelopmentServicePage() {
             </div>
           </div>
 
+          {/* Connected Case Study & Guide */}
+          <div className="mt-16 p-8 rounded-[32px] border border-[#c7d2fe] bg-[#f5f7ff] flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div>
+              <span className="text-xs font-bold uppercase tracking-wider text-[#4f46e5]">Related Client Case Study</span>
+              <h3 className="text-xl font-bold text-[#0f172a] mt-1">
+                How Lakeview Heritage Resort Cut Load Time to 0.8s with Custom Next.js
+              </h3>
+              <p className="text-sm text-[#475569] mt-1 max-w-2xl">
+                See the exact technical stack and performance audit behind this hospitality speed overhaul.
+              </p>
+            </div>
+            <Link
+              href="/case-studies/lakeview-heritage-resort"
+              className="inline-flex items-center gap-2 rounded-full bg-[#4f46e5] px-6 py-3 text-xs font-bold text-white shadow-sm hover:bg-[#4338ca] transition-colors shrink-0"
+            >
+              Read Case Study <ArrowRight size={13} />
+            </Link>
+          </div>
+
           {/* CTA Banner */}
           <div className="mt-20 rounded-[32px] bg-gradient-to-r from-[#4f46e5] to-[#4338ca] p-8 sm:p-12 text-white text-center">
             <h2 className="text-2xl sm:text-3xl font-bold">Ready to build a website that actually brings customers?</h2>
             <p className="mt-3 text-sm sm:text-base text-indigo-100 max-w-xl mx-auto">
-              Get a transparent quote and direct technical consultation with Naveen Panchal.
+              Get a transparent quote and direct technical consultation with Founder Naveen Panchal.
             </p>
             <Link
               href="/free-growth-audit"

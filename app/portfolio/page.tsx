@@ -26,6 +26,7 @@ interface Repo {
 
 const outcomeCaseStudies = [
   {
+    slug: "lakeview-heritage-resort",
     category: "Websites & Direct Bookings",
     client: "Lakeview Heritage Resort",
     location: "Udaipur, Rajasthan",
@@ -35,6 +36,7 @@ const outcomeCaseStudies = [
     tags: ["Custom Next.js", "Core Web Vitals", "WhatsApp Booking", "Hospitality SEO"],
   },
   {
+    slug: "mewar-stone-marble-exports",
     category: "B2B Lead Generation & Local SEO",
     client: "Mewar Stone & Marble Exports",
     location: "Rajasthan & Global Export",
@@ -44,6 +46,7 @@ const outcomeCaseStudies = [
     tags: ["B2B Search Ads", "Export SEO", "Technical Catalogs", "Lead Generation"],
   },
   {
+    slug: "smile-care-dental",
     category: "Local SEO & Google Maps 3-Pack",
     client: "Smile Care Dental & Healthcare",
     location: "Udaipur, Rajasthan",
@@ -100,7 +103,7 @@ export default async function PortfolioPage() {
                 </h1>
 
                 <p className="text-base sm:text-lg text-[#475569] leading-relaxed max-w-2xl font-normal">
-                  We don't build generic brochure websites. We engineer high-speed Next.js web platforms, Google Maps 3-Pack rankings, and B2B inquiry funnels that generate verified revenue pipeline for ambitious brands.
+                  We don&apos;t build generic brochure websites. We engineer high-speed Next.js web platforms, Google Maps 3-Pack rankings, and B2B inquiry funnels that generate verified revenue pipeline for ambitious brands.
                 </p>
 
                 {/* Primary Action Buttons */}
@@ -129,8 +132,8 @@ export default async function PortfolioPage() {
                     <div className="text-[11px] font-semibold uppercase tracking-wider text-[#94a3b8]">Mobile LCP Speed</div>
                   </div>
                   <div>
-                    <div className="text-xl sm:text-2xl font-black text-[#4f46e5]">+200%</div>
-                    <div className="text-[11px] font-semibold uppercase tracking-wider text-[#94a3b8]">Direct Inquiry Lift</div>
+                    <div className="text-xl sm:text-2xl font-black text-[#4f46e5]">Next.js</div>
+                    <div className="text-[11px] font-semibold uppercase tracking-wider text-[#94a3b8]">Custom Architecture</div>
                   </div>
                   <div>
                     <div className="text-xl sm:text-2xl font-black text-[#0f172a]">100%</div>
@@ -210,13 +213,21 @@ export default async function PortfolioPage() {
         {/* Client Case Studies Section */}
         <section className="py-16 lg:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mb-12">
-              <p className="text-xs font-bold uppercase tracking-widest text-[#4f46e5]">
-                Client Case Studies
-              </p>
-              <h2 className="mt-2 text-2xl sm:text-3xl font-extrabold text-[#0f172a]">
-                Real Challenges, Engineered Solutions
-              </h2>
+            <div className="mb-12 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-widest text-[#4f46e5]">
+                  Client Case Studies
+                </p>
+                <h2 className="mt-2 text-2xl sm:text-3xl font-extrabold text-[#0f172a]">
+                  Real Challenges, Engineered Solutions
+                </h2>
+              </div>
+              <Link
+                href="/case-studies"
+                className="inline-flex items-center gap-1.5 text-xs font-bold text-[#4f46e5] hover:text-[#4338ca] hover:underline"
+              >
+                View Dedicated Case Studies Hub <ArrowRight size={14} />
+              </Link>
             </div>
 
             <div className="space-y-8">
@@ -236,10 +247,10 @@ export default async function PortfolioPage() {
                       <p className="text-xs text-[#64748b] mt-0.5">📍 {study.location}</p>
                     </div>
                     <Link
-                      href="/free-growth-audit"
+                      href={`/case-studies/${study.slug}`}
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#4f46e5] hover:text-[#4338ca]"
                     >
-                      Audit Your Website Like This
+                      Read Full Deep Dive
                       <ArrowRight size={14} />
                     </Link>
                   </div>

@@ -242,22 +242,22 @@ const milestones = [
     year: "2024",
     title: "AI & Local SEO Expansion Across Rajasthan",
     event:
-      "Rankvra integrates custom AI workflows, WhatsApp automations, and local SEO services, scaling resorts, marble exporters, clinics, and e-commerce stores across Udaipur, Jaipur, and Bhilwara.",
+      "RankVRA integrates custom AI workflows, WhatsApp automations, and local SEO services, scaling resorts, marble exporters, clinics, and e-commerce stores across Udaipur, Jaipur, and Bhilwara.",
   },
   {
     year: "2025+",
-    title: "The Go-To Growth Partner in Rajasthan",
+    title: "Engineering-First Digital Agency",
     event:
-      "With 40+ brands scaled and a 96% client retention rate, Rankvra establishes itself as the premier web development and digital marketing agency in Udaipur and across Rajasthan.",
+      "RankVRA establishes itself as an engineering-led web development and organic search partner, serving ambitious businesses in Udaipur, across Rajasthan, and internationally.",
   },
 ];
 
-// Stats
+// Stats - Grounded in verified engineering metrics & direct founder involvement
 const stats = [
   { value: "3+ Yrs", label: "Real Experience" },
-  { value: "40+", label: "Rajasthan Brands" },
-  { value: "85+", label: "Page 1 Keywords" },
-  { value: "96%", label: "Client Retention" },
+  { value: "<1.0s", label: "Target Load Speed" },
+  { value: "100%", label: "Custom Code" },
+  { value: "Direct", label: "Founder Led" },
 ];
 
 export function AboutPage() {

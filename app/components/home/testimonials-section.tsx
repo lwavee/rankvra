@@ -33,7 +33,7 @@ export function TestimonialsSection() {
 
           <div className="relative z-10">
             <p className="text-sm font-semibold tracking-[0.2em] uppercase text-[#4f46e5]">
-              What clients say
+              Engineering Standards &amp; Client Commitment
             </p>
 
             <div className="mx-auto mt-8 flex max-w-3xl flex-col items-center min-h-[200px] justify-center">

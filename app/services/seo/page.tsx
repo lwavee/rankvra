@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SiteShell } from "@/app/components/site-shell";
 import {
   ArrowRight,
+  ChevronRight,
   Phone,
   Search,
 } from "lucide-react";
@@ -12,13 +13,120 @@ export const metadata: Metadata = {
   description:
     "Dominate Google Page 1 for high-intent search terms. RankVRA delivers technical SEO, topical authority, and organic conversion strategies for businesses in Rajasthan and India.",
   alternates: { canonical: "https://www.rankvra.com/services/seo" },
+  openGraph: {
+    title: "SEO Agency in Udaipur & Rajasthan | Search Engine Optimization | RankVRA",
+    description:
+      "Dominate Google Page 1 for high-intent search terms. RankVRA delivers technical SEO, topical authority, and organic conversion strategies for businesses in Rajasthan and India.",
+    url: "https://www.rankvra.com/services/seo",
+    siteName: "RankVRA",
+    locale: "en_IN",
+    type: "website",
+  },
 };
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://www.rankvra.com/services/seo#service",
+      name: "Search Engine Optimization & Technical SEO",
+      serviceType: "SEO Service",
+      provider: {
+        "@id": "https://www.rankvra.com/#organization",
+      },
+      areaServed: [
+        { "@type": "City", name: "Udaipur" },
+        { "@type": "AdministrativeArea", name: "Rajasthan" },
+        { "@type": "Country", name: "India" },
+        { "@type": "Country", name: "United States" },
+        { "@type": "Country", name: "United Kingdom" },
+        { "@type": "Country", name: "United Arab Emirates" },
+      ],
+      description:
+        "Technical SEO, semantic topical authority, Google Maps 3-Pack optimization, and high-intent keyword ranking engineered for sustainable organic customer inquiries.",
+      offers: {
+        "@type": "Offer",
+        url: "https://www.rankvra.com/services/seo",
+        priceCurrency: "INR",
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.rankvra.com/services/seo#breadcrumb",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.rankvra.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Services",
+          item: "https://www.rankvra.com/services",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "SEO Services",
+          item: "https://www.rankvra.com/services/seo",
+        },
+      ],
+    },
+  ],
+};
+
+const pillars = [
+  {
+    title: "Technical SEO & Core Web Vitals",
+    desc: "We resolve crawl bottlenecks, canonical conflicts, schema graphs, mobile indexability, and server response times so search engines crawl your site without friction.",
+  },
+  {
+    title: "Semantic Topical Authority",
+    desc: "We build structured content hubs answering every high-intent query your buyers type, establishing your domain as an authoritative industry reference.",
+  },
+  {
+    title: "Google Maps 3-Pack Optimization",
+    desc: "For regional storefronts and service providers, we dominate the Google Maps 3-Pack across high-density target neighborhoods.",
+  },
+  {
+    title: "High-Intent Commercial Keyword Targeting",
+    desc: "We eliminate zero-intent vanity queries, focusing your budget exclusively on commercial search terms that drive phone calls and sales inquiries.",
+  },
+  {
+    title: "Digital PR & Earned Brand Citations",
+    desc: "We reject toxic PBNs and automated directory spam. We acquire legitimate industry mentions, local press, and verified partner links.",
+  },
+  {
+    title: "Conversion Tracking & Revenue Attribution",
+    desc: "Transparent reporting tracking organic phone calls, form fills, and WhatsApp chats back to specific landing pages and search queries.",
+  },
+];
 
 export default function SeoServicePage() {
   return (
     <SiteShell>
-      <main className="bg-white py-16 lg:py-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <main className="bg-white py-12 lg:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          {/* Breadcrumb Navigation */}
+          <nav aria-label="Breadcrumbs" className="mb-6 flex items-center gap-2 text-xs font-medium text-[#64748b]">
+            <Link href="/" className="hover:text-[#4f46e5] transition-colors">
+              Home
+            </Link>
+            <ChevronRight size={12} className="text-[#94a3b8]" />
+            <Link href="/services" className="hover:text-[#4f46e5] transition-colors">
+              Services
+            </Link>
+            <ChevronRight size={12} className="text-[#94a3b8]" />
+            <span className="text-[#4f46e5] font-semibold">SEO Services</span>
+          </nav>
+
           {/* Hero */}
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-[#e0e7ff] bg-[#eef2ff] px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-[#4f46e5] mb-6">
@@ -26,12 +134,12 @@ export default function SeoServicePage() {
               Organic Growth &amp; Search Authority
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#0f172a] tracking-tight leading-[1.1]">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-[#0f172a] tracking-tight leading-[1.12]">
               SEO That Puts You On{" "}
               <span className="text-gradient">Google Page 1</span>.
             </h1>
 
-            <p className="mt-6 text-base sm:text-lg text-[#475569] leading-8">
+            <p className="mt-6 text-base sm:text-lg text-[#475569] leading-relaxed">
               Ranking for vanity keywords that nobody searches for is pointless. At RankVRA, we identify the exact high-intent search queries your buyers type when they are ready to purchase — and engineer your website to rank at the very top.
             </p>
 
@@ -47,66 +155,75 @@ export default function SeoServicePage() {
                 href="https://wa.me/917297875798?text=Hi%20Naveen,%20I%20want%20to%20rank%20my%20website%20on%20Google."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-[#cbd5e1] bg-white px-8 py-4 text-sm font-semibold text-[#334155] hover:border-[#4f46e5] hover:text-[#4f46e5] transition-all"
+                className="inline-flex items-center gap-2 rounded-full border border-[#cbd5e1] bg-white px-8 py-4 text-sm font-semibold text-[#334155] hover:border-[#4f46e5] hover:text-[#4f46e5] transition-all shadow-sm"
               >
                 <Phone size={15} />
-                Discuss Your Keywords
+                Discuss Your Keywords (+91 7297875798)
               </a>
             </div>
           </div>
 
           {/* Pillars of SEO */}
           <div className="mt-20 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              {
-                title: "1. Technical SEO Foundation",
-                desc: "We fix crawl errors, canonical tags, schema markup, mobile indexing, and server response times so Google crawls your site without friction.",
-              },
-              {
-                title: "2. Commercial Keyword Research",
-                desc: "We focus on search terms with real buying intent — like 'marble exporter in Rajasthan' or 'luxury resort in Udaipur' — rather than broad, low-converting volume.",
-              },
-              {
-                title: "3. Information Architecture & Content",
-                desc: "We structure your website into topical clusters that demonstrate undeniable subject-matter authority to Google's ranking algorithms.",
-              },
-              {
-                title: "4. On-Page & Schema Markup",
-                desc: "Every heading, title tag, image alt text, and JSON-LD structured data block is optimized for maximum click-through rates.",
-              },
-              {
-                title: "5. White-Hat Authority Building",
-                desc: "We build genuine industry mentions and digital PR assets without using toxic link farms or dangerous private blog networks (PBNs).",
-              },
-              {
-                title: "6. Conversion Rate Optimization",
-                desc: "Ranking #1 is meaningless if visitors bounce. We optimize your forms and WhatsApp call-to-actions to turn search traffic into paid clients.",
-              },
-            ].map((item, i) => (
-              <div key={i} className="p-7 rounded-[28px] border border-[#e2e8f0] bg-[#f8fafc] hover:border-[#c7d2fe] hover:bg-white transition-all">
-                <h3 className="text-base font-bold text-[#0f172a] mb-2">{item.title}</h3>
-                <p className="text-xs sm:text-sm text-[#64748b] leading-6">{item.desc}</p>
+            {pillars.map((item, i) => (
+              <div key={i} className="p-8 rounded-[28px] border border-[#e2e8f0] bg-[#f8fafc] hover:border-[#c7d2fe] transition-all">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#eef2ff] text-[#4f46e5] font-bold text-sm mb-5">
+                  0{i + 1}
+                </div>
+                <h3 className="text-lg font-bold text-[#0f172a] mb-2">{item.title}</h3>
+                <p className="text-xs sm:text-sm text-[#64748b] leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
 
-          {/* Local vs Regional Context */}
-          <div className="mt-20 rounded-[32px] border border-[#e2e8f0] bg-white p-8 sm:p-12 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#0f172a] mb-4">
-              Transparent SEO Timelines &amp; Expectations
-            </h2>
-            <p className="text-sm text-[#64748b] leading-7 max-w-3xl">
-              Anyone promising &ldquo;#1 rank in 7 days&rdquo; is running spam tactics that will get your domain permanently blacklisted by Google. Real, sustainable SEO compounds over 60 to 90 days. We provide complete monthly tracking reports showing your exact ranking movements, organic clicks, and verified lead submissions.
-            </p>
-            <div className="mt-8">
+          {/* Cross Link Box to Case Studies & Guides */}
+          <div className="mt-16 grid sm:grid-cols-2 gap-6">
+            <div className="p-8 rounded-[28px] border border-[#c7d2fe] bg-[#f5f7ff]">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#4f46e5]">Healthcare Local SEO Case Study</span>
+              <h3 className="text-xl font-bold text-[#0f172a] mt-1">
+                Dominating the Google Maps 3-Pack for Smile Care Dental
+              </h3>
+              <p className="text-sm text-[#475569] mt-2 mb-4">
+                See how citation cleansing and mobile booking pages drove verified patient consultations.
+              </p>
               <Link
-                href="/free-growth-audit"
-                className="inline-flex items-center gap-2 rounded-full bg-[#4f46e5] px-7 py-3.5 text-sm font-bold text-white hover:bg-[#4338ca] transition-all"
+                href="/case-studies/smile-care-dental"
+                className="text-xs font-bold text-[#4f46e5] hover:underline inline-flex items-center gap-1"
               >
-                Analyze Your Competitor Gaps
-                <ArrowRight size={15} />
+                Read Dental Clinic Case Study <ArrowRight size={13} />
               </Link>
             </div>
+
+            <div className="p-8 rounded-[28px] border border-[#e2e8f0] bg-white">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#64748b]">Strategic In-Depth Guide</span>
+              <h3 className="text-xl font-bold text-[#0f172a] mt-1">
+                SEO Agency in Udaipur: How to Choose for Real Growth
+              </h3>
+              <p className="text-sm text-[#475569] mt-2 mb-4">
+                Explore the technical criteria, pricing benchmarks, and red flags to avoid when hiring.
+              </p>
+              <Link
+                href="/blogs/seo-agency-udaipur"
+                className="text-xs font-bold text-[#4f46e5] hover:underline inline-flex items-center gap-1"
+              >
+                Read Founder Guide <ArrowRight size={13} />
+              </Link>
+            </div>
+          </div>
+
+          {/* CTA Banner */}
+          <div className="mt-20 rounded-[32px] bg-gradient-to-r from-[#4f46e5] to-[#4338ca] p-8 sm:p-12 text-white text-center">
+            <h2 className="text-2xl sm:text-3xl font-bold">Ready to see where your website stands on Google?</h2>
+            <p className="mt-3 text-sm sm:text-base text-indigo-100 max-w-xl mx-auto">
+              Request a free growth audit. We will review your search crawlability, Core Web Vitals, and competitor ranking gaps.
+            </p>
+            <Link
+              href="/free-growth-audit"
+              className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-8 py-3.5 text-sm font-bold text-[#4f46e5] hover:bg-slate-50 transition-all shadow-md"
+            >
+              Get Free SEO Audit
+              <ArrowRight size={15} />
+            </Link>
           </div>
         </div>
       </main>

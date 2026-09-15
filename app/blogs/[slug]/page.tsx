@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import {
-  ArrowLeft,
   ArrowRight,
   Calendar,
   Clock,
@@ -525,7 +524,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                   <ArrowRight size={15} />
                 </Link>
                 <a
-                  href="https://wa.me/919929610203?text=Hi%20Naveen,%20I%20read%20your%20RankVRA%20article%20and%20would%20like%20to%20discuss%20our%20website%20growth."
+                  href="https://wa.me/917297875798?text=Hi%20Naveen,%20I%20read%20your%20RankVRA%20article%20and%20would%20like%20to%20discuss%20our%20website%20growth."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 backdrop-blur-md px-6 py-3 text-sm font-bold text-white hover:bg-white/20 transition-all"

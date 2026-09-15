@@ -46,27 +46,34 @@ export default function NotFound() {
             </a>
           </div>
 
-          <div className="mt-12 pt-8 border-t border-[#e2e8f0] grid sm:grid-cols-3 gap-4 text-left">
+          <div className="mt-12 pt-8 border-t border-[#e2e8f0] grid sm:grid-cols-4 gap-4 text-left">
             <Link
-              href="/services/web-development"
+              href="/services"
               className="p-4 rounded-2xl border border-[#e2e8f0] hover:border-[#c7d2fe] hover:bg-[#f8fafc] transition-all"
             >
-              <p className="text-sm font-bold text-[#0f172a]">Web Development</p>
-              <p className="text-xs text-[#64748b] mt-1">High-speed custom Next.js builds</p>
+              <p className="text-sm font-bold text-[#0f172a]">Core Services</p>
+              <p className="text-xs text-[#64748b] mt-1">Web, SEO &amp; Google Ads</p>
             </Link>
             <Link
-              href="/services/seo"
+              href="/case-studies"
               className="p-4 rounded-2xl border border-[#e2e8f0] hover:border-[#c7d2fe] hover:bg-[#f8fafc] transition-all"
             >
-              <p className="text-sm font-bold text-[#0f172a]">SEO & Local Search</p>
-              <p className="text-xs text-[#64748b] mt-1">Google Maps & Page 1 rankings</p>
+              <p className="text-sm font-bold text-[#0f172a]">Case Studies</p>
+              <p className="text-xs text-[#64748b] mt-1">Verified client outcomes</p>
             </Link>
             <Link
-              href="/services/google-ads"
+              href="/blogs"
               className="p-4 rounded-2xl border border-[#e2e8f0] hover:border-[#c7d2fe] hover:bg-[#f8fafc] transition-all"
             >
-              <p className="text-sm font-bold text-[#0f172a]">Google Ads</p>
-              <p className="text-xs text-[#64748b] mt-1">High-ROI lead generation</p>
+              <p className="text-sm font-bold text-[#0f172a]">Growth Blog</p>
+              <p className="text-xs text-[#64748b] mt-1">SEO &amp; marketing guides</p>
+            </Link>
+            <Link
+              href="/contact"
+              className="p-4 rounded-2xl border border-[#e2e8f0] hover:border-[#c7d2fe] hover:bg-[#f8fafc] transition-all"
+            >
+              <p className="text-sm font-bold text-[#0f172a]">Contact Us</p>
+              <p className="text-xs text-[#64748b] mt-1">Direct founder inquiry</p>
             </Link>
           </div>
         </div>

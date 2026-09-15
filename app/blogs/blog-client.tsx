@@ -9,11 +9,8 @@ import {
   Sparkles,
   Search,
   BookOpen,
-  TrendingUp,
   ShieldCheck,
   CheckCircle2,
-  Calendar,
-  Layers,
   ArrowUpRight,
 } from "lucide-react";
 import { BlogPost } from "./data";

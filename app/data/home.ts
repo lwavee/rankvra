@@ -10,10 +10,10 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    title: "Best Web Development Agency in Udaipur",
+    title: "Custom Web Development & Next.js Engineering in Udaipur",
     copy: "We don't build clunky, slow WordPress templates. We develop lightning-fast, custom websites with Next.js and clean code that load under 1 second, pass Google Core Web Vitals, and turn local visitors into paying customers.",
     icon: PanelsTopLeft,
-    badge: "Most Requested in Udaipur",
+    badge: "Next.js & React",
   },
   {
     title: "Local SEO & Google Page 1 Rankings",
@@ -22,7 +22,7 @@ export const services: Service[] = [
     badge: "High Organic ROI",
   },
   {
-    title: "Best Digital Marketing Agency in Udaipur",
+    title: "Performance Digital Marketing & Google Ads in Udaipur",
     copy: "Stop burning money on useless Facebook 'Boost Post' buttons. We build targeted Meta and Google Ad funnels engineered to bring qualified inquiries, direct calls, and WhatsApp leads to your business every single day.",
     icon: Target,
     badge: "Lead Generation",

@@ -112,7 +112,7 @@ export function HeroSection() {
                   <div className="flex h-12 w-12 items-center justify-center rounded-[18px] bg-white shadow-sm border border-[#f1f5f9] p-2">
                     <Image
                       src="/logo-icon.png"
-                      alt="Rankvra"
+                      alt="RankVRA"
                       width={36}
                       height={36}
                       className="h-8 w-8 object-contain"
@@ -120,10 +120,10 @@ export function HeroSection() {
                   </div>
                   <div>
                     <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-[#4f46e5]">
-                      Client Growth Snapshot
+                      Engineering Benchmark
                     </p>
                     <p className="mt-1 text-lg font-bold tracking-tight text-[#0f172a]">
-                      Verified Revenue &amp; Pipeline Growth
+                      Next.js Speed &amp; Search Visibility
                     </p>
                   </div>
                 </div>
@@ -137,9 +137,9 @@ export function HeroSection() {
                   <div className="relative z-10 flex justify-between items-end">
                     <div>
                       <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-1">
-                        Direct Revenue &amp; Inquiry Lift
+                        Mobile Largest Contentful Paint
                       </p>
-                      <p className="text-5xl sm:text-6xl font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-300">+200%</p>
+                      <p className="text-5xl sm:text-6xl font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-300">&lt; 0.8s</p>
                     </div>
                     <div className="flex items-center gap-1.5 pb-2 text-emerald-400">
                       <TrendingUp size={20} strokeWidth={3} />
@@ -147,8 +147,8 @@ export function HeroSection() {
                   </div>
                   
                   <div className="mt-8 flex items-center justify-between border-t border-white/10 pt-5 text-sm font-medium">
-                    <span className="text-slate-300">Lakeview Heritage Resort</span>
-                    <span className="text-white font-semibold rounded-full bg-white/10 px-3 py-1 text-xs">90 days</span>
+                    <span className="text-slate-300">Clean Server-Rendered Architecture</span>
+                    <span className="text-white font-semibold rounded-full bg-white/10 px-3 py-1 text-xs">Core Web Vitals Pass</span>
                   </div>
                 </div>
 
@@ -158,16 +158,16 @@ export function HeroSection() {
                     <div className="absolute top-0 right-0 p-3 opacity-10 text-[#4f46e5]">
                        <BarChart3 size={40} />
                     </div>
-                    <p className="text-[10px] font-bold text-[#94a3b8] uppercase tracking-widest">Google ROAS</p>
-                    <p className="mt-1.5 text-3xl font-black text-[#0f172a] tracking-tight">5.4<span className="text-lg text-[#64748b]">x</span></p>
+                    <p className="text-[10px] font-bold text-[#94a3b8] uppercase tracking-widest">Architecture</p>
+                    <p className="mt-1.5 text-2xl font-black text-[#0f172a] tracking-tight">100%<span className="text-xs font-semibold text-[#64748b] ml-1">Custom Code</span></p>
                   </div>
                   
                   <div className="flex-1 rounded-[20px] bg-gradient-to-b from-[#eef2ff] to-[#f8fafc] p-5 border border-[#e0e7ff] flex flex-col justify-center">
                     <div className="flex items-center gap-2 mb-1.5">
                       <ShieldCheck size={14} className="text-[#4f46e5]" />
-                      <span className="text-[10px] font-bold text-[#4f46e5] uppercase tracking-widest">Retention</span>
+                      <span className="text-[10px] font-bold text-[#4f46e5] uppercase tracking-widest">Leadership</span>
                     </div>
-                    <p className="text-3xl font-black text-[#0f172a] tracking-tight">96<span className="text-lg text-[#64748b]">%</span></p>
+                    <p className="text-2xl font-black text-[#0f172a] tracking-tight">Direct<span className="text-xs font-semibold text-[#64748b] ml-1">Founder Led</span></p>
                   </div>
                 </div>
 

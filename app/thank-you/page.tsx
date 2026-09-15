@@ -47,7 +47,7 @@ export default function ThankYouPage() {
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <a
-              href="https://wa.me/917297875798?text=Hi%20Naveen,%20I%20just%20submitted%20a%20growth%20audit%20request%20on%20Rankvra."
+              href="https://wa.me/917297875798?text=Hi%20Naveen,%20I%20just%20submitted%20a%20growth%20audit%20request%20on%20RankVRA."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-[#4f46e5] px-8 py-4 text-sm font-semibold text-white shadow-lg shadow-[#4f46e5]/25 hover:bg-[#4338ca] transition-all"
@@ -56,10 +56,10 @@ export default function ThankYouPage() {
               Fast-Track on WhatsApp (+91 7297875798)
             </a>
             <Link
-              href="/portfolio"
+              href="/case-studies"
               className="inline-flex items-center gap-2 rounded-full border border-[#cbd5e1] bg-white px-8 py-4 text-sm font-semibold text-[#334155] hover:border-[#4f46e5] hover:text-[#4f46e5] transition-all"
             >
-              Explore Our Work
+              Explore Client Case Studies
               <ArrowRight size={15} />
             </Link>
           </div>

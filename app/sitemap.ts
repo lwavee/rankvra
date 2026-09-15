@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { BLOG_POSTS } from "@/app/blogs/data";
+import { CASE_STUDIES } from "@/app/case-studies/data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.rankvra.com";
@@ -25,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/b2b-lead-generation",
     "/international-seo",
     "/free-growth-audit",
+    "/case-studies",
     "/portfolio",
     "/blogs",
     "/contact",
@@ -32,9 +34,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/terms-and-conditions",
   ];
 
+  const portfolioProjects = ["AMS-project", "sarala-ai", "CRM"];
+
   const blogRoutes = BLOG_POSTS.map((post) => ({
     url: `${baseUrl}/blogs/${post.slug}`,
     lastModified: new Date(post.date || lastModified),
+    changeFrequency: "monthly" as const,
+    priority: 0.75,
+  }));
+
+  const caseStudyRoutes = CASE_STUDIES.map((study) => ({
+    url: `${baseUrl}/case-studies/${study.slug}`,
+    lastModified: new Date(study.publishedDate || lastModified),
+    changeFrequency: "weekly" as const,
+    priority: 0.85,
+  }));
+
+  const portfolioRoutes = portfolioProjects.map((project) => ({
+    url: `${baseUrl}/portfolio/${project}`,
+    lastModified,
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
@@ -46,7 +64,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     if (route === "") {
       priority = 1.0;
       changeFrequency = "daily";
-    } else if (route.startsWith("/services") || route === "/free-growth-audit") {
+    } else if (
+      route.startsWith("/services") ||
+      route === "/free-growth-audit" ||
+      route === "/case-studies"
+    ) {
       priority = 0.9;
     } else if (route.startsWith("/industries") || route.startsWith("/locations")) {
       priority = 0.85;
@@ -63,5 +85,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  return [...mainRoutes, ...blogRoutes];
+  return [...mainRoutes, ...caseStudyRoutes, ...blogRoutes, ...portfolioRoutes];
 }

@@ -15,32 +15,48 @@ import {
 export default function FreeGrowthAuditPage() {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     website: "",
     company: "",
-    primaryGoal: "More Local Phone & WhatsApp Inquiries",
+    primaryGoal: "National / Pan-India Inbound Lead Generation",
     notes: "",
+    honeypot: "",
   });
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    setErrorMsg("");
 
-    // Simulate reliable capture (or store in localStorage/API)
     try {
       if (typeof window !== "undefined") {
         sessionStorage.setItem("last_audit_lead", JSON.stringify(formData));
       }
-    } catch {
-      // ignore
-    }
 
-    setTimeout(() => {
+      const res = await fetch("/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...formData,
+          source: "free-growth-audit",
+        }),
+      });
+
+      const data = await res.json();
+      if (res.ok && data.success) {
+        router.push("/thank-you");
+      } else {
+        setErrorMsg(data.error || "Unable to process request. Please message us directly on WhatsApp (+91 7297875798).");
+        setLoading(false);
+      }
+    } catch {
+      // Still allow redirect if offline or push to thank you
       router.push("/thank-you");
-    }, 600);
+    }
   };
 
   return (
@@ -222,6 +238,24 @@ export default function FreeGrowthAuditPage() {
                       className="w-full rounded-2xl border border-[#cbd5e1] px-4 py-3 text-sm text-[#0f172a] placeholder-[#94a3b8] focus:border-[#4f46e5] focus:ring-2 focus:ring-[#4f46e5]/20 outline-hidden transition-all resize-none"
                     />
                   </div>
+
+                  {/* Honeypot spam trap */}
+                  <div className="hidden" aria-hidden="true">
+                    <input
+                      type="text"
+                      name="honeypot"
+                      tabIndex={-1}
+                      autoComplete="off"
+                      value={formData.honeypot}
+                      onChange={(e) => setFormData({ ...formData, honeypot: e.target.value })}
+                    />
+                  </div>
+
+                  {errorMsg && (
+                    <div className="p-3.5 rounded-2xl bg-rose-50 border border-rose-200 text-rose-700 text-xs font-medium">
+                      {errorMsg}
+                    </div>
+                  )}
 
                   <button
                     type="submit"

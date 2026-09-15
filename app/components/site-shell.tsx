@@ -9,7 +9,7 @@ import { Menu, X, ArrowUpRight, MessageCircle } from "lucide-react";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
-  { href: "/portfolio", label: "Case Studies" },
+  { href: "/case-studies", label: "Case Studies" },
   { href: "/about", label: "About" },
   { href: "/blogs", label: "Blog" },
   { href: "/contact", label: "Contact" },
@@ -210,7 +210,8 @@ export function SiteShell({ children }: { children: ReactNode }) {
                 <li><Link href="/locations/rajasthan" className="hover:text-[#4f46e5] transition-colors">Rajasthan Regional</Link></li>
                 <li><Link href="/locations/india" className="hover:text-[#4f46e5] transition-colors">India (Nationwide)</Link></li>
                 <li><Link href="/international-seo" className="hover:text-[#4f46e5] transition-colors">US, UK &amp; UAE Global</Link></li>
-                <li><Link href="/portfolio" className="hover:text-[#4f46e5] transition-colors">Client Case Studies</Link></li>
+                <li><Link href="/case-studies" className="text-[#4f46e5] font-semibold hover:underline">Client Case Studies</Link></li>
+                <li><Link href="/portfolio" className="hover:text-[#4f46e5] transition-colors">Developer Projects &amp; R&amp;D</Link></li>
                 <li><Link href="/free-growth-audit" className="text-[#4f46e5] font-semibold hover:underline">Free Website Audit</Link></li>
               </ul>
             </div>

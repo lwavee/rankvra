@@ -54,9 +54,8 @@ export function CTASection() {
             </a>
           </div>
 
-          {/* Trust pills */}
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
-            {["No contracts", "Results in 3 weeks", "96% client retention", "Dedicated strategist"].map(
+            {["100% Code Ownership", "Direct Founder Collaboration", "Sub-Second Target Speed", "No Bloated Templates"].map(
               (item) => (
                 <span
                   key={item}
