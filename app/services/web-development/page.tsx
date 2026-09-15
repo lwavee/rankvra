@@ -4,10 +4,8 @@ import { SiteShell } from "@/app/components/site-shell";
 import {
   ArrowRight,
   CheckCircle2,
-  ChevronRight,
-  Code2,
-  Phone,
 } from "lucide-react";
+import { WebDevHero } from "@/app/components/services/web-dev-hero";
 
 export const metadata: Metadata = {
   title: "Custom Web Development Company in Udaipur & Rajasthan | RankVRA",
@@ -86,56 +84,9 @@ export default function WebDevelopmentServicePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
+      <WebDevHero />
       <main className="bg-white py-12 lg:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          {/* Breadcrumb Navigation */}
-          <nav aria-label="Breadcrumbs" className="mb-6 flex items-center gap-2 text-xs font-medium text-[#64748b]">
-            <Link href="/" className="hover:text-[#4f46e5] transition-colors">
-              Home
-            </Link>
-            <ChevronRight size={12} className="text-[#94a3b8]" />
-            <Link href="/services" className="hover:text-[#4f46e5] transition-colors">
-              Services
-            </Link>
-            <ChevronRight size={12} className="text-[#94a3b8]" />
-            <span className="text-[#4f46e5] font-semibold">Web Development</span>
-          </nav>
-
-          {/* Hero */}
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#e0e7ff] bg-[#eef2ff] px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-[#4f46e5] mb-6">
-              <Code2 size={14} />
-              Full-Stack Engineering
-            </div>
-
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-[#0f172a] tracking-tight leading-[1.12]">
-              Custom Web Development That{" "}
-              <span className="text-gradient">Generates Customers</span>.
-            </h1>
-
-            <p className="mt-6 text-base sm:text-lg text-[#475569] leading-relaxed">
-              Slow websites kill conversions. If your website takes more than 3 seconds to load on a mobile phone, half of your potential clients click back to Google and call your competitor instead. At RankVRA, led by full-stack developer Naveen Panchal (lw_avee), we build clean, custom Next.js websites engineered for sub-second load times and customer conversions.
-            </p>
-
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <Link
-                href="/free-growth-audit"
-                className="inline-flex items-center gap-2 rounded-full bg-[#4f46e5] px-8 py-4 text-sm font-bold text-white shadow-lg shadow-[#4f46e5]/20 hover:bg-[#4338ca] transition-all"
-              >
-                Get a Free Website Audit
-                <ArrowRight size={16} />
-              </Link>
-              <a
-                href="https://wa.me/917297875798?text=Hi%20Naveen,%20I%20am%20interested%20in%20custom%20web%20development."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-[#cbd5e1] bg-white px-8 py-4 text-sm font-semibold text-[#334155] hover:border-[#4f46e5] hover:text-[#4f46e5] transition-all shadow-sm"
-              >
-                <Phone size={15} />
-                WhatsApp Naveen (+91 7297875798)
-              </a>
-            </div>
-          </div>
 
           {/* Why Custom Next.js Beats WordPress */}
           <div className="mt-20 grid lg:grid-cols-2 gap-10 items-center">

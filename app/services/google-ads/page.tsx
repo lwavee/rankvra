@@ -4,12 +4,10 @@ import { SiteShell } from "@/app/components/site-shell";
 import {
   ArrowRight,
   CheckCircle2,
-  ChevronRight,
-  Phone,
   ShieldCheck,
-  Target,
   TrendingUp,
 } from "lucide-react";
+import { GoogleAdsHero } from "@/app/components/services/google-ads-hero";
 
 export const metadata: Metadata = {
   title: "Google Ads & PPC Management Agency in Udaipur | RankVRA",
@@ -130,68 +128,9 @@ export default function GoogleAdsServicePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
+      <GoogleAdsHero />
       <main className="bg-white py-12 lg:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          {/* Breadcrumbs */}
-          <nav aria-label="Breadcrumb" className="mb-8">
-            <ol className="flex items-center gap-2 text-xs font-semibold text-[#64748b]">
-              <li>
-                <Link href="/" className="hover:text-[#4f46e5] transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <ChevronRight size={12} className="text-[#94a3b8]" />
-              </li>
-              <li>
-                <Link href="/services" className="hover:text-[#4f46e5] transition-colors">
-                  Services
-                </Link>
-              </li>
-              <li>
-                <ChevronRight size={12} className="text-[#94a3b8]" />
-              </li>
-              <li className="text-[#0f172a]" aria-current="page">
-                Google Ads &amp; PPC
-              </li>
-            </ol>
-          </nav>
-
-          {/* Hero */}
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#e0e7ff] bg-[#eef2ff] px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-[#4f46e5] mb-6">
-              <Target size={14} />
-              Paid Search Advertising
-            </div>
-
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#0f172a] tracking-tight leading-[1.1]">
-              Google Ads That Deliver{" "}
-              <span className="text-gradient">Ready-To-Buy Leads</span>.
-            </h1>
-
-            <p className="mt-6 text-base sm:text-lg text-[#475569] leading-8">
-              When a buyer in your industry types a commercial search query into Google, they are looking to take action today. We engineer tightly controlled Google Search campaigns that place your business in front of high-intent searchers and block irrelevant clicks with continuous negative keyword management.
-            </p>
-
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <Link
-                href="/free-growth-audit"
-                className="inline-flex items-center gap-2 rounded-full bg-[#4f46e5] px-8 py-4 text-sm font-bold text-white shadow-lg shadow-[#4f46e5]/20 hover:bg-[#4338ca] transition-all"
-              >
-                Audit My Existing Google Ads
-                <ArrowRight size={16} />
-              </Link>
-              <a
-                href="https://wa.me/917297875798?text=Hi%20Naveen,%20I%20want%20to%20run%20Google%20Ads."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-[#cbd5e1] bg-white px-8 py-4 text-sm font-semibold text-[#334155] hover:border-[#4f46e5] hover:text-[#4f46e5] transition-all"
-              >
-                <Phone size={15} />
-                Discuss Ad Budget
-              </a>
-            </div>
-          </div>
 
           {/* Case Study Cross Link */}
           <div className="mt-14 rounded-3xl border border-[#e2e8f0] bg-[#f8fafc] p-7 sm:p-9">

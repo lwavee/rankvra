@@ -1,12 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteShell } from "@/app/components/site-shell";
-import {
-  ArrowRight,
-  ChevronRight,
-  Phone,
-  Search,
-} from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { SeoHero } from "@/app/components/services/seo-hero";
 
 export const metadata: Metadata = {
   title: "SEO Agency in Udaipur & Rajasthan | Search Engine Optimization | RankVRA",
@@ -112,56 +108,9 @@ export default function SeoServicePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
+      <SeoHero />
       <main className="bg-white py-12 lg:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          {/* Breadcrumb Navigation */}
-          <nav aria-label="Breadcrumbs" className="mb-6 flex items-center gap-2 text-xs font-medium text-[#64748b]">
-            <Link href="/" className="hover:text-[#4f46e5] transition-colors">
-              Home
-            </Link>
-            <ChevronRight size={12} className="text-[#94a3b8]" />
-            <Link href="/services" className="hover:text-[#4f46e5] transition-colors">
-              Services
-            </Link>
-            <ChevronRight size={12} className="text-[#94a3b8]" />
-            <span className="text-[#4f46e5] font-semibold">SEO Services</span>
-          </nav>
-
-          {/* Hero */}
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#e0e7ff] bg-[#eef2ff] px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-[#4f46e5] mb-6">
-              <Search size={14} />
-              Organic Growth &amp; Search Authority
-            </div>
-
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-[#0f172a] tracking-tight leading-[1.12]">
-              SEO That Puts You On{" "}
-              <span className="text-gradient">Google Page 1</span>.
-            </h1>
-
-            <p className="mt-6 text-base sm:text-lg text-[#475569] leading-relaxed">
-              Ranking for vanity keywords that nobody searches for is pointless. At RankVRA, we identify the exact high-intent search queries your buyers type when they are ready to purchase — and engineer your website to rank at the very top.
-            </p>
-
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <Link
-                href="/free-growth-audit"
-                className="inline-flex items-center gap-2 rounded-full bg-[#4f46e5] px-8 py-4 text-sm font-bold text-white shadow-lg shadow-[#4f46e5]/20 hover:bg-[#4338ca] transition-all"
-              >
-                Get Free SEO Audit
-                <ArrowRight size={16} />
-              </Link>
-              <a
-                href="https://wa.me/917297875798?text=Hi%20Naveen,%20I%20want%20to%20rank%20my%20website%20on%20Google."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-[#cbd5e1] bg-white px-8 py-4 text-sm font-semibold text-[#334155] hover:border-[#4f46e5] hover:text-[#4f46e5] transition-all shadow-sm"
-              >
-                <Phone size={15} />
-                Discuss Your Keywords (+91 7297875798)
-              </a>
-            </div>
-          </div>
 
           {/* Pillars of SEO */}
           <div className="mt-20 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -1,17 +1,13 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { SiteShell } from "@/app/components/site-shell";
 import {
-  ArrowRight,
-  Bot,
   Brain,
   CheckCircle2,
-  ChevronRight,
   MessageSquare,
-  Phone,
   ShieldCheck,
   Zap,
 } from "lucide-react";
+import { AiAutomationHero } from "@/app/components/services/ai-automation-hero";
 
 export const metadata: Metadata = {
   title: "AI Workflows & WhatsApp Automation Agency | RankVRA",
@@ -132,68 +128,9 @@ export default function AiAutomationServicePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
+      <AiAutomationHero />
       <main className="bg-white py-12 lg:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          {/* Breadcrumbs */}
-          <nav aria-label="Breadcrumb" className="mb-8">
-            <ol className="flex items-center gap-2 text-xs font-semibold text-[#64748b]">
-              <li>
-                <Link href="/" className="hover:text-[#4f46e5] transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <ChevronRight size={12} className="text-[#94a3b8]" />
-              </li>
-              <li>
-                <Link href="/services" className="hover:text-[#4f46e5] transition-colors">
-                  Services
-                </Link>
-              </li>
-              <li>
-                <ChevronRight size={12} className="text-[#94a3b8]" />
-              </li>
-              <li className="text-[#0f172a]" aria-current="page">
-                AI &amp; Automation
-              </li>
-            </ol>
-          </nav>
-
-          {/* Hero */}
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#e0e7ff] bg-[#eef2ff] px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-[#4f46e5] mb-6">
-              <Bot size={14} />
-              AI &amp; Workflow Automations
-            </div>
-
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#0f172a] tracking-tight leading-[1.1]">
-              Never Miss A Lead With{" "}
-              <span className="text-gradient">Smart AI &amp; WhatsApp Bots</span>.
-            </h1>
-
-            <p className="mt-6 text-base sm:text-lg text-[#475569] leading-8">
-              In modern sales, response speed is everything. A prospect who receives an instant, intelligent answer on WhatsApp within 30 seconds is significantly more likely to convert than one who waits hours for an email. We engineer custom AI agents that qualify leads, answer FAQs, and notify your sales team immediately.
-            </p>
-
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <Link
-                href="/free-growth-audit"
-                className="inline-flex items-center gap-2 rounded-full bg-[#4f46e5] px-8 py-4 text-sm font-bold text-white shadow-lg shadow-[#4f46e5]/20 hover:bg-[#4338ca] transition-all"
-              >
-                Explore Automation Options
-                <ArrowRight size={16} />
-              </Link>
-              <a
-                href="https://wa.me/917297875798?text=Hi%20Naveen,%20I%20want%20to%20automate%20my%20WhatsApp%20leads."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-[#cbd5e1] bg-white px-8 py-4 text-sm font-semibold text-[#334155] hover:border-[#4f46e5] hover:text-[#4f46e5] transition-all"
-              >
-                <Phone size={15} />
-                WhatsApp Demo
-              </a>
-            </div>
-          </div>
 
           {/* Solutions Grid */}
           <div className="mt-16">
