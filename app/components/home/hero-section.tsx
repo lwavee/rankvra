@@ -1,199 +1,187 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, BarChart3, Globe, Phone, ShieldCheck, TrendingUp } from "lucide-react";
+import {
+  ArrowRight,
+  Globe,
+  MessageCircle,
+  Zap,
+} from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-white">
-      {/* Subtle background pattern */}
+    <section className="relative overflow-hidden bg-white pt-8 pb-16 lg:pt-14 lg:pb-24">
+      {/* Subtle modern background grid */}
       <div className="absolute inset-0 pointer-events-none">
         <div
-          className="absolute inset-0 opacity-[0.025]"
+          className="absolute inset-0 opacity-[0.03]"
           style={{
             backgroundImage:
               "linear-gradient(#4f46e5 1px, transparent 1px), linear-gradient(90deg, #4f46e5 1px, transparent 1px)",
-            backgroundSize: "72px 72px",
+            backgroundSize: "64px 64px",
           }}
         />
-        {/* Soft color washes */}
-        <div className="absolute top-0 right-0 h-[500px] w-[500px] rounded-full bg-[#eef2ff] blur-[120px]" />
-        <div className="absolute bottom-0 left-1/4 h-[300px] w-[300px] rounded-full bg-[#e0f2fe] blur-[100px]" />
+        <div className="absolute top-0 right-0 h-[450px] w-[450px] rounded-full bg-gradient-to-br from-[#e0e7ff]/60 to-[#c7d2fe]/30 blur-[120px]" />
+        <div className="absolute bottom-10 left-10 h-[320px] w-[320px] rounded-full bg-[#f0fdf4]/80 blur-[100px]" />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-6 pb-24 pt-16 lg:grid lg:grid-cols-[1.1fr_0.9fr] lg:gap-16 lg:px-8 lg:pb-32 lg:pt-20">
-        {/* Left — Copy */}
-        <motion.div
-          initial={{ opacity: 0, y: 28 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex flex-col justify-center"
-        >
-          {/* Trust badge */}
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="grid gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-14 items-center">
+          {/* Left Column — High-Impact Concise Copy */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.93 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="mb-7 inline-flex w-fit items-center gap-2 rounded-full border border-[#e0e7ff] bg-[#eef2ff] px-4 py-2 text-sm font-semibold text-[#4f46e5]"
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            className="flex flex-col justify-center"
           >
-            <Globe size={15} className="text-[#4f46e5]" />
-            RankVRA • Web Development, SEO &amp; Digital Growth Agency (Udaipur, India)
-          </motion.div>
-
-          <h1 className="hero-copy max-w-3xl text-4xl font-extrabold leading-[1.1] tracking-[-0.03em] text-[#0f172a] sm:text-5xl lg:text-[58px]">
-            RankVRA — <span className="text-gradient">Web Development, SEO &amp; Digital Growth</span>.
-          </h1>
-
-          <p className="hero-copy mt-6 max-w-2xl text-base leading-8 text-[#475569] sm:text-lg">
-            RankVRA helps businesses build high-converting websites, improve search visibility and generate qualified enquiries through SEO, digital marketing and technology. Founded by <strong>Naveen Panchal (lw_avee)</strong> in Udaipur, Rajasthan, we engineer ultra-fast Next.js web applications, Google Page 1 search architectures, and automated client acquisition funnels.
-          </p>
-
-          <div className="hero-copy mt-9 flex flex-wrap gap-4">
-            <Link
-              href="/free-growth-audit"
-              className="group inline-flex items-center justify-center gap-2 rounded-full bg-[#4f46e5] px-8 py-4 text-[15px] font-semibold text-white shadow-lg shadow-[#4f46e5]/20 transition-all duration-300 hover:-translate-y-1 hover:bg-[#4338ca] hover:shadow-[#4f46e5]/30 hover:shadow-xl"
-            >
-              Get My Free Growth Audit
-              <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
-            </Link>
-            <a
-              href="https://wa.me/917297875798?text=Hi%20Naveen,%20I%20would%20like%20to%20discuss%20growing%20my%20business%20with%20RankVRA."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-center justify-center gap-2 rounded-full border border-[#e2e8f0] bg-white px-8 py-4 text-[15px] font-semibold text-[#475569] transition-all duration-300 hover:-translate-y-1 hover:border-[#4f46e5]/30 hover:bg-[#f8fafc] hover:text-[#0f172a] hover:shadow-md"
-            >
-              <Phone size={16} className="text-[#4f46e5]" />
-              WhatsApp RankVRA (+91 7297875798)
-            </a>
-          </div>
-
-          {/* Mini stats row */}
-          <div className="hero-copy mt-12 flex flex-wrap gap-8 sm:gap-10">
-            {[
-              { value: "<1.0s", label: "Mobile Speed" },
-              { value: "100%", label: "Custom Code" },
-              { value: "Udaipur", label: "HQ & Worldwide" },
-            ].map((stat) => (
-              <div key={stat.label}>
-                <p className="text-2xl font-black text-[#0f172a]">{stat.value}</p>
-                <p className="mt-0.5 text-xs text-[#94a3b8] font-semibold uppercase tracking-wider">
-                  {stat.label}
-                </p>
-              </div>
-            ))}
-          </div>
-        </motion.div>
-
-        {/* Right — Visual card */}
-        <motion.div
-          initial={{ opacity: 0, y: 28 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.95, delay: 0.15, ease: "easeOut" }}
-          className="relative mt-14 flex flex-col justify-center lg:mt-0"
-        >
-          {/* Outer shadow/glow */}
-          <div className="absolute inset-4 rounded-[36px] bg-[#4f46e5]/5 blur-2xl" />
-
-          {/* Main card */}
-          <div className="relative z-10 w-full max-w-[500px] mx-auto">
-            
-            {/* Overlapping floating elements for a human-crafted feel */}
-            <div className="absolute -top-10 -right-8 z-20 flex h-24 w-24 flex-col items-center justify-center rounded-full bg-gradient-to-br from-[#4f46e5] to-[#4338ca] shadow-[0_10px_40px_rgba(79,70,229,0.3)] border-4 border-white transform rotate-6">
-              <span className="text-white font-black text-xl tracking-tighter">Growth</span>
-              <span className="text-[9px] font-bold text-indigo-100 uppercase tracking-widest text-center leading-tight">Partner</span>
+            {/* Live Status Pill */}
+            <div className="mb-6 inline-flex w-fit items-center gap-2.5 rounded-full border border-[#e0e7ff] bg-[#f8fafc] px-3.5 py-1.5 text-xs font-semibold text-[#4f46e5] shadow-2xs">
+              <span className="flex h-2 w-2 rounded-full bg-[#10b981] animate-pulse" />
+              <span>Next.js Web Engineering &bull; Google Page 1 SEO &bull; Udaipur HQ</span>
             </div>
 
-            <div className="rounded-[36px] border border-[#e2e8f0] bg-white p-2 shadow-[0_40px_100px_rgba(15,23,42,0.06)] relative">
-              <div className="rounded-[30px] border border-[#f1f5f9] bg-gradient-to-b from-[#f8fafc] to-white p-7 sm:p-10">
-                {/* Header */}
-                <div className="flex items-center gap-4 mb-8">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-[18px] bg-white shadow-sm border border-[#f1f5f9] p-2">
+            {/* Main Headline */}
+            <h1 className="text-4xl font-extrabold tracking-tight text-[#0f172a] sm:text-5xl lg:text-[56px] leading-[1.12]">
+              High-Speed Websites &amp;{" "}
+              <span className="text-gradient">Google SEO That Generate Inquiries</span>.
+            </h1>
+
+            {/* Scannable 2-sentence micro-copy */}
+            <p className="mt-5 max-w-xl text-base text-[#475569] sm:text-lg leading-relaxed">
+              We build custom Next.js web applications that load in under 1 second, dominate Google search results, and convert visitors into verified customer phone calls and WhatsApp leads.
+            </p>
+
+            {/* CTAs */}
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <Link
+                href="/free-growth-audit"
+                className="group inline-flex items-center justify-center gap-2 rounded-full bg-[#4f46e5] px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#4f46e5]/25 transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#4338ca] hover:shadow-xl"
+              >
+                Claim Free Growth Audit
+                <ArrowRight size={15} className="transition-transform duration-200 group-hover:translate-x-1" />
+              </Link>
+              <a
+                href="https://wa.me/917297875798?text=Hi%20Naveen,%20I'd%20like%20to%20discuss%20growing%20my%20business%20with%20RankVRA."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-[#cbd5e1] bg-white px-7 py-3.5 text-sm font-semibold text-[#1e293b] shadow-2xs transition-all duration-200 hover:-translate-y-0.5 hover:border-[#4f46e5] hover:text-[#4f46e5]"
+              >
+                <MessageCircle size={16} className="text-[#10b981]" />
+                WhatsApp Naveen Direct
+              </a>
+            </div>
+
+            {/* 3 Micro-Proof Badges */}
+            <div className="mt-10 grid grid-cols-3 gap-4 border-t border-[#e2e8f0] pt-6 max-w-lg">
+              <div>
+                <p className="text-xl sm:text-2xl font-black text-[#0f172a]">&lt;0.8s</p>
+                <p className="text-xs font-semibold text-[#64748b] mt-0.5">Mobile LCP</p>
+              </div>
+              <div className="border-l border-[#e2e8f0] pl-4">
+                <p className="text-xl sm:text-2xl font-black text-[#0f172a]">100%</p>
+                <p className="text-xs font-semibold text-[#64748b] mt-0.5">Custom Code</p>
+              </div>
+              <div className="border-l border-[#e2e8f0] pl-4">
+                <p className="text-xl sm:text-2xl font-black text-[#10b981]">Top 3</p>
+                <p className="text-xs font-semibold text-[#64748b] mt-0.5">Google Maps</p>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Right Column — Sleek Interactive-Style Showcase Card */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.96 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.15, ease: "easeOut" }}
+            className="relative"
+          >
+            {/* Glowing Backdrop */}
+            <div className="absolute -inset-1.5 rounded-[36px] bg-gradient-to-r from-[#4f46e5]/20 via-[#06b6d4]/20 to-[#10b981]/20 blur-xl opacity-70" />
+
+            <div className="relative rounded-[32px] border border-[#e2e8f0] bg-white p-6 sm:p-7 shadow-2xl">
+              {/* Header Bar */}
+              <div className="flex items-center justify-between border-b border-[#f1f5f9] pb-4 mb-5">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#0f172a] p-1.5 shadow-sm">
                     <Image
                       src="/logo-icon.png"
                       alt="RankVRA"
-                      width={36}
-                      height={36}
-                      className="h-8 w-8 object-contain"
+                      width={28}
+                      height={28}
+                      className="h-6 w-6 object-contain"
                     />
                   </div>
                   <div>
-                    <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-[#4f46e5]">
-                      Engineering Benchmark
+                    <p className="text-xs font-bold text-[#0f172a]">RankVRA Telemetry Hub</p>
+                    <p className="text-[10px] text-[#64748b]">Founder-Led Engineering</p>
+                  </div>
+                </div>
+                <span className="inline-flex items-center gap-1 rounded-full bg-[#f0fdf4] border border-[#bbf7d0] px-2.5 py-1 text-[10px] font-bold text-[#166534]">
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#16a34a]" /> Live Audit
+                </span>
+              </div>
+
+              {/* Speed & Vitals Box */}
+              <div className="rounded-2xl bg-gradient-to-br from-[#0f172a] to-[#1e1b4b] p-5 text-white shadow-md relative overflow-hidden mb-4">
+                <div className="absolute top-0 right-0 h-32 w-32 bg-[#4f46e5]/30 rounded-full blur-2xl pointer-events-none" />
+                <div className="relative z-10 flex items-end justify-between">
+                  <div>
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-indigo-300">
+                      Core Web Vitals Benchmark
+                    </span>
+                    <p className="text-3xl sm:text-4xl font-black mt-1 tracking-tight text-white">
+                      100<span className="text-sm font-semibold text-emerald-400 ml-1">/ 100 Score</span>
                     </p>
-                    <p className="mt-1 text-lg font-bold tracking-tight text-[#0f172a]">
-                      Next.js Speed &amp; Search Visibility
-                    </p>
+                  </div>
+                  <div className="text-right">
+                    <span className="text-xs text-slate-300 font-medium">LCP Latency</span>
+                    <p className="text-xl font-bold text-[#10b981]">0.74s</p>
                   </div>
                 </div>
-
-                {/* Main highlight */}
-                <div className="relative overflow-hidden rounded-[24px] bg-[#0f172a] p-8 text-white shadow-2xl shadow-[#0f172a]/10 mb-5">
-                  {/* Subtle noise/gradient background */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none" />
-                  <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-[#4f46e5]/40 blur-3xl" />
-                  
-                  <div className="relative z-10 flex justify-between items-end">
-                    <div>
-                      <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-1">
-                        Mobile Largest Contentful Paint
-                      </p>
-                      <p className="text-5xl sm:text-6xl font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-300">&lt; 0.8s</p>
-                    </div>
-                    <div className="flex items-center gap-1.5 pb-2 text-emerald-400">
-                      <TrendingUp size={20} strokeWidth={3} />
-                    </div>
-                  </div>
-                  
-                  <div className="mt-8 flex items-center justify-between border-t border-white/10 pt-5 text-sm font-medium">
-                    <span className="text-slate-300">Clean Server-Rendered Architecture</span>
-                    <span className="text-white font-semibold rounded-full bg-white/10 px-3 py-1 text-xs">Core Web Vitals Pass</span>
-                  </div>
-                </div>
-
-                {/* Secondary row */}
-                <div className="flex gap-4 mb-6">
-                  <div className="flex-1 rounded-[20px] bg-white p-5 shadow-sm border border-[#f1f5f9] flex flex-col justify-center relative overflow-hidden">
-                    <div className="absolute top-0 right-0 p-3 opacity-10 text-[#4f46e5]">
-                       <BarChart3 size={40} />
-                    </div>
-                    <p className="text-[10px] font-bold text-[#94a3b8] uppercase tracking-widest">Architecture</p>
-                    <p className="mt-1.5 text-2xl font-black text-[#0f172a] tracking-tight">100%<span className="text-xs font-semibold text-[#64748b] ml-1">Custom Code</span></p>
-                  </div>
-                  
-                  <div className="flex-1 rounded-[20px] bg-gradient-to-b from-[#eef2ff] to-[#f8fafc] p-5 border border-[#e0e7ff] flex flex-col justify-center">
-                    <div className="flex items-center gap-2 mb-1.5">
-                      <ShieldCheck size={14} className="text-[#4f46e5]" />
-                      <span className="text-[10px] font-bold text-[#4f46e5] uppercase tracking-widest">Leadership</span>
-                    </div>
-                    <p className="text-2xl font-black text-[#0f172a] tracking-tight">Direct<span className="text-xs font-semibold text-[#64748b] ml-1">Founder Led</span></p>
-                  </div>
-                </div>
-
-                {/* Capabilities */}
-                <div className="pt-2">
-                  <p className="text-[11px] font-semibold text-[#94a3b8] mb-3 text-center uppercase tracking-widest">Proven Capabilities</p>
-                  <div className="flex flex-wrap justify-center gap-2">
-                    {[
-                      "Technical SEO",
-                      "Conversion Ads",
-                      "Revenue Ops",
-                      "Web Strategy"
-                    ].map((label) => (
-                      <span
-                        key={label}
-                        className="inline-flex items-center rounded-full bg-[#f8fafc] border border-[#e2e8f0] px-3.5 py-1.5 text-xs font-semibold text-[#475569] shadow-sm hover:shadow hover:bg-white hover:text-[#0f172a] transition-all cursor-default"
-                      >
-                        {label}
-                      </span>
-                    ))}
-                  </div>
+                <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px] text-slate-300">
+                  <span>Zero Bloated WP Plugins</span>
+                  <span className="font-semibold text-white">Clean Next.js 16 SSR</span>
                 </div>
               </div>
+
+              {/* Grid with 2 Mini Feature Tiles */}
+              <div className="grid grid-cols-2 gap-3 mb-4">
+                <div className="rounded-xl border border-[#e2e8f0] bg-[#f8fafc] p-3.5">
+                  <div className="flex items-center gap-1.5 text-xs font-bold text-[#0f172a] mb-1">
+                    <Globe size={14} className="text-[#4f46e5]" /> Google 3-Pack
+                  </div>
+                  <p className="text-[11px] text-[#64748b]">Top 3 map placement for commercial buyer intent.</p>
+                </div>
+                <div className="rounded-xl border border-[#e2e8f0] bg-[#f8fafc] p-3.5">
+                  <div className="flex items-center gap-1.5 text-xs font-bold text-[#0f172a] mb-1">
+                    <Zap size={14} className="text-[#10b981]" /> WhatsApp Bot
+                  </div>
+                  <p className="text-[11px] text-[#64748b]">Under 30-sec instant lead qualification &amp; CRM push.</p>
+                </div>
+              </div>
+
+              {/* Tech Stack Pills */}
+              <div className="flex flex-wrap items-center justify-center gap-1.5 pt-2">
+                {[
+                  "Next.js 16",
+                  "TypeScript",
+                  "Local SEO",
+                  "Schema JSON-LD",
+                  "Direct Ownership",
+                ].map((pill) => (
+                  <span
+                    key={pill}
+                    className="inline-block rounded-md bg-[#f1f5f9] px-2.5 py-1 text-[10px] font-semibold text-[#475569]"
+                  >
+                    {pill}
+                  </span>
+                ))}
+              </div>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
     </section>
   );

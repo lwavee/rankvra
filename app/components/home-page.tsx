@@ -7,11 +7,10 @@ import { useEffect } from "react";
 
 import { HeroSection } from "./home/hero-section";
 import { SocialProofBar } from "./home/social-proof-bar";
-import { WhyRankvraSection } from "./home/why-rankvra-section";
 import { ServicesSection } from "./home/services-section";
-import { ProcessSection } from "./home/process-section";
+import { WhyRankvraSection } from "./home/why-rankvra-section";
 import { ResultsSection } from "./home/results-section";
-import { MetricsBar } from "./home/metrics-bar";
+import { ProcessSection } from "./home/process-section";
 import { TestimonialsSection } from "./home/testimonials-section";
 import { FAQSection } from "./home/faq-section";
 import { CTASection } from "./home/cta-section";
@@ -39,13 +38,13 @@ export function HomePage() {
     // Hero copy animation
     gsap.fromTo(
       ".hero-copy",
-      { opacity: 0, y: 28 },
+      { opacity: 0, y: 24 },
       {
         opacity: 1,
         y: 0,
-        duration: 1,
+        duration: 0.9,
         ease: "power3.out",
-        stagger: 0.09,
+        stagger: 0.08,
         delay: 0.1,
       }
     );
@@ -55,11 +54,11 @@ export function HomePage() {
     reveals.forEach((element) => {
       gsap.fromTo(
         element,
-        { opacity: 0, y: 36 },
+        { opacity: 0, y: 32 },
         {
           opacity: 1,
           y: 0,
-          duration: 0.9,
+          duration: 0.8,
           ease: "power3.out",
           scrollTrigger: {
             trigger: element,
@@ -81,11 +80,10 @@ export function HomePage() {
     <main id="top">
       <HeroSection />
       <SocialProofBar />
-      <WhyRankvraSection />
       <ServicesSection />
-      <ProcessSection />
-      <MetricsBar />
+      <WhyRankvraSection />
       <ResultsSection />
+      <ProcessSection />
       <TestimonialsSection />
       <FAQSection />
       <CTASection />

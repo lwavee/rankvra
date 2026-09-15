@@ -1,4 +1,4 @@
-import { Bot, Globe, Megaphone, PanelsTopLeft, Sparkles, Target } from "lucide-react";
+import { Bot, Globe, PanelsTopLeft, Sparkles, Target, Zap } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 export type Service = {
@@ -6,172 +6,179 @@ export type Service = {
   copy: string;
   icon: LucideIcon;
   badge?: string;
+  href: string;
 };
 
 export const services: Service[] = [
   {
-    title: "Custom Web Development & Next.js Engineering in Udaipur",
-    copy: "We don't build clunky, slow WordPress templates. We develop lightning-fast, custom websites with Next.js and clean code that load under 1 second, pass Google Core Web Vitals, and turn local visitors into paying customers.",
+    title: "Custom Next.js Web Development",
+    copy: "Sub-second page speeds, 100% custom code, and zero bloated templates. Engineered to convert traffic into clients.",
     icon: PanelsTopLeft,
-    badge: "Next.js & React",
+    badge: "<0.8s LCP",
+    href: "/services/web-development",
   },
   {
-    title: "Local SEO & Google Page 1 Rankings",
-    copy: "When people in Udaipur or tourists search for your service, does your business show up on Google Maps and Page 1? We optimize your Google Business Profile and website keywords so you rank above local competitors.",
+    title: "Google Maps & Local SEO",
+    copy: "Secure top 3 Google 3-Pack rankings and Page 1 visibility. Drive direct phone calls and local walk-ins.",
     icon: Globe,
-    badge: "High Organic ROI",
+    badge: "Top 3 Maps",
+    href: "/services/local-seo",
   },
   {
-    title: "Performance Digital Marketing & Google Ads in Udaipur",
-    copy: "Stop burning money on useless Facebook 'Boost Post' buttons. We build targeted Meta and Google Ad funnels engineered to bring qualified inquiries, direct calls, and WhatsApp leads to your business every single day.",
+    title: "High-Intent Google Ads (PPC)",
+    copy: "Tightly filtered search and call-only ads. Rigorous negative keywords eliminate wasted spend and maximize ROAS.",
     icon: Target,
-    badge: "Lead Generation",
+    badge: "Ready-To-Buy",
+    href: "/services/google-ads",
   },
   {
-    title: "Social Media Marketing in Udaipur & Rajasthan",
-    copy: "Build a brand that local customers recognize and trust. We create high-engagement Instagram reels, creative graphics, and active community campaigns tailored to the Rajasthani and national audience.",
-    icon: Megaphone,
-  },
-  {
-    title: "E-Commerce Website Development in Rajasthan",
-    copy: "Sell your handicrafts, textiles, jewellery, or direct-to-consumer products across India and globally. Secure payment gateways (Razorpay, UPI), automated shipping integrations, and high-conversion checkouts.",
-    icon: Sparkles,
-  },
-  {
-    title: "AI Workflows & WhatsApp Lead Automation",
-    copy: "Never miss a potential client while you sleep. Led by AI developer Naveen Panchal (lw_avee), we set up smart WhatsApp bots and CRM automations that instantly reply to inquiries and schedule appointments.",
+    title: "AI & WhatsApp Lead Automation",
+    copy: "Instant 30-second inquiry response. Intelligent qualification bots and WhatsApp CRM alerts that capture leads 24/7.",
     icon: Bot,
+    badge: "Instant 24/7",
+    href: "/services/ai-automation",
+  },
+  {
+    title: "B2B Manufacturing Lead Gen",
+    copy: "Digital product catalogs, specification sheets, and verified wholesale RFQ funnels for industrial suppliers.",
+    icon: Sparkles,
+    badge: "Verified RFQs",
+    href: "/b2b-lead-generation",
+  },
+  {
+    title: "International SEO for Exporters",
+    copy: "Multi-country hreflang architecture and CDN edge caching to rank in the USA, UK, UAE, and European markets.",
+    icon: Zap,
+    badge: "Global Trade",
+    href: "/international-seo",
   },
 ];
 
 export const steps = [
   {
     step: "01",
-    title: "Local Market & Competitor Audit",
-    copy: "We analyze your existing website, your Google rankings in Udaipur, your competitors, and the exact keywords your potential buyers in Rajasthan are typing into Google.",
+    title: "Technical Audit & Search Map",
+    copy: "We audit your site speed, Google rankings, and the high-intent keywords your actual buyers search for.",
   },
   {
     step: "02",
-    title: "High-Speed Website & Funnel Build",
-    copy: "Our development team designs a modern, mobile-friendly website tailored to your brand, complete with clear WhatsApp call-to-actions and conversion-focused copy.",
+    title: "Custom Build & Schema Engine",
+    copy: "We build a lightning-fast web app with structured JSON-LD schemas and clear WhatsApp conversion funnels.",
   },
   {
     step: "03",
-    title: "Targeted Launch & Google Ranking",
-    copy: "We launch your website, optimize your Google Maps Local Pack, and initiate hyper-targeted ad campaigns targeting high-intent buyers in Udaipur, Rajasthan, and nationwide.",
-  },
-  {
-    step: "04",
-    title: "Measure, Refine & Scale Revenue",
-    copy: "Every month, you receive a straightforward report detailing phone calls, form submissions, and sales generated — with zero technical jargon or smoke and mirrors.",
+    title: "Launch, Scale & Capture Inquiries",
+    copy: "We activate Google indexing and targeted ad funnels to generate direct phone calls, WhatsApp leads, and RFQs.",
   },
 ];
 
 export const metrics = [
-  { label: "Custom Next.js Engineering", value: "100%" },
-  { label: "Target Load Speed", value: "<1.0s" },
-  { label: "Direct Founder Architecture", value: "Direct" },
-  { label: "Technical SEO Compliance", value: "100%" },
+  { label: "Custom Architecture", value: "100%" },
+  { label: "Mobile Page Load", value: "<1.0s" },
+  { label: "Founder-Led Delivery", value: "Direct" },
+  { label: "Technical Schema", value: "100%" },
 ];
 
-export const features = [
+export const comparison = [
   {
-    title: "Handcrafted in Udaipur, Serving Nationwide & Global Clients",
-    copy: "You work directly with founder Naveen Panchal (lw_avee) and our technical team. No outsourced offshore freelancers and no disappearing acts after your website goes live.",
+    feature: "Technology Stack",
+    legacy: "Bloated WordPress & plugin-heavy templates (3-6s load)",
+    rankvra: "Custom Next.js & React engineered for sub-second speeds",
   },
   {
-    title: "1-Second Load Speed (No Slow Templates)",
-    copy: "Google penalizes slow websites. We write clean Next.js and modern code that loads instantly on mobile 4G/5G, keeping visitors from bouncing to competitors.",
+    feature: "Primary Goal",
+    legacy: "Fluffy vanity metrics (impressions, fake clicks)",
+    rankvra: "Verified phone calls, booked appointments & WhatsApp RFQs",
   },
   {
-    title: "Phone Calls & WhatsApp Inquiries First",
-    copy: "We design every page around what matters to your business: customers picking up the phone, messaging you on WhatsApp, or requesting an audit.",
+    feature: "Team & Accountability",
+    legacy: "Junior account managers & outsourced freelancers",
+    rankvra: "Direct collaboration with Founder Naveen Panchal",
   },
   {
-    title: "Complete Transparency & Direct Ownership",
-    copy: "We explain everything clearly in plain Hindi and English. You own 100% of your website code, domain, and ad accounts. No hidden lock-ins or surprise fees.",
+    feature: "Code & Asset Ownership",
+    legacy: "Proprietary lock-ins & hostage recurring retainers",
+    rankvra: "100% Client ownership of clean source code and assets",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Every website we engineer is built on clean Next.js architecture with sub-second page speeds, technical SEO schema, and direct conversion funnels tailored to real commercial queries.",
-    name: "Engineering-First Standard",
-    role: "RankVRA Quality Protocol",
+      "Every web app we engineer is built on clean Next.js architecture with sub-second speeds, verified JSON-LD schema, and conversion funnels mapped to real commercial queries.",
+    name: "Engineering Standard",
+    role: "Core Technical Protocol",
     metric: "Sub-Second Speed",
   },
   {
     quote:
-      "We operate with complete transparency. Clients receive full source code ownership, clean DNS/hosting setups, and direct founder collaboration with zero outsourced runaround.",
-    name: "Direct Client Collaboration",
-    role: "Led by Founder Naveen Panchal",
+      "We operate with 100% transparency. Clients get direct founder collaboration, full source code ownership, and zero agency runaround.",
+    name: "Founder Direct",
+    role: "Led by Naveen Panchal",
     metric: "100% Code Ownership",
   },
   {
     quote:
-      "Our search engine optimization and digital campaigns focus strictly on business outcomes: qualified phone inquiries, WhatsApp leads, and high-intent commercial keyword rankings.",
-    name: "Commercial Strategy",
-    role: "Outcome-Driven Focus",
-    metric: "High-Intent SEO",
+      "Our SEO and paid campaigns focus exclusively on commercial outcomes: verified phone calls, booked appointments, and container-load RFQs.",
+    name: "Commercial Focus",
+    role: "Inbound Pipeline Growth",
+    metric: "Outcome-Driven",
   },
 ];
 
 export const faqs = [
   {
-    q: "Who is RankVRA and where is it located?",
-    a: "RankVRA is a web development, SEO, and digital growth agency founded by Naveen Panchal. Our engineering headquarters are located in Udaipur, Rajasthan 313001, India. We partner with ambitious businesses locally in Udaipur, across Rajasthan and India, and internationally across the US, UK, and UAE.",
+    q: "Who is RankVRA and where are you located?",
+    a: "RankVRA is a web development and digital growth agency founded by Naveen Panchal (lw_avee), headquartered in Udaipur, Rajasthan 313001. We serve businesses locally in Udaipur, across Rajasthan and India, and internationally across the US, UK, and UAE.",
   },
   {
-    q: "Who founded RankVRA?",
-    a: "RankVRA was founded by Naveen Panchal (known online as lw_avee), a full-stack engineer and technical digital marketer based in Udaipur, Rajasthan. Naveen personally architects the web platforms and search strategies for all RankVRA clients.",
+    q: "What makes RankVRA different from standard agencies?",
+    a: "Standard agencies use slow WordPress templates and report vanity impressions. RankVRA takes a software-engineering approach: custom Next.js websites that load under 1 second, high-intent Google SEO, and direct WhatsApp/phone inquiry funnels.",
   },
   {
-    q: "What core services does RankVRA provide?",
-    a: "RankVRA provides custom web development (Next.js, TypeScript, modern React), technical Google SEO, local SEO and Google Business Profile optimization, Google Ads PPC campaigns, and AI/WhatsApp lead automation funnels.",
+    q: "How soon can we launch and start capturing leads?",
+    a: "Most custom web platforms and initial SEO/Ad frameworks are architected and deployed within 2 to 3 weeks, with direct founder communication throughout.",
   },
   {
-    q: "How can businesses contact RankVRA?",
-    a: "You can reach Founder Naveen Panchal directly via phone or WhatsApp at +91 7297875798, email us at info@rankvra.com, or request a free review of your current website at https://www.rankvra.com/free-growth-audit.",
-  },
-  {
-    q: "How is RankVRA different from standard digital marketing agencies?",
-    a: "Most agencies run vanity campaigns using slow, clunky WordPress templates. RankVRA takes a software-engineering approach: we build custom Next.js web applications that load in under 1 second, build technical search architectures that rank for high-intent buyer queries, and track verified pipeline revenue and sales inquiries.",
-  },
-  {
-    q: "How do you coordinate with clients in different locations or time zones?",
-    a: "We maintain streamlined direct communication via WhatsApp, Google Meet, email, and phone. Our team regularly coordinates with clients across IST (India), EST/PST (United States), GMT (United Kingdom), and GST (United Arab Emirates).",
+    q: "How can I get started?",
+    a: "Request a free website growth audit online or message founder Naveen Panchal directly on WhatsApp at +91 7297875798.",
   },
 ];
 
 export const caseStudies = [
   {
-    name: "AMS 360 Agency Management System",
-    category: "Enterprise Cloud Application",
-    result: "Automated insurance brokerage management with unified client profiles, policy lifecycles, and sub-second Next.js dashboards.",
-    lift: "Enterprise Cloud",
+    name: "Lakeview Heritage Resort",
+    category: "Hospitality & Luxury Stays",
+    result: "Boutique Udaipur resort shifted room inventory from 20% OTA commissions to direct WhatsApp & website reservations.",
+    lift: "+41% Direct Bookings",
+    slug: "lakeview-heritage-resort",
+    tags: ["Next.js", "Local SEO", "WhatsApp Desk"],
   },
   {
-    name: "Sarala AI Platform",
-    category: "AI & Operational Automation",
-    result: "Built real-time conversational AI and smart automation workflows for business intelligence and instant query resolution.",
-    lift: "AI Workflow",
+    name: "Mewar Stone & Marble Exports",
+    category: "Industrial B2B & Export",
+    result: "Natural stone processor captured verified container-load export inquiries from US and UAE architects via international SEO.",
+    lift: "19 Export RFQs",
+    slug: "mewar-stone-marble-exports",
+    tags: ["Technical SEO", "B2B Catalog", "Global Trade"],
   },
   {
-    name: "Client Acquisition CRM Engine",
-    category: "Sales Automation & Funnels",
-    result: "Architected high-performance lead pipeline management with automated follow-ups and client activity history.",
-    lift: "CRM Engine",
+    name: "Smile Care Dental Clinic",
+    category: "Healthcare & Local SEO",
+    result: "Multi-specialty dental practice achieved consistent Google 3-Pack placement across 5 Udaipur neighborhoods.",
+    lift: "+125% Phone Inquiries",
+    slug: "smile-care-dental",
+    tags: ["Google 3-Pack", "Medical Schema", "Review Engine"],
   },
 ];
 
 export const clients = [
-  "Next.js Engineering",
-  "Technical SEO",
+  "Next.js 16",
   "Google Maps 3-Pack",
-  "Core Web Vitals",
-  "B2B Lead Generation",
-  "Google Ads PPC",
-  "WhatsApp Lead Automation",
-  "Conversion Rate Optimization",
+  "Technical SEO",
+  "B2B Lead Funnels",
+  "WhatsApp Cloud API",
+  "Core Web Vitals Pass",
+  "Google Ads ROAS",
+  "TypeScript",
 ];
