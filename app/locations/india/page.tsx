@@ -5,6 +5,7 @@ import {
   ArrowRight,
   Building2,
   CheckCircle2,
+  ChevronRight,
   Globe2,
   Phone,
 } from "lucide-react";
@@ -16,6 +17,53 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.rankvra.com/locations/india",
   },
+  openGraph: {
+    title: "Web Development & Digital Marketing Agency in India | RankVRA",
+    description:
+      "Enterprise Next.js web applications, pan-India technical SEO, and B2B growth funnels engineered by founder Naveen Panchal.",
+    url: "https://www.rankvra.com/locations/india",
+    siteName: "RankVRA",
+    locale: "en_IN",
+    type: "website",
+  },
+};
+
+const pageSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.rankvra.com/locations/india#webpage",
+      url: "https://www.rankvra.com/locations/india",
+      name: "Web Development & Digital Marketing Agency in India | RankVRA",
+      description:
+        "RankVRA delivers nationwide custom web development, search engine optimization, and paid acquisition across all major commercial metros and industrial hubs in India.",
+      isPartOf: {
+        "@id": "https://www.rankvra.com/#website",
+      },
+      breadcrumb: {
+        "@id": "https://www.rankvra.com/locations/india#breadcrumb",
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.rankvra.com/locations/india#breadcrumb",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.rankvra.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Locations",
+          item: "https://www.rankvra.com/locations/india",
+        },
+      ],
+    },
+  ],
 };
 
 const metros = [
@@ -32,10 +80,31 @@ const metros = [
 export default function IndiaLocationPage() {
   return (
     <SiteShell>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }}
+      />
       <main className="bg-white">
         {/* Hero */}
-        <section className="relative overflow-hidden bg-gradient-to-b from-[#f8fafc] to-white pt-20 pb-16 lg:pt-28 lg:pb-24 border-b border-[#e2e8f0]">
+        <section className="relative overflow-hidden bg-gradient-to-b from-[#f8fafc] to-white pt-16 pb-16 lg:pt-24 lg:pb-24 border-b border-[#e2e8f0]">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            {/* Breadcrumb */}
+            <nav aria-label="Breadcrumb" className="mb-6">
+              <ol className="flex items-center gap-2 text-xs font-semibold text-[#64748b]">
+                <li>
+                  <Link href="/" className="hover:text-[#4f46e5] transition-colors">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <ChevronRight size={12} className="text-[#94a3b8]" />
+                </li>
+                <li className="text-[#0f172a]" aria-current="page">
+                  Pan-India Locations
+                </li>
+              </ol>
+            </nav>
+
             <div className="max-w-3xl">
               <div className="inline-flex items-center gap-2 rounded-full border border-[#e0e7ff] bg-[#eef2ff] px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-[#4f46e5] mb-6">
                 <Globe2 size={13} className="text-[#4f46e5]" />
