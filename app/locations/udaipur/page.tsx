@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import {
   ArrowRight,
-  ChevronRight,
   Globe,
   MapPin,
   MessageSquare,
   PanelsTopLeft,
   Target,
 } from "lucide-react";
+import { LocationHero } from "@/app/components/location-hero";
 import { SiteShell } from "@/app/components/site-shell";
 
 export const metadata: Metadata = {
@@ -157,78 +157,28 @@ export default function UdaipurLocationPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(udaipurSchema) }}
       />
       <main className="min-h-screen bg-[#f8fafc]">
-        {/* Hero Section */}
-        <section className="relative overflow-hidden border-b border-[#e2e8f0] bg-white pt-12 pb-16 sm:pt-16 sm:pb-20">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            {/* Breadcrumb Navigation */}
-            <nav aria-label="Breadcrumbs" className="mb-6 flex items-center gap-2 text-xs font-medium text-[#64748b]">
-              <Link href="/" className="hover:text-[#4f46e5] transition-colors">
-                Home
-              </Link>
-              <ChevronRight size={12} className="text-[#94a3b8]" />
-              <Link href="/locations/rajasthan" className="hover:text-[#4f46e5] transition-colors">
-                Locations
-              </Link>
-              <ChevronRight size={12} className="text-[#94a3b8]" />
-              <span className="text-[#4f46e5] font-semibold">Udaipur HQ</span>
-            </nav>
-
-            <div className="max-w-3xl">
-              <div className="inline-flex items-center gap-2 rounded-full border border-[#c7d2fe] bg-[#eef2ff] px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-[#4f46e5] mb-6">
-                <MapPin size={14} />
-                <span>Headquarters • Udaipur, Rajasthan 313001</span>
-              </div>
-
-              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-[#0f172a] tracking-tight leading-[1.12]">
-                Web Development &amp; SEO Agency in{" "}
-                <span className="text-gradient">Udaipur, Rajasthan</span>.
-              </h1>
-
-              <p className="mt-6 text-base sm:text-lg text-[#475569] leading-relaxed">
-                RankVRA provides engineering-first web development, technical Google SEO, and high-ROI digital lead funnels for businesses in the City of Lakes. Led by Founder <strong>Naveen Panchal (lw_avee)</strong>, we build digital assets that convert visitors into paying clients.
-              </p>
-
-              <div className="mt-8 flex flex-wrap items-center gap-4">
-                <Link
-                  href="/free-growth-audit"
-                  className="inline-flex items-center gap-2 rounded-full bg-[#4f46e5] px-8 py-4 text-sm font-bold text-white shadow-lg shadow-[#4f46e5]/20 hover:bg-[#4338ca] transition-all"
-                >
-                  Get Free Website &amp; SEO Audit
-                  <ArrowRight size={16} />
-                </Link>
-                <a
-                  href="https://wa.me/917297875798?text=Hi%20Naveen,%20I%20am%20a%20business%20in%20Udaipur%20and%20want%20to%20discuss%20growth."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border border-[#cbd5e1] bg-white px-8 py-4 text-sm font-semibold text-[#334155] hover:border-[#4f46e5] hover:text-[#4f46e5] transition-all shadow-sm"
-                >
-                  <MessageSquare size={15} />
-                  WhatsApp Naveen (+91 7297875798)
-                </a>
-              </div>
-
-              {/* Local Trust Badges */}
-              <div className="mt-8 pt-6 border-t border-[#f1f5f9] grid grid-cols-2 sm:grid-cols-4 gap-4">
-                <div>
-                  <div className="text-lg font-bold text-[#0f172a]">&lt; 1.0s</div>
-                  <div className="text-[11px] text-[#64748b] font-medium">Target Load Speed</div>
-                </div>
-                <div>
-                  <div className="text-lg font-bold text-[#4f46e5]">Top 3 Pack</div>
-                  <div className="text-[11px] text-[#64748b] font-medium">Google Maps Focus</div>
-                </div>
-                <div>
-                  <div className="text-lg font-bold text-[#0f172a]">100% Custom</div>
-                  <div className="text-[11px] text-[#64748b] font-medium">Next.js Code IP</div>
-                </div>
-                <div>
-                  <div className="text-lg font-bold text-[#10b981]">Direct</div>
-                  <div className="text-[11px] text-[#64748b] font-medium">Founder Led</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <LocationHero
+          locationName="Udaipur, Rajasthan"
+          badgeText="Headquarters • Udaipur, Rajasthan 313001"
+          title={<>Web Development &amp; SEO Agency in <span className="text-gradient">Udaipur, Rajasthan</span>.</>}
+          description="RankVRA provides engineering-first web development, technical Google SEO, and high-ROI digital lead funnels for businesses in the City of Lakes, led by Founder Naveen Panchal."
+          breadcrumbLabel="Udaipur HQ"
+          parentLocationPath="/locations/rajasthan"
+          parentLocationLabel="Locations"
+          coordinatesText="24.5854° N, 73.7125° E"
+          auditCtaText="Get Free Website & SEO Audit"
+          whatsappMessage="Hi Naveen, I am a business in Udaipur and want to discuss growth."
+          proofCounters={[
+            { value: "< 1.0s", label: "Target Load Speed" },
+            { value: "Top 3 Pack", label: "Google Maps Focus", highlightColor: "text-[#4f46e5]" },
+            { value: "100%", label: "Custom Architecture", highlightColor: "text-[#10b981]" },
+          ]}
+          localHubs={[
+            { name: "Lake Pichola & Fateh Sagar", sector: "Luxury Resorts & Hospitality", tag: "Direct Bookings" },
+            { name: "Sukher & Madri Industrial", sector: "Marble Processors & Exporters", tag: "B2B Export RFQs" },
+            { name: "Shastri Circle & Bhopalpura", sector: "Specialized Healthcare & Clinics", tag: "Maps 3-Pack" },
+          ]}
+        />
 
         {/* Localized Industry Ecosystems */}
         <section className="py-16 lg:py-20">

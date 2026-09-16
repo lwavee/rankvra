@@ -133,7 +133,7 @@ export default function AiAutomationServicePage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
           {/* Solutions Grid */}
-          <div className="mt-16">
+          <div>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0f172a] tracking-tight mb-8">
               Automation Solutions
             </h2>

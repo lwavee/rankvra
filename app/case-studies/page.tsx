@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, ChevronRight, MessageSquare, Sparkles } from "lucide-react";
+import { ArrowRight, MessageSquare } from "lucide-react";
+import { CaseStudiesHero } from "@/app/components/case-studies-hero";
 import { SiteShell } from "@/app/components/site-shell";
 import { CASE_STUDIES } from "./data";
 
@@ -70,53 +71,7 @@ export default function CaseStudiesHubPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <main className="min-h-screen bg-[#f8fafc]">
-        {/* Hero Section */}
-        <section className="relative overflow-hidden border-b border-[#e2e8f0] bg-white pt-12 pb-16 sm:pt-16 sm:pb-20">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            {/* Breadcrumb Navigation */}
-            <nav aria-label="Breadcrumbs" className="mb-6 flex items-center gap-2 text-xs font-medium text-[#64748b]">
-              <Link href="/" className="hover:text-[#4f46e5] transition-colors">
-                Home
-              </Link>
-              <ChevronRight size={12} className="text-[#94a3b8]" />
-              <span className="text-[#4f46e5] font-semibold">Case Studies</span>
-            </nav>
-
-            <div className="max-w-3xl">
-              <div className="inline-flex items-center gap-2 rounded-full border border-[#c7d2fe] bg-[#eef2ff] px-4 py-1.5 text-xs font-bold tracking-wide text-[#4f46e5] mb-6">
-                <Sparkles size={14} className="text-[#4f46e5]" />
-                <span>Verified Engineering &amp; Commercial Work</span>
-              </div>
-
-              <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-[#0f172a] leading-[1.12]">
-                Case Studies: <span className="text-gradient">Real Problems, Engineered Outcomes</span>.
-              </h1>
-
-              <p className="mt-5 text-base sm:text-lg text-[#475569] leading-relaxed font-normal">
-                We believe in proof over promotional hype. Explore how RankVRA architects custom Next.js web applications, Google Maps 3-Pack rankings, and B2B inquiry funnels that deliver measurable business outcomes.
-              </p>
-
-              <div className="mt-8 flex flex-wrap items-center gap-4">
-                <Link
-                  href="/free-growth-audit"
-                  className="inline-flex items-center gap-2 rounded-full bg-[#4f46e5] px-8 py-4 text-sm font-bold text-white shadow-lg shadow-[#4f46e5]/25 hover:bg-[#4338ca] transition-all"
-                >
-                  Claim Free Growth Audit
-                  <ArrowRight size={15} />
-                </Link>
-                <a
-                  href="https://wa.me/917297875798?text=Hi%20Naveen,%20I%20reviewed%20your%20case%20studies%20and%20would%20like%20to%20discuss%20our%20project."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border border-[#cbd5e1] bg-white px-8 py-4 text-sm font-semibold text-[#334155] hover:border-[#4f46e5] hover:text-[#4f46e5] transition-all shadow-sm"
-                >
-                  <MessageSquare size={15} />
-                  WhatsApp Founder (+91 7297875798)
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+        <CaseStudiesHero />
 
         {/* Case Studies List */}
         <section className="py-16 lg:py-20">

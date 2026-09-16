@@ -5,10 +5,8 @@ import {
   ArrowRight,
   Building2,
   CheckCircle2,
-  ChevronRight,
-  Globe2,
-  Phone,
 } from "lucide-react";
+import { LocationHero } from "@/app/components/location-hero";
 
 export const metadata: Metadata = {
   title: "Web Development & Digital Marketing Agency in India | RankVRA",
@@ -85,56 +83,26 @@ export default function IndiaLocationPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }}
       />
       <main className="bg-white">
-        {/* Hero */}
-        <section className="relative overflow-hidden bg-gradient-to-b from-[#f8fafc] to-white pt-16 pb-16 lg:pt-24 lg:pb-24 border-b border-[#e2e8f0]">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            {/* Breadcrumb */}
-            <nav aria-label="Breadcrumb" className="mb-6">
-              <ol className="flex items-center gap-2 text-xs font-semibold text-[#64748b]">
-                <li>
-                  <Link href="/" className="hover:text-[#4f46e5] transition-colors">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <ChevronRight size={12} className="text-[#94a3b8]" />
-                </li>
-                <li className="text-[#0f172a]" aria-current="page">
-                  Pan-India Locations
-                </li>
-              </ol>
-            </nav>
-
-            <div className="max-w-3xl">
-              <div className="inline-flex items-center gap-2 rounded-full border border-[#e0e7ff] bg-[#eef2ff] px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-[#4f46e5] mb-6">
-                <Globe2 size={13} className="text-[#4f46e5]" />
-                Pan-India Digital Engineering Hub
-              </div>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#0f172a] leading-[1.1]">
-                Web Development &amp; SEO Agency in <span className="text-gradient">India</span>.
-              </h1>
-              <p className="mt-6 text-lg sm:text-xl text-[#475569] leading-relaxed">
-                RankVRA delivers enterprise-grade Next.js web applications, national technical SEO dominance, and high-converting B2B pipeline growth for businesses operating across India and international corridors.
-              </p>
-              <div className="mt-8 flex flex-wrap items-center gap-4">
-                <Link
-                  href="/free-growth-audit"
-                  className="inline-flex items-center gap-2 rounded-full bg-[#4f46e5] px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-[#4f46e5]/20 hover:bg-[#4338ca] transition-all"
-                >
-                  Request Nationwide Growth Audit <ArrowRight size={15} />
-                </Link>
-                <a
-                  href="https://wa.me/917297875798?text=Hi%20Naveen,%20I'd%20like%20to%20discuss%20our%20pan-India%20digital%20strategy."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-7 py-3.5 text-sm font-semibold text-slate-700 hover:border-[#4f46e5] hover:text-[#4f46e5] transition-all"
-                >
-                  <Phone size={15} className="text-[#16a34a]" /> WhatsApp Direct Connect
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+        <LocationHero
+          locationName="India (Pan-India Scope)"
+          badgeText="Pan-India Digital Engineering Hub"
+          title={<>Web Development &amp; SEO Agency in <span className="text-gradient">India</span>.</>}
+          description="RankVRA delivers enterprise-grade Next.js web applications, national technical SEO dominance, and high-converting B2B pipeline growth for businesses operating across India and international corridors."
+          breadcrumbLabel="Pan-India"
+          coordinatesText="Nationwide Reach • HQ: Udaipur, Rajasthan"
+          auditCtaText="Request Nationwide Growth Audit"
+          whatsappMessage="Hi Naveen, I'd like to discuss our pan-India digital strategy."
+          proofCounters={[
+            { value: "< 0.8s", label: "National Edge CDN" },
+            { value: "Pan-India", label: "Rankings Scope", highlightColor: "text-[#4f46e5]" },
+            { value: "100%", label: "Custom Architecture", highlightColor: "text-[#10b981]" },
+          ]}
+          localHubs={[
+            { name: "Mumbai & Bengaluru", sector: "Fintech, SaaS, VC-Backed Tech & D2C", tag: "Full-Stack Dev" },
+            { name: "Delhi NCR & Hyderabad", sector: "B2B Enterprises, Pharma & Consulting", tag: "National SEO" },
+            { name: "Ahmedabad & Pune", sector: "Manufacturing, Export & Engineering", tag: "B2B Funnels" },
+          ]}
+        />
 
         {/* Why Indian Brands Choose RankVRA */}
         <section className="py-20 bg-white border-b border-[#e2e8f0]">

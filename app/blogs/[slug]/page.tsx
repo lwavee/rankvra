@@ -182,11 +182,11 @@ export default async function BlogPostPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(fullSchema) }}
       />
-      <main className="min-h-screen bg-[#f8fafc] pt-8 pb-16">
+      <main className="min-h-screen bg-[#f8fafc] pt-5 pb-12">
         <article className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
 
           {/* Breadcrumb Navigation */}
-          <nav aria-label="Breadcrumbs" className="mb-4 flex flex-wrap items-center gap-2 text-xs font-medium text-[#64748b]">
+          <nav aria-label="Breadcrumbs" className="mb-3 flex flex-wrap items-center gap-2 text-xs font-medium text-[#64748b]">
             <Link href="/" className="hover:text-[#4f46e5] transition-colors">
               Home
             </Link>
@@ -199,46 +199,46 @@ export default async function BlogPostPage({ params }: PageProps) {
           </nav>
 
           {/* Article Header Card */}
-          <header className="rounded-[28px] border border-[#e2e8f0] bg-white p-6 sm:p-8 lg:p-10 shadow-sm mb-6">
-            <div className="flex flex-wrap items-center gap-3 text-xs font-semibold mb-4">
-              <span className="rounded-full bg-[#eef2ff] px-3 py-1 text-[#4f46e5]">
+          <header className="rounded-[22px] border border-[#e2e8f0] bg-white p-5 sm:p-7 shadow-xs mb-5">
+            <div className="flex flex-wrap items-center gap-2.5 text-xs font-semibold mb-3">
+              <span className="rounded-full bg-[#eef2ff] px-2.5 py-0.5 text-[#4f46e5] text-[11px] font-bold">
                 {post.category}
               </span>
               <span className="text-[#94a3b8]">•</span>
-              <span className="flex items-center gap-1.5 text-[#64748b]">
-                <Calendar size={13} />
-                Published {post.date}
+              <span className="flex items-center gap-1 text-[#64748b] text-[11px]">
+                <Calendar size={12} />
+                {post.date}
               </span>
               <span className="text-[#94a3b8]">•</span>
-              <span className="flex items-center gap-1.5 text-[#64748b]">
-                <Clock size={13} />
+              <span className="flex items-center gap-1 text-[#64748b] text-[11px]">
+                <Clock size={12} />
                 {post.readTime}
               </span>
             </div>
 
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-[#0f172a] leading-tight mb-4">
+            <h1 className="text-xl sm:text-2xl lg:text-[28px] font-black tracking-tight text-[#0f172a] leading-tight mb-2.5">
               {post.title}
             </h1>
 
-            <p className="text-base sm:text-lg text-[#475569] leading-relaxed font-normal mb-6">
+            <p className="text-xs sm:text-sm text-[#475569] leading-relaxed font-normal mb-4">
               {post.subtitle}
             </p>
 
             {/* Author bar */}
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t border-[#f1f5f9] pt-5">
-              <div className="flex items-center gap-3.5">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-t border-[#f1f5f9] pt-3.5">
+              <div className="flex items-center gap-3">
                 <Image
                   src={post.author.avatar || "/ceo-naveen.png"}
                   alt={post.author.name}
-                  width={44}
-                  height={44}
-                  className="rounded-full border-2 border-[#4f46e5]/20 object-cover shadow-sm"
+                  width={36}
+                  height={36}
+                  className="rounded-full border border-[#4f46e5]/20 object-cover shadow-xs"
                 />
                 <div>
-                  <div className="font-bold text-[#0f172a] text-sm sm:text-base">
+                  <div className="font-bold text-[#0f172a] text-xs sm:text-sm">
                     {post.author.name}
                   </div>
-                  <div className="text-xs text-[#64748b] font-medium">
+                  <div className="text-[11px] text-[#64748b]">
                     {post.author.role}
                   </div>
                 </div>

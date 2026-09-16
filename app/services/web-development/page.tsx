@@ -89,7 +89,7 @@ export default function WebDevelopmentServicePage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
           {/* Why Custom Next.js Beats WordPress */}
-          <div className="mt-20 grid lg:grid-cols-2 gap-10 items-center">
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div className="p-8 sm:p-10 rounded-[32px] bg-[#f8fafc] border border-[#e2e8f0]">
               <h2 className="text-2xl font-bold text-[#0f172a] mb-4">
                 Why We Never Use Slow WordPress Page Builders

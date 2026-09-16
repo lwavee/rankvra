@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, type ReactNode } from "react";
-import { Menu, X, ArrowUpRight, MessageCircle } from "lucide-react";
+import { Menu, X, ArrowUpRight, MessageCircle, MapPin, Mail } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -139,105 +139,124 @@ export function SiteShell({ children }: { children: ReactNode }) {
 
       <main className="flex-1">{children}</main>
 
-      {/* Footer */}
-      <footer className="border-t border-[#e2e8f0] bg-[#f8fafc] text-sm text-[#475569]">
-        {/* Main Footer Links */}
-        <div className="mx-auto max-w-7xl px-6 pt-16 pb-12 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
-            {/* Col 1: Brand & Contact */}
-            <div className="lg:col-span-2 space-y-4">
-              <Link href="/" className="flex items-center gap-3" aria-label="RankVRA Home">
+      {/* Short, Clean & Premium Footer */}
+      <footer className="border-t border-slate-200 bg-[#f8fafc] text-sm text-slate-600">
+        <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8 lg:py-14">
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-12 lg:gap-8">
+            {/* Col 1: Brand & Contact (4 cols) */}
+            <div className="lg:col-span-4 space-y-4">
+              <Link href="/" className="inline-flex items-center gap-2.5 group" aria-label="RankVRA Home">
                 <Image
                   src="/logo-icon.png"
-                  alt="RankVRA - Web Development, SEO & Digital Growth Agency"
-                  width={46}
-                  height={34}
-                  className="h-8 w-auto object-contain"
+                  alt="RankVRA"
+                  width={42}
+                  height={32}
+                  className="h-7 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
                 />
-                <span className="text-xl font-bold tracking-tight text-[#0f172a]">
+                <span className="text-xl font-black tracking-tight text-[#0f172a]">
                   Rank<span className="text-[#4f46e5]">VRA</span>
                 </span>
               </Link>
-              <p className="text-sm leading-relaxed text-[#64748b] max-w-sm">
-                RankVRA helps businesses build high-converting websites, improve search visibility and generate qualified enquiries through SEO, digital marketing and technology. Engineering headquarters in Udaipur, Rajasthan.
+              <p className="text-xs sm:text-sm text-slate-500 leading-relaxed max-w-sm">
+                Next.js web development, technical Google SEO, and high-converting lead funnels engineered in Udaipur, Rajasthan.
               </p>
-              <div className="space-y-1.5 text-xs text-[#64748b] pt-1">
-                <p><strong>Founder &amp; Technical Lead:</strong> Naveen Panchal (lw_avee)</p>
-                <p><strong>Headquarters:</strong> Udaipur, Rajasthan 313001, India</p>
-                <p><strong>Serving:</strong> India (Nationwide) &bull; Global (US, UK, UAE)</p>
-                <p><strong>Direct Call / WhatsApp:</strong> <a href="tel:+917297875798" className="text-[#0f172a] font-semibold hover:text-[#4f46e5]">+91 7297875798</a></p>
-                <p><strong>Inquiries:</strong> <a href="mailto:info@rankvra.com" className="text-[#0f172a] font-semibold hover:text-[#4f46e5]">info@rankvra.com</a></p>
+              <div className="space-y-1.5 text-xs text-slate-600">
+                <p className="flex items-center gap-2">
+                  <MapPin size={13} className="text-[#4f46e5] shrink-0" />
+                  <span>Udaipur, Rajasthan 313001 &bull; Serving Global</span>
+                </p>
+                <p className="flex items-center gap-2">
+                  <Mail size={13} className="text-[#4f46e5] shrink-0" />
+                  <a href="mailto:info@rankvra.com" className="hover:text-[#4f46e5] transition-colors">info@rankvra.com</a>
+                </p>
               </div>
-              <div className="flex items-center gap-4 pt-2">
-                <a href="https://www.instagram.com/lw_avee/?__pwa=1" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-slate-600 hover:text-indigo-600">Instagram</a>
-                <a href="https://www.youtube.com/@Lw_avee" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-slate-600 hover:text-indigo-600">YouTube</a>
-                <a href="https://www.facebook.com/lwavee?locale=hi_IN" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-slate-600 hover:text-indigo-600">Facebook</a>
-                <a href="https://github.com/lwavee" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-slate-600 hover:text-indigo-600">GitHub</a>
+              <div className="flex items-center gap-3 pt-1">
+                <a
+                  href="https://www.instagram.com/lw_avee/?__pwa=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-lg bg-white border border-slate-200 px-2.5 py-1 text-xs font-semibold text-slate-600 hover:border-indigo-300 hover:text-indigo-600 transition-colors"
+                >
+                  Instagram
+                </a>
+                <a
+                  href="https://www.youtube.com/@Lw_avee"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-lg bg-white border border-slate-200 px-2.5 py-1 text-xs font-semibold text-slate-600 hover:border-indigo-300 hover:text-indigo-600 transition-colors"
+                >
+                  YouTube
+                </a>
+                <a
+                  href="https://github.com/lwavee"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-lg bg-white border border-slate-200 px-2.5 py-1 text-xs font-semibold text-slate-600 hover:border-indigo-300 hover:text-indigo-600 transition-colors"
+                >
+                  GitHub
+                </a>
               </div>
             </div>
 
-            {/* Col 2: Services */}
-            <div className="space-y-3">
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#0f172a]">Core Services</h3>
-              <ul className="space-y-2 text-xs">
+            {/* Col 2: Services (2 cols) */}
+            <div className="lg:col-span-2 space-y-3">
+              <h3 className="text-xs font-bold uppercase tracking-wider text-[#0f172a]">Services</h3>
+              <ul className="space-y-2 text-xs text-slate-600">
                 <li><Link href="/services/web-development" className="hover:text-[#4f46e5] transition-colors">Web Development</Link></li>
                 <li><Link href="/services/seo" className="hover:text-[#4f46e5] transition-colors">Technical &amp; Local SEO</Link></li>
                 <li><Link href="/services/local-seo" className="hover:text-[#4f46e5] transition-colors">Maps 3-Pack SEO</Link></li>
                 <li><Link href="/services/google-ads" className="hover:text-[#4f46e5] transition-colors">Google Ads (PPC)</Link></li>
-                <li><Link href="/services/digital-marketing" className="hover:text-[#4f46e5] transition-colors">Digital Marketing</Link></li>
                 <li><Link href="/services/ai-automation" className="hover:text-[#4f46e5] transition-colors">AI &amp; Automation</Link></li>
+                <li><Link href="/b2b-lead-generation" className="hover:text-[#4f46e5] transition-colors">B2B Lead Gen</Link></li>
               </ul>
             </div>
 
-            {/* Col 3: Industry Solutions */}
-            <div className="space-y-3">
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#0f172a]">Industries</h3>
-              <ul className="space-y-2 text-xs">
-                <li><Link href="/industries/hotels" className="hover:text-[#4f46e5] transition-colors">Hotels &amp; Resorts</Link></li>
-                <li><Link href="/industries/manufacturers" className="hover:text-[#4f46e5] transition-colors">Manufacturers</Link></li>
-                <li><Link href="/industries/exporters" className="hover:text-[#4f46e5] transition-colors">Exporters &amp; Marble</Link></li>
-                <li><Link href="/industries/clinics" className="hover:text-[#4f46e5] transition-colors">Clinics &amp; Healthcare</Link></li>
-                <li><Link href="/b2b-lead-generation" className="hover:text-[#4f46e5] transition-colors">B2B Lead Generation</Link></li>
-                <li><Link href="/international-seo" className="hover:text-[#4f46e5] transition-colors">International SEO</Link></li>
+            {/* Col 3: Company (2 cols) */}
+            <div className="lg:col-span-2 space-y-3">
+              <h3 className="text-xs font-bold uppercase tracking-wider text-[#0f172a]">Company</h3>
+              <ul className="space-y-2 text-xs text-slate-600">
+                <li><Link href="/case-studies" className="hover:text-[#4f46e5] transition-colors font-medium">Case Studies</Link></li>
+                <li><Link href="/about" className="hover:text-[#4f46e5] transition-colors">About RankVRA</Link></li>
+                <li><Link href="/locations/udaipur" className="hover:text-[#4f46e5] transition-colors">Udaipur HQ</Link></li>
+                <li><Link href="/blogs" className="hover:text-[#4f46e5] transition-colors">Blog &amp; Insights</Link></li>
+                <li><Link href="/free-growth-audit" className="hover:text-[#4f46e5] transition-colors text-[#4f46e5] font-semibold">Free Growth Audit</Link></li>
+                <li><Link href="/contact" className="hover:text-[#4f46e5] transition-colors">Contact</Link></li>
               </ul>
             </div>
 
-            {/* Col 4: Presence & Locations */}
-            <div className="space-y-3">
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#0f172a]">Locations</h3>
-              <ul className="space-y-2 text-xs">
-                <li><Link href="/locations/udaipur" className="text-[#4f46e5] font-semibold hover:underline">Udaipur (HQ)</Link></li>
-                <li><Link href="/locations/rajasthan" className="hover:text-[#4f46e5] transition-colors">Rajasthan Regional</Link></li>
-                <li><Link href="/locations/india" className="hover:text-[#4f46e5] transition-colors">India (Nationwide)</Link></li>
-                <li><Link href="/international-seo" className="hover:text-[#4f46e5] transition-colors">US, UK &amp; UAE Global</Link></li>
-                <li><Link href="/case-studies" className="text-[#4f46e5] font-semibold hover:underline">Client Case Studies</Link></li>
-                <li><Link href="/portfolio" className="hover:text-[#4f46e5] transition-colors">Developer Projects &amp; R&amp;D</Link></li>
-                <li><Link href="/free-growth-audit" className="text-[#4f46e5] font-semibold hover:underline">Free Website Audit</Link></li>
-              </ul>
-            </div>
-
-            {/* Col 5: Blog & Strategic Guides */}
-            <div className="space-y-3">
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#0f172a]">Blog &amp; Guides</h3>
-              <ul className="space-y-2 text-xs">
-                <li><Link href="/blogs" className="text-[#4f46e5] font-bold hover:underline flex items-center gap-1">All Blog Articles <ArrowUpRight className="w-3 h-3" /></Link></li>
-                <li><Link href="/blogs/seo-agency-udaipur" className="hover:text-[#4f46e5] transition-colors">SEO Agency in Udaipur</Link></li>
-                <li><Link href="/blogs/seo-cost-udaipur" className="hover:text-[#4f46e5] transition-colors">SEO Cost &amp; Pricing</Link></li>
-                <li><Link href="/blogs/hotel-marketing-udaipur-direct-bookings" className="hover:text-[#4f46e5] transition-colors">Direct Hotel Bookings</Link></li>
-                <li><Link href="/blogs/web-development-company-udaipur" className="hover:text-[#4f46e5] transition-colors">Web Development Guide</Link></li>
-                <li><Link href="/blogs/local-seo-udaipur" className="hover:text-[#4f46e5] transition-colors">Local SEO 3-Pack Guide</Link></li>
-              </ul>
+            {/* Col 4: Direct Founder Desk Card (4 cols) */}
+            <div className="lg:col-span-4">
+              <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-xs">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-xs font-bold text-[#0f172a]">Direct Founder Desk</span>
+                  <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-2 py-0.5 text-[10px] font-bold text-emerald-700 border border-emerald-200">
+                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                    Available
+                  </span>
+                </div>
+                <p className="text-xs text-slate-500 leading-relaxed mb-3.5">
+                  Talk directly with Founder Naveen Panchal for technical discovery, pricing, and rapid turnarounds.
+                </p>
+                <a
+                  href="https://wa.me/917297875798?text=Hi%20Naveen,%20I%20want%20to%20discuss%20a%20project%20with%20RankVRA."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 w-full rounded-xl bg-[#16a34a] hover:bg-[#15803d] px-4 py-2.5 text-xs font-bold text-white shadow-sm transition-colors"
+                >
+                  <MessageCircle size={14} />
+                  <span>WhatsApp: +91 7297875798</span>
+                </a>
+              </div>
             </div>
           </div>
 
           {/* Footer Bottom Strip */}
-          <div className="mt-12 pt-8 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#94a3b8]">
+          <div className="mt-10 pt-6 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
             <p>© {new Date().getFullYear()} RankVRA. All rights reserved. Registered in Udaipur, Rajasthan.</p>
-            <div className="flex items-center gap-6">
-              <Link href="/blogs" className="text-[#4f46e5] font-semibold hover:underline">Blog</Link>
-              <Link href="/privacy-policy" className="hover:text-slate-600 transition-colors">Privacy Policy</Link>
-              <Link href="/terms-and-conditions" className="hover:text-slate-600 transition-colors">Terms of Service</Link>
-              <a href="/sitemap.xml" className="hover:text-slate-600 transition-colors">Sitemap</a>
+            <div className="flex items-center gap-5">
+              <Link href="/privacy-policy" className="hover:text-slate-800 transition-colors">Privacy Policy</Link>
+              <Link href="/terms-and-conditions" className="hover:text-slate-800 transition-colors">Terms of Service</Link>
+              <a href="/sitemap.xml" className="hover:text-slate-800 transition-colors">Sitemap</a>
             </div>
           </div>
         </div>

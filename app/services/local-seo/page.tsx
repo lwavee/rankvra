@@ -134,7 +134,7 @@ export default function LocalSeoServicePage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
           {/* Cross Links to Case Study & Location Hub */}
-          <div className="mt-14 grid sm:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 gap-6">
             <div className="rounded-3xl border border-[#e2e8f0] bg-[#f8fafc] p-7">
               <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#4f46e5] mb-2">
                 <TrendingUp size={14} />

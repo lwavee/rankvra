@@ -170,178 +170,174 @@ export function ServicesPage() {
 
   return (
     <main className="bg-white">
-      {/* Hero Section — Balanced 2-Column High-Impact Layout */}
-      <section className="relative overflow-hidden border-b border-[#e2e8f0] bg-gradient-to-b from-[#f8fafc] to-white pt-10 pb-16 lg:pt-16 lg:pb-24">
-        {/* Subtle grid pattern */}
+      {/* Hero Section — Ultra-Modern, Light Tech & Animated Live Traction */}
+      <section className="relative overflow-hidden bg-gradient-to-b from-slate-50/80 via-white to-slate-50/50 text-slate-900 pt-6 pb-9 lg:pt-8 lg:pb-12 border-b border-slate-200/80">
+        {/* Ambient mesh */}
         <div className="absolute inset-0 pointer-events-none">
           <div
-            className="absolute inset-0 opacity-[0.03]"
+            className="absolute inset-0 opacity-[0.035]"
             style={{
               backgroundImage:
                 "linear-gradient(#4f46e5 1px, transparent 1px), linear-gradient(90deg, #4f46e5 1px, transparent 1px)",
-              backgroundSize: "64px 64px",
+              backgroundSize: "36px 36px",
             }}
           />
-          <div className="absolute top-0 right-0 h-[400px] w-[400px] rounded-full bg-gradient-to-br from-[#e0e7ff]/60 to-[#c7d2fe]/30 blur-[100px]" />
-          <div className="absolute bottom-0 left-10 h-[300px] w-[300px] rounded-full bg-[#f0fdf4]/80 blur-[90px]" />
+          <div className="absolute top-0 right-10 h-72 w-72 rounded-full bg-gradient-to-br from-indigo-500/10 via-sky-500/10 to-transparent blur-[80px]" />
+          <div className="absolute bottom-0 left-10 h-64 w-64 rounded-full bg-emerald-500/10 blur-[70px]" />
         </div>
 
-        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb Navigation */}
-          <nav aria-label="Breadcrumb" className="mb-6">
-            <ol className="flex items-center gap-2 text-xs font-semibold text-[#64748b]">
+          <nav aria-label="Breadcrumb" className="mb-3">
+            <ol className="flex items-center gap-1.5 text-xs font-semibold text-slate-500">
               <li>
-                <Link href="/" className="hover:text-[#4f46e5] transition-colors">
+                <Link href="/" className="hover:text-indigo-600 transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <ChevronRight size={12} className="text-[#94a3b8]" />
+                <ChevronRight size={11} className="text-slate-400" />
               </li>
-              <li className="text-[#0f172a]" aria-current="page">
-                Services &amp; Growth Infrastructure
+              <li className="text-indigo-600" aria-current="page">
+                Services
               </li>
             </ol>
           </nav>
 
-          <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12 items-center">
-            {/* Left Column — Crisp, Authoritative Copy */}
+          <div className="grid gap-6 lg:grid-cols-[1fr_1fr] lg:gap-8 items-center">
+            {/* Left Column — Concise Copy */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, ease: "easeOut" }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
             >
-              <div className="inline-flex items-center gap-2 rounded-full border border-[#e0e7ff] bg-white px-3.5 py-1.5 text-xs font-bold uppercase tracking-widest text-[#4f46e5] shadow-2xs mb-5">
-                <Sparkles size={13} className="text-[#4f46e5]" />
-                Full-Stack Growth Engineering
+              <div className="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50/80 px-3 py-1 text-xs font-bold uppercase tracking-wider text-indigo-700 shadow-2xs mb-3">
+                <span className="h-2 w-2 rounded-full bg-emerald-500 animate-ping" />
+                <span>Full-Stack Growth Engineering</span>
               </div>
 
-              <h1 className="text-4xl font-black tracking-tight text-[#0f172a] sm:text-5xl lg:text-[52px] leading-[1.1]">
-                Digital Capabilities Engineered for{" "}
-                <span className="text-gradient">Verified Revenue</span>.
+              <h1 className="text-2xl sm:text-3xl lg:text-[38px] font-black tracking-tight text-slate-950 leading-[1.15]">
+                Digital Capabilities.{" "}
+                <span className="bg-gradient-to-r from-indigo-600 via-blue-600 to-teal-600 bg-clip-text text-transparent">
+                  Verified Commercial Revenue.
+                </span>
               </h1>
 
-              <p className="mt-5 text-base sm:text-lg leading-relaxed text-[#475569] max-w-xl">
-                We don&apos;t sell superficial retainer packages or post Canva quotes. We build high-speed Next.js platforms, Google Page 1 search authority, and WhatsApp acquisition funnels that convert visitors into paying clients.
+              <p className="mt-2.5 text-xs sm:text-sm leading-relaxed text-slate-600 max-w-lg">
+                Custom Next.js platforms, Google Page-1 search authority, and WhatsApp acquisition funnels built for verifiable, commission-free growth.
               </p>
 
-              <div className="mt-8 flex flex-wrap items-center gap-4">
+              <div className="mt-4 flex flex-wrap items-center gap-2.5">
                 <Link
                   href="/free-growth-audit"
-                  className="group inline-flex items-center gap-2 rounded-full bg-[#4f46e5] px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#4f46e5]/25 hover:bg-[#4338ca] hover:-translate-y-0.5 transition-all"
+                  className="group inline-flex items-center gap-2 rounded-full bg-indigo-600 px-5 py-2.5 text-xs sm:text-sm font-bold text-white shadow-md shadow-indigo-600/25 hover:bg-indigo-700 hover:-translate-y-0.5 transition-all"
                 >
-                  Claim Free Website Growth Audit
-                  <ArrowRight size={15} className="transition-transform group-hover:translate-x-1" />
+                  Free Growth Audit
+                  <ArrowRight size={13} className="transition-transform group-hover:translate-x-1" />
                 </Link>
                 <a
                   href="https://wa.me/917297875798?text=Hi%20Naveen,%20I'd%20like%20to%20discuss%20services%20for%20my%20business."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border border-[#cbd5e1] bg-white px-6 py-3.5 text-sm font-semibold text-[#1e293b] hover:border-[#4f46e5] hover:text-[#4f46e5] transition-all shadow-2xs"
+                  className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-4.5 py-2.5 text-xs sm:text-sm font-semibold text-slate-800 hover:bg-slate-50 hover:border-indigo-400 transition-all shadow-2xs"
                 >
-                  <MessageCircle size={16} className="text-[#10b981]" />
-                  WhatsApp Naveen Direct
+                  <MessageCircle size={14} className="text-emerald-600" />
+                  WhatsApp Naveen
                 </a>
               </div>
 
-              {/* 3 Quick Benchmarks */}
-              <div className="mt-10 grid grid-cols-3 gap-4 border-t border-[#e2e8f0] pt-6 max-w-lg">
-                <div>
-                  <p className="text-xl sm:text-2xl font-black text-[#0f172a]">&lt; 0.8s</p>
-                  <p className="text-xs font-semibold text-[#64748b] mt-0.5">Mobile Speed</p>
+              {/* Compact Inline Proof Counters */}
+              <div className="mt-4 flex items-center gap-5 border-t border-slate-200/90 pt-3 text-xs text-slate-500">
+                <div className="flex items-center gap-1.5">
+                  <span className="font-extrabold text-slate-900">&lt; 0.8s</span>
+                  <span className="text-slate-500 text-[11px]">Mobile LCP</span>
                 </div>
-                <div className="border-l border-[#e2e8f0] pl-4">
-                  <p className="text-xl sm:text-2xl font-black text-[#0f172a]">100%</p>
-                  <p className="text-xs font-semibold text-[#64748b] mt-0.5">Custom Code</p>
+                <span className="h-3 w-px bg-slate-200" />
+                <div className="flex items-center gap-1.5">
+                  <span className="font-extrabold text-indigo-600">Top 3</span>
+                  <span className="text-slate-500 text-[11px]">Maps Rank</span>
                 </div>
-                <div className="border-l border-[#e2e8f0] pl-4">
-                  <p className="text-xl sm:text-2xl font-black text-[#10b981]">Founder</p>
-                  <p className="text-xs font-semibold text-[#64748b] mt-0.5">Direct Oversight</p>
+                <span className="h-3 w-px bg-slate-200" />
+                <div className="flex items-center gap-1.5">
+                  <span className="font-extrabold text-emerald-600">100%</span>
+                  <span className="text-slate-500 text-[11px]">Custom Code</span>
                 </div>
               </div>
             </motion.div>
 
-            {/* Right Column — Interactive Capability Showcase Card (Fills the visual void) */}
+            {/* Right Column — Compact Interactive Live Growth Deck */}
             <motion.div
               initial={{ opacity: 0, scale: 0.96 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.15, ease: "easeOut" }}
+              transition={{ duration: 0.55, delay: 0.1, ease: "easeOut" }}
               className="relative"
             >
-              <div className="absolute -inset-1 rounded-[34px] bg-gradient-to-r from-[#4f46e5]/20 via-[#06b6d4]/20 to-[#10b981]/20 blur-xl opacity-75" />
-
-              <div className="relative rounded-[32px] border border-[#e2e8f0] bg-white p-6 sm:p-7 shadow-xl">
-                <div className="flex items-center justify-between border-b border-[#f1f5f9] pb-4 mb-4">
-                  <div>
-                    <p className="text-xs font-bold text-[#0f172a]">Core Growth Stack</p>
-                    <p className="text-[11px] text-[#64748b]">Select a discipline to preview</p>
+              <div className="relative rounded-[22px] border border-slate-200 bg-white/95 backdrop-blur-md p-4 sm:p-5 shadow-xl shadow-slate-900/5">
+                <div className="flex items-center justify-between border-b border-slate-100 pb-2.5 mb-3">
+                  <div className="flex items-center gap-2">
+                    <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-ping" />
+                    <p className="text-xs font-bold text-slate-900">Production Capabilities Console</p>
                   </div>
-                  <span className="rounded-full bg-[#f0fdf4] border border-[#bbf7d0] px-2.5 py-0.5 text-[10px] font-bold text-[#166534]">
-                    6 Core Capabilities
+                  <span className="rounded-full bg-emerald-50 border border-emerald-200/80 px-2.5 py-0.5 text-[10px] font-bold text-emerald-700">
+                    6 Active Stacks
                   </span>
                 </div>
 
-                {/* Capability Selector Buttons */}
-                <div className="grid grid-cols-2 gap-2 mb-4">
-                  {services.map((s, idx) => {
-                    const SIcon = s.icon;
+                {/* Compact Capability Selector Buttons */}
+                <div className="grid grid-cols-3 gap-1.5 mb-3">
+                  {services.slice(0, 6).map((s, idx) => {
                     const isSelected = activeTab === idx;
                     return (
                       <button
                         key={s.id}
                         onClick={() => setActiveTab(idx)}
-                        className={`flex items-center gap-2 rounded-xl p-2.5 text-left text-xs font-semibold transition-all ${
+                        className={`rounded-lg py-1.5 px-2 text-center text-[10px] font-bold transition-all truncate ${
                           isSelected
-                            ? "bg-[#0f172a] text-white shadow-xs"
-                            : "bg-[#f8fafc] text-[#334155] border border-[#e2e8f0] hover:bg-[#f1f5f9]"
+                            ? "bg-indigo-600 text-white shadow-xs border border-indigo-600"
+                            : "bg-slate-50 text-slate-700 border border-slate-200/80 hover:border-indigo-300 hover:bg-indigo-50/20"
                         }`}
                       >
-                        <SIcon size={14} className={isSelected ? "text-[#38bdf8]" : "text-[#4f46e5]"} />
-                        <span className="truncate">{s.title.split(" ")[0]} {s.title.split(" ")[1]}</span>
+                        {s.title.split(" ")[0]} {s.title.split(" ")[1] || ""}
                       </button>
                     );
                   })}
                 </div>
 
-                {/* Active Capability Preview Box */}
-                <div className="rounded-2xl bg-gradient-to-br from-[#0f172a] via-[#1e1b4b] to-[#0f172a] p-5 text-white shadow-md relative overflow-hidden">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-[11px] font-bold uppercase tracking-wider text-indigo-300">
+                {/* Animated Active Capability Card */}
+                <motion.div
+                  key={activeTab}
+                  initial={{ opacity: 0, y: 6 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.25 }}
+                  className="rounded-xl border border-slate-200/80 bg-slate-50/70 p-3.5 text-slate-900 shadow-2xs"
+                >
+                  <div className="flex items-center justify-between mb-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-indigo-700 truncate max-w-[200px]">
                       {services[activeTab].tagline}
                     </span>
-                    <span className="rounded-md bg-white/10 px-2 py-0.5 text-[10px] font-bold text-emerald-400">
+                    <span className="rounded-md bg-emerald-50 border border-emerald-200 px-2 py-0.5 text-[10px] font-bold text-emerald-700">
                       {services[activeTab].badge}
                     </span>
                   </div>
-                  <h3 className="text-lg font-bold text-white mb-2">
+                  <h3 className="text-sm font-black text-slate-950 mb-1 truncate">
                     {services[activeTab].title}
                   </h3>
-                  <p className="text-xs text-slate-300 leading-relaxed line-clamp-3">
+                  <p className="text-[11px] text-slate-600 leading-snug line-clamp-2 mb-2.5">
                     {services[activeTab].description}
                   </p>
 
-                  <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between">
-                    <span className="text-[11px] text-emerald-400 font-medium">
-                      ✓ Verified Deliverables
+                  <div className="pt-2 border-t border-slate-200/80 flex items-center justify-between text-[11px]">
+                    <span className="text-emerald-700 font-semibold flex items-center gap-1">
+                      <CheckCircle2 size={12} className="text-emerald-600" /> {services[activeTab].verifiedOutcome.slice(0, 36)}...
                     </span>
                     <Link
                       href={services[activeTab].href}
-                      className="inline-flex items-center gap-1 text-xs font-bold text-white hover:text-[#38bdf8] transition-colors"
+                      className="font-bold text-indigo-600 hover:text-indigo-700 transition-colors flex items-center gap-1"
                     >
-                      Deep Dive <ArrowRight size={12} />
+                      Deep Dive <ArrowRight size={11} />
                     </Link>
                   </div>
-                </div>
-
-                {/* Quick Trust Footer */}
-                <div className="mt-4 pt-3 border-t border-[#f1f5f9] flex items-center justify-between text-[11px] text-[#64748b]">
-                  <span className="flex items-center gap-1 text-[#10b981] font-semibold">
-                    <ShieldCheck size={14} /> 100% Code Ownership
-                  </span>
-                  <a href="#services-list" className="text-[#4f46e5] font-bold hover:underline">
-                    View All 6 Below ↓
-                  </a>
-                </div>
+                </motion.div>
               </div>
             </motion.div>
           </div>

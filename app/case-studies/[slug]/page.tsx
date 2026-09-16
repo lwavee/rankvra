@@ -130,10 +130,10 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <main className="min-h-screen bg-[#f8fafc] pt-10 pb-20">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+      <main className="min-h-screen bg-[#f8fafc] pt-5 pb-12">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb Navigation */}
-          <nav aria-label="Breadcrumbs" className="mb-6 flex flex-wrap items-center gap-2 text-xs font-medium text-[#64748b]">
+          <nav aria-label="Breadcrumbs" className="mb-4 flex flex-wrap items-center gap-2 text-xs font-medium text-[#64748b]">
             <Link href="/" className="hover:text-[#4f46e5] transition-colors">
               Home
             </Link>
@@ -146,43 +146,49 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
           </nav>
 
           {/* Hero Overview Card */}
-          <header className="rounded-[32px] border border-[#e2e8f0] bg-white p-8 sm:p-12 shadow-sm mb-10">
-            <div className="flex flex-wrap items-center gap-3 text-xs font-semibold mb-5">
-              <span className="rounded-full bg-[#eef2ff] px-3.5 py-1 text-[#4f46e5] font-bold">
-                {study.industry}
-              </span>
-              <span className="text-[#94a3b8]">•</span>
-              <span className="flex items-center gap-1.5 text-[#64748b]">
-                <MapPin size={13} className="text-[#4f46e5]" />
-                {study.location}
-              </span>
-              <span className="text-[#94a3b8]">•</span>
-              <span className="flex items-center gap-1.5 text-[#64748b]">
-                <Clock size={13} className="text-[#4f46e5]" />
-                {study.timeline}
+          <header className="rounded-[22px] border border-[#e2e8f0] bg-white p-5 sm:p-7 shadow-xs mb-6">
+            <div className="flex flex-wrap items-center justify-between gap-3 mb-3">
+              <div className="flex flex-wrap items-center gap-2.5 text-xs font-semibold">
+                <span className="rounded-full bg-[#eef2ff] px-3 py-0.5 text-[#4f46e5] font-bold text-[11px]">
+                  {study.industry}
+                </span>
+                <span className="text-[#94a3b8]">•</span>
+                <span className="flex items-center gap-1 text-[#64748b] text-[11px]">
+                  <MapPin size={12} className="text-[#4f46e5]" />
+                  {study.location}
+                </span>
+                <span className="text-[#94a3b8]">•</span>
+                <span className="flex items-center gap-1 text-[#64748b] text-[11px]">
+                  <Clock size={12} className="text-[#4f46e5]" />
+                  {study.timeline}
+                </span>
+              </div>
+              <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 text-[10px] font-bold text-emerald-700">
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-ping" />
+                Live Audited
               </span>
             </div>
 
-            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#0f172a] leading-[1.15] mb-6">
+            <h1 className="text-xl sm:text-2xl lg:text-3xl font-black tracking-tight text-[#0f172a] leading-tight mb-2.5">
               {study.title}
             </h1>
 
-            <p className="text-base sm:text-lg text-[#475569] leading-relaxed font-normal mb-8">
+            <p className="text-xs sm:text-sm text-[#475569] leading-relaxed font-normal mb-4">
               {study.tagline}
             </p>
 
             {/* Services Used Tags */}
-            <div className="pt-6 border-t border-[#f1f5f9]">
-              <p className="text-xs font-bold uppercase tracking-wider text-[#94a3b8] mb-3">
-                Services &amp; Architecture Applied:
-              </p>
-              <div className="flex flex-wrap gap-2">
+            <div className="pt-3.5 border-t border-[#f1f5f9]">
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-[#94a3b8] mr-1">
+                  Stack:
+                </span>
                 {study.servicesUsed.map((s, idx) => (
                   <span
                     key={idx}
-                    className="inline-flex items-center rounded-xl bg-[#f8fafc] border border-[#e2e8f0] px-3.5 py-1.5 text-xs font-semibold text-[#334155]"
+                    className="inline-flex items-center rounded-lg bg-[#f8fafc] border border-[#e2e8f0] px-2.5 py-1 text-[11px] font-medium text-[#334155]"
                   >
-                    <span className="mr-2 h-1.5 w-1.5 rounded-full bg-[#4f46e5]" />
+                    <span className="mr-1.5 h-1.5 w-1.5 rounded-full bg-[#4f46e5]" />
                     {s}
                   </span>
                 ))}
@@ -191,17 +197,17 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
           </header>
 
           {/* Metrics & Performance Strip */}
-          <div className="mb-10 grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div className="mb-6 grid grid-cols-2 sm:grid-cols-4 gap-3">
             {study.metrics.map((m, idx) => (
               <div
                 key={idx}
-                className="rounded-[24px] border border-[#e2e8f0] bg-white p-6 shadow-sm flex flex-col justify-between"
+                className="rounded-[18px] border border-[#e2e8f0] bg-white p-3.5 sm:p-4 shadow-xs flex flex-col justify-between"
               >
                 <div>
-                  <div className="text-2xl sm:text-3xl font-black text-[#0f172a] tracking-tight">{m.value}</div>
-                  <div className="text-xs font-bold text-[#4f46e5] uppercase tracking-wider mt-1">{m.label}</div>
+                  <div className="text-xl sm:text-2xl font-black text-[#0f172a] tracking-tight">{m.value}</div>
+                  <div className="text-[10px] font-bold text-[#4f46e5] uppercase tracking-wider mt-0.5">{m.label}</div>
                 </div>
-                <p className="text-[11px] text-[#64748b] mt-3 leading-relaxed border-t border-[#f1f5f9] pt-2">
+                <p className="text-[10px] text-[#64748b] mt-2 leading-relaxed border-t border-[#f1f5f9] pt-1.5">
                   {m.context}
                 </p>
               </div>

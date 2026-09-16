@@ -98,39 +98,124 @@ export function ContactPage() {
   return (
     <main>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-white">
+      <section className="relative overflow-hidden bg-gradient-to-b from-slate-50/80 via-white to-slate-50/50 text-slate-900 pt-6 pb-9 lg:pt-8 lg:pb-12 border-b border-slate-200/80">
         <div className="absolute inset-0 pointer-events-none">
           <div
-            className="absolute inset-0 opacity-[0.025]"
+            className="absolute inset-0 opacity-[0.035]"
             style={{
               backgroundImage:
-                "linear-gradient(#4f46e5 1px, transparent 1px), linear-gradient(90deg, #4f46e5 1px, transparent 1px)",
-              backgroundSize: "72px 72px",
+                "linear-gradient(#6366f1 1px, transparent 1px), linear-gradient(90deg, #6366f1 1px, transparent 1px)",
+              backgroundSize: "44px 44px",
             }}
           />
-          <div className="absolute top-0 right-0 h-96 w-96 rounded-full bg-[#eef2ff] blur-[120px]" />
+          <div className="absolute -top-20 right-10 h-72 w-72 rounded-full bg-gradient-to-bl from-indigo-500/10 via-sky-500/10 to-transparent blur-[80px]" />
+          <div className="absolute bottom-0 left-10 h-64 w-64 rounded-full bg-emerald-500/10 blur-[75px]" />
         </div>
 
-        <div className="relative mx-auto max-w-7xl px-6 pb-16 pt-16 lg:px-8 lg:pb-20 lg:pt-20">
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.75, ease: "easeOut" }}
-            className="max-w-2xl"
-          >
-            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-[#4f46e5]">
-              Get in touch
-            </p>
-            <h1 className="mt-4 text-5xl font-extrabold tracking-tight text-[#0f172a] sm:text-6xl leading-[1.05]">
-              Let&apos;s talk about{" "}
-              <span className="text-gradient">your growth</span>.
-            </h1>
-            <p className="mt-6 text-lg leading-8 text-[#475569]">
-              Book a free strategy call. We&apos;ll audit your current
-              marketing, identify your biggest opportunities, and give you a
-              clear roadmap — no obligation.
-            </p>
-          </motion.div>
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-6 lg:grid-cols-[1fr_1fr] lg:gap-8 items-center">
+            {/* Left Column — Concise High-Traction Copy */}
+            <motion.div
+              initial={{ opacity: 0, y: 14 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+            >
+              <div className="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50/90 px-3 py-1 text-xs font-bold uppercase tracking-wider text-indigo-800 shadow-xs mb-3">
+                <span className="h-2 w-2 rounded-full bg-emerald-500 animate-ping" />
+                <span>Direct Technical Discovery • Udaipur HQ</span>
+              </div>
+
+              <h1 className="text-2xl sm:text-3xl lg:text-[36px] font-black tracking-tight text-slate-950 leading-[1.16]">
+                Direct Discovery.{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-sky-600 to-emerald-600">
+                  Speak With Founder Naveen.
+                </span>
+              </h1>
+
+              <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed max-w-xl font-normal">
+                Book a direct technical strategy evaluation. We analyze your website speed, Google search visibility, and conversion bottlenecks with zero sales pressure.
+              </p>
+
+              {/* Quick Proof Counters */}
+              <div className="mt-5 pt-3.5 border-t border-slate-200/80 grid grid-cols-3 gap-3 max-w-md">
+                <div>
+                  <div className="text-base sm:text-lg font-black text-slate-950">&lt; 15 mins</div>
+                  <div className="text-[10px] font-semibold text-slate-500">WhatsApp Speed</div>
+                </div>
+                <div className="border-l border-slate-200/80 pl-3">
+                  <div className="text-base sm:text-lg font-black text-indigo-700">Direct</div>
+                  <div className="text-[10px] font-semibold text-slate-500">Founder Led</div>
+                </div>
+                <div className="border-l border-slate-200/80 pl-3">
+                  <div className="text-base sm:text-lg font-black text-emerald-700">100% Free</div>
+                  <div className="text-[10px] font-semibold text-slate-500">Technical Audit</div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Right Column — Live Founder Availability Desk Card */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.96 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
+              className="relative"
+            >
+              <div className="rounded-[22px] border border-slate-200/80 bg-white/95 backdrop-blur-md p-4 sm:p-5 shadow-xl shadow-slate-900/5">
+                {/* Header with Live Status */}
+                <div className="flex items-center justify-between border-b border-slate-100 pb-3 mb-3">
+                  <div className="flex items-center gap-2.5">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-50 text-indigo-600 border border-indigo-200">
+                      <Zap size={16} />
+                    </div>
+                    <div>
+                      <h2 className="text-xs sm:text-sm font-bold text-slate-900 flex items-center gap-1.5">
+                        Direct Founder Desk
+                        <span className="text-[10px] text-indigo-600 font-mono">LIVE</span>
+                      </h2>
+                      <p className="text-[10px] text-slate-500">Naveen Panchal (lw_avee)</p>
+                    </div>
+                  </div>
+                  <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-0.5 text-[10px] font-bold text-emerald-700">
+                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-ping" />
+                    Online &amp; Active
+                  </span>
+                </div>
+
+                {/* Direct Action Box */}
+                <a
+                  href="https://wa.me/917297875798?text=Hi%20Naveen,%20I%20want%20to%20discuss%20a%20project%20with%20RankVRA."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center justify-between rounded-xl border border-emerald-200 bg-emerald-50/60 p-3 transition-all hover:bg-emerald-50 mb-3 shadow-2xs"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-500 text-white font-bold shadow-xs">
+                      <Phone size={15} />
+                    </div>
+                    <div>
+                      <div className="text-[11px] font-bold text-emerald-800">Instant WhatsApp Chat</div>
+                      <div className="text-xs sm:text-sm font-black text-slate-950">+91 7297875798</div>
+                    </div>
+                  </div>
+                  <ArrowRight size={15} className="text-emerald-700 transition-transform group-hover:translate-x-1" />
+                </a>
+
+                {/* Quick Info Grid */}
+                <div className="space-y-1.5 text-[11px]">
+                  <div className="flex items-center justify-between rounded-lg bg-slate-50 px-3 py-2 border border-slate-100">
+                    <span className="text-slate-500">Direct Email</span>
+                    <a href="mailto:info@rankvra.com" className="font-bold text-slate-900 hover:text-indigo-600 transition-colors">
+                      info@rankvra.com
+                    </a>
+                  </div>
+                  <div className="flex items-center justify-between rounded-lg bg-slate-50 px-3 py-2 border border-slate-100">
+                    <span className="text-slate-500">Headquarters</span>
+                    <span className="font-bold text-slate-900">Udaipur, Rajasthan 313001</span>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 

@@ -135,7 +135,7 @@ export default function DigitalMarketingServicePage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
           {/* Case Studies Link */}
-          <div className="mt-14 rounded-3xl border border-[#e2e8f0] bg-[#f8fafc] p-7 sm:p-9">
+          <div className="rounded-3xl border border-[#e2e8f0] bg-[#f8fafc] p-7 sm:p-9">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
               <div className="max-w-2xl">
                 <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#4f46e5] mb-2">

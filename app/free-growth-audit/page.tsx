@@ -61,28 +61,28 @@ export default function FreeGrowthAuditPage() {
 
   return (
     <SiteShell>
-      <main className="bg-white py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+      <main className="bg-white py-5 sm:py-7 lg:py-9">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-12 gap-6 lg:gap-10 items-start">
             {/* Left Column — Value Proposition & Proof */}
             <div className="lg:col-span-6">
-              <div className="inline-flex items-center gap-2 rounded-full border border-[#e0e7ff] bg-[#eef2ff] px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-[#4f46e5] mb-6">
-                <Sparkles size={14} />
-                100% Free • No Obligation
+              <div className="inline-flex items-center gap-1.5 rounded-full border border-[#e0e7ff] bg-[#eef2ff] px-3 py-1 text-xs font-bold uppercase tracking-wider text-[#4f46e5] mb-3">
+                <Sparkles size={13} />
+                100% Free • Direct Founder Audit
               </div>
 
-              <h1 className="text-3xl sm:text-5xl font-extrabold text-[#0f172a] tracking-tight leading-[1.15]">
+              <h1 className="text-2xl sm:text-3xl lg:text-[34px] font-black text-[#0f172a] tracking-tight leading-[1.18]">
                 Get Your Free Website &amp;{" "}
                 <span className="text-gradient">Growth Audit</span>.
               </h1>
 
-              <p className="mt-5 text-base sm:text-lg text-[#475569] leading-8">
-                Send us your website URL and current commercial target. Our senior technical team, led by Founder Naveen Panchal (lw_avee), will manually analyze your website speed, national &amp; international Google search visibility, and conversion bottlenecks.
+              <p className="mt-2.5 text-xs sm:text-sm text-[#475569] leading-relaxed">
+                Send us your website URL and current commercial target. Our senior technical team, led by Founder Naveen Panchal (lw_avee), will manually analyze your website speed, search visibility, and conversion bottlenecks.
               </p>
 
               {/* What's Included */}
-              <div className="mt-8 space-y-4">
-                <p className="text-xs font-bold uppercase tracking-wider text-[#94a3b8]">
+              <div className="mt-5 space-y-2.5">
+                <p className="text-[11px] font-bold uppercase tracking-wider text-[#94a3b8]">
                   What You Receive Within 48 Hours:
                 </p>
                 {[
@@ -103,40 +103,46 @@ export default function FreeGrowthAuditPage() {
                     desc: "Specific recommendations to increase calls, WhatsApp clicks, and booking forms on your current pages.",
                   },
                 ].map((item, i) => (
-                  <div key={i} className="flex items-start gap-3.5 p-4 rounded-2xl bg-[#f8fafc] border border-[#e2e8f0]">
-                    <CheckCircle2 size={18} className="text-[#4f46e5] shrink-0 mt-0.5" />
+                  <div key={i} className="flex items-start gap-2.5 p-3 rounded-xl bg-[#f8fafc] border border-[#e2e8f0]">
+                    <CheckCircle2 size={16} className="text-[#4f46e5] shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-sm font-bold text-[#0f172a]">{item.title}</p>
-                      <p className="text-xs text-[#64748b] mt-0.5 leading-5">{item.desc}</p>
+                      <p className="text-xs sm:text-sm font-bold text-[#0f172a]">{item.title}</p>
+                      <p className="text-[11px] sm:text-xs text-[#64748b] mt-0.5 leading-snug">{item.desc}</p>
                     </div>
                   </div>
                 ))}
               </div>
 
-              <div className="mt-8 flex items-center gap-6 text-xs text-[#64748b]">
+              <div className="mt-5 flex flex-wrap items-center gap-4 text-xs text-[#64748b]">
                 <span className="flex items-center gap-1.5">
-                  <Clock size={14} className="text-[#4f46e5]" /> Delivered in 48 hrs
+                  <Clock size={13} className="text-[#4f46e5]" /> Delivered in 48 hrs
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <Lock size={14} className="text-[#4f46e5]" /> 100% Confidential
+                  <Lock size={13} className="text-[#4f46e5]" /> 100% Confidential
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <ShieldCheck size={14} className="text-[#4f46e5]" /> Zero hard sales
+                  <ShieldCheck size={13} className="text-[#4f46e5]" /> Zero hard sales
                 </span>
               </div>
             </div>
 
             {/* Right Column — Frictionless Audit Form */}
             <div className="lg:col-span-6">
-              <div className="rounded-[32px] border border-[#e2e8f0] bg-white p-8 sm:p-10 shadow-xl shadow-[#4f46e5]/5">
-                <h2 className="text-xl sm:text-2xl font-bold text-[#0f172a] tracking-tight">
-                  Request Your Audit
-                </h2>
-                <p className="mt-1 text-sm text-[#64748b]">
+              <div className="rounded-[24px] border border-[#e2e8f0] bg-white p-5 sm:p-7 shadow-lg shadow-[#4f46e5]/5">
+                <div className="flex items-center justify-between">
+                  <h2 className="text-lg sm:text-xl font-black text-[#0f172a] tracking-tight">
+                    Request Your Audit
+                  </h2>
+                  <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 px-2.5 py-0.5 text-[10px] font-bold">
+                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-ping" />
+                    Queue Active
+                  </span>
+                </div>
+                <p className="mt-1 text-xs text-[#64748b]">
                   Fill out this brief form and we&apos;ll begin your review immediately.
                 </p>
 
-                <form onSubmit={handleSubmit} className="mt-8 space-y-4">
+                <form onSubmit={handleSubmit} className="mt-5 space-y-3.5">
                   <div>
                     <label className="block text-xs font-bold text-[#0f172a] uppercase tracking-wider mb-1.5">
                       Your Name *

@@ -264,94 +264,133 @@ export function AboutPage() {
   return (
     <main className="relative bg-white">
       {/* 1. HERO SECTION */}
-      <section className="relative overflow-hidden bg-white border-b border-[#e2e8f0]">
+      <section className="relative overflow-hidden bg-gradient-to-b from-slate-50/80 via-white to-slate-50/50 text-slate-900 pt-6 pb-9 lg:pt-8 lg:pb-12 border-b border-slate-200/80">
         <div className="absolute inset-0 pointer-events-none">
           <div
-            className="absolute inset-0 opacity-[0.03]"
+            className="absolute inset-0 opacity-[0.035]"
             style={{
               backgroundImage:
-                "linear-gradient(#4f46e5 1px, transparent 1px), linear-gradient(90deg, #4f46e5 1px, transparent 1px)",
-              backgroundSize: "64px 64px",
+                "linear-gradient(#6366f1 1px, transparent 1px), linear-gradient(90deg, #6366f1 1px, transparent 1px)",
+              backgroundSize: "44px 44px",
             }}
           />
-          <div className="absolute -top-24 right-0 h-96 w-96 rounded-full bg-[#eef2ff] blur-[140px]" />
-          <div className="absolute bottom-0 left-10 h-80 w-80 rounded-full bg-[#ecfeff] blur-[120px]" />
+          <div className="absolute -top-20 right-10 h-72 w-72 rounded-full bg-gradient-to-bl from-indigo-500/10 via-sky-500/10 to-transparent blur-[80px]" />
+          <div className="absolute bottom-0 left-10 h-64 w-64 rounded-full bg-emerald-500/10 blur-[75px]" />
         </div>
 
-        <div className="relative mx-auto max-w-7xl px-6 pb-20 pt-16 lg:grid lg:grid-cols-12 lg:gap-12 lg:px-8 lg:pb-24 lg:pt-20 items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.75, ease: "easeOut" }}
-            className="lg:col-span-7 flex flex-col justify-center"
-          >
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#e0e7ff] bg-[#eef2ff] px-4 py-1.5 text-xs font-semibold text-[#4f46e5] w-fit mb-6 shadow-xs">
-              <MapPin size={14} className="text-[#4f46e5]" />
-              <span>Founded in Udaipur • Serving Businesses Across Rajasthan</span>
-            </div>
-
-            <h1 className="text-3xl font-extrabold tracking-tight text-[#0f172a] sm:text-4xl lg:text-5xl leading-[1.15]">
-              The Best Web Development &amp;{" "}
-              <span className="text-gradient">Digital Marketing Agency</span>{" "}
-              in Udaipur.
-            </h1>
-
-            <p className="mt-6 text-base sm:text-lg leading-8 text-[#475569]">
-              Rankvra was founded on a simple, honest premise: local business owners in Udaipur and Rajasthan deserve world-class websites that load in 1 second and digital marketing campaigns that actually produce paying customers.
-            </p>
-
-            <p className="mt-4 text-sm sm:text-base leading-7 text-[#64748b]">
-              Led by Founder &amp; CEO <strong>Naveen Panchal (lw_avee)</strong>, our in-house team combines modern Next.js coding, artificial intelligence automations, and local Google Page 1 SEO to help hotels, manufacturers, retailers, and service businesses thrive.
-            </p>
-
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <a
-                href="#ceo-spotlight"
-                className="group inline-flex items-center gap-2 rounded-full bg-[#4f46e5] px-7 py-3.5 text-sm font-semibold text-white shadow-md shadow-[#4f46e5]/25 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#4338ca]"
-              >
-                Meet Naveen Panchal (CEO)
-                <ArrowRight size={15} className="transition-transform duration-300 group-hover:translate-x-1" />
-              </a>
-              <a
-                href="https://wa.me/917297875798"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-[#cbd5e1] bg-white px-7 py-3.5 text-sm font-semibold text-[#334155] transition-all duration-300 hover:border-[#4f46e5] hover:text-[#4f46e5] hover:bg-[#f8fafc]"
-              >
-                <Phone size={15} className="text-[#4f46e5]" />
-                WhatsApp Us (+91 7297875798)
-              </a>
-            </div>
-          </motion.div>
-
-          {/* Stats Grid */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.85, delay: 0.15, ease: "easeOut" }}
-            className="mt-12 lg:mt-0 lg:col-span-5 grid grid-cols-2 gap-4"
-          >
-            {stats.map((stat) => (
-              <div
-                key={stat.label}
-                className="relative overflow-hidden rounded-[26px] border border-[#e2e8f0] bg-white/80 p-6 backdrop-blur-sm shadow-xs hover:shadow-md hover:border-[#c7d2fe] transition-all duration-300"
-              >
-                <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-[#4f46e5]/10 to-transparent rounded-bl-full pointer-events-none" />
-                <p className="text-3xl sm:text-4xl font-black text-gradient">{stat.value}</p>
-                <p className="mt-2 text-xs font-bold uppercase tracking-wider text-[#64748b]">
-                  {stat.label}
-                </p>
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-6 lg:grid-cols-[1fr_1fr] lg:gap-8 items-center">
+            {/* Left Column */}
+            <motion.div
+              initial={{ opacity: 0, y: 14 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+            >
+              <div className="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50/90 px-3 py-1 text-xs font-bold uppercase tracking-wider text-indigo-800 shadow-xs mb-3">
+                <span className="h-2 w-2 rounded-full bg-emerald-500 animate-ping" />
+                <span>Founded in Udaipur • Serving Ambitious Brands Worldwide</span>
               </div>
-            ))}
-            <div className="col-span-2 rounded-[26px] border border-[#e0e7ff] bg-gradient-to-r from-[#eef2ff] via-[#f5f3ff] to-[#ecfeff] p-5 text-center">
-              <p className="text-xs font-bold text-[#4f46e5] uppercase tracking-wider">
-                Our Promise to Udaipur Businesses
+
+              <h1 className="text-2xl sm:text-3xl lg:text-[36px] font-black tracking-tight text-slate-950 leading-[1.16]">
+                Digital Engineering &amp;{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-sky-600 to-emerald-600">
+                  Growth Architecture.
+                </span>
+              </h1>
+
+              <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed max-w-xl font-normal">
+                Led by Founder &amp; CEO <strong>Naveen Panchal (lw_avee)</strong>, we build high-speed custom Next.js platforms, Google Page 1 search authority, and automated revenue funnels.
               </p>
-              <p className="mt-1 text-sm font-semibold text-[#0f172a]">
-                Custom Code • No Slow WordPress • Real Phone &amp; WhatsApp Leads
-              </p>
-            </div>
-          </motion.div>
+
+              <div className="mt-4 flex flex-wrap items-center gap-3">
+                <a
+                  href="#ceo-spotlight"
+                  className="inline-flex items-center gap-2 rounded-full bg-indigo-600 px-5 py-2.5 text-xs sm:text-sm font-bold text-white shadow-md shadow-indigo-600/25 hover:bg-indigo-700 hover:-translate-y-0.5 transition-all"
+                >
+                  Meet Naveen Panchal (CEO)
+                  <ArrowRight size={14} />
+                </a>
+                <a
+                  href="https://wa.me/917297875798"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-4 py-2.5 text-xs sm:text-sm font-semibold text-slate-800 hover:bg-slate-50 hover:border-indigo-500 transition-all shadow-2xs"
+                >
+                  <Phone size={14} className="text-emerald-600" />
+                  WhatsApp Us
+                </a>
+              </div>
+
+              {/* Quick Proof Counters */}
+              <div className="mt-5 pt-3.5 border-t border-slate-200/80 grid grid-cols-3 gap-3 max-w-md">
+                <div>
+                  <div className="text-base sm:text-lg font-black text-slate-950">&lt; 1.0s</div>
+                  <div className="text-[10px] font-semibold text-slate-500">Page Load Time</div>
+                </div>
+                <div className="border-l border-slate-200/80 pl-3">
+                  <div className="text-base sm:text-lg font-black text-indigo-700">100%</div>
+                  <div className="text-[10px] font-semibold text-slate-500">Custom Code</div>
+                </div>
+                <div className="border-l border-slate-200/80 pl-3">
+                  <div className="text-base sm:text-lg font-black text-emerald-700">Direct</div>
+                  <div className="text-[10px] font-semibold text-slate-500">Founder Led</div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Right Column — Light Engineering HUD */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.96 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
+              className="relative"
+            >
+              <div className="rounded-[22px] border border-slate-200/80 bg-white/95 backdrop-blur-md p-4 sm:p-5 shadow-xl shadow-slate-900/5">
+                {/* HUD Header */}
+                <div className="flex items-center justify-between border-b border-slate-100 pb-3 mb-3">
+                  <div className="flex items-center gap-2.5">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-50 text-indigo-600 border border-indigo-200">
+                      <Sparkles size={16} />
+                    </div>
+                    <div>
+                      <h2 className="text-xs sm:text-sm font-bold text-slate-900 flex items-center gap-1.5">
+                        Agency Performance Index
+                      </h2>
+                      <p className="text-[10px] text-slate-500">Audited Engineering Benchmarks</p>
+                    </div>
+                  </div>
+                  <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-0.5 text-[10px] font-bold text-emerald-700">
+                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-ping" />
+                    Verified
+                  </span>
+                </div>
+
+                {/* 4 Key Stat Tiles */}
+                <div className="grid grid-cols-2 gap-2.5 mb-3">
+                  {stats.map((stat) => (
+                    <div
+                      key={stat.label}
+                      className="rounded-xl border border-slate-100 bg-slate-50/60 p-3"
+                    >
+                      <p className="text-xl sm:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-sky-600 to-emerald-600">
+                        {stat.value}
+                      </p>
+                      <p className="mt-0.5 text-[10px] font-semibold text-slate-500 uppercase tracking-wider">
+                        {stat.label}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Engineering Standard Bar */}
+                <div className="rounded-xl border border-indigo-200/80 bg-indigo-50/40 p-2.5 text-center">
+                  <p className="text-[11px] font-semibold text-indigo-800">
+                    Custom Next.js &amp; TypeScript • Zero Slow WordPress • 100% Core Web Vitals
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 

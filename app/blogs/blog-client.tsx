@@ -78,75 +78,75 @@ export function BlogClient({ initialPosts }: BlogClientProps) {
   return (
     <div>
       {/* Editorial Hero Masthead */}
-      <section className="relative overflow-hidden border-b border-[#e2e8f0] bg-gradient-to-b from-[#f8fafc] via-white to-white pt-10 pb-12 sm:pt-14 sm:pb-16">
+      <section className="relative overflow-hidden bg-gradient-to-b from-slate-50/80 via-white to-slate-50/50 text-slate-900 pt-6 pb-9 lg:pt-8 lg:pb-12 border-b border-slate-200/80">
         {/* Subtle engineering grid background */}
         <div
-          className="absolute inset-0 opacity-[0.03] pointer-events-none"
+          className="absolute inset-0 opacity-[0.035] pointer-events-none"
           style={{
             backgroundImage:
-              "linear-gradient(#4f46e5 1px, transparent 1px), linear-gradient(90deg, #4f46e5 1px, transparent 1px)",
-            backgroundSize: "64px 64px",
+              "linear-gradient(#6366f1 1px, transparent 1px), linear-gradient(90deg, #6366f1 1px, transparent 1px)",
+            backgroundSize: "44px 44px",
           }}
         />
-        {/* Ambient gradient glow spheres */}
-        <div className="absolute -top-24 right-1/4 h-96 w-96 rounded-full bg-[#4f46e5]/5 blur-3xl pointer-events-none" />
-        <div className="absolute top-1/2 -left-20 h-80 w-80 rounded-full bg-[#06b6d4]/5 blur-3xl pointer-events-none" />
+        <div className="absolute -top-20 right-10 h-72 w-72 rounded-full bg-gradient-to-bl from-indigo-500/10 via-sky-500/10 to-transparent blur-[80px]" />
+        <div className="absolute bottom-0 left-10 h-64 w-64 rounded-full bg-emerald-500/10 blur-[75px]" />
 
-        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-12 gap-6 lg:gap-8 items-center">
             
             {/* Left Column: Publication Title & Value Prop */}
-            <div className="lg:col-span-7 space-y-5">
-              <div className="inline-flex items-center gap-2 rounded-full border border-[#c7d2fe] bg-[#eef2ff] px-4 py-1.5 text-xs font-bold tracking-wide text-[#4f46e5] shadow-sm">
-                <ShieldCheck size={14} className="text-[#4f46e5]" />
+            <div className="lg:col-span-7 space-y-3">
+              <div className="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50/90 px-3 py-1 text-xs font-bold uppercase tracking-wider text-indigo-800 shadow-xs">
+                <span className="h-2 w-2 rounded-full bg-emerald-500 animate-ping" />
                 <span>RankVRA Research &amp; Engineering Publications</span>
               </div>
 
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#0f172a] leading-[1.12]">
-                Practical Playbooks for <span className="text-gradient">Real Business</span> Growth
+              <h1 className="text-2xl sm:text-3xl lg:text-[36px] font-black tracking-tight text-slate-950 leading-[1.16]">
+                Growth Blueprints.{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-sky-600 to-emerald-600">
+                  Field-Tested Search Strategy.
+                </span>
               </h1>
 
-              <p className="text-base sm:text-lg text-[#475569] leading-relaxed max-w-2xl font-normal">
-                Field-tested guides on search engine optimization, Core Web Vitals, Google Maps 3-Pack dominance, and modern web architectures. Written from first-hand engineering experience in Udaipur and global markets.
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-xl font-normal">
+                Field-tested guides on technical SEO, Core Web Vitals, Google Maps 3-Pack, and web architectures from engineering practice in Udaipur and global markets.
               </p>
 
               {/* Author & Verification Row */}
-              <div className="flex flex-wrap items-center gap-4 pt-2 text-xs font-medium text-[#64748b]">
-                <div className="flex items-center gap-2.5">
+              <div className="flex flex-wrap items-center gap-3 pt-1 text-xs font-medium text-slate-500">
+                <div className="flex items-center gap-2">
                   <Image
                     src="/ceo-naveen.png"
                     alt="Naveen Panchal"
-                    width={36}
-                    height={36}
-                    className="rounded-full border-2 border-[#4f46e5]/30 object-cover shadow-sm"
+                    width={28}
+                    height={28}
+                    className="rounded-full border border-indigo-200 object-cover shadow-2xs"
                   />
                   <div>
-                    <span className="font-bold text-[#0f172a] block">Naveen Panchal (lw_avee)</span>
-                    <span className="text-[11px] text-[#64748b]">Founder &amp; Technical Director</span>
+                    <span className="font-bold text-slate-900 text-xs leading-none block">Naveen Panchal (lw_avee)</span>
+                    <span className="text-[10px] text-slate-500">Founder &amp; Technical Director</span>
                   </div>
                 </div>
-                <span className="hidden sm:inline text-[#cbd5e1]">•</span>
-                <span className="inline-flex items-center gap-1.5 text-[#10b981] font-semibold">
-                  <CheckCircle2 size={13} />
-                  Zero AI Filler • 100% Primary Data
+                <span className="text-slate-300">•</span>
+                <span className="inline-flex items-center gap-1 text-emerald-700 font-semibold text-[11px]">
+                  <CheckCircle2 size={12} />
+                  Zero AI Filler • Primary Data
                 </span>
-                <span className="hidden sm:inline text-[#cbd5e1]">•</span>
-                <span className="text-[#64748b]">Updated for 2026 AI Search &amp; SGE</span>
               </div>
 
               {/* Publication Key Metrics */}
-              <div className="pt-4 border-t border-[#f1f5f9] grid grid-cols-3 gap-4 max-w-lg">
+              <div className="pt-3 border-t border-slate-200/80 grid grid-cols-3 gap-3 max-w-md">
                 <div>
-                  <div className="text-xl sm:text-2xl font-black text-[#0f172a]">10</div>
-                  <div className="text-[11px] font-semibold uppercase tracking-wider text-[#94a3b8]">In-Depth Guides</div>
+                  <div className="text-base sm:text-lg font-black text-slate-950">10</div>
+                  <div className="text-[10px] font-semibold text-slate-500">Engineering Guides</div>
                 </div>
-                <div>
-                  <div className="text-xl sm:text-2xl font-black text-[#4f46e5]">&lt; 1.0s</div>
-                  <div className="text-[11px] font-semibold uppercase tracking-wider text-[#94a3b8]">Mobile LCP Speed</div>
+                <div className="border-l border-slate-200/80 pl-3">
+                  <div className="text-base sm:text-lg font-black text-indigo-700">&lt; 1.0s</div>
+                  <div className="text-[10px] font-semibold text-slate-500">Mobile LCP Speed</div>
                 </div>
-                <div>
-                  <div className="text-xl sm:text-2xl font-black text-[#0f172a]">Udaipur</div>
-                  <div className="text-[11px] font-semibold uppercase tracking-wider text-[#94a3b8]">HQ &amp; Global Scope</div>
+                <div className="border-l border-slate-200/80 pl-3">
+                  <div className="text-base sm:text-lg font-black text-emerald-700">Verified</div>
+                  <div className="text-[10px] font-semibold text-slate-500">Production Code</div>
                 </div>
               </div>
             </div>
@@ -154,55 +154,43 @@ export function BlogClient({ initialPosts }: BlogClientProps) {
             {/* Right Column: Featured Flagship Blueprint Card */}
             {featuredPost && (
               <div className="lg:col-span-5">
-                <div className="relative rounded-[28px] border border-[#c7d2fe] bg-white p-6 shadow-xl shadow-[#4f46e5]/5 transition-all hover:border-[#818cf8] hover:shadow-2xl hover:shadow-[#4f46e5]/10 group">
-                  <div className="flex items-center justify-between text-xs mb-3.5">
-                    <span className="inline-flex items-center gap-1.5 rounded-full bg-[#eef2ff] px-3 py-1 font-bold text-[#4f46e5] uppercase tracking-wider text-[10px]">
-                      <Sparkles size={12} />
+                <div className="relative rounded-[22px] border border-slate-200/80 bg-white/95 backdrop-blur-md p-4 sm:p-5 shadow-xl shadow-slate-900/5 transition-all hover:border-indigo-300 hover:shadow-2xl group">
+                  <div className="flex items-center justify-between text-xs mb-2.5">
+                    <span className="inline-flex items-center gap-1 rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-0.5 font-bold text-indigo-800 uppercase tracking-wider text-[9px]">
+                      <Sparkles size={10} />
                       Featured Strategy
                     </span>
-                    <span className="text-[#64748b] font-medium flex items-center gap-1 text-[11px]">
-                      <Clock size={12} />
+                    <span className="text-slate-500 font-medium flex items-center gap-1 text-[10px]">
+                      <Clock size={11} />
                       {featuredPost.readTime}
                     </span>
                   </div>
 
                   <Link href={`/blogs/${featuredPost.slug}`} className="block">
-                    <div className="overflow-hidden rounded-xl border border-[#e2e8f0] bg-slate-900 aspect-[1200/630] mb-4">
-                      <Image
-                        src={featuredPost.featuredImage.url}
-                        alt={featuredPost.featuredImage.alt}
-                        width={600}
-                        height={315}
-                        unoptimized
-                        priority
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
-
-                    <h2 className="text-lg sm:text-xl font-extrabold text-[#0f172a] group-hover:text-[#4f46e5] transition-colors leading-snug">
+                    <h2 className="text-sm sm:text-base font-bold text-slate-900 group-hover:text-indigo-600 transition-colors leading-snug">
                       {featuredPost.title}
                     </h2>
 
-                    <p className="mt-2 text-xs sm:text-sm text-[#475569] line-clamp-2 leading-relaxed">
+                    <p className="mt-1.5 text-[11px] text-slate-600 line-clamp-2 leading-relaxed">
                       {featuredPost.excerpt}
                     </p>
                   </Link>
 
-                  <div className="mt-5 pt-4 border-t border-[#f1f5f9] flex items-center justify-between">
-                    <span className="text-xs font-semibold text-[#64748b]">
+                  <div className="mt-3.5 pt-2.5 border-t border-slate-100 flex items-center justify-between">
+                    <span className="text-[10px] font-semibold text-slate-500">
                       Pillar 01 • Pricing Architecture
                     </span>
                     <Link
                       href={`/blogs/${featuredPost.slug}`}
-                      className="inline-flex items-center gap-1 text-xs font-bold text-[#4f46e5] hover:text-[#3730a3]"
+                      className="inline-flex items-center gap-1 text-xs font-bold text-indigo-600 group-hover:text-indigo-700 transition-colors"
                     >
-                      Read Full Blueprint <ArrowRight size={13} className="transition-transform group-hover:translate-x-1" />
+                      Read Blueprint
+                      <ArrowUpRight size={13} />
                     </Link>
                   </div>
                 </div>
               </div>
             )}
-
           </div>
         </div>
       </section>

@@ -74,127 +74,123 @@ export default async function PortfolioPage() {
     <SiteShell>
       <main className="min-h-screen bg-[#f8fafc]">
         {/* Editorial & Performance Hero Section */}
-        <section className="relative overflow-hidden border-b border-[#e2e8f0] bg-gradient-to-b from-[#f8fafc] via-white to-white pt-10 pb-14 sm:pt-14 sm:pb-16">
+        <section className="relative overflow-hidden border-b border-[#e2e8f0] bg-gradient-to-b from-[#f8fafc] via-white to-white pt-5 pb-8 lg:pt-7 lg:pb-10">
           {/* Subtle engineering grid background */}
           <div
             className="absolute inset-0 opacity-[0.03] pointer-events-none"
             style={{
               backgroundImage:
                 "linear-gradient(#4f46e5 1px, transparent 1px), linear-gradient(90deg, #4f46e5 1px, transparent 1px)",
-              backgroundSize: "64px 64px",
+              backgroundSize: "48px 48px",
             }}
           />
           {/* Soft ambient glow accents */}
-          <div className="absolute -top-24 right-1/4 h-96 w-96 rounded-full bg-[#4f46e5]/5 blur-3xl pointer-events-none" />
-          <div className="absolute top-1/2 -left-20 h-80 w-80 rounded-full bg-[#06b6d4]/5 blur-3xl pointer-events-none" />
+          <div className="absolute -top-20 right-1/4 h-64 w-64 rounded-full bg-[#4f46e5]/5 blur-3xl pointer-events-none" />
+          <div className="absolute top-1/2 -left-16 h-56 w-56 rounded-full bg-[#06b6d4]/5 blur-3xl pointer-events-none" />
 
-          <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="grid lg:grid-cols-12 gap-6 lg:gap-8 items-center">
               
               {/* Left Column: Narrative & Action */}
-              <div className="lg:col-span-7 space-y-5">
-                <div className="inline-flex items-center gap-2 rounded-full border border-[#c7d2fe] bg-[#eef2ff] px-4 py-1.5 text-xs font-bold tracking-wide text-[#4f46e5] shadow-sm">
-                  <Sparkles size={14} className="text-[#4f46e5]" />
-                  <span>Verified Client Outcomes &amp; Engineering</span>
+              <div className="lg:col-span-7 space-y-3.5">
+                <div className="inline-flex items-center gap-2 rounded-full border border-[#c7d2fe] bg-[#eef2ff] px-3.5 py-1 text-xs font-bold tracking-wide text-[#4f46e5] shadow-sm">
+                  <Sparkles size={13} className="text-[#4f46e5]" />
+                  <span>Verified Outcomes &amp; Engineering</span>
                 </div>
 
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#0f172a] leading-[1.12]">
+                <h1 className="text-2xl sm:text-3xl lg:text-[34px] font-black tracking-tight text-[#0f172a] leading-[1.18]">
                   Work Engineered for <span className="text-gradient">Measurable Growth</span>.
                 </h1>
 
-                <p className="text-base sm:text-lg text-[#475569] leading-relaxed max-w-2xl font-normal">
+                <p className="text-xs sm:text-sm text-[#475569] leading-relaxed max-w-xl font-normal">
                   We don&apos;t build generic brochure websites. We engineer high-speed Next.js web platforms, Google Maps 3-Pack rankings, and B2B inquiry funnels that generate verified revenue pipeline for ambitious brands.
                 </p>
 
                 {/* Primary Action Buttons */}
-                <div className="flex flex-wrap gap-4 pt-2">
+                <div className="flex flex-wrap gap-2.5 pt-1">
                   <Link
                     href="/free-growth-audit"
-                    className="inline-flex items-center gap-2 rounded-full bg-[#4f46e5] px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#4f46e5]/25 hover:bg-[#4338ca] transition-all"
+                    className="inline-flex items-center gap-2 rounded-full bg-[#4f46e5] px-5 py-2.5 text-xs sm:text-sm font-bold text-white shadow-md shadow-[#4f46e5]/20 hover:bg-[#4338ca] transition-all"
                   >
                     Claim Free Growth Audit
-                    <ArrowRight size={15} />
+                    <ArrowRight size={14} />
                   </Link>
                   <a
                     href="https://wa.me/917297875798?text=Hi%20Naveen,%20I%20reviewed%20your%20case%20studies%20and%20would%20like%20to%20discuss%20our%20project."
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-full border border-[#e2e8f0] bg-white px-7 py-3.5 text-sm font-bold text-[#334155] hover:bg-[#f8fafc] hover:border-[#c7d2fe] transition-all shadow-sm"
+                    className="inline-flex items-center gap-2 rounded-full border border-[#e2e8f0] bg-white px-5 py-2.5 text-xs sm:text-sm font-bold text-[#334155] hover:bg-[#f8fafc] hover:border-[#c7d2fe] transition-all shadow-sm"
                   >
-                    WhatsApp Founder (+91 7297875798)
+                    WhatsApp Naveen Direct
                   </a>
                 </div>
 
                 {/* Proof Metrics Strip */}
-                <div className="pt-5 border-t border-[#f1f5f9] grid grid-cols-3 gap-4 max-w-lg">
+                <div className="pt-3 border-t border-[#f1f5f9] grid grid-cols-3 gap-3 max-w-sm">
                   <div>
-                    <div className="text-xl sm:text-2xl font-black text-[#0f172a]">&lt; 0.8s</div>
-                    <div className="text-[11px] font-semibold uppercase tracking-wider text-[#94a3b8]">Mobile LCP Speed</div>
+                    <div className="text-base sm:text-lg font-black text-[#0f172a]">&lt; 0.8s</div>
+                    <div className="text-[10px] font-semibold uppercase tracking-wider text-[#94a3b8]">Mobile LCP</div>
                   </div>
                   <div>
-                    <div className="text-xl sm:text-2xl font-black text-[#4f46e5]">Next.js</div>
-                    <div className="text-[11px] font-semibold uppercase tracking-wider text-[#94a3b8]">Custom Architecture</div>
+                    <div className="text-base sm:text-lg font-black text-[#4f46e5]">Next.js</div>
+                    <div className="text-[10px] font-semibold uppercase tracking-wider text-[#94a3b8]">Architecture</div>
                   </div>
                   <div>
-                    <div className="text-xl sm:text-2xl font-black text-[#0f172a]">100%</div>
-                    <div className="text-[11px] font-semibold uppercase tracking-wider text-[#94a3b8]">Modern Code IP</div>
+                    <div className="text-base sm:text-lg font-black text-[#0f172a]">100%</div>
+                    <div className="text-[10px] font-semibold uppercase tracking-wider text-[#94a3b8]">Clean IP</div>
                   </div>
                 </div>
               </div>
 
               {/* Right Column: Live Telemetry / Result Benchmark Card */}
               <div className="lg:col-span-5">
-                <div className="rounded-[28px] bg-gradient-to-br from-[#0f172a] via-[#1e1b4b] to-[#0f172a] p-7 text-white shadow-2xl border border-[#334155] relative overflow-hidden">
-                  <div className="absolute top-0 right-0 h-40 w-40 bg-[#4f46e5]/20 rounded-full blur-3xl pointer-events-none" />
+                <div className="rounded-[22px] bg-gradient-to-br from-[#0f172a] via-[#1e1b4b] to-[#0f172a] p-4 sm:p-5 text-white shadow-xl border border-[#334155] relative overflow-hidden">
+                  <div className="absolute top-0 right-0 h-32 w-32 bg-[#4f46e5]/20 rounded-full blur-2xl pointer-events-none" />
 
                   {/* Header with live status badge */}
-                  <div className="flex items-center justify-between pb-5 border-b border-white/10">
+                  <div className="flex items-center justify-between pb-3 border-b border-white/10">
                     <div>
-                      <div className="text-xs font-bold uppercase tracking-widest text-[#818cf8]">
+                      <div className="text-[10px] font-bold uppercase tracking-wider text-[#818cf8]">
                         Production Benchmark
                       </div>
-                      <div className="text-sm font-extrabold text-white mt-0.5">
+                      <div className="text-xs font-black text-white mt-0.5">
                         Lakeview Heritage Resort
                       </div>
                     </div>
-                    <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/20 border border-emerald-500/30 px-3 py-1 text-[11px] font-bold text-emerald-300">
-                      <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                      Live Case Study
+                    <span className="inline-flex items-center gap-1 rounded-full bg-emerald-500/20 border border-emerald-500/30 px-2.5 py-0.5 text-[10px] font-bold text-emerald-300">
+                      <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-ping" />
+                      Live Audited
                     </span>
                   </div>
 
                   {/* Before vs After Metric Bars */}
-                  <div className="my-5 space-y-3.5">
+                  <div className="my-3 space-y-2.5">
                     <div>
-                      <div className="flex justify-between text-xs font-medium mb-1.5">
-                        <span className="text-slate-400">Legacy WordPress Mobile LCP:</span>
-                        <span className="text-rose-400 font-bold">5.2s (Failed Core Web Vitals)</span>
+                      <div className="flex justify-between text-[11px] font-medium mb-1">
+                        <span className="text-slate-400">Legacy WordPress LCP:</span>
+                        <span className="text-rose-400 font-bold">5.2s (Failed CWV)</span>
                       </div>
-                      <div className="h-2 w-full rounded-full bg-white/10 overflow-hidden">
+                      <div className="h-1.5 w-full rounded-full bg-white/10 overflow-hidden">
                         <div className="h-full bg-rose-500 rounded-full w-[85%]" />
                       </div>
                     </div>
 
                     <div>
-                      <div className="flex justify-between text-xs font-medium mb-1.5">
+                      <div className="flex justify-between text-[11px] font-medium mb-1">
                         <span className="text-slate-300">RankVRA Next.js Engine:</span>
-                        <span className="text-emerald-400 font-bold">0.8s (-84% Load Time)</span>
+                        <span className="text-emerald-400 font-bold">0.8s (-84% load)</span>
                       </div>
-                      <div className="h-2 w-full rounded-full bg-white/10 overflow-hidden">
+                      <div className="h-1.5 w-full rounded-full bg-white/10 overflow-hidden">
                         <div className="h-full bg-emerald-400 rounded-full w-[16%]" />
                       </div>
                     </div>
                   </div>
 
                   {/* Result Highlight Box */}
-                  <div className="rounded-xl bg-white/5 border border-white/10 p-4">
-                    <div className="flex items-start gap-3">
-                      <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#4f46e5] text-white font-black text-xs flex-shrink-0">
-                        ROI
-                      </div>
-                      <div className="text-xs text-slate-300 leading-relaxed">
-                        <strong className="text-white">Commercial Result:</strong> Direct guest WhatsApp booking engine replaced 20% OTA commission dependency across peak tourist season.
-                      </div>
+                  <div className="rounded-xl bg-white/5 border border-white/10 p-2.5">
+                    <div className="flex items-center justify-between text-[11px] text-slate-300">
+                      <span className="font-medium text-white">Direct Bookings Lift</span>
+                      <span className="font-black text-emerald-400">+215% via WhatsApp Funnel</span>
                     </div>
                   </div>
 

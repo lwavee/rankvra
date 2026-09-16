@@ -4,12 +4,10 @@ import { SiteShell } from "@/app/components/site-shell";
 import {
   ArrowRight,
   CheckCircle2,
-  ChevronRight,
-  Hotel,
-  Phone,
   ShieldCheck,
   TrendingUp,
 } from "lucide-react";
+import { HotelsHero } from "@/app/components/hotels-hero";
 
 export const metadata: Metadata = {
   title: "Hotel & Resort Marketing Agency in Udaipur & Rajasthan | RankVRA",
@@ -123,71 +121,12 @@ export default function HotelsIndustryPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }}
       />
+      <HotelsHero />
       <main className="bg-white py-12 lg:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          {/* Breadcrumbs */}
-          <nav aria-label="Breadcrumb" className="mb-8">
-            <ol className="flex items-center gap-2 text-xs font-semibold text-[#64748b]">
-              <li>
-                <Link href="/" className="hover:text-[#4f46e5] transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <ChevronRight size={12} className="text-[#94a3b8]" />
-              </li>
-              <li>
-                <Link href="/industries" className="hover:text-[#4f46e5] transition-colors">
-                  Industries
-                </Link>
-              </li>
-              <li>
-                <ChevronRight size={12} className="text-[#94a3b8]" />
-              </li>
-              <li className="text-[#0f172a]" aria-current="page">
-                Hotels &amp; Hospitality
-              </li>
-            </ol>
-          </nav>
-
-          {/* Hero */}
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#e0e7ff] bg-[#eef2ff] px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-[#4f46e5] mb-6">
-              <Hotel size={14} />
-              Hospitality &amp; Luxury Stays
-            </div>
-
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#0f172a] tracking-tight leading-[1.1]">
-              Increase Direct Bookings &amp;{" "}
-              <span className="text-gradient">Stop Losing 20% to OTAs</span>.
-            </h1>
-
-            <p className="mt-6 text-base sm:text-lg text-[#475569] leading-8">
-              Booking portals and OTAs charge hotels and resorts in Udaipur anywhere from 18% to 25% commission on every room night. At RankVRA, we engineer custom high-speed websites, Google Maps dominance, and targeted paid campaigns that guide high-value domestic and international travelers directly to your reservation desk.
-            </p>
-
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <Link
-                href="/free-growth-audit"
-                className="inline-flex items-center gap-2 rounded-full bg-[#4f46e5] px-8 py-4 text-sm font-bold text-white shadow-lg shadow-[#4f46e5]/20 hover:bg-[#4338ca] transition-all"
-              >
-                Get Hotel Direct Booking Audit
-                <ArrowRight size={16} />
-              </Link>
-              <a
-                href="https://wa.me/917297875798?text=Hi%20Naveen,%20I%20run%20a%20hotel/resort%20and%20want%20more%20direct%20bookings."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-[#cbd5e1] bg-white px-8 py-4 text-sm font-semibold text-[#334155] hover:border-[#4f46e5] hover:text-[#4f46e5] transition-all"
-              >
-                <Phone size={15} />
-                WhatsApp Our Hotel Strategist
-              </a>
-            </div>
-          </div>
 
           {/* Featured Case Study Cross-Link */}
-          <div className="mt-14 rounded-3xl border border-[#e2e8f0] bg-[#f8fafc] p-7 sm:p-9">
+          <div className="rounded-3xl border border-[#e2e8f0] bg-[#f8fafc] p-7 sm:p-9">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
               <div className="max-w-2xl">
                 <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#4f46e5] mb-2">

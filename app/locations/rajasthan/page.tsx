@@ -4,11 +4,10 @@ import { SiteShell } from "@/app/components/site-shell";
 import {
   ArrowRight,
   CheckCircle2,
-  ChevronRight,
   MapPin,
-  Phone,
   ShieldCheck,
 } from "lucide-react";
+import { LocationHero } from "@/app/components/location-hero";
 
 export const metadata: Metadata = {
   title: "Web Development & Digital Marketing Agency in Rajasthan | RankVRA",
@@ -122,71 +121,32 @@ export default function RajasthanLocationPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }}
       />
+      <LocationHero
+        locationName="Rajasthan, India"
+        badgeText="Serving All Across Rajasthan"
+        title={<>Web Development &amp; <span className="text-gradient">Digital Marketing in Rajasthan</span>.</>}
+        description="From Jaipur's startup ecosystem and Jodhpur's handicrafts to Bhilwara's textile mills and Udaipur's hospitality — we provide enterprise-grade web development and ROI-focused digital growth across the entire state."
+        breadcrumbLabel="Rajasthan"
+        parentLocationPath="/locations/india"
+        parentLocationLabel="Locations"
+        coordinatesText="Statewide Network • 26.9124° N, 75.7873° E"
+        auditCtaText="Get Rajasthan Business Audit"
+        whatsappMessage="Hi Naveen, I am a business in Rajasthan and want to grow our search rankings."
+        proofCounters={[
+          { value: "< 1.0s", label: "Target Load Speed" },
+          { value: "Statewide", label: "Regional Coverage", highlightColor: "text-[#4f46e5]" },
+          { value: "100%", label: "Custom Architecture", highlightColor: "text-[#10b981]" },
+        ]}
+        localHubs={[
+          { name: "Jaipur & Jodhpur", sector: "Startups, Retail & Global Handicrafts", tag: "E-Commerce & SEO" },
+          { name: "Udaipur HQ", sector: "Luxury Heritage Tourism & Marble Mining", tag: "Direct Bookings & RFQs" },
+          { name: "Bhilwara & Kota", sector: "Textiles, Manufacturing & Education", tag: "B2B Lead Funnels" },
+        ]}
+      />
       <main className="bg-white py-12 lg:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          {/* Breadcrumbs */}
-          <nav aria-label="Breadcrumb" className="mb-8">
-            <ol className="flex items-center gap-2 text-xs font-semibold text-[#64748b]">
-              <li>
-                <Link href="/" className="hover:text-[#4f46e5] transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <ChevronRight size={12} className="text-[#94a3b8]" />
-              </li>
-              <li>
-                <Link href="/locations/india" className="hover:text-[#4f46e5] transition-colors">
-                  Locations
-                </Link>
-              </li>
-              <li>
-                <ChevronRight size={12} className="text-[#94a3b8]" />
-              </li>
-              <li className="text-[#0f172a]" aria-current="page">
-                Rajasthan
-              </li>
-            </ol>
-          </nav>
-
-          {/* Hero */}
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#e0e7ff] bg-[#eef2ff] px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-[#4f46e5] mb-6">
-              <MapPin size={14} />
-              Serving All Across Rajasthan
-            </div>
-
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#0f172a] tracking-tight leading-[1.1]">
-              Web Development &amp;{" "}
-              <span className="text-gradient">Digital Marketing in Rajasthan</span>.
-            </h1>
-
-            <p className="mt-6 text-base sm:text-lg text-[#475569] leading-8">
-              Rajasthan&apos;s commercial landscape is expanding rapidly. From Jaipur&apos;s startup ecosystem and jewellery houses to Jodhpur&apos;s handicrafts, Bhilwara&apos;s textile mills, and Udaipur&apos;s world-famous luxury tourism — we provide enterprise-grade web development and ROI-focused digital growth across the entire state.
-            </p>
-
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <Link
-                href="/free-growth-audit"
-                className="inline-flex items-center gap-2 rounded-full bg-[#4f46e5] px-8 py-4 text-sm font-bold text-white shadow-lg shadow-[#4f46e5]/20 hover:bg-[#4338ca] transition-all"
-              >
-                Request Free Website Audit
-                <ArrowRight size={16} />
-              </Link>
-              <a
-                href="https://wa.me/917297875798?text=Hi%20Naveen,%20I%20am%20a%20business%20in%20Rajasthan%20and%20want%20to%20scale."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-[#cbd5e1] bg-white px-8 py-4 text-sm font-semibold text-[#334155] hover:border-[#4f46e5] hover:text-[#4f46e5] transition-all"
-              >
-                <Phone size={15} />
-                WhatsApp Our Strategist
-              </a>
-            </div>
-          </div>
-
           {/* Udaipur HQ Spotlight */}
-          <div className="mt-14 rounded-3xl border border-[#e2e8f0] bg-[#f8fafc] p-7 sm:p-9">
+          <div className="rounded-3xl border border-[#e2e8f0] bg-[#f8fafc] p-7 sm:p-9">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
               <div className="max-w-2xl">
                 <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#4f46e5] mb-2">

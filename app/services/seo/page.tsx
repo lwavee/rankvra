@@ -113,7 +113,7 @@ export default function SeoServicePage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
           {/* Pillars of SEO */}
-          <div className="mt-20 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {pillars.map((item, i) => (
               <div key={i} className="p-8 rounded-[28px] border border-[#e2e8f0] bg-[#f8fafc] hover:border-[#c7d2fe] transition-all">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#eef2ff] text-[#4f46e5] font-bold text-sm mb-5">
