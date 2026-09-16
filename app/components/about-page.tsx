@@ -572,6 +572,75 @@ export function AboutPage() {
         </div>
       </section>
 
+      {/* CEO MEDIA SECTION (Instagram Reels Grid) */}
+      <section className="py-12 bg-[#f8fafc] overflow-hidden">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 mb-8 flex justify-between items-end">
+          <div>
+            <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#0f172a]">
+              Latest Reels & Updates
+            </h2>
+            <p className="mt-2 text-sm text-[#64748b]">
+              Follow @lw_avee on Instagram for more insights.
+            </p>
+          </div>
+          <a
+            href="https://www.instagram.com/lw_avee/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#f09433] via-[#dc2743] to-[#bc1888] px-5 py-2 text-sm font-bold text-white shadow-md hover:shadow-lg transition-all hover:-translate-y-0.5"
+          >
+            <InstagramIcon className="w-4 h-4" />
+            Follow on Instagram
+          </a>
+        </div>
+
+        {/* Horizontal Scrolling Grid */}
+        <div className="w-full relative">
+          <div className="flex overflow-x-auto gap-4 sm:gap-6 px-6 lg:px-8 pb-8 snap-x snap-mandatory scroll-smooth hide-scrollbar" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+            {/* Dummy Reel Data - The user can replace these with actual video embeds, thumbnails, or links */}
+            {[
+              "https://www.instagram.com/reel/DcnlCSTpMi2",
+              "https://www.instagram.com/reel/DdWaEEEJApR",
+              "https://www.instagram.com/reel/DdTpG08JFH-",
+              "https://www.instagram.com/reel/DdGuHfhJao7",
+            ].map((reelUrl, index) => (
+              <div
+                key={index}
+                className="relative flex-none w-[328px] h-[520px] rounded-[12px] bg-white shadow-sm hover:shadow-lg transition-all duration-300 snap-center border border-gray-200 overflow-hidden"
+              >
+                <iframe
+                  src={`${reelUrl}/embed`}
+                  width="328"
+                  height="520"
+                  style={{ border: "none" }}
+                  scrolling="no"
+                  allow="encrypted-media"
+                  className="absolute inset-0"
+                ></iframe>
+              </div>
+            ))}
+          </div>
+          <style dangerouslySetInnerHTML={{__html: `
+            .hide-scrollbar::-webkit-scrollbar {
+              display: none;
+            }
+          `}} />
+        </div>
+        
+        {/* Mobile Follow Button */}
+        <div className="sm:hidden px-6 mt-2 flex justify-center">
+          <a
+            href="https://www.instagram.com/lw_avee/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#f09433] via-[#dc2743] to-[#bc1888] px-6 py-3 text-sm font-bold text-white shadow-md"
+          >
+            <InstagramIcon className="w-5 h-5" />
+            Follow @lw_avee
+          </a>
+        </div>
+      </section>
+
       {/* 3. OUR STORY & THE LOCAL ADVANTAGE */}
       <section className="py-20 lg:py-28 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -803,51 +872,148 @@ export function AboutPage() {
       </section>
 
       {/* 7. BOTTOM STRATEGY CALL TO ACTION */}
-      <section className="py-20 lg:py-28 bg-white">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="relative overflow-hidden rounded-[36px] bg-gradient-to-br from-[#4f46e5] via-[#4338ca] to-[#312e81] p-10 sm:p-16 text-center text-white shadow-2xl shadow-[#4f46e5]/25">
-            <div className="absolute top-0 right-0 h-96 w-96 rounded-full bg-white/10 blur-3xl pointer-events-none" />
-            <div className="absolute bottom-0 left-0 h-96 w-96 rounded-full bg-[#0891b2]/20 blur-3xl pointer-events-none" />
+      <section className="py-20 lg:py-32 bg-white relative overflow-hidden">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="relative overflow-hidden rounded-[40px] bg-[#0f172a] p-10 sm:p-20 text-center text-white shadow-2xl shadow-indigo-900/20 border border-slate-800"
+          >
+            {/* Animated Background Graphics */}
+            <div className="absolute inset-0 pointer-events-none overflow-hidden rounded-[40px]">
+              {/* Dynamic Gradient Orbs */}
+              <motion.div 
+                animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
+                transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute -top-40 -right-40 h-[500px] w-[500px] rounded-full bg-gradient-to-br from-indigo-500/40 via-purple-500/20 to-transparent blur-3xl" 
+              />
+              <motion.div 
+                animate={{ scale: [1, 1.3, 1], opacity: [0.2, 0.4, 0.2] }}
+                transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+                className="absolute -bottom-40 -left-40 h-[600px] w-[600px] rounded-full bg-gradient-to-tr from-cyan-500/30 via-emerald-500/10 to-transparent blur-3xl" 
+              />
+              
+              {/* Grid Overlay */}
+              <div 
+                className="absolute inset-0 opacity-[0.05]"
+                style={{
+                  backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.5) 1px, transparent 1px)",
+                  backgroundSize: "40px 40px",
+                }}
+              />
+            </div>
 
-            <div className="relative z-10 max-w-2xl mx-auto">
-              <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-indigo-200 backdrop-blur-md mb-6">
-                <Zap size={13} className="text-indigo-200" />
-                Udaipur &amp; Rajasthan Consultation
-              </div>
+            {/* Floating Graphic Icons */}
+            <motion.div
+              animate={{ y: [-10, 10, -10], rotate: [-5, 5, -5] }}
+              transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+              className="absolute top-12 left-12 md:left-24 hidden md:flex items-center justify-center h-16 w-16 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md shadow-2xl text-yellow-400"
+            >
+              <Zap size={28} />
+            </motion.div>
+            
+            <motion.div
+              animate={{ y: [10, -10, 10], rotate: [5, -5, 5] }}
+              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+              className="absolute bottom-16 right-12 md:right-24 hidden md:flex items-center justify-center h-20 w-20 rounded-[28px] bg-gradient-to-br from-indigo-500/20 to-purple-500/20 border border-white/10 backdrop-blur-md shadow-2xl text-cyan-300"
+            >
+              <TrendingUp size={36} />
+            </motion.div>
 
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
-                Ready to rank your business on Google and get real leads?
-              </h2>
+            <motion.div
+              animate={{ y: [-8, 8, -8], scale: [1, 1.05, 1] }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+              className="absolute top-20 right-32 hidden lg:flex items-center justify-center h-12 w-12 rounded-full bg-white/5 border border-white/10 backdrop-blur-md text-emerald-400"
+            >
+              <Rocket size={20} />
+            </motion.div>
 
-              <p className="mt-6 text-base sm:text-lg leading-8 text-indigo-100">
-                Talk directly with Founder &amp; CEO Naveen Panchal. We&apos;ll review your current website, analyze your Google rankings in Udaipur, and share an honest roadmap to grow your inquiries.
-              </p>
+            {/* Content */}
+            <div className="relative z-20 max-w-3xl mx-auto flex flex-col items-center">
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2, duration: 0.5 }}
+                className="inline-flex items-center gap-2 rounded-full border border-indigo-500/30 bg-indigo-500/10 px-5 py-2 text-xs font-black uppercase tracking-widest text-indigo-300 backdrop-blur-md mb-8 shadow-[0_0_15px_rgba(99,102,241,0.2)]"
+              >
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
+                </span>
+                Udaipur & Rajasthan Growth Partner
+              </motion.div>
 
-              <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+              <motion.h2 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.3, duration: 0.6 }}
+                className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-[1.1]"
+              >
+                Ready to dominate Google <br className="hidden sm:block" />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-cyan-400 to-emerald-400">
+                  and get real leads?
+                </span>
+              </motion.h2>
+
+              <motion.p 
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.5, duration: 0.6 }}
+                className="mt-6 text-base sm:text-lg leading-8 text-slate-300 max-w-2xl font-medium"
+              >
+                Stop losing customers to competitors with faster websites. Talk directly with Founder & CEO Naveen Panchal for an honest, no-BS roadmap to scale your inquiries.
+              </motion.p>
+
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.7, duration: 0.6 }}
+                className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-5 w-full sm:w-auto"
+              >
                 <a
                   href="https://wa.me/917297875798"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-bold text-[#4f46e5] shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:bg-slate-50"
+                  className="group relative inline-flex items-center justify-center gap-3 rounded-full bg-white px-8 py-4.5 text-sm font-black text-slate-900 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] w-full sm:w-auto overflow-hidden"
                 >
-                  Chat with Naveen on WhatsApp
-                  <ArrowRight size={15} className="transition-transform duration-300 group-hover:translate-x-1" />
+                  <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-emerald-100 to-emerald-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                  <div className="relative z-10 flex items-center gap-2">
+                    <span className="flex items-center justify-center h-6 w-6 rounded-full bg-emerald-500 text-white">
+                      <Phone size={12} />
+                    </span>
+                    Chat with Naveen
+                    <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1.5" />
+                  </div>
                 </a>
+                
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/5 px-8 py-4 text-sm font-bold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/15"
+                  className="group inline-flex items-center justify-center gap-2 rounded-full border border-slate-700 bg-slate-800/50 px-8 py-4.5 text-sm font-bold text-white backdrop-blur-md transition-all duration-300 hover:bg-slate-700 hover:border-slate-600 w-full sm:w-auto"
                 >
+                  <div className="flex h-2 w-2 rounded-full bg-indigo-500 group-hover:animate-ping"></div>
                   Book a Strategy Call
                 </Link>
-              </div>
+              </motion.div>
 
-              <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-xs text-indigo-200 font-medium">
-                <span>✓ 100% Free Website &amp; SEO Audit</span>
-                <span>✓ Direct CEO Consultation in Udaipur</span>
-                <span>✓ Transparent Fixed Pricing</span>
-              </div>
+              <motion.div 
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.9, duration: 0.8 }}
+                className="mt-12 flex flex-wrap items-center justify-center gap-6 sm:gap-8 text-[11px] sm:text-xs text-slate-400 font-bold uppercase tracking-wider"
+              >
+                <span className="flex items-center gap-2"><CheckCircle2 size={14} className="text-emerald-400" /> Free SEO Audit</span>
+                <span className="flex items-center gap-2"><CheckCircle2 size={14} className="text-emerald-400" /> Direct CEO Consult</span>
+                <span className="flex items-center gap-2"><CheckCircle2 size={14} className="text-emerald-400" /> Transparent Pricing</span>
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
     </main>
