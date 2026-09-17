@@ -3,6 +3,8 @@ import { FileText, Video, Users, Calendar, Activity, MessageSquare } from "lucid
 import { getBlogs, getReels, getVisitorStats } from "@/lib/db";
 import prisma from "@/lib/prisma";
 
+export const dynamic = "force-dynamic";
+
 export default async function AdminDashboard() {
   const blogsCount = getBlogs().length;
   const reelsCount = getReels().length;
