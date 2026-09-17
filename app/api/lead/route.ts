@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import prisma from "@/lib/prisma";
 
 export async function POST(req: NextRequest) {
   try {
@@ -51,24 +52,18 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Lead payload structured for CRM, Webhook, or email dispatch
-    const leadRecord = {
-      id: `lead_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`,
-      name: name.trim(),
-      email: email.trim().toLowerCase(),
-      phone: phone.trim(),
-      website: website.trim(),
-      company: company.trim(),
-      primaryGoal: primaryGoal.trim(),
-      details: (notes || message).trim(),
-      source,
-      timestamp: new Date().toISOString(),
-      userAgent: req.headers.get("user-agent") || "unknown",
-      ip: req.headers.get("x-forwarded-for") || "unknown",
-    };
-
-    // Log structured lead record to server output (and ready for webhook integration)
-    console.info("[RankVRA Lead Capture]", JSON.stringify(leadRecord));
+    // Save Lead to database using Prisma
+    const leadRecord = await prisma.lead.create({
+      data: {
+        name: name.trim(),
+        email: email.trim().toLowerCase(),
+        phone: phone.trim(),
+        company: company.trim() || null,
+        primaryGoal: primaryGoal.trim() || null,
+        notes: (notes || message).trim() || null,
+        source: source.trim() || null,
+      }
+    });
 
     return NextResponse.json(
       {
