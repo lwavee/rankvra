@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, FormEvent } from "react";
-import { Trash2, Loader2, Plus, Instagram } from "lucide-react";
+import { Trash2, Loader2, Plus, PlayCircle } from "lucide-react";
 
 type Reel = {
   id: string;
@@ -136,7 +136,7 @@ export default function ManageReels() {
           ) : reels.length === 0 ? (
             <div className="bg-white rounded-2xl border border-slate-200 border-dashed p-12 text-center">
               <div className="mx-auto h-12 w-12 rounded-full bg-pink-50 flex items-center justify-center text-pink-400 mb-3">
-                <Instagram size={24} />
+                <PlayCircle size={24} />
               </div>
               <h3 className="text-sm font-bold text-slate-900 mb-1">No reels added</h3>
               <p className="text-sm text-slate-500">Link your first Instagram reel using the form.</p>
@@ -147,7 +147,7 @@ export default function ManageReels() {
                 <div key={reel.id} className="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm group hover:shadow-md transition-shadow relative">
                   <div className="flex items-start gap-4 mb-3">
                     <div className="h-10 w-10 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-500 flex items-center justify-center text-white shrink-0 shadow-inner">
-                      <Instagram size={20} />
+                      <PlayCircle size={20} />
                     </div>
                     <div className="flex-1 min-w-0">
                       <h3 className="text-sm font-bold text-slate-900 truncate">{reel.title}</h3>
