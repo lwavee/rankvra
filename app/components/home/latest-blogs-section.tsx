@@ -4,12 +4,16 @@ import { ArrowRight, BookOpen, Clock, Sparkles } from "lucide-react";
 import { BLOG_POSTS } from "@/app/blogs/data";
 
 export function LatestBlogsSection() {
-  // Select 3 high-impact strategic articles
-  const featured = [
-    BLOG_POSTS.find((p) => p.slug === "seo-agency-udaipur") || BLOG_POSTS[0],
-    BLOG_POSTS.find((p) => p.slug === "web-development-company-udaipur") || BLOG_POSTS[2],
-    BLOG_POSTS.find((p) => p.slug === "ecommerce-seo-india-guide") || BLOG_POSTS[10],
-  ].filter(Boolean);
+  // Select 3 high-impact strategic articles with unique slugs
+  const selectedSlugs = [
+    "core-web-vitals-nextjs-optimization",
+    "b2b-lead-generation-india",
+    "ecommerce-seo-india-guide",
+  ];
+
+  const featured = selectedSlugs
+    .map((slug) => BLOG_POSTS.find((p) => p.slug === slug))
+    .filter((p): p is (typeof BLOG_POSTS)[number] => Boolean(p));
 
   return (
     <section id="insights" className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24 border-t border-slate-100">

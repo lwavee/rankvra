@@ -4,14 +4,16 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, type ReactNode } from "react";
-import { Menu, X, ArrowUpRight, MessageCircle, MapPin, Mail } from "lucide-react";
+import { Menu, X, ArrowUpRight, MessageCircle, MapPin, Mail, Globe } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
+  { href: "/industries/insurance", label: "Insurance" },
   { href: "/case-studies", label: "Case Studies" },
-  { href: "/about", label: "About" },
+  { href: "/markets", label: "Markets" },
   { href: "/blogs", label: "Blog" },
+  { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -28,7 +30,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
           <Link href="/" className="flex items-center gap-3 group py-1" aria-label="RankVRA Home">
             <Image
               src="/logo-icon.png"
-              alt="RankVRA - Web Development & SEO Agency"
+              alt="RankVRA - Web Development & Growth Company"
               width={54}
               height={40}
               className="h-9 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
@@ -40,12 +42,12 @@ export function SiteShell({ children }: { children: ReactNode }) {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden items-center gap-7 text-sm font-medium md:flex">
+          <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
             {navLinks.map((link) => {
               const isActive =
                 link.href === "/"
                   ? pathname === "/"
-                  : pathname.startsWith(link.href);
+                  : pathname === link.href || pathname.startsWith(link.href + "/");
               return (
                 <Link
                   key={link.href}
@@ -76,10 +78,10 @@ export function SiteShell({ children }: { children: ReactNode }) {
               WhatsApp
             </a>
             <Link
-              href="/free-growth-audit"
+              href="/free-website-audit"
               className="hidden sm:inline-flex items-center gap-1.5 rounded-full bg-[#4f46e5] px-4.5 py-2 text-xs font-semibold text-white shadow-sm transition-all duration-200 hover:bg-[#4338ca] hover:shadow-md"
             >
-              Free Growth Audit
+              Free Website Audit
               <ArrowUpRight className="w-3.5 h-3.5" />
             </Link>
             <button
@@ -114,13 +116,13 @@ export function SiteShell({ children }: { children: ReactNode }) {
                   </Link>
                 );
               })}
-              <div className="pt-2 border-t border-slate-100 flex flex-col gap-2.5">
+              <div className="pt-3 border-t border-slate-100 flex flex-col gap-2.5">
                 <Link
-                  href="/free-growth-audit"
+                  href="/free-website-audit"
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="inline-flex items-center justify-center rounded-full bg-[#4f46e5] px-6 py-3 text-sm font-semibold text-white"
                 >
-                  Get Free Growth Audit
+                  Get a Free Website Audit
                 </Link>
                 <a
                   href="https://wa.me/917297875798"
@@ -139,11 +141,11 @@ export function SiteShell({ children }: { children: ReactNode }) {
 
       <main className="flex-1">{children}</main>
 
-      {/* Short, Clean & Premium Footer */}
+      {/* Clean & Authoritative Global Footer */}
       <footer className="border-t border-slate-200 bg-[#f8fafc] text-sm text-slate-600">
-        <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8 lg:py-14">
+        <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8 lg:py-16">
           <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-12 lg:gap-8">
-            {/* Col 1: Brand & Contact (4 cols) */}
+            {/* Col 1: Brand & Positioning (4 cols) */}
             <div className="lg:col-span-4 space-y-4">
               <Link href="/" className="inline-flex items-center gap-2.5 group" aria-label="RankVRA Home">
                 <Image
@@ -158,19 +160,23 @@ export function SiteShell({ children }: { children: ReactNode }) {
                 </span>
               </Link>
               <p className="text-xs sm:text-sm text-slate-500 leading-relaxed max-w-sm">
-                Next.js web development, technical Google SEO, and high-converting lead funnels engineered in Udaipur, Rajasthan.
+                India-based web development, custom software engineering, and search growth systems serving national and international businesses.
               </p>
               <div className="space-y-1.5 text-xs text-slate-600">
                 <p className="flex items-center gap-2">
+                  <Globe size={13} className="text-[#4f46e5] shrink-0" />
+                  <span>Serving USA, Canada, UK, India &amp; Global Markets</span>
+                </p>
+                <p className="flex items-center gap-2">
                   <MapPin size={13} className="text-[#4f46e5] shrink-0" />
-                  <span>Udaipur, Rajasthan 313001 &bull; Serving Global</span>
+                  <span>Headquarters: Udaipur, Rajasthan 313001, India</span>
                 </p>
                 <p className="flex items-center gap-2">
                   <Mail size={13} className="text-[#4f46e5] shrink-0" />
                   <a href="mailto:info@rankvra.com" className="hover:text-[#4f46e5] transition-colors">info@rankvra.com</a>
                 </p>
               </div>
-              <div className="flex items-center gap-3 pt-1">
+              <div className="flex items-center gap-2.5 pt-1">
                 <a
                   href="https://www.instagram.com/lw_avee/?__pwa=1"
                   target="_blank"
@@ -200,42 +206,42 @@ export function SiteShell({ children }: { children: ReactNode }) {
 
             {/* Col 2: Services (2 cols) */}
             <div className="lg:col-span-2 space-y-3">
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#0f172a]">Services</h3>
+              <h3 className="text-xs font-bold uppercase tracking-wider text-[#0f172a]">Core Services</h3>
               <ul className="space-y-2 text-xs text-slate-600">
                 <li><Link href="/services/web-development" className="hover:text-[#4f46e5] transition-colors">Web Development</Link></li>
-                <li><Link href="/services/seo" className="hover:text-[#4f46e5] transition-colors">Technical &amp; Local SEO</Link></li>
-                <li><Link href="/services/local-seo" className="hover:text-[#4f46e5] transition-colors">Maps 3-Pack SEO</Link></li>
-                <li><Link href="/services/google-ads" className="hover:text-[#4f46e5] transition-colors">Google Ads (PPC)</Link></li>
-                <li><Link href="/services/ai-automation" className="hover:text-[#4f46e5] transition-colors">AI &amp; Automation</Link></li>
-                <li><Link href="/b2b-lead-generation" className="hover:text-[#4f46e5] transition-colors">B2B Lead Gen</Link></li>
+                <li><Link href="/services/website-design" className="hover:text-[#4f46e5] transition-colors">Website Design</Link></li>
+                <li><Link href="/services/website-redesign" className="hover:text-[#4f46e5] transition-colors">Website Redesign</Link></li>
+                <li><Link href="/services/web-application-development" className="hover:text-[#4f46e5] transition-colors">Custom Web Apps</Link></li>
+                <li><Link href="/services/technical-seo" className="hover:text-[#4f46e5] transition-colors">Technical SEO</Link></li>
+                <li><Link href="/services/international-seo" className="hover:text-[#4f46e5] transition-colors">International SEO</Link></li>
               </ul>
             </div>
 
-            {/* Col 3: Company (2 cols) */}
-            <div className="lg:col-span-2 space-y-3">
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#0f172a]">Company</h3>
+            {/* Col 3: Markets & Industries (3 cols) */}
+            <div className="lg:col-span-3 space-y-3">
+              <h3 className="text-xs font-bold uppercase tracking-wider text-[#0f172a]">Markets &amp; Industries</h3>
               <ul className="space-y-2 text-xs text-slate-600">
-                <li><Link href="/case-studies" className="hover:text-[#4f46e5] transition-colors font-medium">Case Studies</Link></li>
-                <li><Link href="/about" className="hover:text-[#4f46e5] transition-colors">About RankVRA</Link></li>
-                <li><Link href="/locations/udaipur" className="hover:text-[#4f46e5] transition-colors">Udaipur HQ</Link></li>
-                <li><Link href="/blogs" className="hover:text-[#4f46e5] transition-colors">Blog &amp; Insights</Link></li>
-                <li><Link href="/free-growth-audit" className="hover:text-[#4f46e5] transition-colors text-[#4f46e5] font-semibold">Free Growth Audit</Link></li>
-                <li><Link href="/contact" className="hover:text-[#4f46e5] transition-colors">Contact</Link></li>
+                <li><Link href="/markets/usa" className="hover:text-[#4f46e5] transition-colors">United States Market</Link></li>
+                <li><Link href="/markets/uk" className="hover:text-[#4f46e5] transition-colors">United Kingdom Market</Link></li>
+                <li><Link href="/markets/canada" className="hover:text-[#4f46e5] transition-colors">Canada Market</Link></li>
+                <li><Link href="/markets/india" className="hover:text-[#4f46e5] transition-colors">India (Delhi NCR &amp; Metros)</Link></li>
+                <li><Link href="/industries/insurance" className="hover:text-[#4f46e5] transition-colors font-medium text-indigo-600">Insurance Technology</Link></li>
+                <li><Link href="/case-studies" className="hover:text-[#4f46e5] transition-colors">Featured Case Studies</Link></li>
               </ul>
             </div>
 
-            {/* Col 4: Direct Founder Desk Card (4 cols) */}
-            <div className="lg:col-span-4">
+            {/* Col 4: Direct Founder Desk (3 cols) */}
+            <div className="lg:col-span-3">
               <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-xs">
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-xs font-bold text-[#0f172a]">Direct Founder Desk</span>
                   <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-2 py-0.5 text-[10px] font-bold text-emerald-700 border border-emerald-200">
-                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                    Available
+                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                    Active
                   </span>
                 </div>
                 <p className="text-xs text-slate-500 leading-relaxed mb-3.5">
-                  Talk directly with Founder Naveen Panchal for technical discovery, pricing, and rapid turnarounds.
+                  Direct architectural discovery and project planning with Founder Naveen Panchal.
                 </p>
                 <a
                   href="https://wa.me/917297875798?text=Hi%20Naveen,%20I%20want%20to%20discuss%20a%20project%20with%20RankVRA."
@@ -246,13 +252,18 @@ export function SiteShell({ children }: { children: ReactNode }) {
                   <MessageCircle size={14} />
                   <span>WhatsApp: +91 7297875798</span>
                 </a>
+                <div className="mt-3 text-center">
+                  <Link href="/free-website-audit" className="text-[11px] font-semibold text-indigo-600 hover:underline">
+                    Or request a Free Website Audit &rarr;
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Footer Bottom Strip */}
-          <div className="mt-10 pt-6 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
-            <p>© {new Date().getFullYear()} RankVRA. All rights reserved. Registered in Udaipur, Rajasthan.</p>
+          <div className="mt-12 pt-6 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+            <p>© {new Date().getFullYear()} RankVRA. All rights reserved. Based in India, serving global businesses.</p>
             <div className="flex items-center gap-5">
               <Link href="/privacy-policy" className="hover:text-slate-800 transition-colors">Privacy Policy</Link>
               <Link href="/terms-and-conditions" className="hover:text-slate-800 transition-colors">Terms of Service</Link>

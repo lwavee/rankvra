@@ -2,10 +2,13 @@ import {
   ArrowRight,
   Bot,
   CheckCircle2,
+  Code2,
   Globe,
+  LayoutDashboard,
+  MonitorSmartphone,
   PanelsTopLeft,
+  ShieldCheck,
   Sparkles,
-  Target,
   Zap,
 } from "lucide-react";
 import Link from "next/link";
@@ -19,18 +22,18 @@ export function ServicesSection() {
           <div className="max-w-2xl mb-12">
             <div className="inline-flex items-center gap-2 rounded-full border border-[#e0e7ff] bg-[#eef2ff] px-3.5 py-1 text-xs font-bold uppercase tracking-widest text-[#4f46e5] mb-3">
               <Sparkles size={13} />
-              Growth Capabilities
+              Core Capabilities
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0f172a] tracking-tight leading-tight">
               Software-Grade Engineering &amp;{" "}
-              <span className="text-gradient">High-Intent Lead Funnels</span>.
+              <span className="text-gradient">Search Growth Systems</span>.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-[#64748b]">
-              Every solution is custom-coded for speed, search dominance, and direct business inquiries.
+              Every solution is custom-coded for speed, search dominance, and qualified commercial client acquisition.
             </p>
           </div>
 
-          {/* Bento Grid Layout for Ultra-Unique Visual Hierarchy */}
+          {/* Bento Grid Layout */}
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {/* Feature 1 — Large Bento Card: Web Development */}
             <div className="sm:col-span-2 rounded-3xl border border-[#e2e8f0] bg-white p-7 sm:p-9 shadow-xs hover:border-[#c7d2fe] hover:shadow-md transition-all relative overflow-hidden flex flex-col justify-between">
@@ -41,19 +44,19 @@ export function ServicesSection() {
                     <PanelsTopLeft size={22} />
                   </div>
                   <span className="rounded-full bg-[#f0fdf4] border border-[#bbf7d0] px-3 py-1 text-xs font-bold text-[#166534]">
-                    &lt; 0.8s Mobile LCP
+                    Next.js &amp; React SSR
                   </span>
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-[#0f172a]">
-                  Custom Next.js &amp; React Web Development
+                  Custom Web Development &amp; Modern Applications
                 </h3>
                 <p className="mt-2 text-sm text-[#64748b] leading-relaxed max-w-xl">
-                  We write clean, lightweight TypeScript code that passes Google Core Web Vitals with 100/100 scores. No slow WordPress plugins, zero bloated page builders, and direct conversion funnels.
+                  We write clean, lightweight TypeScript code engineered for rapid page loading and stable Core Web Vitals. Zero sluggish CMS plugins, no bloated drag-and-drop page builders, and focused inbound conversion funnels.
                 </p>
 
                 {/* Micro Feature Tags */}
                 <div className="mt-5 flex flex-wrap gap-2">
-                  {["Next.js 16 SSR", "TypeScript", "Core Web Vitals Pass", "100% Code Ownership"].map(
+                  {["Next.js SSR & SSG", "TypeScript", "Core Web Vitals Pass", "100% Code Ownership"].map(
                     (tag) => (
                       <span
                         key={tag}
@@ -68,124 +71,124 @@ export function ServicesSection() {
               </div>
 
               <div className="mt-6 pt-5 border-t border-[#f1f5f9] flex items-center justify-between">
-                <span className="text-xs font-semibold text-[#64748b]">Engineered in Udaipur for Ambitious Brands</span>
+                <span className="text-xs font-semibold text-[#64748b]">Engineered in India for National &amp; Global Clients</span>
                 <Link
                   href="/services/web-development"
                   className="inline-flex items-center gap-1 text-xs font-bold text-[#4f46e5] hover:underline"
                 >
-                  Explore Web Dev <ArrowRight size={13} />
+                  Explore Web Development <ArrowRight size={13} />
                 </Link>
               </div>
             </div>
 
-            {/* Feature 2: Local SEO & Google Maps */}
+            {/* Feature 2: Website Design & Redesign */}
             <div className="rounded-3xl border border-[#e2e8f0] bg-white p-7 shadow-xs hover:border-[#c7d2fe] hover:shadow-md transition-all flex flex-col justify-between">
               <div>
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#f0fdf4] text-[#16a34a] border border-[#bbf7d0]">
-                    <Globe size={22} />
+                    <MonitorSmartphone size={22} />
                   </div>
                   <span className="rounded-full bg-[#eef2ff] border border-[#e0e7ff] px-2.5 py-0.5 text-[11px] font-bold text-[#4f46e5]">
-                    Top 3 3-Pack
+                    Conversion First
                   </span>
                 </div>
                 <h3 className="text-lg font-bold text-[#0f172a]">
-                  Local SEO &amp; Google Maps 3-Pack
+                  Website Design &amp; Redesign
                 </h3>
                 <p className="mt-2 text-xs sm:text-sm text-[#64748b] leading-relaxed">
-                  Capture 70% of localized customer calls. We optimize Google Business Profiles, citations, and geo-targeted landing pages across Udaipur and Rajasthan.
+                  Transform slow, outdated corporate websites into clean, modern digital storefronts that command trust and drive qualified consultation requests.
                 </p>
               </div>
               <div className="mt-6 pt-4 border-t border-[#f1f5f9]">
                 <Link
-                  href="/services/local-seo"
+                  href="/services/website-design"
                   className="inline-flex items-center gap-1 text-xs font-bold text-[#4f46e5] hover:underline"
                 >
-                  Explore Local SEO <ArrowRight size={13} />
+                  Explore Website Design <ArrowRight size={13} />
                 </Link>
               </div>
             </div>
 
-            {/* Feature 3: Google Ads (PPC) */}
+            {/* Feature 3: Custom Web Applications & Portals */}
             <div className="rounded-3xl border border-[#e2e8f0] bg-white p-7 shadow-xs hover:border-[#c7d2fe] hover:shadow-md transition-all flex flex-col justify-between">
               <div>
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#eff6ff] text-[#2563eb] border border-[#bfdbfe]">
-                    <Target size={22} />
+                    <LayoutDashboard size={22} />
                   </div>
                   <span className="rounded-full bg-[#f8fafc] border border-[#e2e8f0] px-2.5 py-0.5 text-[11px] font-bold text-[#334155]">
-                    High ROAS
+                    Portals &amp; Tools
                   </span>
                 </div>
                 <h3 className="text-lg font-bold text-[#0f172a]">
-                  Google Ads &amp; Paid Search Funnels
+                  Custom Web Applications
                 </h3>
                 <p className="mt-2 text-xs sm:text-sm text-[#64748b] leading-relaxed">
-                  Eliminate wasted ad spend with aggressive negative keyword filtering, call-only ads, and high-speed dedicated landing pages that convert clicks into leads.
+                  Secure broker portals, operational dashboards, client intake engines, and business automation systems tailored to your unique workflows.
                 </p>
               </div>
               <div className="mt-6 pt-4 border-t border-[#f1f5f9]">
                 <Link
-                  href="/services/google-ads"
+                  href="/services/web-application-development"
                   className="inline-flex items-center gap-1 text-xs font-bold text-[#4f46e5] hover:underline"
                 >
-                  Explore Google Ads <ArrowRight size={13} />
+                  Explore Web Apps <ArrowRight size={13} />
                 </Link>
               </div>
             </div>
 
-            {/* Feature 4: AI & WhatsApp Automation */}
+            {/* Feature 4: Technical & International SEO */}
             <div className="rounded-3xl border border-[#e2e8f0] bg-white p-7 shadow-xs hover:border-[#c7d2fe] hover:shadow-md transition-all flex flex-col justify-between">
               <div>
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#faf5ff] text-[#9333ea] border border-[#e9d5ff]">
-                    <Bot size={22} />
+                    <Globe size={22} />
                   </div>
                   <span className="rounded-full bg-[#f0fdf4] border border-[#bbf7d0] px-2.5 py-0.5 text-[11px] font-bold text-[#16a34a]">
-                    &lt; 30s Response
+                    Ethical White-Hat
                   </span>
                 </div>
                 <h3 className="text-lg font-bold text-[#0f172a]">
-                  AI &amp; WhatsApp Lead Automations
+                  Technical &amp; International SEO
                 </h3>
                 <p className="mt-2 text-xs sm:text-sm text-[#64748b] leading-relaxed">
-                  Never miss an inquiry while sleeping. Custom WhatsApp Business bots that answer FAQs, qualify requirements, and push instant alerts to your phone.
+                  Schema graph implementation, rendering optimizations, crawl budgeting, and multi-market search architecture for national and international organic rankings.
                 </p>
               </div>
               <div className="mt-6 pt-4 border-t border-[#f1f5f9]">
                 <Link
-                  href="/services/ai-automation"
+                  href="/services/technical-seo"
                   className="inline-flex items-center gap-1 text-xs font-bold text-[#4f46e5] hover:underline"
                 >
-                  Explore AI Bots <ArrowRight size={13} />
+                  Explore Technical SEO <ArrowRight size={13} />
                 </Link>
               </div>
             </div>
 
-            {/* Feature 5: B2B & Export Inbound */}
+            {/* Feature 5: Insurance & Vertical Solutions */}
             <div className="rounded-3xl border border-[#e2e8f0] bg-white p-7 shadow-xs hover:border-[#c7d2fe] hover:shadow-md transition-all flex flex-col justify-between">
               <div>
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#fff7ed] text-[#ea580c] border border-[#fed7aa]">
-                    <Zap size={22} />
+                    <ShieldCheck size={22} />
                   </div>
                   <span className="rounded-full bg-[#eef2ff] border border-[#e0e7ff] px-2.5 py-0.5 text-[11px] font-bold text-[#4f46e5]">
-                    Global RFQs
+                    Specialized
                   </span>
                 </div>
                 <h3 className="text-lg font-bold text-[#0f172a]">
-                  B2B &amp; International Export SEO
+                  Insurance Technology Solutions
                 </h3>
                 <p className="mt-2 text-xs sm:text-sm text-[#64748b] leading-relaxed">
-                  Rank on Google in the USA, UK, and UAE. Multi-language hreflang structures and digital specification catalogs for marble, stone, and manufacturing exporters.
+                  Proven agency web design, quote funnels, and wholesale broker intake portals built on actual commercial project experience.
                 </p>
               </div>
               <div className="mt-6 pt-4 border-t border-[#f1f5f9]">
                 <Link
-                  href="/b2b-lead-generation"
+                  href="/industries/insurance"
                   className="inline-flex items-center gap-1 text-xs font-bold text-[#4f46e5] hover:underline"
                 >
-                  Explore B2B Funnels <ArrowRight size={13} />
+                  Explore Insurance Solutions <ArrowRight size={13} />
                 </Link>
               </div>
             </div>

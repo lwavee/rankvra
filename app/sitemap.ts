@@ -11,20 +11,33 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/about",
     "/services",
     "/services/web-development",
+    "/services/website-design",
+    "/services/website-redesign",
+    "/services/web-application-development",
+    "/services/technical-seo",
+    "/services/international-seo",
+    "/services/conversion-optimization",
+    "/services/ecommerce-development",
+    "/services/landing-page-development",
     "/services/seo",
     "/services/local-seo",
     "/services/digital-marketing",
     "/services/google-ads",
     "/services/ai-automation",
+    "/industries/insurance",
     "/industries/hotels",
     "/industries/manufacturers",
     "/industries/exporters",
     "/industries/clinics",
-    "/locations/india",
-    "/locations/udaipur",
-    "/locations/rajasthan",
+    "/markets",
+    "/markets/usa",
+    "/markets/uk",
+    "/markets/canada",
+    "/markets/india",
+    "/markets/delhi-ncr",
     "/b2b-lead-generation",
     "/international-seo",
+    "/free-website-audit",
     "/free-growth-audit",
     "/case-studies",
     "/portfolio",
@@ -47,7 +60,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}/case-studies/${study.slug}`,
     lastModified: new Date(study.publishedDate || lastModified),
     changeFrequency: "weekly" as const,
-    priority: 0.85,
+    priority: 0.9,
   }));
 
   const portfolioRoutes = portfolioProjects.map((project) => ({
@@ -66,7 +79,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency = "daily";
     } else if (
       route.startsWith("/services") ||
-      route === "/free-growth-audit" ||
+      route.startsWith("/markets") ||
+      route === "/industries/insurance" ||
+      route === "/free-website-audit" ||
       route === "/case-studies"
     ) {
       priority = 0.9;

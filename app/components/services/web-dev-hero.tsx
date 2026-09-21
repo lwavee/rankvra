@@ -72,7 +72,7 @@ export function WebDevHero() {
 
             <div className="mt-4 flex flex-wrap items-center gap-2.5">
               <Link
-                href="/free-growth-audit"
+                href="/free-website-audit"
                 className="group inline-flex items-center gap-2 rounded-full bg-indigo-600 px-5 py-2.5 text-xs sm:text-sm font-bold text-white shadow-md shadow-indigo-600/25 hover:bg-indigo-700 hover:-translate-y-0.5 transition-all"
               >
                 Claim Free Website Audit
@@ -137,7 +137,7 @@ export function WebDevHero() {
                   <span className="text-emerald-600 font-black">280ms</span>
                 </p>
                 <p className="text-slate-500 text-[10px]">
-                  Lakeview Heritage Resort: mobile load reduced 5.2s &rarr; 0.6s
+                  Capital &amp; Co Insurance: sub-second SSR load &bull; Global CDN
                 </p>
                 <div className="h-1 w-full bg-slate-200 rounded-full overflow-hidden">
                   <div className="h-full bg-emerald-500 rounded-full w-[94%]" />

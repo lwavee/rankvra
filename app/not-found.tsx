@@ -29,10 +29,10 @@ export default function NotFound() {
               Return Home
             </Link>
             <Link
-              href="/free-growth-audit"
+              href="/free-website-audit"
               className="inline-flex items-center gap-2 rounded-full border border-[#cbd5e1] bg-white px-7 py-3.5 text-sm font-semibold text-[#334155] hover:border-[#4f46e5] hover:text-[#4f46e5] transition-all"
             >
-              Get Free Growth Audit
+              Get Free Website Audit
               <ArrowRight size={15} />
             </Link>
             <a
@@ -52,28 +52,28 @@ export default function NotFound() {
               className="p-4 rounded-2xl border border-[#e2e8f0] hover:border-[#c7d2fe] hover:bg-[#f8fafc] transition-all"
             >
               <p className="text-sm font-bold text-[#0f172a]">Core Services</p>
-              <p className="text-xs text-[#64748b] mt-1">Web, SEO &amp; Google Ads</p>
+              <p className="text-xs text-[#64748b] mt-1">Web, App &amp; SEO Engineering</p>
             </Link>
             <Link
               href="/case-studies"
               className="p-4 rounded-2xl border border-[#e2e8f0] hover:border-[#c7d2fe] hover:bg-[#f8fafc] transition-all"
             >
               <p className="text-sm font-bold text-[#0f172a]">Case Studies</p>
-              <p className="text-xs text-[#64748b] mt-1">Verified client outcomes</p>
+              <p className="text-xs text-[#64748b] mt-1">Real projects &amp; live links</p>
             </Link>
             <Link
-              href="/blogs"
+              href="/industries/insurance"
               className="p-4 rounded-2xl border border-[#e2e8f0] hover:border-[#c7d2fe] hover:bg-[#f8fafc] transition-all"
             >
-              <p className="text-sm font-bold text-[#0f172a]">Growth Blog</p>
-              <p className="text-xs text-[#64748b] mt-1">SEO &amp; marketing guides</p>
+              <p className="text-sm font-bold text-[#0f172a]">Insurance Systems</p>
+              <p className="text-xs text-[#64748b] mt-1">Agency sites &amp; portals</p>
             </Link>
             <Link
               href="/contact"
               className="p-4 rounded-2xl border border-[#e2e8f0] hover:border-[#c7d2fe] hover:bg-[#f8fafc] transition-all"
             >
               <p className="text-sm font-bold text-[#0f172a]">Contact Us</p>
-              <p className="text-xs text-[#64748b] mt-1">Direct founder inquiry</p>
+              <p className="text-xs text-[#64748b] mt-1">Direct founder discovery</p>
             </Link>
           </div>
         </div>

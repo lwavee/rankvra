@@ -26,245 +26,326 @@ export interface CaseStudy {
   outcomeSummary: string;
   keyTakeaways: string[];
   publishedDate: string;
+  liveUrl?: string;
 }
 
 export const CASE_STUDIES: CaseStudy[] = [
   {
-    id: "lakeview-heritage-resort",
-    slug: "lakeview-heritage-resort",
-    title: "How Lakeview Heritage Resort Reduced OTA Dependency with Sub-Second Next.js Engineering",
-    tagline: "Custom Next.js architecture, Google Maps 3-Pack optimization, and a 1-tap WhatsApp booking funnel built for an independent boutique resort in Udaipur.",
-    client: "Lakeview Heritage Resort",
-    industry: "Hospitality & Tourism",
-    location: "Udaipur, Rajasthan",
-    timeline: "8 Weeks Engineering & Search Launch",
+    id: "capital-co-insurance",
+    slug: "capital-co-insurance",
+    title: "Capital & Co Insurance Services: Modernizing Commercial Insurance Acquisition",
+    tagline: "High-trust commercial insurance web design, policy lead capture architecture, and technical SEO for a forward-thinking insurance brokerage.",
+    client: "Capital & Co Insurance Services",
+    industry: "Commercial & Personal Insurance",
+    location: "United States",
+    timeline: "6 Weeks Full-Cycle Architecture & Launch",
+    liveUrl: "https://capcoinsurance.com/",
     servicesUsed: [
-      "Custom Next.js Web Development",
-      "Core Web Vitals Remediation",
-      "Hospitality Local SEO",
-      "WhatsApp Direct Booking Funnel",
+      "Custom Web Development",
+      "Insurance Agency Web Design",
+      "Lead Capture Automation",
+      "Technical SEO",
+      "Conversion Rate Optimization",
     ],
     startingPoint:
-      "The resort relied on Online Travel Agencies (OTAs) like MakeMyTrip and Booking.com for over 80% of its room occupancy, paying 18% to 22% in commissions on every reservation. Their existing legacy WordPress site had an 5.2s mobile Largest Contentful Paint (LCP), failed Google Core Web Vitals, and lost mobile visitors before images even loaded.",
+      "Capital & Co needed a high-trust digital storefront capable of presenting complex commercial and personal insurance policies with absolute clarity, establishing an authoritative presence to capture high-value commercial policyholders.",
     challenge:
-      "OTAs were running search ads on the resort's exact brand name, siphoning travelers who already intended to book directly. The slow website gave visitors no incentive to book on the official site, and international guests encountered confusing booking forms that failed on mobile viewports.",
+      "Standard agency templates often overwhelm prospective policyholders with dense industry jargon, complex quote forms, and poor mobile readability. The client required a modern, responsive web application that established immediate institutional credibility and guided prospects into clean, policy-specific consultation pathways.",
     strategy: [
-      "Re-engineer the digital storefront from scratch using Next.js 15+, eliminating all slow PHP plugins and database overhead.",
-      "Deploy edge-cached static generation and next/image optimization to achieve sub-second mobile page loads (<0.8s LCP).",
-      "Integrate Google Hotel Free Booking Links and optimize the Google Business Profile with localized geo-signals around Lake Pichola.",
-      "Build a frictionless 1-tap WhatsApp direct concierge funnel allowing domestic and NRI travelers to inquire about room suites instantly.",
+      "Architect a clean, modern web presence that positions commercial liability, property, auto, and personal lines with clear value propositions.",
+      "Build focused multi-step inquiry pathways tailored to commercial policy types, reducing cognitive load and friction.",
+      "Deploy responsive, accessible UI with sub-second page transitions, ensuring an effortless experience across all mobile viewports.",
+      "Implement comprehensive InsuranceAgency schema and structured data to establish strong entity understanding in search engines.",
     ],
     workCompleted: [
       {
-        title: "Headless Next.js Architecture",
+        title: "Full-Stack Web Engineering",
         description:
-          "Replaced bloated legacy WordPress templates with modular React components, custom Tailwind CSS, and automatic static pre-rendering on Vercel Edge networks.",
+          "Engineered a lightweight, high-performance web platform utilizing modern React and Next.js architecture, delivering instantaneous page navigation and stable visual layout.",
       },
       {
-        title: "Mobile Core Web Vitals Overhaul",
+        title: "Insurance Policy Funnels",
         description:
-          "Compressed luxury suite photography into modern WebP formats with responsive srcsets, reducing total page payload from 6.8MB to under 450KB.",
+          "Crafted dedicated inquiry flows for commercial general liability, commercial property, workers' compensation, and personal lines.",
       },
       {
-        title: "Local Hospitality Search Clustering",
+        title: "Trust-First UX Architecture",
         description:
-          "Structured schema graphs (Hotel, PostalAddress, GeoCoordinates) and published localized intent guides for luxury stays, lake views, and destination wedding queries in Udaipur.",
+          "Integrated prominent carrier representation, licensing transparency, and clear coverage guidance to reassure corporate decision-makers.",
       },
       {
-        title: "Direct WhatsApp Booking Engine",
+        title: "Technical SEO & Structured Data",
         description:
-          "Engineered pre-populated WhatsApp reservation links tied directly to specific suite types and dates, eliminating complex checkout forms.",
+          "Implemented comprehensive Schema.org markup (InsuranceAgency, Service, PostalAddress) to solidify regional and national commercial search positioning.",
       },
     ],
     metrics: [
       {
-        label: "Mobile LCP Speed",
-        value: "0.8s",
-        context: "Down from 5.2s on legacy WordPress, achieving 100% green Core Web Vitals pass scores.",
+        label: "Platform Speed",
+        value: "Sub-Second",
+        context: "Ultra-fast page loads and minimal visual shift across mobile viewports.",
       },
       {
-        label: "Page Weight Reduction",
-        value: "-85%",
-        context: "Optimized image and script payloads without sacrificing high-resolution luxury imagery.",
+        label: "Inquiry Flow",
+        value: "Frictionless",
+        context: "Streamlined multi-step quote submissions matched to specific policy lines.",
       },
       {
-        label: "Direct Booking Share",
-        value: "Substantial Lift",
-        context: "Direct guest WhatsApp and phone inquiries replaced high-commission OTA bookings for peak season dates.",
+        label: "Mobile UX",
+        value: "100% Responsive",
+        context: "Clean typography, accessible touch targets, and frictionless mobile forms.",
       },
       {
-        label: "Google Maps Visibility",
-        value: "Top 3 Rank",
-        context: "Consistent appearance in the local 3-pack for boutique heritage queries around Lake Pichola.",
+        label: "Source Ownership",
+        value: "Full Client IP",
+        context: "Proprietary, maintainable codebase without restrictive template locks.",
       },
     ],
-    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel Edge Network", "JSON-LD Schema", "WhatsApp Business API"],
+    techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "JSON-LD Schema", "Secure Lead Webhooks"],
     outcomeSummary:
-      "By replacing a sluggish template with custom web engineering and hyper-localized search positioning, Lakeview Heritage Resort established a dependable direct guest acquisition engine, significantly protecting its operating margins across peak season.",
+      "Capital & Co Insurance Services established an authoritative, high-converting digital presence that clearly communicates their coverage capabilities, supports commercial client acquisition, and represents their brokerage with modern professionalism.",
     keyTakeaways: [
-      "Speed directly impacts guest conversion: mobile travelers abandon hospitality sites taking more than 3 seconds to load.",
-      "A fast WhatsApp booking funnel converts significantly higher than traditional 6-step hotel reservation engines in the Indian and NRI market.",
-      "Claiming your exact brand entity on Google prevents OTAs from hijacking your direct organic reservations.",
+      "Insurance buyers seek trust and speed: clear policy explanations and fast-loading pages significantly reduce drop-offs.",
+      "Segmenting quote requests by specific policy type yields far higher lead quality than one-size-fits-all inquiry forms.",
+      "Custom web engineering protects client brand identity far better than bloated off-the-shelf WordPress themes.",
     ],
-    publishedDate: "2026-09-14",
+    publishedDate: "2026-09-15",
   },
   {
-    id: "mewar-stone-marble-exports",
-    slug: "mewar-stone-marble-exports",
-    title: "Engineered B2B Lead Funnel for Mewar Stone & Marble Exporters",
-    tagline: "Technical product catalogs, international B2B search architecture, and buyer inquiry funnels for a stone manufacturer in Rajasthan.",
-    client: "Mewar Stone & Marble Exports",
-    industry: "Industrial Manufacturing & Mining",
-    location: "Sukher / Madri Industrial Area, Udaipur",
-    timeline: "10 Weeks Technical Architecture & Search Campaign",
+    id: "sterling-insurance-portal",
+    slug: "sterling-insurance-portal",
+    title: "Sterling Wholesale Insurance: Engineering a High-Volume Broker Portal & Submission Engine",
+    tagline: "Custom web application engineering, secure broker authentication, and automated submission workflows for wholesale insurance.",
+    client: "Sterling Wholesale Insurance",
+    industry: "Wholesale Insurance & Underwriting",
+    location: "United States",
+    timeline: "12 Weeks Custom Web Application Architecture",
+    liveUrl: "https://app.sterlingwholesaleinsurance.com/",
     servicesUsed: [
-      "B2B Web Application Development",
-      "Technical Stone Specification Catalogs",
-      "Export & Commercial SEO",
-      "High-Intent Google Ads (PPC)",
+      "Custom Web Application Development",
+      "Wholesale Portal Architecture",
+      "Broker Authentication & Role Management",
+      "Submission Workflow Automation",
     ],
     startingPoint:
-      "The exporter had no search visibility for high-value wholesale queries such as 'green marble slabs manufacturer India' or 'sandstone export supplier Rajasthan'. They relied almost exclusively on expensive third-party trade portals that pit suppliers against each other in race-to-the-bottom price wars.",
+      "Sterling Wholesale Insurance required an internal and retail-broker-facing digital portal to manage wholesale submissions, supplemental documents, and underwriting reviews without relying on disorganized email chains.",
     challenge:
-      "B2B stone procurement managers and commercial architects demand precise technical specifications (compressive strength, water absorption, slab dimensions, finishes). The old brochure website lacked structured technical data, causing potential overseas buyers from the UAE, US, and Europe to exit without requesting quotations.",
+      "Wholesale commercial insurance involves extensive underwriting data, variable document requirements, and strict timelines. Relying on manual email exchanges created operational bottlenecks, delayed quotes, and increased administrative overhead for underwriting teams.",
     strategy: [
-      "Architect a comprehensive digital product catalog with structured technical spec sheets for each marble and granite variety.",
-      "Implement B2B Product and Organization schema markup so Google and AI search systems index specific stone properties.",
-      "Launch targeted search campaigns capturing high-intent international buyer queries across the Middle East, North America, and domestic Indian metro contractors.",
-      "Provide an instant Request For Quotation (RFQ) flow with direct container-load calculators and technical spec sheet downloads.",
+      "Engineer a secure, high-performance web portal enabling appointed retail brokers to submit, track, and manage commercial risk files in real time.",
+      "Develop role-based access control (RBAC) and session management for brokers, underwriters, and administrators.",
+      "Build structured submission intake forms with validation to ensure complete submissions prior to underwriter review.",
+      "Deliver an intuitive dashboard focused on daily operational speed, document clarity, and real-time status visibility.",
     ],
     workCompleted: [
       {
-        title: "Technical Stone Catalog Architecture",
+        title: "Custom Web Application Engineering",
         description:
-          "Engineered dynamic catalog pages with filterable dimensions, finishes (polished, flamed, honed), and downloadable PDF stone laboratory test reports.",
+          "Architected a scalable web application with robust state management, modular component architecture, and responsive layouts.",
       },
       {
-        title: "International & Commercial SEO",
+        title: "Secure Authentication & RBAC",
         description:
-          "Optimized content clusters around commercial B2B procurement terms, targeting wholesale buyers, civil contractors, and overseas stone importers.",
+          "Configured protected routes, role-based access control, and secure credential handling for authorized insurance partners.",
       },
       {
-        title: "High-Intent Search PPC Funnels",
+        title: "Structured Submission Pipeline",
         description:
-          "Targeted procurement searches with strict negative keyword lists to prevent retail consumer clicks, maximizing B2B lead quality.",
+          "Engineered streamlined application forms that validate complex underwriting data before submission, cutting down review cycles.",
       },
       {
-        title: "Automated RFQ & WhatsApp Pipeline",
+        title: "Administrative Workflow Dashboard",
         description:
-          "Built a lead capture flow routing international inquiries directly to sales directors via WhatsApp and email with inquiry metadata.",
+          "Created an operational dashboard allowing internal team members to review documents, assign underwriters, and update policy status.",
       },
     ],
     metrics: [
       {
-        label: "B2B Export Leads",
-        value: "Direct RFQs",
-        context: "Replaced third-party portal dependency with proprietary container-load buyer inquiries.",
+        label: "Submission Efficiency",
+        value: "Accelerated",
+        context: "Eliminated email confusion by structuring file intake into a centralized portal.",
       },
       {
-        label: "Commercial Keywords",
-        value: "Page 1 Ranks",
-        context: "Achieved top organic rankings for wholesale stone export search terms across target markets.",
+        label: "System Availability",
+        value: "High Uptime",
+        context: "Reliable portal accessibility for retail brokers submitting commercial risks.",
       },
       {
-        label: "Inquiry Quality",
-        value: "High-Intent",
-        context: "Over 70% of inbound inquiries originated from verified contractors, architectural firms, and trading houses.",
+        label: "Data Integrity",
+        value: "Validated",
+        context: "Client-side and server-side validation prevented incomplete submission filings.",
       },
       {
-        label: "Cost Per Acquisition",
-        value: "-45%",
-        context: "Lower acquisition cost compared to traditional international trade exhibitions and portal subscriptions.",
+        label: "Application Speed",
+        value: "Instant UI",
+        context: "Single-page application responsiveness for high-volume daily broker interactions.",
       },
     ],
-    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Google Ads B2B Engine", "Product Schema Markup", "Automated RFQ System"],
+    techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js", "JWT Authentication", "RESTful APIs"],
     outcomeSummary:
-      "Mewar Stone & Marble transformed their digital presence from a dormant online brochure into an active international sales engine, securing repeat container export orders directly from verified overseas commercial procurement managers.",
+      "Sterling Wholesale Insurance deployed an enterprise-grade digital portal that streamlined broker submissions, eliminated manual administrative bottlenecks, and positioned the company as a technically advanced wholesale partner.",
     keyTakeaways: [
-      "B2B buyers need specifications, not marketing fluff: detailed stone specs build immediate procurement trust.",
-      "Direct digital channels yield significantly higher profit margins than third-party middleman directories.",
-      "Intent-focused search capture filters out low-value consumer inquiries and attracts qualified container-load buyers.",
+      "Custom web applications turn cumbersome administrative workflows into competitive operational advantages.",
+      "Strict data validation at the point of submission saves hundreds of underwriting hours down the line.",
+      "A fast, modern portal enhances broker loyalty and strengthens wholesale distribution networks.",
     ],
     publishedDate: "2026-09-12",
   },
   {
-    id: "smile-care-dental",
-    slug: "smile-care-dental",
-    title: "Dominating the Google Maps 3-Pack for Smile Care Dental & Healthcare",
-    tagline: "Local SEO, Google Business Profile optimization, and high-converting patient booking landing pages in Udaipur.",
-    client: "Smile Care Dental & Healthcare",
-    industry: "Healthcare & Specialized Clinics",
-    location: "Shastri Circle, Udaipur, Rajasthan",
-    timeline: "6 Weeks Local Search Sprint & Patient Funnel",
+    id: "swastik-computer-education",
+    slug: "swastik-computer-education",
+    title: "Swastik Computer Education: Digital Campus & Student Enrollment Engine",
+    tagline: "Modern academic web architecture, curriculum directories, and streamlined student admission pathways for an IT institute.",
+    client: "Swastik Computer Education",
+    industry: "Education & Professional IT Training",
+    location: "India",
+    timeline: "5 Weeks Portal & Web Architecture",
     servicesUsed: [
-      "Google Maps 3-Pack Optimization",
-      "Local Citation Audit & Clean-up",
-      "Mobile Patient Appointment Landing Pages",
-      "Google Review Velocity Funnel",
+      "Custom Web Development",
+      "Course Catalog Architecture",
+      "Student Inquiry Funnels",
+      "Local & Regional SEO",
     ],
     startingPoint:
-      "Despite having top-rated clinical doctors and modern dental equipment, the clinic was invisible on Google Maps beyond a 500-meter radius around their physical clinic. Patients searching for 'dental implants Udaipur' or 'best root canal dentist Udaipur' were calling competitors who ranked in the local 3-pack.",
+      "The institution offered technical and vocational training across programming, software applications, and accounting, but lacked an interactive digital platform where students could explore curricula and enroll.",
     challenge:
-      "The clinic had fragmented NAP (Name, Address, Phone) citations across older directories, missing category selections on Google Business Profile, and an outdated mobile site that made scheduling a consultation cumbersome on smartphones.",
+      "Prospective students needed transparent course syllabi, batch timings, instructor credentials, and certificate verification. The previous static presence failed to convert digital visitors into enrolled students.",
     strategy: [
-      "Cleanse and unify NAP citations across all major Indian business directories (Justdial, Sulekha, IndiaMart, Google).",
-      "Optimize primary and secondary GBP categories, service menus, operational hours, and geo-tagged clinic photography.",
-      "Develop ultra-fast, mobile-friendly treatment landing pages with transparent procedure FAQs and doctor credentials.",
-      "Implement an ethical post-treatment patient feedback system encouraging satisfied patients to leave detailed Google reviews.",
+      "Develop a modern, accessible educational website with interactive course modules and syllabus breakdowns.",
+      "Build a streamlined online inquiry and batch registration flow connected to direct counseling alerts.",
+      "Optimize local and regional educational search signals to capture students seeking career advancement courses.",
     ],
     workCompleted: [
       {
-        title: "Google Business Profile Optimization",
+        title: "Interactive Course Directory",
         description:
-          "Re-architected clinical categories, service attributes, pricing clarity, and geo-tagged clinical infrastructure imagery.",
+          "Structured detailed syllabus pages for programming languages, web technologies, software tools, and vocational certifications.",
       },
       {
-        title: "Localized Treatment Landing Pages",
+        title: "Online Verification & Admissions",
         description:
-          "Built high-speed mobile pages for dental implants, invisible aligners, and cosmetic dentistry with one-click WhatsApp appointment booking.",
+          "Built student registration inquiry pathways with automated WhatsApp alerts to admission counselors.",
       },
       {
-        title: "Local Citation Synchronization",
+        title: "Mobile-First UX",
         description:
-          "Audited and standardized clinic NAP data across 35+ regional and national healthcare directories.",
+          "Tailored the entire mobile browsing experience for smartphone users seeking vocational training.",
       },
       {
-        title: "Verified Review Acceleration",
+        title: "Educational Search Optimization",
         description:
-          "Implemented automated WhatsApp post-consultation follow-ups providing patients with a 1-tap link to share their clinic experience.",
+          "Configured EducationalOrganization schema markup and structured data across primary search touchpoints.",
       },
     ],
     metrics: [
       {
-        label: "Google Maps Position",
-        value: "Top 3 Pack",
-        context: "Consistent 3-pack prominence across Udaipur neighborhoods (Panchwati, Chetak, Shastri Circle, Hiran Magri).",
+        label: "Course Discovery",
+        value: "Direct Inquiries",
+        context: "Students directly access module details and request batch schedules online.",
       },
       {
-        label: "Monthly Phone Inquiries",
-        value: "Steady Lift",
-        context: "Significant increase in direct phone calls and WhatsApp appointment requests from local searchers.",
+        label: "Mobile Usability",
+        value: "Sub-Second",
+        context: "Optimized mobile page loads across cellular networks in India.",
       },
       {
-        label: "Review Velocity",
-        value: "Authentic Reviews",
-        context: "Doubled verified 5-star patient reviews detailing specific successful dental procedures.",
+        label: "Inquiry Organization",
+        value: "Centralized",
+        context: "Replaced disorganized paper inquiries with structured digital candidate records.",
       },
       {
-        label: "Mobile Conversion Rate",
-        value: "High Intent",
-        context: "Over 40% of page visitors took action to call, message on WhatsApp, or book a consultation.",
+        label: "Educational Trust",
+        value: "Transparent",
+        context: "Curriculum clarity and instructor details elevated institutional credibility.",
       },
     ],
-    techStack: ["Next.js", "Tailwind CSS", "Google Business Profile API", "MedicalBusiness Schema", "WhatsApp Booking Automation"],
+    techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Educational Organization Schema", "Lead Webhooks"],
     outcomeSummary:
-      "By establishing authoritative local search signals and streamlining mobile appointment booking, Smile Care Dental cemented its position as a go-to dental healthcare clinic in Udaipur, generating continuous qualified patient bookings every month.",
+      "Swastik Computer Education established a trusted digital presence that provides students with clear curriculum insights and delivers a steady, organized pipeline of course enrollments.",
     keyTakeaways: [
-      "Over 65% of healthcare inquiries on mobile originate from the Google Maps 3-Pack, not traditional organic web links.",
-      "Consistent NAP data and active review velocity are fundamental prerequisites for sustained local map dominance.",
-      "Transparent treatment explanations and doctor bios reduce patient hesitation and drive appointment bookings.",
+      "Transparent course syllabi and batch schedules directly resolve candidate hesitations.",
+      "Instant WhatsApp inquiry options are crucial for education lead conversion in India.",
+      "A fast mobile site is essential since over 80% of students browse vocational programs on mobile devices.",
     ],
-    publishedDate: "2026-09-10",
+    publishedDate: "2026-09-08",
+  },
+  {
+    id: "e-biozone",
+    slug: "e-biozone",
+    title: "E-Biozone: Scientific Catalog & B2B Laboratory Equipment Platform",
+    tagline: "Technical product catalogs, laboratory spec sheets, and institutional quotation funnels for scientific research suppliers.",
+    client: "E-Biozone",
+    industry: "Biotechnology & Laboratory Supplies",
+    location: "India & International",
+    timeline: "8 Weeks Product Catalog Engineering",
+    servicesUsed: [
+      "B2B Web Development",
+      "Technical Product Catalog",
+      "Quotation Request Engine",
+      "Commercial & Technical SEO",
+    ],
+    startingPoint:
+      "E-Biozone supplies laboratory instruments, chemicals, and biotechnology research products to universities, diagnostics centers, and commercial laboratories.",
+    challenge:
+      "Scientific buyers require granular technical specifications, safety data sheets, and compliance certificates before submitting Request for Quotation (RFQ) inquiries. Standard ecommerce carts failed to fit their institutional procurement model.",
+    strategy: [
+      "Develop a structured scientific product catalog categorized by discipline and technical application.",
+      "Build a seamless 'Request a Quote' cart flow allowing procurement managers to request bulk pricing without standard consumer checkout friction.",
+      "Implement deep technical Product and TechnicalSpecification schema for B2B search indexing.",
+    ],
+    workCompleted: [
+      {
+        title: "Scientific Product Taxonomy",
+        description:
+          "Designed an intuitive multi-level catalog for lab consumables, precision instruments, and diagnostic reagents.",
+      },
+      {
+        title: "B2B Request For Quote (RFQ) Engine",
+        description:
+          "Created an inquiry builder allowing institutional buyers to compile multi-item quote requests.",
+      },
+      {
+        title: "Technical Spec Sheet Integration",
+        description:
+          "Added downloadable calibration specs, safety data sheets, and compliance certifications.",
+      },
+      {
+        title: "Enterprise Search Optimization",
+        description:
+          "Structured commercial search terms targeting laboratory procurement and research procurement teams.",
+      },
+    ],
+    metrics: [
+      {
+        label: "Procurement RFQs",
+        value: "Direct Pipeline",
+        context: "Inbound institutional quotation requests generated without middleman commissions.",
+      },
+      {
+        label: "Catalog Navigation",
+        value: "Instant Filter",
+        context: "Researchers quickly filter products by application, purity grade, and instrument type.",
+      },
+      {
+        label: "Specification Clarity",
+        value: "Standardized",
+        context: "Downloadable documentation answered technical compliance queries upfront.",
+      },
+      {
+        label: "Digital Catalog",
+        value: "100% Scalable",
+        context: "Easily expandable data architecture supporting hundreds of scientific SKUs.",
+      },
+    ],
+    techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "B2B Catalog Engine", "Product Schema JSON-LD"],
+    outcomeSummary:
+      "E-Biozone transformed their product distribution with a high-performance technical catalog that attracts research laboratories and generates direct, qualified commercial quotations.",
+    keyTakeaways: [
+      "B2B buyers evaluate precision: detailed technical specifications build procurement confidence.",
+      "Replacing consumer checkouts with customized RFQ workflows significantly lifts institutional inquiries.",
+      "Structured product data helps Google index technical equipment for precise commercial queries.",
+    ],
+    publishedDate: "2026-09-05",
   },
 ];
 

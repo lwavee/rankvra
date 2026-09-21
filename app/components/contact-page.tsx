@@ -122,7 +122,7 @@ export function ContactPage() {
             >
               <div className="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50/90 px-3 py-1 text-xs font-bold uppercase tracking-wider text-indigo-800 shadow-xs mb-3">
                 <span className="h-2 w-2 rounded-full bg-emerald-500 animate-ping" />
-                <span>Direct Technical Discovery • Udaipur HQ</span>
+                <span>Direct Technical Discovery • Serving US, UK, Canada &amp; India</span>
               </div>
 
               <h1 className="text-2xl sm:text-3xl lg:text-[36px] font-black tracking-tight text-slate-950 leading-[1.16]">

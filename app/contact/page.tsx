@@ -3,10 +3,19 @@ import { SiteShell } from "@/app/components/site-shell";
 import { ContactPage } from "@/app/components/contact-page";
 
 export const metadata: Metadata = {
-  title: "Contact RankVRA | Web Development & SEO Agency Udaipur",
+  title: "Contact RankVRA | Web Development & Growth Partner | Global & India",
   description:
-    "Get in touch with RankVRA in Udaipur, Rajasthan. Speak directly with Founder Naveen Panchal (+91 7297875798 / info@rankvra.com) to discuss web development, SEO, and digital growth.",
+    "RankVRA is based in India and works with businesses across India, the USA, Canada, the UK, and international markets. Connect directly with Founder Naveen Panchal (+91 7297875798 / info@rankvra.com).",
   alternates: { canonical: "https://www.rankvra.com/contact" },
+  openGraph: {
+    title: "Contact RankVRA | Web Development & Growth Partner | Global & India",
+    description:
+      "RankVRA is based in India and works with businesses across India, the USA, Canada, the UK, and international markets. Speak directly with Founder Naveen Panchal.",
+    url: "https://www.rankvra.com/contact",
+    siteName: "RankVRA",
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function Contact() {

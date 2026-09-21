@@ -20,43 +20,43 @@ export function CTASection() {
         <div className="relative z-10 max-w-3xl mx-auto">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-indigo-200 backdrop-blur-xs">
             <Sparkles size={13} className="text-[#38bdf8]" />
-            Free Manual Technical Audit
+            Comprehensive Technical Analysis
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
-            Ready to Scale Your Inbound Pipeline with{" "}
+            Ready to Build a High-Converting Website with{" "}
             <span className="text-[#a5b4fc]">RankVRA</span>?
           </h2>
 
           <p className="mt-5 text-sm sm:text-base leading-relaxed text-slate-300 max-w-xl mx-auto">
-            Get a comprehensive speed, search ranking, and conversion audit from founder Naveen Panchal within 24 hours. Zero sales pitch, 100% actionable engineering value.
+            Get an honest review of your website architecture, speed, mobile usability, and search opportunities. Zero aggressive sales pitches, 100% actionable engineering insights.
           </p>
 
           <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/free-growth-audit"
+              href="/free-website-audit"
               className="inline-flex items-center gap-2 rounded-full bg-[#4f46e5] px-8 py-4 text-sm font-bold text-white shadow-lg shadow-[#4f46e5]/30 hover:bg-[#4338ca] hover:-translate-y-0.5 transition-all"
             >
-              Get Free Growth Audit
+              Get a Free Website Audit
               <ArrowRight size={15} />
             </Link>
             <a
-              href="https://wa.me/917297875798?text=Hi%20Naveen,%20I'd%20like%20to%20request%20a%20website%20audit."
+              href="https://wa.me/917297875798?text=Hi%20Naveen,%20I'd%20like%20to%20discuss%20a%20website%20project."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-7 py-4 text-sm font-semibold text-white hover:bg-white/20 transition-all"
             >
               <MessageCircle size={16} className="text-[#10b981]" />
-              WhatsApp Naveen Direct
+              Talk to Founder Naveen
             </a>
           </div>
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
             {[
               "100% Code Ownership",
-              "Sub-1-Second Speed",
-              "Direct Founder Led",
-              "Zero Bloated Templates",
+              "Next.js Architecture",
+              "Direct Founder Oversight",
+              "National & Global Delivery",
             ].map((item) => (
               <span
                 key={item}

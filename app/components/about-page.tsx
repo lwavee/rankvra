@@ -158,35 +158,35 @@ const ceoProfile = {
 const agencyPillars = [
   {
     icon: Code2,
-    badge: "Udaipur & Rajasthan",
-    title: "Best Web Development Agency in Udaipur",
+    badge: "Web Engineering",
+    title: "Custom Web Application & Website Development",
     description:
-      "We avoid generic WordPress page-builders that take 6 seconds to load. We write clean, custom Next.js code tailored to your business, whether you run a luxury resort near Lake Pichola, a marble factory in Rajsamand, or a boutique in Jaipur.",
-    highlights: ["1-second mobile load time", "Clean code architecture", "100% mobile responsive", "Google Core Web Vitals passed"],
+      "We avoid generic WordPress page-builders that take 6 seconds to load. We write clean, custom Next.js and React code tailored to business requirements — from corporate platforms and customer portals to high-performance marketing engines.",
+    highlights: ["Sub-second mobile load speeds", "Clean TypeScript architecture", "100% responsive design", "Google Core Web Vitals compliant"],
   },
   {
     icon: TrendingUp,
-    badge: "Local Search Ranking",
-    title: "Google Maps & Local SEO in Udaipur",
+    badge: "Search Authority",
+    title: "Technical & International SEO Architecture",
     description:
-      "When someone in Udaipur searches 'best wedding planner in Udaipur' or 'marble exporter in Rajasthan', your business must show up in the top 3 on Google Maps. We optimize your local presence so customers call you first.",
-    highlights: ["Google Business Profile setup", "Udaipur local citations", "Review generation strategy", "Page 1 search engine keywords"],
+      "Search visibility requires more than inserting keywords. We build search architectures with clean crawl paths, Schema.org entity graphs, and topical depth to rank for high-intent commercial queries across national and global markets.",
+    highlights: ["Crawl budget optimization", "Schema.org entity graphs", "Topical cluster architecture", "Commercial search intent alignment"],
   },
   {
     icon: Target,
-    badge: "Lead Generation",
-    title: "Performance Digital Marketing (Meta & Google)",
+    badge: "Conversion Systems",
+    title: "Conversion-Focused UX & Inbound Lead Funnels",
     description:
-      "No more boosting random Instagram posts for ₹500 with zero sales. We design laser-targeted ad campaigns on Google Search, Instagram, and Facebook that put your offer directly in front of ready-to-buy customers.",
-    highlights: ["High-intent search campaigns", "Direct WhatsApp click-to-chat ads", "Remarketing to warm leads", "Clear cost-per-lead tracking"],
+      "Traffic without commercial inquiry is meaningless. We design high-converting user interfaces, streamlined booking flows, and friction-free inquiry funnels that convert qualified visitors into measurable business pipelines.",
+    highlights: ["Friction-free contact funnels", "1:1 message match", "Clear value hierarchy", "Accurate conversion analytics"],
   },
   {
     icon: Bot,
-    badge: "Modern Technology",
-    title: "AI Workflows & WhatsApp Lead Automation",
+    badge: "Business Systems",
+    title: "Custom Business Portals & API Integrations",
     description:
-      "Speed is everything in local sales. We integrate custom WhatsApp automation that instantly greets leads, shares your catalog or pricing, and notifies your sales team immediately on their phone.",
-    highlights: ["Instant WhatsApp replies", "Automated lead capture", "CRM integration", "Zero missed customer calls"],
+      "When off-the-shelf software falls short, we engineer custom web applications, wholesale broker portals, role-based dashboards, and automated API integrations that streamline business operations.",
+    highlights: ["Role-based access control", "Secure API data integrations", "Custom intake workflows", "Operational efficiency"],
   },
 ];
 
@@ -194,33 +194,33 @@ const agencyPillars = [
 const values = [
   {
     icon: Target,
-    title: "Phone calls and sales first",
-    copy: "We judge our success by one metric: did your business get more inquiries, direct calls, and paying customers? Vanity impressions don't pay bills.",
+    title: "Business inquiries and sales first",
+    copy: "We measure success by commercial outcomes: qualified inquiries, direct client communications, and paying accounts. Vanity metrics do not build sustainable businesses.",
   },
   {
     icon: Cpu,
     title: "Clean engineering, zero bloat",
-    copy: "Your website shouldn't freeze on a mobile connection. We write fast, modern code that gives your visitors a seamless, premium experience.",
+    copy: "Your website should never stutter on a mobile connection. We write fast, modern Next.js code that delivers exceptional user experiences.",
   },
   {
     icon: ShieldCheck,
     title: "100% Transparency & ownership",
-    copy: "You own your domain, your hosting, your code, and your ad accounts. We believe in earning your trust month after month, with no sneaky lock-ins.",
+    copy: "You retain full ownership of your domain, codebase, cloud hosting, and analytics. We believe in earning long-term partnership through measurable value.",
   },
   {
     icon: MapPin,
-    title: "Rooted in Udaipur, serving Rajasthan",
-    copy: "We understand the local economy, local buyer behavior, and the unique seasonal rhythms of businesses across Udaipur, Jaipur, Jodhpur, and Rajasthan.",
+    title: "India-based engineering, global delivery",
+    copy: "Based in India and serving clients across the US, UK, Canada, and India, delivering world-class software engineering and search performance.",
   },
   {
     icon: Lightbulb,
-    title: "AI-powered efficiency",
-    copy: "We use modern AI tools to streamline content and lead follow-ups, giving your business an unfair advantage over competitors using outdated methods.",
+    title: "Modern AI & workflow efficiency",
+    copy: "We deploy modern development workflows and intelligent automation to accelerate project delivery and improve operational turnaround times.",
   },
   {
     icon: Heart,
     title: "Direct founder access",
-    copy: "When you partner with Rankvra, you work directly with founder Naveen Panchal and our senior operators — not an untrained junior intern.",
+    copy: "When you partner with RankVRA, you work directly with founder Naveen Panchal and senior engineers — not handed off to unaccountable intermediaries.",
   },
 ];
 
@@ -230,25 +230,25 @@ const milestones = [
     year: "2022",
     title: "The Genesis: Learn with Avee (lw_avee)",
     event:
-      "Naveen Panchal begins creating coding, web development, and tech tutorials under the moniker 'lw_avee', building an engaged community of over 3,300 followers on Instagram and launching active YouTube tutorials.",
+      "Naveen Panchal begins creating coding, web development, and tech tutorials under the moniker 'lw_avee', building an engaged developer community across social platforms and YouTube.",
   },
   {
     year: "2023",
-    title: "Rankvra Founded in Udaipur",
+    title: "RankVRA Founded in India",
     event:
-      "Seeing local business owners in Udaipur and Rajasthan get frustrated by sub-par freelancers and slow templates, Naveen officially launches Rankvra as a dedicated web development and performance agency.",
+      "Frustrated by slow, bloated templates and unaccountable agencies, Naveen officially launches RankVRA to deliver clean, engineering-led web development and organic search systems.",
   },
   {
     year: "2024",
-    title: "AI & Local SEO Expansion Across Rajasthan",
+    title: "Expansion into Custom Portals & Commercial Search",
     event:
-      "RankVRA integrates custom AI workflows, WhatsApp automations, and local SEO services, scaling resorts, marble exporters, clinics, and e-commerce stores across Udaipur, Jaipur, and Bhilwara.",
+      "RankVRA scales into custom portal development, insurance agency platforms, and B2B web applications, delivering systems like Capital & Co Insurance and the Sterling Wholesale Insurance Portal.",
   },
   {
     year: "2025+",
-    title: "Engineering-First Digital Agency",
+    title: "Global Engineering & Digital Growth",
     event:
-      "RankVRA establishes itself as an engineering-led web development and organic search partner, serving ambitious businesses in Udaipur, across Rajasthan, and internationally.",
+      "RankVRA establishes itself as an engineering-led web development and search partner, serving ambitious businesses across India, the United States, the UK, and Canada.",
   },
 ];
 
@@ -507,19 +507,19 @@ export function AboutPage() {
                   </div>
 
                   <h3 className="text-2xl sm:text-3xl font-extrabold text-[#0f172a] tracking-tight">
-                    From Tech Educator in Udaipur to Growth Agency Leader
+                    From Technical Educator to Digital Engineering Leader
                   </h3>
 
                   <p className="mt-4 text-base leading-7 text-[#475569]">
-                    Known across social platforms as <strong>lw_avee</strong> (&ldquo;Learn with Avee 🚀&rdquo;), Naveen Panchal has spent over 3 years immersed in full-stack programming, artificial intelligence, and digital growth.
+                    Known across social platforms as <strong>lw_avee</strong> (&ldquo;Learn with Avee 🚀&rdquo;), Naveen Panchal has spent years immersed in full-stack programming, artificial intelligence, and digital growth.
                   </p>
 
                   <p className="mt-3 text-base leading-7 text-[#64748b]">
-                    Living in Udaipur, Naveen saw too many local business owners — from resorts and tour operators to marble exporters and healthcare clinics — get cheated by substandard agencies that delivered slow, crashing WordPress websites and ran clueless ads that wasted money.
+                    Seeing business owners get trapped with fragile templates, crashing plugins, and unaccountable agencies that wasted time and marketing capital, Naveen founded RankVRA to bring an engineering-first approach to commercial digital platforms.
                   </p>
 
                   <p className="mt-3 text-base leading-7 text-[#64748b]">
-                    He founded Rankvra to fix this. With clean Next.js code, practical Google Maps Local SEO, and ROI-driven ad management, Naveen and his team have helped over 40 businesses across Udaipur and Rajasthan turn their digital presence into a profitable growth engine.
+                    With clean Next.js architecture, technical SEO, and conversion-focused user experiences, RankVRA engineers custom business websites, wholesale web applications, and search architectures for clients across India, the United States, the UK, and Canada.
                   </p>
 
                   {/* 4 Specialized Core Pillars */}
@@ -712,7 +712,7 @@ export function AboutPage() {
                   <div className="rounded-2xl border border-indigo-200 bg-white p-5 shadow-sm">
                     <p className="text-xs font-bold uppercase tracking-wider text-[#4f46e5] mb-2 flex items-center gap-2">
                       <Sparkles size={14} />
-                      The Rankvra Standard in Udaipur
+                      The RankVRA Standard
                     </p>
                     <ul className="space-y-2 text-xs sm:text-sm text-[#0f172a] font-medium">
                       <li className="flex items-center gap-2">
@@ -721,15 +721,15 @@ export function AboutPage() {
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle2 size={15} className="text-[#4f46e5]" />
-                        Direct phone calls, WhatsApp leads, and verified booking inquiries
+                        Direct phone calls, inquiry funnels, and verified commercial opportunities
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle2 size={15} className="text-[#4f46e5]" />
-                        Personalized support from Naveen Panchal (lw_avee) &amp; local team
+                        Personalized support from Naveen Panchal (lw_avee) &amp; senior engineers
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle2 size={15} className="text-[#4f46e5]" />
-                        Transparent pricing in plain Hindi &amp; English with 100% asset ownership
+                        Transparent pricing with 100% codebase, domain, and data ownership
                       </li>
                     </ul>
                   </div>
@@ -749,10 +749,10 @@ export function AboutPage() {
               Our Core Disciplines
             </div>
             <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-[#0f172a] sm:text-4xl lg:text-5xl">
-              Web Development &amp; Digital Marketing Services in Udaipur
+              Web Development &amp; Search Architecture
             </h2>
             <p className="mt-4 text-base sm:text-lg text-[#64748b]">
-              Engineered specifically to help Udaipur and Rajasthan businesses generate customer inquiries and build long-term local authority.
+              Engineered to help ambitious businesses across national and international markets establish search authority and convert traffic into qualified commercial pipeline.
             </p>
           </div>
 
@@ -803,7 +803,7 @@ export function AboutPage() {
               Principles We Stand By Every Day
             </h2>
             <p className="mt-4 text-base sm:text-lg text-[#64748b]">
-              Honest, practical standards that guide every website we build and ad campaign we run in Rajasthan.
+              Honest, practical standards that guide every web application we engineer and search system we architect.
             </p>
           </div>
 
@@ -839,7 +839,7 @@ export function AboutPage() {
               3+ Years of Proven Track Record
             </h2>
             <p className="mt-4 text-base sm:text-lg text-[#64748b]">
-              From educational tech tutorials as &apos;lw_avee&apos; to building Rajasthan&apos;s leading growth agency.
+              From educational tech tutorials as &apos;lw_avee&apos; to engineering digital systems for clients across India and global markets.
             </p>
           </div>
 
@@ -943,7 +943,7 @@ export function AboutPage() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
                 </span>
-                Udaipur & Rajasthan Growth Partner
+                India-Based Engineering • Serving US, UK, Canada &amp; India
               </motion.div>
 
               <motion.h2 
@@ -953,9 +953,9 @@ export function AboutPage() {
                 transition={{ delay: 0.3, duration: 0.6 }}
                 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-[1.1]"
               >
-                Ready to dominate Google <br className="hidden sm:block" />
+                Ready to build high-performance <br className="hidden sm:block" />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-cyan-400 to-emerald-400">
-                  and get real leads?
+                  websites and web apps?
                 </span>
               </motion.h2>
 
@@ -966,7 +966,7 @@ export function AboutPage() {
                 transition={{ delay: 0.5, duration: 0.6 }}
                 className="mt-6 text-base sm:text-lg leading-8 text-slate-300 max-w-2xl font-medium"
               >
-                Stop losing customers to competitors with faster websites. Talk directly with Founder & CEO Naveen Panchal for an honest, no-BS roadmap to scale your inquiries.
+                Elevate your commercial presence with clean Next.js engineering and technical search architecture. Request a technical audit or schedule a direct consultation with Founder Naveen Panchal.
               </motion.p>
 
               <motion.div 
@@ -993,11 +993,11 @@ export function AboutPage() {
                 </a>
                 
                 <Link
-                  href="/contact"
+                  href="/free-website-audit"
                   className="group inline-flex items-center justify-center gap-2 rounded-full border border-slate-700 bg-slate-800/50 px-8 py-4.5 text-sm font-bold text-white backdrop-blur-md transition-all duration-300 hover:bg-slate-700 hover:border-slate-600 w-full sm:w-auto"
                 >
                   <div className="flex h-2 w-2 rounded-full bg-indigo-500 group-hover:animate-ping"></div>
-                  Book a Strategy Call
+                  Get a Free Website Audit
                 </Link>
               </motion.div>
 
@@ -1008,8 +1008,8 @@ export function AboutPage() {
                 transition={{ delay: 0.9, duration: 0.8 }}
                 className="mt-12 flex flex-wrap items-center justify-center gap-6 sm:gap-8 text-[11px] sm:text-xs text-slate-400 font-bold uppercase tracking-wider"
               >
-                <span className="flex items-center gap-2"><CheckCircle2 size={14} className="text-emerald-400" /> Free SEO Audit</span>
-                <span className="flex items-center gap-2"><CheckCircle2 size={14} className="text-emerald-400" /> Direct CEO Consult</span>
+                <span className="flex items-center gap-2"><CheckCircle2 size={14} className="text-emerald-400" /> Free Technical Audit</span>
+                <span className="flex items-center gap-2"><CheckCircle2 size={14} className="text-emerald-400" /> Direct Founder Consult</span>
                 <span className="flex items-center gap-2"><CheckCircle2 size={14} className="text-emerald-400" /> Transparent Pricing</span>
               </motion.div>
             </div>

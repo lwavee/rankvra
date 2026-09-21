@@ -1,4 +1,4 @@
-import { Bot, Globe, PanelsTopLeft, Sparkles, Target, Zap } from "lucide-react";
+import { Bot, Code2, Globe, LayoutDashboard, MonitorSmartphone, PanelsTopLeft, ShieldCheck, Sparkles, Target, Zap } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 export type Service = {
@@ -11,115 +11,115 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    title: "Custom Next.js Web Development",
-    copy: "Sub-second page speeds, 100% custom code, and zero bloated templates. Engineered to convert traffic into clients.",
+    title: "Custom Web Development",
+    copy: "Clean TypeScript, React, and Next.js architecture built for lightning speed, clean rendering, and zero template bloat.",
     icon: PanelsTopLeft,
-    badge: "<0.8s LCP",
+    badge: "Next.js SSR",
     href: "/services/web-development",
   },
   {
-    title: "Google Maps & Local SEO",
-    copy: "Secure top 3 Google 3-Pack rankings and Page 1 visibility. Drive direct phone calls and local walk-ins.",
+    title: "Website Design & Redesign",
+    copy: "Modern, high-trust digital storefronts that replace outdated websites and turn digital visitors into qualified inbound inquiries.",
+    icon: MonitorSmartphone,
+    badge: "High-Trust UX",
+    href: "/services/website-design",
+  },
+  {
+    title: "Custom Web Applications",
+    copy: "Secure broker portals, operational dashboards, client areas, and internal workflow tools tailored to your exact business operations.",
+    icon: LayoutDashboard,
+    badge: "Portals & SaaS",
+    href: "/services/web-application-development",
+  },
+  {
+    title: "Technical & International SEO",
+    copy: "Comprehensive crawlability, structured schema graphs, Core Web Vitals optimization, and multi-region search architecture.",
     icon: Globe,
-    badge: "Top 3 Maps",
-    href: "/services/local-seo",
+    badge: "Global Organic",
+    href: "/services/technical-seo",
   },
   {
-    title: "High-Intent Google Ads (PPC)",
-    copy: "Tightly filtered search and call-only ads. Rigorous negative keywords eliminate wasted spend and maximize ROAS.",
-    icon: Target,
-    badge: "Ready-To-Buy",
-    href: "/services/google-ads",
+    title: "Insurance Web Solutions",
+    copy: "Specialized agency web design and wholesale underwriting portals engineered for commercial brokerages and risk managers.",
+    icon: ShieldCheck,
+    badge: "Industry Proven",
+    href: "/industries/insurance",
   },
   {
-    title: "AI & WhatsApp Lead Automation",
-    copy: "Instant 30-second inquiry response. Intelligent qualification bots and WhatsApp CRM alerts that capture leads 24/7.",
-    icon: Bot,
-    badge: "Instant 24/7",
-    href: "/services/ai-automation",
-  },
-  {
-    title: "B2B Manufacturing Lead Gen",
-    copy: "Digital product catalogs, specification sheets, and verified wholesale RFQ funnels for industrial suppliers.",
-    icon: Sparkles,
-    badge: "Verified RFQs",
-    href: "/b2b-lead-generation",
-  },
-  {
-    title: "International SEO for Exporters",
-    copy: "Multi-country hreflang architecture and CDN edge caching to rank in the USA, UK, UAE, and European markets.",
+    title: "Conversion Optimization & Funnels",
+    copy: "Frictionless multi-step inquiry pathways, quote forms, and direct messaging workflows that maximize buyer conversions.",
     icon: Zap,
-    badge: "Global Trade",
-    href: "/international-seo",
+    badge: "Inbound Pipeline",
+    href: "/services/conversion-optimization",
   },
 ];
 
 export const steps = [
   {
     step: "01",
-    title: "Technical Audit & Search Map",
-    copy: "We audit your site speed, Google rankings, and the high-intent keywords your actual buyers search for.",
+    title: "Discovery & Technical Audit",
+    copy: "We inspect your digital architecture, page speeds, user experience friction, and commercial search positioning.",
   },
   {
     step: "02",
-    title: "Custom Build & Schema Engine",
-    copy: "We build a lightning-fast web app with structured JSON-LD schemas and clear WhatsApp conversion funnels.",
+    title: "Custom Engineering & Schema",
+    copy: "We engineer a lightweight web platform with structured JSON-LD schemas, accessible UX, and frictionless conversion pathways.",
   },
   {
     step: "03",
-    title: "Launch, Scale & Capture Inquiries",
-    copy: "We activate Google indexing and targeted ad funnels to generate direct phone calls, WhatsApp leads, and RFQs.",
+    title: "Launch & Commercial Growth",
+    copy: "We deploy on modern global edge networks, activate search indexing, and stream qualified inbound inquiries to your sales desk.",
   },
 ];
 
 export const metrics = [
-  { label: "Custom Architecture", value: "100%" },
-  { label: "Mobile Page Load", value: "<1.0s" },
-  { label: "Founder-Led Delivery", value: "Direct" },
-  { label: "Technical Schema", value: "100%" },
+  { label: "Engineering Stack", value: "Next.js & React" },
+  { label: "Performance Focus", value: "Mobile-First" },
+  { label: "Delivery Model", value: "Founder-Led" },
+  { label: "Client Footprint", value: "Global Markets" },
 ];
 
 export const comparison = [
   {
     feature: "Technology Stack",
-    legacy: "Bloated WordPress & plugin-heavy templates (3-6s load)",
-    rankvra: "Custom Next.js & React engineered for sub-second speeds",
+    legacy: "Bloated WordPress & plugin-heavy templates prone to security issues and 4-6s load times",
+    rankvra: "Modern Next.js, React, and clean TypeScript engineered for sub-second performance",
   },
   {
-    feature: "Primary Goal",
-    legacy: "Fluffy vanity metrics (impressions, fake clicks)",
-    rankvra: "Verified phone calls, booked appointments & WhatsApp RFQs",
+    feature: "Commercial Focus",
+    legacy: "Superficial vanity impressions and generic social media graphics with zero ROI",
+    rankvra: "Verified inbound phone inquiries, booked consultations, and commercial RFQs",
   },
   {
-    feature: "Team & Accountability",
-    legacy: "Junior account managers & outsourced freelancers",
-    rankvra: "Direct collaboration with Founder Naveen Panchal",
+    feature: "Engineering Accountability",
+    legacy: "Junior account runners and multiple outsourced layers causing communication gaps",
+    rankvra: "Direct architectural collaboration with Founder Naveen Panchal and technical team",
   },
   {
     feature: "Code & Asset Ownership",
-    legacy: "Proprietary lock-ins & hostage recurring retainers",
-    rankvra: "100% Client ownership of clean source code and assets",
+    legacy: "Proprietary page-builder lock-ins and ongoing hostage recurring platform fees",
+    rankvra: "100% Client ownership of clean, maintainable source code and intellectual property",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Every web app we engineer is built on clean Next.js architecture with sub-second speeds, verified JSON-LD schema, and conversion funnels mapped to real commercial queries.",
+      "Every web platform we build is engineered on modern Next.js architecture with clean typography, verified schema graphs, and inquiry pathways mapped to real buyer intent.",
     name: "Engineering Standard",
-    role: "Core Technical Protocol",
-    metric: "Sub-Second Speed",
+    role: "Technical Architecture Protocol",
+    metric: "Sub-Second UX",
   },
   {
     quote:
-      "We operate with 100% transparency. Clients get direct founder collaboration, full source code ownership, and zero agency runaround.",
-    name: "Founder Direct",
+      "We believe in complete transparency. Clients receive direct architectural communication, regular sprint progress, and 100% ownership of their codebase.",
+    name: "Accountability",
     role: "Led by Naveen Panchal",
-    metric: "100% Code Ownership",
+    metric: "Direct Collaboration",
   },
   {
     quote:
-      "Our SEO and paid campaigns focus exclusively on commercial outcomes: verified phone calls, booked appointments, and container-load RFQs.",
+      "Our search and design work concentrates on real commercial results: corporate inquiries, appointment bookings, and institutional RFQs across target markets.",
     name: "Commercial Focus",
     role: "Inbound Pipeline Growth",
     metric: "Outcome-Driven",
@@ -128,57 +128,73 @@ export const testimonials = [
 
 export const faqs = [
   {
-    q: "Who is RankVRA and where are you located?",
-    a: "RankVRA is a web development and digital growth agency founded by Naveen Panchal (lw_avee), headquartered in Udaipur, Rajasthan 313001. We serve businesses locally in Udaipur, across Rajasthan and India, and internationally across the US, UK, and UAE.",
+    q: "Who is RankVRA and where are you based?",
+    a: "RankVRA is an India-based web development, custom software, and digital growth company founded by Naveen Panchal. Headquartered in Udaipur, Rajasthan, we serve businesses nationally across India and internationally across the United States, United Kingdom, Canada, and other global markets.",
   },
   {
-    q: "What makes RankVRA different from standard agencies?",
-    a: "Standard agencies use slow WordPress templates and report vanity impressions. RankVRA takes a software-engineering approach: custom Next.js websites that load under 1 second, high-intent Google SEO, and direct WhatsApp/phone inquiry funnels.",
+    q: "Do you work with international clients in the US, UK, and Canada?",
+    a: "Yes. A substantial portion of our work involves international businesses. We maintain overlapping communication hours, structured project management in Slack and Notion, transparent GitHub version control, and seamless international payment processing.",
   },
   {
-    q: "How soon can we launch and start capturing leads?",
-    a: "Most custom web platforms and initial SEO/Ad frameworks are architected and deployed within 2 to 3 weeks, with direct founder communication throughout.",
+    q: "What makes RankVRA different from traditional agencies?",
+    a: "Traditional agencies often rely on slow WordPress themes and report vanity metrics. RankVRA approaches digital growth from a software engineering perspective: custom Next.js web applications, sub-second mobile speeds, comprehensive technical SEO, and conversion funnels mapped to commercial intent.",
   },
   {
-    q: "How can I get started?",
-    a: "Request a free website growth audit online or message founder Naveen Panchal directly on WhatsApp at +91 7297875798.",
+    q: "Can you redesign an existing website without losing SEO rankings?",
+    a: "Absolutely. Website redesigns at RankVRA include comprehensive URL mapping, 301 redirect architecture, metadata preservation, and Core Web Vitals remediation to protect and improve organic search visibility.",
+  },
+  {
+    q: "What industries do you have proven experience in?",
+    a: "We have proven project experience in Commercial Insurance (agency websites & wholesale broker portals), B2B Industrial & Scientific Manufacturing, Professional Education, Healthcare Clinics, and SaaS/Web Applications.",
+  },
+  {
+    q: "How can we get started on a project?",
+    a: "You can request a Free Website Audit through our online form, schedule an architectural discovery call, or connect directly with Founder Naveen Panchal via WhatsApp at +91 7297875798.",
   },
 ];
 
 export const caseStudies = [
   {
-    name: "Lakeview Heritage Resort",
-    category: "Hospitality & Luxury Stays",
-    result: "Boutique Udaipur resort shifted room inventory from 20% OTA commissions to direct WhatsApp & website reservations.",
-    lift: "+41% Direct Bookings",
-    slug: "lakeview-heritage-resort",
-    tags: ["Next.js", "Local SEO", "WhatsApp Desk"],
+    name: "Capital & Co Insurance Services",
+    category: "Commercial Insurance & Web Design",
+    result: "High-trust digital storefront with specialized policy quote funnels and technical SEO for a forward-thinking insurance brokerage.",
+    lift: "Modern Architecture",
+    slug: "capital-co-insurance",
+    tags: ["Next.js", "Insurance Web Design", "Lead Funnels", "USA Market"],
   },
   {
-    name: "Mewar Stone & Marble Exports",
-    category: "Industrial B2B & Export",
-    result: "Natural stone processor captured verified container-load export inquiries from US and UAE architects via international SEO.",
-    lift: "19 Export RFQs",
-    slug: "mewar-stone-marble-exports",
-    tags: ["Technical SEO", "B2B Catalog", "Global Trade"],
+    name: "Sterling Wholesale Insurance Portal",
+    category: "Wholesale Underwriting & Custom Web App",
+    result: "High-volume broker submission portal featuring secure authentication, document management, and real-time underwriting workflows.",
+    lift: "Broker Portal",
+    slug: "sterling-insurance-portal",
+    tags: ["Custom Web App", "Broker Auth", "Workflow Engine", "USA Market"],
   },
   {
-    name: "Smile Care Dental Clinic",
-    category: "Healthcare & Local SEO",
-    result: "Multi-specialty dental practice achieved consistent Google 3-Pack placement across 5 Udaipur neighborhoods.",
-    lift: "+125% Phone Inquiries",
-    slug: "smile-care-dental",
-    tags: ["Google 3-Pack", "Medical Schema", "Review Engine"],
+    name: "Swastik Computer Education",
+    category: "Education & Enrollment Engine",
+    result: "Interactive course catalog, curriculum directory, and student admission inquiry pathways for a technical training institute.",
+    lift: "Direct Admissions",
+    slug: "swastik-computer-education",
+    tags: ["Course Catalog", "Admissions Funnel", "Education Schema", "India Market"],
+  },
+  {
+    name: "E-Biozone",
+    category: "Biotechnology & Scientific B2B",
+    result: "Technical laboratory equipment catalog with digital specification sheets and institutional Request for Quotation (RFQ) workflows.",
+    lift: "Institutional RFQ",
+    slug: "e-biozone",
+    tags: ["B2B Catalog", "RFQ Engine", "Product Schema", "Global Trade"],
   },
 ];
 
 export const clients = [
   "Next.js 16",
-  "Google Maps 3-Pack",
-  "Technical SEO",
-  "B2B Lead Funnels",
-  "WhatsApp Cloud API",
-  "Core Web Vitals Pass",
-  "Google Ads ROAS",
   "TypeScript",
+  "React",
+  "Technical SEO",
+  "Tailwind CSS",
+  "Core Web Vitals",
+  "Custom Portals",
+  "REST & Webhooks",
 ];

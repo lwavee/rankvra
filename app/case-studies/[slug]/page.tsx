@@ -163,10 +163,23 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
                   {study.timeline}
                 </span>
               </div>
-              <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 text-[10px] font-bold text-emerald-700">
-                <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-ping" />
-                Live Audited
-              </span>
+              <div className="flex items-center gap-2">
+                {study.liveUrl && (
+                  <a
+                    href={study.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 rounded-full border border-indigo-200 bg-indigo-50/80 hover:bg-indigo-100 px-3 py-1 text-xs font-semibold text-indigo-700 transition-colors"
+                  >
+                    <span>Visit Live Website</span>
+                    <ArrowRight size={12} className="-rotate-45" />
+                  </a>
+                )}
+                <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 text-[10px] font-bold text-emerald-700">
+                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-ping" />
+                  Live Audited
+                </span>
+              </div>
             </div>
 
             <h1 className="text-xl sm:text-2xl lg:text-3xl font-black tracking-tight text-[#0f172a] leading-tight mb-2.5">

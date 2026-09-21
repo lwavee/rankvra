@@ -23,14 +23,15 @@ export function WhyRankvraSection() {
             <span className="text-gradient">We Deliver Verified Inquiries</span>.
           </h2>
           <p className="mt-4 text-sm sm:text-base leading-relaxed text-[#475569]">
-            Most digital agencies charge monthly retainers to post generic social graphics and report vague &ldquo;impressions&rdquo;. RankVRA engineers software-grade web platforms and search campaigns that deliver actual customer calls, booked appointments, and wholesale purchase orders.
+            Many agencies charge monthly retainers for generic social posts and vague &ldquo;impressions&rdquo;. RankVRA engineers software-grade web platforms and search campaigns that generate real client calls, booked consultations, and wholesale purchase inquiries.
           </p>
 
           <div className="mt-6 space-y-2.5">
             {[
-              "Direct collaboration with Founder Naveen Panchal — no junior runarounds",
-              "Sub-1-second mobile page loads guaranteed across 4G & 5G networks",
-              "100% Source code, domain, and ad account ownership with zero lock-in",
+              "Direct collaboration with Founder Naveen Panchal — zero junior runarounds",
+              "Mobile-first architecture engineered for sub-second speeds and Core Web Vitals",
+              "100% Source code, domain, and asset ownership with zero vendor lock-in",
+              "Ethical white-hat SEO aligned with Google Search Essentials and spam policies",
             ].map((point) => (
               <div key={point} className="flex items-start gap-2.5">
                 <CheckCircle2 size={16} className="text-[#10b981] mt-0.5 shrink-0" />
@@ -41,10 +42,10 @@ export function WhyRankvraSection() {
 
           <div className="mt-8">
             <Link
-              href="/free-growth-audit"
+              href="/free-website-audit"
               className="inline-flex items-center gap-2 rounded-full bg-[#0f172a] px-6 py-3 text-xs sm:text-sm font-bold text-white shadow-md hover:bg-[#1e293b] transition-all"
             >
-              Get Free Performance Audit <ArrowRight size={14} />
+              Get a Free Website Audit <ArrowRight size={14} />
             </Link>
           </div>
         </div>
