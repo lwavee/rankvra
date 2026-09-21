@@ -78,7 +78,7 @@ export function HomePage() {
   }, []);
 
   return (
-    <main id="top">
+    <main id="top" suppressHydrationWarning>
       <HeroSection />
       <SocialProofBar />
       <ServicesSection />
