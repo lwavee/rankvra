@@ -20,9 +20,14 @@ export default function LoginPage() {
         setError(res.error)
         setLoading(false)
       }
-    } catch (err) {
-      // Redirect throws an error in Next.js which is expected behavior
-      // so we don't need to do anything here if it succeeds
+    } catch (err: any) {
+      // In Next.js, redirect() throws NEXT_REDIRECT which is expected when login succeeds
+      if (err?.message?.includes("NEXT_REDIRECT") || err?.digest?.includes("NEXT_REDIRECT")) {
+        return
+      }
+      console.error("Login submission error:", err)
+      setError("Server error or connection timed out. Please check your database connection.")
+      setLoading(false)
     }
   }
 

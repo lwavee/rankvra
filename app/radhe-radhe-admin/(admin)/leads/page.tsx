@@ -4,9 +4,14 @@ import { Mail, Phone, Globe, Calendar } from "lucide-react";
 export const dynamic = "force-dynamic";
 
 export default async function LeadsPage() {
-  const leads = await prisma.lead.findMany({
-    orderBy: { createdAt: "desc" },
-  });
+  let leads: any[] = [];
+  try {
+    leads = await prisma.lead.findMany({
+      orderBy: { createdAt: "desc" },
+    });
+  } catch (err) {
+    console.error("Failed to fetch leads:", err);
+  }
 
   return (
     <div>

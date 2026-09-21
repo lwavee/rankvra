@@ -9,7 +9,12 @@ export default async function AdminDashboard() {
   const blogsCount = getBlogs().length;
   const reelsCount = getReels().length;
   const visitorStats = getVisitorStats();
-  const leadsCount = await prisma.lead.count();
+  let leadsCount = 0;
+  try {
+    leadsCount = await prisma.lead.count();
+  } catch (err) {
+    console.error("Failed to count leads:", err);
+  }
 
   return (
     <div>

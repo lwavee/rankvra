@@ -430,7 +430,7 @@ export function ContactPage() {
                     className="group inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#4f46e5] px-6 py-4 text-sm font-bold text-white shadow-lg shadow-[#4f46e5]/25 transition-all duration-300 hover:bg-[#4338ca] hover:shadow-xl hover:shadow-[#4f46e5]/30 cursor-pointer disabled:opacity-50"
                   >
                     <Send size={15} />
-                    {loading ? "Sending Details..." : "Send Message & Request Strategy Call"}
+                    {loading ? "Sending Details..." : "Submit"}
                     <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
                   </button>
 
