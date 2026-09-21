@@ -24,6 +24,7 @@ const CATEGORIES = [
   "Search Strategy",
   "Local & Udaipur",
   "Web Engineering",
+  "Paid Advertising",
   "Hospitality",
   "B2B & Industrial",
   "Conversion & CRO",
@@ -47,19 +48,23 @@ export function BlogClient({ initialPosts }: BlogClientProps) {
           post.title.includes("Udaipur");
       } else if (selectedCategory === "Web Engineering") {
         matchesCategory =
-          post.category.includes("Web") || post.slug.includes("web") || post.slug.includes("website");
+          post.category.includes("Web") || post.slug.includes("web") || post.slug.includes("website") || post.slug.includes("vitals");
+      } else if (selectedCategory === "Paid Advertising") {
+        matchesCategory =
+          post.category.includes("Paid") || post.slug.includes("ads") || post.slug.includes("google-ads");
       } else if (selectedCategory === "Hospitality") {
         matchesCategory =
           post.category.includes("Hospitality") || post.slug.includes("hotel");
       } else if (selectedCategory === "B2B & Industrial") {
         matchesCategory =
-          post.category.includes("B2B") || post.slug.includes("manufacturers");
+          post.category.includes("B2B") || post.slug.includes("manufacturers") || post.slug.includes("export");
       } else if (selectedCategory === "Conversion & CRO") {
         matchesCategory =
           post.category.includes("Conversion") ||
           post.category.includes("CRO") ||
           post.slug.includes("leads") ||
-          post.slug.includes("converting");
+          post.slug.includes("converting") ||
+          post.slug.includes("optimization");
       } else if (selectedCategory !== "All Guides") {
         matchesCategory = post.category === selectedCategory;
       }

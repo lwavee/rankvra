@@ -214,14 +214,29 @@ const jsonLd = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${inter.variable} h-full`}>
+    <html lang="en" className={`${inter.variable} h-full`} suppressHydrationWarning>
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                if (typeof Element !== 'undefined') {
+                  const _set = Element.prototype.setAttribute;
+                  Element.prototype.setAttribute = function(k, v) {
+                    if (k === 'bis_skin_checked') return;
+                    return _set.apply(this, arguments);
+                  };
+                }
+              } catch (e) {}
+            `,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-full flex flex-col bg-white text-[#0f172a] antialiased">
+      <body className="min-h-full flex flex-col bg-white text-[#0f172a] antialiased" suppressHydrationWarning>
         <VisitorTracker />
         {children}
       </body>

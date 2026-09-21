@@ -1,0 +1,68 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" rx="24" fill="#0f172a"/>
+  <!-- Subtle Grid -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+  <defs>
+    <filter id="b1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="80"/></filter>
+    <filter id="b2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="90"/></filter>
+  </defs>
+  <circle cx="240" cy="180" r="230" fill="#3b82f6" opacity="0.2" filter="url(#b1)"/>
+  <circle cx="980" cy="460" r="250" fill="#10b981" opacity="0.18" filter="url(#b2)"/>
+
+  <!-- Badge -->
+  <rect x="80" y="70" width="220" height="38" rx="19" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="100" y="94" fill="#93c5fd" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" letter-spacing="1">B2B LEAD GENERATION INDIA</text>
+
+  <!-- Titles -->
+  <text x="80" y="160" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" letter-spacing="-1">Inbound Lead Generation for</text>
+  <text x="80" y="215" fill="#60a5fa" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" letter-spacing="-1">Indian B2B &amp; Exporters</text>
+  <text x="80" y="265" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="400">High-intent search capture, automated WhatsApp qualification &amp; pipeline revenue.</text>
+
+  <!-- Card 1: Intent Capture -->
+  <g transform="translate(80, 320)">
+    <rect width="320" height="230" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <rect x="24" y="24" width="44" height="44" rx="12" fill="#1e3a8a"/>
+    <text x="46" y="52" fill="#93c5fd" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" text-anchor="middle">🎯</text>
+    <text x="24" y="105" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">Commercial Intent</text>
+    <text x="24" y="132" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">Targeting bulk order queries,</text>
+    <text x="24" y="154" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">RFQ keywords &amp; specification sheets.</text>
+    <rect x="24" y="180" width="130" height="24" rx="6" fill="#3b82f6" opacity="0.2"/>
+    <text x="34" y="196" fill="#93c5fd" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">HIGH-TICKET BUYERS</text>
+  </g>
+
+  <!-- Card 2: Qualification Funnel -->
+  <g transform="translate(430, 320)">
+    <rect width="320" height="230" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <rect x="24" y="24" width="44" height="44" rx="12" fill="#065f46"/>
+    <text x="46" y="52" fill="#6ee7b7" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" text-anchor="middle">⚡</text>
+    <text x="24" y="105" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">Instant AI Lead Routing</text>
+    <text x="24" y="132" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">Sub-minute response times via</text>
+    <text x="24" y="154" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">WhatsApp &amp; automated CRM triggers.</text>
+    <rect x="24" y="180" width="135" height="24" rx="6" fill="#10b981" opacity="0.2"/>
+    <text x="34" y="196" fill="#6ee7b7" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">PIPELINE SPEED</text>
+  </g>
+
+  <!-- Card 3: Account Based Growth -->
+  <g transform="translate(780, 320)">
+    <rect width="340" height="230" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <rect x="24" y="24" width="44" height="44" rx="12" fill="#312e81"/>
+    <text x="46" y="52" fill="#a5b4fc" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" text-anchor="middle">💼</text>
+    <text x="24" y="105" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">Account Nurturing</text>
+    <text x="24" y="132" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">Case studies, procurement proof,</text>
+    <text x="24" y="154" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">and automated email nurture sequences.</text>
+    <rect x="24" y="180" width="130" height="24" rx="6" fill="#6366f1" opacity="0.2"/>
+    <text x="34" y="196" fill="#a5b4fc" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">RETENTION &amp; CLOSE</text>
+  </g>
+</svg>

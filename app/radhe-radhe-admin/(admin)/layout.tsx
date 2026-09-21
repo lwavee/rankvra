@@ -4,7 +4,7 @@ import { LayoutDashboard, FileText, Film, MessageSquare } from "lucide-react";
 
 export default function AdminLayout({ children }: { children: ReactNode }) {
   return (
-    <div className="min-h-screen bg-slate-50 flex">
+    <div className="min-h-screen bg-slate-50 flex" suppressHydrationWarning>
       {/* Sidebar */}
       <aside className="w-64 bg-slate-900 text-slate-300 flex flex-col shadow-2xl z-10">
         <div className="p-6">

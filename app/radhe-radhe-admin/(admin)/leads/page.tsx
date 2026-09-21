@@ -14,7 +14,7 @@ export default async function LeadsPage() {
   }
 
   return (
-    <div>
+    <div suppressHydrationWarning>
       <h1 className="text-3xl font-black text-slate-900 mb-8">Manage Leads</h1>
       
       <div className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">

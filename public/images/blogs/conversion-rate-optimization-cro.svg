@@ -1,0 +1,68 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" rx="24" fill="#0f172a"/>
+  <!-- Subtle Grid -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+  <defs>
+    <filter id="b1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="80"/></filter>
+    <filter id="b2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="90"/></filter>
+  </defs>
+  <circle cx="200" cy="180" r="220" fill="#10b981" opacity="0.2" filter="url(#b1)"/>
+  <circle cx="1020" cy="450" r="250" fill="#6366f1" opacity="0.18" filter="url(#b2)"/>
+
+  <!-- Badge -->
+  <rect x="80" y="70" width="220" height="38" rx="19" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+  <text x="100" y="94" fill="#6ee7b7" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" letter-spacing="1">CONVERSION OPTIMIZATION</text>
+
+  <!-- Titles -->
+  <text x="80" y="160" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" letter-spacing="-1">Conversion Rate Optimization:</text>
+  <text x="80" y="215" fill="#34d399" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" letter-spacing="-1">Doubling Leads Without More Traffic</text>
+  <text x="80" y="265" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="400">Behavioral UX, friction elimination, copywriting triggers &amp; psychological trust badges.</text>
+
+  <!-- Card 1: Friction Elimination -->
+  <g transform="translate(80, 320)">
+    <rect width="320" height="230" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <rect x="24" y="24" width="44" height="44" rx="12" fill="#065f46"/>
+    <text x="46" y="52" fill="#6ee7b7" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" text-anchor="middle">✂️</text>
+    <text x="24" y="105" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">Form Friction Removal</text>
+    <text x="24" y="132" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">Cutting unnecessary input fields</text>
+    <text x="24" y="154" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">to increase completions by 47%.</text>
+    <rect x="24" y="180" width="130" height="24" rx="6" fill="#10b981" opacity="0.2"/>
+    <text x="34" y="196" fill="#6ee7b7" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">+47% INQUIRIES</text>
+  </g>
+
+  <!-- Card 2: Value Proposition -->
+  <g transform="translate(430, 320)">
+    <rect width="320" height="230" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <rect x="24" y="24" width="44" height="44" rx="12" fill="#312e81"/>
+    <text x="46" y="52" fill="#a5b4fc" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" text-anchor="middle">🎯</text>
+    <text x="24" y="105" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">Hero Section Clarity</text>
+    <text x="24" y="132" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">Passing the 5-second test with</text>
+    <text x="24" y="154" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">clear outcomes &amp; zero buzzwords.</text>
+    <rect x="24" y="180" width="135" height="24" rx="6" fill="#6366f1" opacity="0.2"/>
+    <text x="34" y="196" fill="#a5b4fc" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">5-SECOND TEST</text>
+  </g>
+
+  <!-- Card 3: Proof & Badges -->
+  <g transform="translate(780, 320)">
+    <rect width="340" height="230" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <rect x="24" y="24" width="44" height="44" rx="12" fill="#78350f"/>
+    <text x="46" y="52" fill="#fde68a" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" text-anchor="middle">🛡️</text>
+    <text x="24" y="105" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">Micro-Social Proof</text>
+    <text x="24" y="132" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">Client logos, case numbers, and</text>
+    <text x="24" y="154" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">verifiable reviews beside call-to-actions.</text>
+    <rect x="24" y="180" width="130" height="24" rx="6" fill="#f59e0b" opacity="0.2"/>
+    <text x="34" y="196" fill="#fcd34d" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">TRUST TRIGGERS</text>
+  </g>
+</svg>

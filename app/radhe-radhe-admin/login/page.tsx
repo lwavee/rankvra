@@ -32,7 +32,7 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-50">
+    <div className="min-h-screen flex items-center justify-center bg-slate-50" suppressHydrationWarning>
       <div className="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md">
         <h1 className="text-2xl font-black mb-2 text-center text-slate-800 tracking-tighter">
           RANKVRA<span className="text-indigo-500">ADMIN</span>

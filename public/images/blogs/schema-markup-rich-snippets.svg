@@ -1,0 +1,68 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" rx="24" fill="#0f172a"/>
+  <!-- Subtle Grid -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+  <defs>
+    <filter id="b1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="80"/></filter>
+    <filter id="b2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="90"/></filter>
+  </defs>
+  <circle cx="200" cy="180" r="220" fill="#a855f7" opacity="0.2" filter="url(#b1)"/>
+  <circle cx="1020" cy="450" r="250" fill="#3b82f6" opacity="0.2" filter="url(#b2)"/>
+
+  <!-- Badge -->
+  <rect x="80" y="70" width="220" height="38" rx="19" fill="#3b0764" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="100" y="94" fill="#d8b4fe" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" letter-spacing="1">TECHNICAL SEO SCHEMA</text>
+
+  <!-- Titles -->
+  <text x="80" y="160" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" letter-spacing="-1">Schema Markup &amp; Structured Data</text>
+  <text x="80" y="215" fill="#c084fc" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" letter-spacing="-1">Claiming Google Rich Snippets</text>
+  <text x="80" y="265" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="400">JSON-LD architectures that boost search click-through rate by up to 35%.</text>
+
+  <!-- Card 1: Knowledge Graph -->
+  <g transform="translate(80, 320)">
+    <rect width="320" height="230" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <rect x="24" y="24" width="44" height="44" rx="12" fill="#581c87"/>
+    <text x="46" y="52" fill="#d8b4fe" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" text-anchor="middle">🧠</text>
+    <text x="24" y="105" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">Entity Relationships</text>
+    <text x="24" y="132" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">Organization, Founder, SameAs,</text>
+    <text x="24" y="154" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">and Google Knowledge Panels.</text>
+    <rect x="24" y="180" width="130" height="24" rx="6" fill="#a855f7" opacity="0.2"/>
+    <text x="34" y="196" fill="#d8b4fe" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">ENTITY GRAPH</text>
+  </g>
+
+  <!-- Card 2: SERP Visuals -->
+  <g transform="translate(430, 320)">
+    <rect width="320" height="230" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <rect x="24" y="24" width="44" height="44" rx="12" fill="#1e3a8a"/>
+    <text x="46" y="52" fill="#93c5fd" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" text-anchor="middle">⭐</text>
+    <text x="24" y="105" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">FAQ &amp; Product Rich Snippets</text>
+    <text x="24" y="132" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">Expand SERP real estate with</text>
+    <text x="24" y="154" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">collapsible answers &amp; review stars.</text>
+    <rect x="24" y="180" width="135" height="24" rx="6" fill="#3b82f6" opacity="0.2"/>
+    <text x="34" y="196" fill="#93c5fd" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">+35% CTR SURGE</text>
+  </g>
+
+  <!-- Card 3: AI Search Proofing -->
+  <g transform="translate(780, 320)">
+    <rect width="340" height="230" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <rect x="24" y="24" width="44" height="44" rx="12" fill="#065f46"/>
+    <text x="46" y="52" fill="#6ee7b7" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" text-anchor="middle">🤖</text>
+    <text x="24" y="105" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">AI Citation Readiness</text>
+    <text x="24" y="132" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">Feeding structured context directly</text>
+    <text x="24" y="154" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">to Google Gemini, AI Overviews &amp; LLMs.</text>
+    <rect x="24" y="180" width="130" height="24" rx="6" fill="#10b981" opacity="0.2"/>
+    <text x="34" y="196" fill="#6ee7b7" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">GEO OPTIMIZED</text>
+  </g>
+</svg>

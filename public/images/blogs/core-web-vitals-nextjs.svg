@@ -1,0 +1,68 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" rx="24" fill="#0f172a"/>
+  <!-- Subtle Grid -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+  <defs>
+    <filter id="b1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="80"/></filter>
+    <filter id="b2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="90"/></filter>
+  </defs>
+  <circle cx="200" cy="180" r="220" fill="#10b981" opacity="0.18" filter="url(#b1)"/>
+  <circle cx="1020" cy="450" r="250" fill="#06b6d4" opacity="0.2" filter="url(#b2)"/>
+
+  <!-- Badge -->
+  <rect x="80" y="70" width="220" height="38" rx="19" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+  <text x="100" y="94" fill="#6ee7b7" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" letter-spacing="1">CORE WEB VITALS NEXT.JS</text>
+
+  <!-- Titles -->
+  <text x="80" y="160" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" letter-spacing="-1">Mastering Core Web Vitals</text>
+  <text x="80" y="215" fill="#34d399" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" letter-spacing="-1">in Next.js App Router</text>
+  <text x="80" y="265" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="400">Eliminating INP latency, crushing CLS &amp; optimizing LCP for sub-second speeds.</text>
+
+  <!-- Card 1: LCP -->
+  <g transform="translate(80, 320)">
+    <rect width="320" height="230" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <rect x="24" y="24" width="44" height="44" rx="12" fill="#065f46"/>
+    <text x="46" y="52" fill="#6ee7b7" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" text-anchor="middle">⚡</text>
+    <text x="24" y="105" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">LCP &lt; 1.2s</text>
+    <text x="24" y="132" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">Server Component streaming,</text>
+    <text x="24" y="154" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">next/image priority &amp; AVIF.</text>
+    <rect x="24" y="180" width="130" height="24" rx="6" fill="#10b981" opacity="0.2"/>
+    <text x="34" y="196" fill="#6ee7b7" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">LARGEST CONTENTFUL</text>
+  </g>
+
+  <!-- Card 2: INP -->
+  <g transform="translate(430, 320)">
+    <rect width="320" height="230" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <rect x="24" y="24" width="44" height="44" rx="12" fill="#164e63"/>
+    <text x="46" y="52" fill="#67e8f9" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" text-anchor="middle">🎯</text>
+    <text x="24" y="105" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">INP &lt; 50ms</text>
+    <text x="24" y="132" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">Minimizing JavaScript main thread</text>
+    <text x="24" y="154" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">blocking &amp; optimizing handlers.</text>
+    <rect x="24" y="180" width="140" height="24" rx="6" fill="#06b6d4" opacity="0.2"/>
+    <text x="34" y="196" fill="#67e8f9" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">INTERACTION TO PAINT</text>
+  </g>
+
+  <!-- Card 3: CLS -->
+  <g transform="translate(780, 320)">
+    <rect width="340" height="230" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <rect x="24" y="24" width="44" height="44" rx="12" fill="#312e81"/>
+    <text x="46" y="52" fill="#a5b4fc" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" text-anchor="middle">📐</text>
+    <text x="24" y="105" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">CLS = 0.000</text>
+    <text x="24" y="132" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">Pre-allocated aspect ratios &amp;</text>
+    <text x="24" y="154" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">zero layout shifts during render.</text>
+    <rect x="24" y="180" width="130" height="24" rx="6" fill="#6366f1" opacity="0.2"/>
+    <text x="34" y="196" fill="#a5b4fc" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">ZERO LAYOUT SHIFT</text>
+  </g>
+</svg>
