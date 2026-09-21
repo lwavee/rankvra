@@ -12,6 +12,7 @@ import { WhyRankvraSection } from "./home/why-rankvra-section";
 import { ResultsSection } from "./home/results-section";
 import { ProcessSection } from "./home/process-section";
 import { TestimonialsSection } from "./home/testimonials-section";
+import { LatestBlogsSection } from "./home/latest-blogs-section";
 import { FAQSection } from "./home/faq-section";
 import { CTASection } from "./home/cta-section";
 
@@ -85,6 +86,7 @@ export function HomePage() {
       <ResultsSection />
       <ProcessSection />
       <TestimonialsSection />
+      <LatestBlogsSection />
       <FAQSection />
       <CTASection />
     </main>

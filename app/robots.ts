@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/api/", "/thank-you"],
+      disallow: ["/api/", "/thank-you", "/radhe-radhe-admin/"],
     },
     sitemap: "https://www.rankvra.com/sitemap.xml",
   };

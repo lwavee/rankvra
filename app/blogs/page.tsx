@@ -8,6 +8,17 @@ export const metadata: Metadata = {
   description:
     "Explore actionable technical SEO blueprints, local search guides, hospitality direct booking frameworks, and web performance insights by Founder Naveen Panchal.",
   alternates: { canonical: "https://www.rankvra.com/blogs" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
     title: "Search Strategy & Web Engineering Blog | RankVRA",
     description:
