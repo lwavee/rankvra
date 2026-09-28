@@ -43,7 +43,7 @@ export default function BlogsPage() {
 
   return (
     <SiteShell>
-      <main className="min-h-screen bg-white">
+      <main className="min-h-screen bg-white" suppressHydrationWarning>
         {/* Schema Markup for SEO */}
         <script
           type="application/ld+json"

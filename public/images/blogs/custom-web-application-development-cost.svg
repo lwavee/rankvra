@@ -1,0 +1,94 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+  <defs>
+    <filter id="glow1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="90"/></filter>
+    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="80"/></filter>
+    <linearGradient id="accGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="24" fill="#090d16"/>
+  <!-- Ambient Glow Orbs -->
+  <circle cx="180" cy="160" r="240" fill="#10b981" opacity="0.18" filter="url(#glow1)"/>
+  <circle cx="1040" cy="460" r="260" fill="#f59e0b" opacity="0.16" filter="url(#glow2)"/>
+  <!-- Subtle Background Grid -->
+  <g opacity="0.05" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="150" y1="0" x2="150" y2="630"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="450" y1="0" x2="450" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="750" y1="0" x2="750" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1050" y1="0" x2="1050" y2="630"/>
+  </g>
+  
+    <!-- Header -->
+    <rect x="80" y="55" width="280" height="34" rx="17" fill="#064e3b" stroke="#10b981" stroke-width="1.2"/>
+    <text x="96" y="77" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">INVESTMENT ARCHITECTURE</text>
+    <text x="80" y="135" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="800" letter-spacing="-1">Web Application Cost Breakdown</text>
+    <text x="80" y="170" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">The Core Factors Determining Custom Software Investment &amp; ROI</text>
+
+    <!-- 3 Tier Scope Columns -->
+    <g transform="translate(80, 215)">
+      <!-- Tier 1: MVP -->
+      <g transform="translate(0, 0)">
+        <rect width="325" height="310" rx="18" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+        <rect x="25" y="25" width="85" height="26" rx="6" fill="#1e293b"/>
+        <text x="35" y="42" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="700">STAGE 1</text>
+        <text x="25" y="85" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="800">MVP Prototype</text>
+        <text x="25" y="110" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Speed to Market</text>
+        <line x1="25" y1="130" x2="300" y2="130" stroke="#1e293b"/>
+        <text x="25" y="160" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">✓ Core functional user workflows</text>
+        <text x="25" y="190" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">✓ Single-role authentication (JWT)</text>
+        <text x="25" y="220" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">✓ Basic PostgreSQL database</text>
+        <text x="25" y="250" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">✓ 4 - 8 Weeks Delivery</text>
+      </g>
+
+      <!-- Tier 2: Scaled Business App (Featured) -->
+      <g transform="translate(355, 0)">
+        <rect width="330" height="310" rx="18" fill="#06221c" stroke="#10b981" stroke-width="2"/>
+        <rect x="25" y="25" width="120" height="26" rx="6" fill="#065f46"/>
+        <text x="35" y="42" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="11" font-weight="700">MOST POPULAR</text>
+        <text x="25" y="85" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="800">Commercial Platform</text>
+        <text x="25" y="110" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Enterprise Operations</text>
+        <line x1="25" y1="130" x2="305" y2="130" stroke="#065f46"/>
+        <text x="25" y="160" fill="#d1fae5" font-family="system-ui, sans-serif" font-size="13">✓ Multi-role RBAC permissions</text>
+        <text x="25" y="190" fill="#d1fae5" font-family="system-ui, sans-serif" font-size="13">✓ Stripe / Razorpay Gateways</text>
+        <text x="25" y="220" fill="#d1fae5" font-family="system-ui, sans-serif" font-size="13">✓ Third-Party API integrations</text>
+        <text x="25" y="250" fill="#d1fae5" font-family="system-ui, sans-serif" font-size="13">✓ Redis In-Memory Caching</text>
+        <rect x="25" y="270" width="280" height="26" rx="6" fill="#10b981" opacity="0.2"/>
+        <text x="165" y="287" fill="#34d399" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">ZERO ONGOING SEAT FEES</text>
+      </g>
+
+      <!-- Tier 3: Enterprise Scaled -->
+      <g transform="translate(715, 0)">
+        <rect width="325" height="310" rx="18" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+        <rect x="25" y="25" width="110" height="26" rx="6" fill="#1e293b"/>
+        <text x="35" y="42" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="11" font-weight="700">SCALE &amp; SLA</text>
+        <text x="25" y="85" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="800">Enterprise Suite</text>
+        <text x="25" y="110" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="13" font-weight="600">High-Throughput Infra</text>
+        <line x1="25" y1="130" x2="300" y2="130" stroke="#1e293b"/>
+        <text x="25" y="160" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">✓ Multi-tenant architecture</text>
+        <text x="25" y="190" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">✓ SOC2 / OWASP Hardening</text>
+        <text x="25" y="220" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">✓ Auto-scaling Cloud Cluster</text>
+        <text x="25" y="250" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">✓ 99.9% Uptime Guarantee</text>
+      </g>
+    </g>
+    
+  <!-- Footer Branding -->
+  <line x1="80" y1="560" x2="1120" y2="560" stroke="#1e293b" stroke-width="1"/>
+  <text x="80" y="590" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="1">RANKVRA ENGINEERING SERIES</text>
+  <text x="1120" y="590" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" text-anchor="end">WWW.RANKVRA.COM</text>
+  
+  </svg>

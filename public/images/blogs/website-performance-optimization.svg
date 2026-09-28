@@ -1,0 +1,86 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+  <defs>
+    <filter id="glow1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="90"/></filter>
+    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="80"/></filter>
+    <linearGradient id="accGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="24" fill="#070f14"/>
+  <!-- Ambient Glow Orbs -->
+  <circle cx="180" cy="160" r="240" fill="#10b981" opacity="0.18" filter="url(#glow1)"/>
+  <circle cx="1040" cy="460" r="260" fill="#3b82f6" opacity="0.16" filter="url(#glow2)"/>
+  <!-- Subtle Background Grid -->
+  <g opacity="0.05" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="150" y1="0" x2="150" y2="630"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="450" y1="0" x2="450" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="750" y1="0" x2="750" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1050" y1="0" x2="1050" y2="630"/>
+  </g>
+  
+    <!-- Header -->
+    <rect x="80" y="55" width="280" height="34" rx="17" fill="#064e3b" stroke="#10b981" stroke-width="1.2"/>
+    <text x="96" y="77" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">SUB-SECOND WEB SPEED</text>
+    <text x="80" y="135" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="800" letter-spacing="-1">Website Performance Optimization</text>
+    <text x="80" y="170" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">Transforming Core Web Vitals into High Search Rankings &amp; Conversions</text>
+
+    <!-- 3 Speed Dial Gauges -->
+    <g transform="translate(80, 215)">
+      <!-- LCP Gauge -->
+      <g transform="translate(0, 0)">
+        <rect width="325" height="310" rx="18" fill="#0f172a" stroke="#10b981" stroke-width="2"/>
+        <circle cx="162" cy="115" r="65" stroke="#1e293b" stroke-width="12" fill="none"/>
+        <path d="M 116 161 A 65 65 0 1 1 208 161" stroke="#10b981" stroke-width="12" stroke-linecap="round" fill="none"/>
+        <text x="162" y="115" fill="#ffffff" font-family="system-ui, sans-serif" font-size="28" font-weight="900" text-anchor="middle">0.8s</text>
+        <text x="162" y="135" fill="#34d399" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">FAST (GOOD)</text>
+        <text x="162" y="210" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="800" text-anchor="middle">LCP (Largest Content)</text>
+        <text x="162" y="238" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">Target: &lt; 2.5s • RankVRA: 0.8s</text>
+        <text x="162" y="265" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">Server Components &amp; Edge CDN</text>
+      </g>
+
+      <!-- INP Gauge -->
+      <g transform="translate(355, 0)">
+        <rect width="330" height="310" rx="18" fill="#0f172a" stroke="#06b6d4" stroke-width="2"/>
+        <circle cx="165" cy="115" r="65" stroke="#1e293b" stroke-width="12" fill="none"/>
+        <path d="M 119 161 A 65 65 0 1 1 211 161" stroke="#06b6d4" stroke-width="12" stroke-linecap="round" fill="none"/>
+        <text x="165" y="115" fill="#ffffff" font-family="system-ui, sans-serif" font-size="28" font-weight="900" text-anchor="middle">32ms</text>
+        <text x="165" y="135" fill="#67e8f9" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">INSTANT</text>
+        <text x="165" y="210" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="800" text-anchor="middle">INP (Touch Interaction)</text>
+        <text x="165" y="238" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">Target: &lt; 200ms • RankVRA: 32ms</text>
+        <text x="165" y="265" fill="#67e8f9" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">Zero Main-Thread Blocking</text>
+      </g>
+
+      <!-- CLS Gauge -->
+      <g transform="translate(715, 0)">
+        <rect width="325" height="310" rx="18" fill="#0f172a" stroke="#3b82f6" stroke-width="2"/>
+        <circle cx="162" cy="115" r="65" stroke="#1e293b" stroke-width="12" fill="none"/>
+        <path d="M 116 161 A 65 65 0 1 1 208 161" stroke="#3b82f6" stroke-width="12" stroke-linecap="round" fill="none"/>
+        <text x="162" y="115" fill="#ffffff" font-family="system-ui, sans-serif" font-size="28" font-weight="900" text-anchor="middle">0.000</text>
+        <text x="162" y="135" fill="#93c5fd" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">PERFECT ZERO</text>
+        <text x="162" y="210" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="800" text-anchor="middle">CLS (Layout Shift)</text>
+        <text x="162" y="238" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">Target: &lt; 0.1 • RankVRA: 0.000</text>
+        <text x="162" y="265" fill="#93c5fd" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">Pre-Allocated Aspect Ratios</text>
+      </g>
+    </g>
+    
+  <!-- Footer Branding -->
+  <line x1="80" y1="560" x2="1120" y2="560" stroke="#1e293b" stroke-width="1"/>
+  <text x="80" y="590" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="1">RANKVRA ENGINEERING SERIES</text>
+  <text x="1120" y="590" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" text-anchor="end">WWW.RANKVRA.COM</text>
+  
+  </svg>

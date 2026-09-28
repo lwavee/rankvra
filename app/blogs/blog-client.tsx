@@ -296,14 +296,17 @@ export function BlogClient({ initialPosts }: BlogClientProps) {
               {filteredPosts.map((blog) => (
                 <article
                   key={blog.id}
-                  className="group flex flex-col justify-between rounded-[24px] bg-white border border-[#e2e8f0] shadow-sm transition-all hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(79,70,229,0.09)] hover:border-[#c7d2fe] overflow-hidden"
+                  className="group relative flex flex-col justify-between rounded-[26px] bg-white border border-[#e2e8f0] shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-[0_24px_50px_rgba(79,70,229,0.14)] hover:border-indigo-300 overflow-hidden"
                 >
+                  {/* Top Animated Shimmer Accent Bar */}
+                  <div className="h-1 w-full bg-gradient-to-r from-indigo-600 via-sky-500 to-emerald-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
                   <div>
-                    {/* Featured Image Thumbnail */}
+                    {/* Featured Image Thumbnail with Smooth Zoom */}
                     {blog.featuredImage && (
                       <Link
                         href={`/blogs/${blog.slug}`}
-                        className="block overflow-hidden bg-slate-900 border-b border-[#e2e8f0] aspect-[1200/630]"
+                        className="block overflow-hidden bg-slate-950 border-b border-[#e2e8f0] aspect-[1200/630]"
                       >
                         <Image
                           src={blog.featuredImage.url}
@@ -311,7 +314,7 @@ export function BlogClient({ initialPosts }: BlogClientProps) {
                           width={600}
                           height={315}
                           unoptimized
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-106"
                         />
                       </Link>
                     )}

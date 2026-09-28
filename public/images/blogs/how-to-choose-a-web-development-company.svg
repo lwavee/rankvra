@@ -1,0 +1,106 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+  <defs>
+    <filter id="glow1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="90"/></filter>
+    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="80"/></filter>
+    <linearGradient id="accGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="24" fill="#090d19"/>
+  <!-- Ambient Glow Orbs -->
+  <circle cx="180" cy="160" r="240" fill="#6366f1" opacity="0.18" filter="url(#glow1)"/>
+  <circle cx="1040" cy="460" r="260" fill="#eab308" opacity="0.16" filter="url(#glow2)"/>
+  <!-- Subtle Background Grid -->
+  <g opacity="0.05" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="150" y1="0" x2="150" y2="630"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="450" y1="0" x2="450" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="750" y1="0" x2="750" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1050" y1="0" x2="1050" y2="630"/>
+  </g>
+  
+    <!-- Header -->
+    <rect x="80" y="55" width="280" height="34" rx="17" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.2"/>
+    <text x="96" y="77" fill="#c4b5fd" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">DUE DILIGENCE BLUEPRINT</text>
+    <text x="80" y="135" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="800" letter-spacing="-1">Choosing a Web Development Partner</text>
+    <text x="80" y="170" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">The 10-Point Technical Due Diligence Framework for Founders &amp; Executives</text>
+
+    <!-- Scorecard Grid (4 Distinct Verification Pillars) -->
+    <g transform="translate(80, 215)">
+      <!-- Pillar 1: Code &amp; Architecture -->
+      <g transform="translate(0, 0)">
+        <rect width="245" height="310" rx="16" fill="#0f172a" stroke="#6366f1" stroke-width="2"/>
+        <circle cx="50" cy="50" r="22" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.5"/>
+        <text x="50" y="57" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" text-anchor="middle">💻</text>
+        <text x="25" y="110" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="800">1. Architecture</text>
+        <text x="25" y="132" fill="#a78bfa" font-family="system-ui, sans-serif" font-size="12" font-weight="700">NO BLOATED THEMES</text>
+        <text x="25" y="165" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">• Modern Next.js / React</text>
+        <text x="25" y="190" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">• Clean Git repositories</text>
+        <text x="25" y="215" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">• TypeScript Type Safety</text>
+        <rect x="25" y="250" width="195" height="28" rx="6" fill="#10b981" opacity="0.2"/>
+        <text x="122" y="268" fill="#34d399" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">✓ VERIFIED CODEBASE</text>
+      </g>
+
+      <!-- Pillar 2: 100% IP Ownership -->
+      <g transform="translate(265, 0)">
+        <rect width="245" height="310" rx="16" fill="#0f172a" stroke="#10b981" stroke-width="2"/>
+        <circle cx="50" cy="50" r="22" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+        <text x="50" y="57" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" text-anchor="middle">📜</text>
+        <text x="25" y="110" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="800">2. IP Ownership</text>
+        <text x="25" y="132" fill="#34d399" font-family="system-ui, sans-serif" font-size="12" font-weight="700">100% CLIENT CONTROL</text>
+        <text x="25" y="165" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">• You own all code &amp; IP</text>
+        <text x="25" y="190" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">• Database keys in your name</text>
+        <text x="25" y="215" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">• Zero vendor lock-in</text>
+        <rect x="25" y="250" width="195" height="28" rx="6" fill="#10b981" opacity="0.2"/>
+        <text x="122" y="268" fill="#34d399" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">✓ ASSET SOVEREIGNTY</text>
+      </g>
+
+      <!-- Pillar 3: Speed &amp; Security -->
+      <g transform="translate(530, 0)">
+        <rect width="245" height="310" rx="16" fill="#0f172a" stroke="#06b6d4" stroke-width="2"/>
+        <circle cx="50" cy="50" r="22" fill="#083344" stroke="#06b6d4" stroke-width="1.5"/>
+        <text x="50" y="57" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" text-anchor="middle">⚡</text>
+        <text x="25" y="110" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="800">3. Vitals &amp; Security</text>
+        <text x="25" y="132" fill="#67e8f9" font-family="system-ui, sans-serif" font-size="12" font-weight="700">SUB-SECOND SPEEDS</text>
+        <text x="25" y="165" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">• Core Web Vitals passed</text>
+        <text x="25" y="190" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">• OWASP security defense</text>
+        <text x="25" y="215" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">• Multi-layer encryption</text>
+        <rect x="25" y="250" width="195" height="28" rx="6" fill="#06b6d4" opacity="0.2"/>
+        <text x="122" y="268" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">✓ HIGH-SPEED RATING</text>
+      </g>
+
+      <!-- Pillar 4: Post-Launch SLA -->
+      <g transform="translate(795, 0)">
+        <rect width="245" height="310" rx="16" fill="#0f172a" stroke="#eab308" stroke-width="2"/>
+        <circle cx="50" cy="50" r="22" fill="#422006" stroke="#eab308" stroke-width="1.5"/>
+        <text x="50" y="57" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" text-anchor="middle">🤝</text>
+        <text x="25" y="110" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="800">4. Support SLA</text>
+        <text x="25" y="132" fill="#fde047" font-family="system-ui, sans-serif" font-size="12" font-weight="700">GUARANTEED UPTIME</text>
+        <text x="25" y="165" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">• 24/7 uptime monitoring</text>
+        <text x="25" y="190" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">• Priority feature sprints</text>
+        <text x="25" y="215" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">• Direct engineer access</text>
+        <rect x="25" y="250" width="195" height="28" rx="6" fill="#eab308" opacity="0.2"/>
+        <text x="122" y="268" fill="#facc15" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">✓ LIFETIME PARTNER</text>
+      </g>
+    </g>
+    
+  <!-- Footer Branding -->
+  <line x1="80" y1="560" x2="1120" y2="560" stroke="#1e293b" stroke-width="1"/>
+  <text x="80" y="590" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="1">RANKVRA ENGINEERING SERIES</text>
+  <text x="1120" y="590" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" text-anchor="end">WWW.RANKVRA.COM</text>
+  
+  </svg>

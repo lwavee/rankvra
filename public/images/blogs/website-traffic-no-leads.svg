@@ -30,7 +30,7 @@
   <rect x="80" y="70" width="220" height="38" rx="19" fill="#450a0a" stroke="#dc2626" stroke-width="1.5"/>
   <text x="100" y="94" fill="#fca5a5" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" letter-spacing="1">CONVERSION OPTIMIZATION</text>
 
-  <!-- Title & Subtitle -->
+  <!-- Title &amp; Subtitle -->
   <text x="80" y="160" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" letter-spacing="-1">Why Your Website Gets Traffic</text>
   <text x="80" y="215" fill="#f87171" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" letter-spacing="-1">but Zero Qualified Leads</text>
   <text x="80" y="265" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="400">10 high-friction conversion bottlenecks that drain marketing budgets &amp; how to fix them today.</text>

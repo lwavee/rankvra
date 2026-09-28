@@ -1,0 +1,101 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+  <defs>
+    <filter id="glow1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="90"/></filter>
+    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="80"/></filter>
+    <linearGradient id="accGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="24" fill="#090d16"/>
+  <!-- Ambient Glow Orbs -->
+  <circle cx="180" cy="160" r="240" fill="#8b5cf6" opacity="0.18" filter="url(#glow1)"/>
+  <circle cx="1040" cy="460" r="260" fill="#10b981" opacity="0.16" filter="url(#glow2)"/>
+  <!-- Subtle Background Grid -->
+  <g opacity="0.05" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="150" y1="0" x2="150" y2="630"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="450" y1="0" x2="450" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="750" y1="0" x2="750" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1050" y1="0" x2="1050" y2="630"/>
+  </g>
+  
+    <!-- Header -->
+    <rect x="80" y="55" width="280" height="34" rx="17" fill="#2e1065" stroke="#8b5cf6" stroke-width="1.2"/>
+    <text x="96" y="77" fill="#c4b5fd" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">EVENT-DRIVEN ARCHITECTURE</text>
+    <text x="80" y="135" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="800" letter-spacing="-1">Third-Party API Automation</text>
+    <text x="80" y="170" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">Connecting Disconnected Tools to Eliminate Redundant Manual Data Entry</text>
+
+    <!-- Visual Automation Pipeline -->
+    <g transform="translate(80, 225)">
+      <!-- Trigger Card -->
+      <g transform="translate(0, 50)">
+        <rect width="250" height="180" rx="14" fill="#0f172a" stroke="#8b5cf6" stroke-width="1.5"/>
+        <rect x="20" y="20" width="100" height="26" rx="6" fill="#1e1b4b"/>
+        <text x="30" y="37" fill="#c4b5fd" font-family="system-ui, sans-serif" font-size="11" font-weight="700">1. TRIGGER</text>
+        <text x="20" y="78" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="800">Form Submission</text>
+        <text x="20" y="105" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Customer submits high-intent</text>
+        <text x="20" y="125" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">enterprise inquiry form</text>
+        <text x="20" y="155" fill="#38bdf8" font-family="monospace" font-size="11">HTTP POST /webhook</text>
+      </g>
+
+      <!-- Connecting Arrow 1 -->
+      <path d="M 250 140 L 320 140" stroke="#8b5cf6" stroke-width="2"/>
+
+      <!-- Middle Processing Node -->
+      <g transform="translate(325, 20)">
+        <rect width="320" height="240" rx="16" fill="#1e1b4b" stroke="#8b5cf6" stroke-width="2"/>
+        <rect x="20" y="20" width="130" height="26" rx="6" fill="#2e1065"/>
+        <text x="30" y="37" fill="#c4b5fd" font-family="system-ui, sans-serif" font-size="11" font-weight="700">2. AUTOMATION HUB</text>
+        <text x="20" y="78" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="800">Data Transformation</text>
+
+        <rect x="20" y="100" width="280" height="38" rx="6" fill="#0f172a"/>
+        <text x="35" y="124" fill="#34d399" font-family="system-ui, sans-serif" font-size="12">✓ Verify HMAC Security Signature</text>
+
+        <rect x="20" y="145" width="280" height="38" rx="6" fill="#0f172a"/>
+        <text x="35" y="169" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="12">✓ Normalize Phone &amp; Address Fields</text>
+
+        <rect x="20" y="190" width="280" height="38" rx="6" fill="#0f172a"/>
+        <text x="35" y="214" fill="#a78bfa" font-family="system-ui, sans-serif" font-size="12">✓ Exponential Backoff Auto-Retries</text>
+      </g>
+
+      <!-- Connecting Arrows to Multi-Destinations -->
+      <path d="M 645 100 L 715 65" stroke="#10b981" stroke-width="2"/>
+      <path d="M 645 140 L 715 140" stroke="#06b6d4" stroke-width="2"/>
+      <path d="M 645 180 L 715 215" stroke="#f59e0b" stroke-width="2"/>
+
+      <!-- Right 3 Parallel Action Nodes -->
+      <g transform="translate(720, 0)">
+        <rect width="320" height="75" rx="10" fill="#0f172a" stroke="#10b981"/>
+        <text x="20" y="32" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="700">👥 HubSpot CRM Lead Created</text>
+        <text x="20" y="54" fill="#34d399" font-family="system-ui, sans-serif" font-size="12">Instant pipeline assignment in 250ms</text>
+
+        <rect y="105" width="320" height="75" rx="10" fill="#0f172a" stroke="#06b6d4"/>
+        <text x="20" y="137" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="700">💬 WhatsApp &amp; Slack Alert</text>
+        <text x="20" y="159" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="12">Sales reps notified on mobile instantly</text>
+
+        <rect y="210" width="320" height="75" rx="10" fill="#0f172a" stroke="#f59e0b"/>
+        <text x="20" y="242" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="700">📦 ERP / Accounting Record</text>
+        <text x="20" y="264" fill="#fde68a" font-family="system-ui, sans-serif" font-size="12">Customer billing profile pre-populated</text>
+      </g>
+    </g>
+    
+  <!-- Footer Branding -->
+  <line x1="80" y1="560" x2="1120" y2="560" stroke="#1e293b" stroke-width="1"/>
+  <text x="80" y="590" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="1">RANKVRA ENGINEERING SERIES</text>
+  <text x="1120" y="590" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" text-anchor="end">WWW.RANKVRA.COM</text>
+  
+  </svg>

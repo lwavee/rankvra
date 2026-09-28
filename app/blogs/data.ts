@@ -9,6 +9,12 @@ export interface BlogTable {
   rows: string[][];
 }
 
+export interface BlogSectionImage {
+  url: string;
+  alt: string;
+  caption?: string;
+}
+
 export interface BlogSection {
   id?: string;
   heading: string;
@@ -22,11 +28,33 @@ export interface BlogSection {
   };
   table?: BlogTable;
   keyTakeaways?: string[];
+  image?: BlogSectionImage;
 }
 
 export interface TableOfContentItem {
   id: string;
   title: string;
+}
+
+export interface BlogInternalLink {
+  label: string;
+  href: string;
+  description?: string;
+}
+
+export interface BlogExternalSource {
+  title: string;
+  url: string;
+  organization: string;
+}
+
+export interface BlogCTA {
+  heading: string;
+  description: string;
+  buttonText: string;
+  buttonHref: string;
+  secondaryText?: string;
+  secondaryHref?: string;
 }
 
 export interface BlogPost {
@@ -53,6 +81,7 @@ export interface BlogPost {
   category: string;
   readTime: string;
   wordCount?: number;
+  quickAnswer?: string;
   tableOfContents?: TableOfContentItem[];
   content: {
     introduction: string;
@@ -61,9 +90,14 @@ export interface BlogPost {
   };
   faqs?: BlogFAQ[];
   relatedSlugs?: string[];
+  internalLinks?: BlogInternalLink[];
+  externalSources?: BlogExternalSource[];
+  customCTA?: BlogCTA;
 }
 
-export const BLOG_POSTS: BlogPost[] = [
+import { WEB_DEV_POSTS } from "./web-dev-data";
+
+const MARKETING_POSTS: BlogPost[] = [
   {
     id: 1,
     slug: "seo-agency-udaipur",
@@ -3333,6 +3367,11 @@ export const BLOG_POSTS: BlogPost[] = [
       "seo-vs-google-ads-guide"
     ]
   }
+];
+
+export const BLOG_POSTS: BlogPost[] = [
+  ...MARKETING_POSTS,
+  ...WEB_DEV_POSTS,
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {

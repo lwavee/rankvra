@@ -1,0 +1,102 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+  <defs>
+    <filter id="glow1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="90"/></filter>
+    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="80"/></filter>
+    <linearGradient id="accGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="24" fill="#0a0d16"/>
+  <!-- Ambient Glow Orbs -->
+  <circle cx="180" cy="160" r="240" fill="#f59e0b" opacity="0.18" filter="url(#glow1)"/>
+  <circle cx="1040" cy="460" r="260" fill="#6366f1" opacity="0.16" filter="url(#glow2)"/>
+  <!-- Subtle Background Grid -->
+  <g opacity="0.05" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="150" y1="0" x2="150" y2="630"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="450" y1="0" x2="450" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="750" y1="0" x2="750" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1050" y1="0" x2="1050" y2="630"/>
+  </g>
+  
+    <!-- Header -->
+    <rect x="80" y="55" width="280" height="34" rx="17" fill="#451a03" stroke="#f59e0b" stroke-width="1.2"/>
+    <text x="96" y="77" fill="#fde68a" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">SALES PIPELINE AUTOMATION</text>
+    <text x="80" y="135" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="800" letter-spacing="-1">Custom CRM Development</text>
+    <text x="80" y="170" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">Tailored Sales Funnels, Zero Per-Seat Licensing &amp; Deep Internal Tool Sync</text>
+
+    <!-- Visual Kanban Board (4 Columns) -->
+    <g transform="translate(80, 215)">
+      <!-- Col 1: Lead Capture -->
+      <g transform="translate(0, 0)">
+        <rect width="245" height="310" rx="14" fill="#0f172a" stroke="#334155"/>
+        <rect x="15" y="15" width="215" height="30" rx="6" fill="#1e293b"/>
+        <text x="25" y="35" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="700">INBOUND LEADS (14)</text>
+        <!-- Card 1 -->
+        <rect x="15" y="55" width="215" height="110" rx="10" fill="#1e293b" stroke="#334155"/>
+        <text x="28" y="80" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Apex Capital Group</text>
+        <text x="28" y="102" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" font-weight="800">$64,000</text>
+        <text x="28" y="125" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">WhatsApp Bot Qualified</text>
+        <text x="28" y="145" fill="#34d399" font-family="system-ui, sans-serif" font-size="10" font-weight="600">⚡ Auto-Assigned</text>
+      </g>
+
+      <!-- Col 2: Discovery -->
+      <g transform="translate(265, 0)">
+        <rect width="245" height="310" rx="14" fill="#0f172a" stroke="#334155"/>
+        <rect x="15" y="15" width="215" height="30" rx="6" fill="#1e293b"/>
+        <text x="25" y="35" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="700">DISCOVERY &amp; DEMO (8)</text>
+        <!-- Card 2 -->
+        <rect x="15" y="55" width="215" height="110" rx="10" fill="#1e293b" stroke="#334155"/>
+        <text x="28" y="80" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Sterling Wholesale</text>
+        <text x="28" y="102" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" font-weight="800">$120,000</text>
+        <text x="28" y="125" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Scope Architecture Audit</text>
+        <text x="28" y="145" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="10" font-weight="600">📅 Demo Scheduled</text>
+      </g>
+
+      <!-- Col 3: Proposal -->
+      <g transform="translate(530, 0)">
+        <rect width="245" height="310" rx="14" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+        <rect x="15" y="15" width="215" height="30" rx="6" fill="#451a03"/>
+        <text x="25" y="35" fill="#fde68a" font-family="system-ui, sans-serif" font-size="12" font-weight="700">PROPOSAL SENT (5)</text>
+        <!-- Card 3 -->
+        <rect x="15" y="55" width="215" height="110" rx="10" fill="#1e293b" stroke="#f59e0b"/>
+        <text x="28" y="80" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Nordic Shipping Logistics</text>
+        <text x="28" y="102" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="13" font-weight="800">$85,000</text>
+        <text x="28" y="125" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Custom CRM Contract</text>
+        <text x="28" y="145" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="10" font-weight="600">⏳ Awaiting e-Signature</text>
+      </g>
+
+      <!-- Col 4: Deal Won -->
+      <g transform="translate(795, 0)">
+        <rect width="245" height="310" rx="14" fill="#06221c" stroke="#10b981" stroke-width="2"/>
+        <rect x="15" y="15" width="215" height="30" rx="6" fill="#065f46"/>
+        <text x="25" y="35" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="12" font-weight="700">DEAL WON (🎉 24)</text>
+        <!-- Card 4 -->
+        <rect x="15" y="55" width="215" height="110" rx="10" fill="#0f172a" stroke="#10b981"/>
+        <text x="28" y="80" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Capital &amp; Co Insurance</text>
+        <text x="28" y="102" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="800">$185,000</text>
+        <text x="28" y="125" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Production Deployment</text>
+        <text x="28" y="145" fill="#34d399" font-family="system-ui, sans-serif" font-size="10" font-weight="700">✓ Stripe Paid • Active</text>
+      </g>
+    </g>
+    
+  <!-- Footer Branding -->
+  <line x1="80" y1="560" x2="1120" y2="560" stroke="#1e293b" stroke-width="1"/>
+  <text x="80" y="590" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="1">RANKVRA ENGINEERING SERIES</text>
+  <text x="1120" y="590" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" text-anchor="end">WWW.RANKVRA.COM</text>
+  
+  </svg>

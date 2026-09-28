@@ -39,7 +39,7 @@
   <circle cx="200" cy="180" r="140" fill="#38bdf8" opacity="0.12" filter="url(#glow)"/>
   <circle cx="1000" cy="450" r="180" fill="#818cf8" opacity="0.15" filter="url(#glow)"/>
 
-  <!-- Left Content Box: Badge & Headlines -->
+  <!-- Left Content Box: Badge &amp; Headlines -->
   <g transform="translate(80, 100)">
     <!-- Badge -->
     <rect width="190" height="36" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="1.5"/>

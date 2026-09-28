@@ -54,7 +54,7 @@
     <text x="34" y="196" fill="#93c5fd" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">LOW COST PER CLICK</text>
   </g>
 
-  <!-- Card 3: ROAS & Scaling -->
+  <!-- Card 3: ROAS &amp; Scaling -->
   <g transform="translate(780, 320)">
     <rect width="340" height="230" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1"/>
     <rect x="24" y="24" width="44" height="44" rx="12" fill="#065f46"/>

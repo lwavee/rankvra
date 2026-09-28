@@ -1,0 +1,103 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+  <defs>
+    <filter id="glow1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="90"/></filter>
+    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="80"/></filter>
+    <linearGradient id="accGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="24" fill="#0a0c16"/>
+  <!-- Ambient Glow Orbs -->
+  <circle cx="180" cy="160" r="240" fill="#f59e0b" opacity="0.18" filter="url(#glow1)"/>
+  <circle cx="1040" cy="460" r="260" fill="#3b82f6" opacity="0.16" filter="url(#glow2)"/>
+  <!-- Subtle Background Grid -->
+  <g opacity="0.05" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="150" y1="0" x2="150" y2="630"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="450" y1="0" x2="450" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="750" y1="0" x2="750" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1050" y1="0" x2="1050" y2="630"/>
+  </g>
+  
+    <!-- Header -->
+    <rect x="80" y="55" width="280" height="34" rx="17" fill="#451a03" stroke="#f59e0b" stroke-width="1.2"/>
+    <text x="96" y="77" fill="#fde68a" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">SERVER INFRASTRUCTURE</text>
+    <text x="80" y="135" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="800" letter-spacing="-1">Backend Development Architecture</text>
+    <text x="80" y="170" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">High-Concurrency REST APIs, PostgreSQL Schemas &amp; Zero-Downtime Microservices</text>
+
+    <!-- Architecture Visual -->
+    <g transform="translate(80, 215)">
+      <!-- Left: Load Balancer -->
+      <g transform="translate(0, 45)">
+        <rect width="200" height="210" rx="16" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+        <text x="100" y="45" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="800" text-anchor="middle">Cloudflare / ALB</text>
+        <text x="100" y="70" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">LOAD BALANCER</text>
+        <rect x="25" y="95" width="150" height="32" rx="6" fill="#1e293b"/>
+        <text x="100" y="116" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">SSL Termination</text>
+        <rect x="25" y="135" width="150" height="32" rx="6" fill="#1e293b"/>
+        <text x="100" y="156" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">DDoS Mitigation</text>
+        <text x="100" y="195" fill="#34d399" font-family="monospace" font-size="11" text-anchor="middle">100k req / sec</text>
+      </g>
+
+      <!-- Connecting Lines to Workers -->
+      <path d="M 200 110 L 260 70" stroke="#f59e0b" stroke-width="2"/>
+      <path d="M 200 150 L 260 150" stroke="#f59e0b" stroke-width="2"/>
+      <path d="M 200 190 L 260 230" stroke="#f59e0b" stroke-width="2"/>
+
+      <!-- Center: 3 Stateless App Workers -->
+      <g transform="translate(260, 20)">
+        <rect width="360" height="75" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+        <text x="25" y="35" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="700">🚀 App Worker Node 01 (Docker)</text>
+        <text x="25" y="58" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Node.js Express • Stateless API Handler</text>
+
+        <rect y="90" width="360" height="75" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+        <text x="25" y="125" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="700">🚀 App Worker Node 02 (Docker)</text>
+        <text x="25" y="148" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Python FastAPI • Async Job Processor</text>
+
+        <rect y="180" width="360" height="75" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+        <text x="25" y="215" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="700">🚀 App Worker Node 03 (Docker)</text>
+        <text x="25" y="238" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Auto-scaled Cloud Instance</text>
+      </g>
+
+      <!-- Connecting Lines to Data -->
+      <path d="M 620 100 L 680 100" stroke="#3b82f6" stroke-width="2"/>
+      <path d="M 620 200 L 680 200" stroke="#10b981" stroke-width="2"/>
+
+      <!-- Right: Database Tier -->
+      <g transform="translate(680, 20)">
+        <!-- Redis Cache -->
+        <rect width="360" height="115" rx="14" fill="#0f172a" stroke="#ef4444" stroke-width="1.5"/>
+        <text x="25" y="38" fill="#f87171" font-family="system-ui, sans-serif" font-size="15" font-weight="700">⚡ In-Memory Cache (Redis)</text>
+        <text x="25" y="65" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="800">Sub-Millisecond Query Response</text>
+        <text x="25" y="92" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Sessions, Rate Limiting &amp; Real-time Caching</text>
+
+        <!-- PostgreSQL Database -->
+        <g transform="translate(0, 135)">
+          <rect width="360" height="120" rx="14" fill="#0f172a" stroke="#3b82f6" stroke-width="1.5"/>
+          <text x="25" y="38" fill="#60a5fa" font-family="system-ui, sans-serif" font-size="15" font-weight="700">🗄️ Primary PostgreSQL + Replica</text>
+          <text x="25" y="65" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="800">ACID Relational Compliance</text>
+          <text x="25" y="92" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Automatic Failover • Automated Hourly Backups</text>
+        </g>
+      </g>
+    </g>
+    
+  <!-- Footer Branding -->
+  <line x1="80" y1="560" x2="1120" y2="560" stroke="#1e293b" stroke-width="1"/>
+  <text x="80" y="590" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="1">RANKVRA ENGINEERING SERIES</text>
+  <text x="1120" y="590" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" text-anchor="end">WWW.RANKVRA.COM</text>
+  
+  </svg>

@@ -217,15 +217,40 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${inter.variable} h-full`} suppressHydrationWarning>
       <head>
         <script
+          suppressHydrationWarning
           dangerouslySetInnerHTML={{
             __html: `
               try {
-                if (typeof Element !== 'undefined') {
-                  const _set = Element.prototype.setAttribute;
-                  Element.prototype.setAttribute = function(k, v) {
-                    if (k === 'bis_skin_checked') return;
-                    return _set.apply(this, arguments);
+                if (typeof window !== 'undefined') {
+                  const _err = console.error;
+                  console.error = function(...args) {
+                    const s = args.map(a => String(a || '')).join(' ');
+                    if (s.indexOf('bis_skin_checked') !== -1 || s.indexOf('chrome-extension://') !== -1 || (s.indexOf('hydrat') !== -1 && s.indexOf('bis_') !== -1)) {
+                      return;
+                    }
+                    return _err.apply(console, args);
                   };
+                  if (typeof Element !== 'undefined') {
+                    const _set = Element.prototype.setAttribute;
+                    Element.prototype.setAttribute = function(k, v) {
+                      if (k === 'bis_skin_checked' || (typeof k === 'string' && k.indexOf('bis_') === 0)) return;
+                      return _set.apply(this, arguments);
+                    };
+                    const _setNode = Element.prototype.setAttributeNode;
+                    if (_setNode) {
+                      Element.prototype.setAttributeNode = function(attr) {
+                        if (attr && (attr.name === 'bis_skin_checked' || (typeof attr.name === 'string' && attr.name.indexOf('bis_') === 0))) return null;
+                        return _setNode.apply(this, arguments);
+                      };
+                    }
+                    try {
+                      Object.defineProperty(Element.prototype, 'bis_skin_checked', {
+                        get: function() { return undefined; },
+                        set: function() {},
+                        configurable: true,
+                      });
+                    } catch (e) {}
+                  }
                 }
               } catch (e) {}
             `,
@@ -233,6 +258,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         <script
           type="application/ld+json"
+          suppressHydrationWarning
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>

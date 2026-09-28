@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 
-// Suppress unhandled errors injected by third-party browser extensions (e.g. VPNs, ad blockers)
+// Suppress unhandled errors and hydration warnings injected by third-party browser extensions (e.g. Bitdefender, VPNs, ad blockers)
 if (typeof window !== 'undefined') {
   window.addEventListener(
     'error',
@@ -18,6 +18,19 @@ if (typeof window !== 'undefined') {
     },
     true
   );
+
+  const origError = console.error;
+  console.error = function (...args: unknown[]) {
+    const msg = args.map((a) => (typeof a === 'string' ? a : '')).join(' ');
+    if (
+      msg.includes('bis_skin_checked') ||
+      msg.includes('chrome-extension://') ||
+      (msg.includes('hydrat') && msg.includes('bis_'))
+    ) {
+      return;
+    }
+    return origError.apply(console, args);
+  };
 }
 
 export default function VisitorTracker() {

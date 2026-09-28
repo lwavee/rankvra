@@ -16,9 +16,61 @@ import {
   AlertCircle,
   Info,
   Lightbulb,
+  ExternalLink,
+  Link2,
 } from "lucide-react";
 import { SiteShell } from "@/app/components/site-shell";
 import { BLOG_POSTS, getBlogPostBySlug, BlogPost } from "../data";
+import {
+  ReadingProgressBar,
+  InteractiveTOC,
+  FloatingReadingToolbar,
+} from "../blog-interactive";
+
+function renderFormattedText(text: string): React.ReactNode {
+  if (!text || typeof text !== "string") return text;
+  const regex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const parts: (string | React.ReactNode)[] = [];
+  let lastIndex = 0;
+  let match;
+  while ((match = regex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index));
+    }
+    const [_, linkText, url] = match;
+    const isInternal = url.startsWith("/") || url.includes("rankvra.com");
+    if (isInternal) {
+      parts.push(
+        <Link
+          key={match.index}
+          href={url}
+          className="text-[#4f46e5] font-semibold underline decoration-[#4f46e5]/30 hover:decoration-[#4f46e5] hover:text-[#4338ca] transition-colors"
+        >
+          {linkText}
+        </Link>
+      );
+    } else {
+      parts.push(
+        <a
+          key={match.index}
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#4f46e5] font-semibold underline decoration-[#4f46e5]/30 hover:decoration-[#4f46e5] hover:text-[#4338ca] transition-colors inline-flex items-center gap-0.5"
+        >
+          {linkText}
+          <ExternalLink size={12} className="inline opacity-70" />
+        </a>
+      );
+    }
+    lastIndex = match.index + match[0].length;
+  }
+  if (lastIndex === 0) return text;
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex));
+  }
+  return parts;
+}
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -194,6 +246,9 @@ export default async function BlogPostPage({ params }: PageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(fullSchema) }}
       />
       <main className="min-h-screen bg-[#f8fafc] pt-5 pb-12">
+        {/* Dynamic Smooth Reading Progress Indicator */}
+        <ReadingProgressBar />
+
         <article className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
 
           {/* Breadcrumb Navigation */}
@@ -264,43 +319,29 @@ export default async function BlogPostPage({ params }: PageProps) {
 
           {/* Featured Visual Graphic */}
           {post.featuredImage && (
-            <div className="mb-8 overflow-hidden rounded-[24px] border border-[#e2e8f0] bg-white shadow-sm">
-              <Image
-                src={post.featuredImage.url}
-                alt={post.featuredImage.alt}
-                width={1200}
-                height={630}
-                priority
-                unoptimized
-                className="w-full h-auto object-cover"
-              />
-              <div className="bg-[#f8fafc] px-5 py-2 text-xs text-[#64748b] border-t border-[#f1f5f9] flex items-center justify-between">
-                <span>Visual Blueprint: {post.title}</span>
-                <span className="font-medium text-[#4f46e5]">RankVRA Strategy Series</span>
+            <div className="mb-8 overflow-hidden rounded-[24px] border border-[#e2e8f0] bg-white shadow-sm group">
+              <div className="overflow-hidden">
+                <Image
+                  src={post.featuredImage.url}
+                  alt={post.featuredImage.alt}
+                  width={1200}
+                  height={630}
+                  priority
+                  unoptimized
+                  className="w-full h-auto object-cover transition-transform duration-700 ease-out group-hover:scale-102"
+                />
+              </div>
+              <div className="bg-[#f8fafc] px-5 py-2.5 text-xs text-[#64748b] border-t border-[#f1f5f9] flex items-center justify-between">
+                <span className="font-medium text-slate-700">Visual Blueprint: {post.title}</span>
+                <span className="font-semibold text-[#4f46e5] text-[11px] tracking-wide uppercase">RankVRA Technical Blueprint</span>
               </div>
             </div>
           )}
 
-          {/* Table of Contents */}
+          {/* Table of Contents - Interactive with smooth scroll and active spy */}
           {post.tableOfContents && post.tableOfContents.length > 0 && (
-            <div className="mb-8 rounded-[20px] border border-[#c7d2fe] bg-[#f5f7ff] p-5 sm:p-6">
-              <div className="flex items-center gap-2 mb-4 text-[#4f46e5] font-bold text-sm tracking-wide uppercase">
-                <BookOpen size={16} />
-                <span>Table of Contents</span>
-              </div>
-              <ul className="space-y-2.5">
-                {post.tableOfContents.map((item) => (
-                  <li key={item.id} className="flex items-start gap-2.5">
-                    <ChevronRight size={15} className="text-[#4f46e5] flex-shrink-0 mt-0.5" />
-                    <a
-                      href={`#${item.id}`}
-                      className="text-sm sm:text-base font-medium text-[#1e293b] hover:text-[#4f46e5] transition-colors"
-                    >
-                      {item.title}
-                    </a>
-                  </li>
-                ))}
-              </ul>
+            <div className="mb-8">
+              <InteractiveTOC items={post.tableOfContents} />
             </div>
           )}
 
@@ -308,11 +349,24 @@ export default async function BlogPostPage({ params }: PageProps) {
           <div className="rounded-[32px] border border-[#e2e8f0] bg-white p-6 sm:p-10 lg:p-12 shadow-sm mb-12">
 
             {/* Introduction Lead Section */}
-            <div className="border-b border-[#f1f5f9] pb-8 mb-10">
+            <div className="border-b border-[#f1f5f9] pb-8 mb-8">
               <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-[#334155] font-medium">
-                {post.content.introduction}
+                {renderFormattedText(post.content.introduction)}
               </p>
             </div>
+
+            {/* Quick Answer / Executive Takeaway */}
+            {post.quickAnswer && (
+              <div className="mb-10 rounded-2xl border border-indigo-200 bg-gradient-to-r from-indigo-50/70 via-white to-slate-50 p-6 shadow-xs">
+                <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#4f46e5] mb-2">
+                  <Sparkles size={16} />
+                  <span>Quick Answer &amp; Key Strategic Takeaway</span>
+                </div>
+                <p className="text-base sm:text-lg font-semibold text-[#0f172a] leading-relaxed">
+                  {renderFormattedText(post.quickAnswer)}
+                </p>
+              </div>
+            )}
 
             {/* Content Sections */}
             <div className="space-y-12">
@@ -331,9 +385,33 @@ export default async function BlogPostPage({ params }: PageProps) {
 
                   {section.paragraphs.map((p, pIdx) => (
                     <p key={pIdx} className="text-base sm:text-lg leading-relaxed text-[#475569]">
-                      {p}
+                      {renderFormattedText(p)}
                     </p>
                   ))}
+
+                  {/* Embedded Technical Architecture Graphic */}
+                  {section.image && (
+                    <figure className="my-8 overflow-hidden rounded-[22px] border border-slate-200 bg-slate-900 shadow-md transition-all duration-300 hover:shadow-xl hover:border-indigo-300 group">
+                      <div className="overflow-hidden">
+                        <Image
+                          src={section.image.url}
+                          alt={section.image.alt}
+                          width={1200}
+                          height={630}
+                          unoptimized
+                          className="w-full h-auto object-cover transition-transform duration-700 ease-out group-hover:scale-103"
+                        />
+                      </div>
+                      {section.image.caption && (
+                        <figcaption className="bg-slate-950 px-5 py-3 text-xs text-slate-300 border-t border-slate-800 flex items-center justify-between">
+                          <span className="font-medium text-slate-200 flex items-center gap-1.5">
+                            <span className="text-indigo-400">❖</span> {section.image.caption}
+                          </span>
+                          <span className="text-indigo-400 font-semibold tracking-wider uppercase text-[10px]">RankVRA Technical Blueprint</span>
+                        </figcaption>
+                      )}
+                    </figure>
+                  )}
 
                   {/* Bullets */}
                   {section.bullets && section.bullets.length > 0 && (
@@ -342,7 +420,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                         <li key={bIdx} className="flex items-start gap-3">
                           <CheckCircle2 size={17} className="text-[#10b981] flex-shrink-0 mt-1" />
                           <span className="text-sm sm:text-base font-medium text-[#1e293b]">
-                            {b}
+                            {renderFormattedText(b)}
                           </span>
                         </li>
                       ))}
@@ -370,7 +448,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                         <span>{section.callout.title}</span>
                       </div>
                       <p className="text-sm sm:text-base leading-relaxed opacity-95">
-                        {section.callout.text}
+                        {renderFormattedText(section.callout.text)}
                       </p>
                     </div>
                   )}
@@ -514,35 +592,94 @@ export default async function BlogPostPage({ params }: PageProps) {
             </div>
           </div>
 
+          {/* Connected Strategic Services & Related Guides */}
+          {post.internalLinks && post.internalLinks.length > 0 && (
+            <div className="rounded-[32px] border border-[#e2e8f0] bg-white p-6 sm:p-8 shadow-sm mb-12">
+              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#4f46e5] mb-2">
+                <Link2 size={16} />
+                <span>Connected RankVRA Services &amp; Strategic Guides</span>
+              </div>
+              <h3 className="text-lg sm:text-xl font-bold text-[#0f172a] mb-4">
+                Explore Core Commercial Capabilities
+              </h3>
+              <div className="grid sm:grid-cols-2 gap-4">
+                {post.internalLinks.map((link, lIdx) => (
+                  <Link
+                    key={lIdx}
+                    href={link.href}
+                    className="group rounded-2xl border border-[#f1f5f9] bg-[#f8fafc] p-4 transition-all hover:border-[#c7d2fe] hover:bg-white hover:shadow-xs flex flex-col justify-between"
+                  >
+                    <div>
+                      <div className="font-bold text-sm text-[#0f172a] group-hover:text-[#4f46e5] transition-colors flex items-center justify-between">
+                        <span>{link.label}</span>
+                        <ArrowRight size={14} className="text-[#4f46e5] group-hover:translate-x-1 transition-transform" />
+                      </div>
+                      {link.description && (
+                        <p className="text-xs text-[#64748b] mt-1.5 leading-relaxed">
+                          {link.description}
+                        </p>
+                      )}
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Authoritative Technical Standards & Documentation */}
+          {post.externalSources && post.externalSources.length > 0 && (
+            <div className="rounded-[32px] border border-[#e2e8f0] bg-white p-6 sm:p-8 shadow-sm mb-12">
+              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#64748b] mb-2">
+                <BookOpen size={16} />
+                <span>Authoritative Technical References &amp; Standards</span>
+              </div>
+              <ul className="space-y-2.5">
+                {post.externalSources.map((src, sIdx) => (
+                  <li key={sIdx} className="flex flex-col sm:flex-row sm:items-center justify-between py-2 border-b border-[#f1f5f9] last:border-0 text-xs sm:text-sm gap-1 sm:gap-4">
+                    <div>
+                      <span className="font-bold text-[#0f172a]">{src.organization}: </span>
+                      <span className="text-[#475569]">{src.title}</span>
+                    </div>
+                    <a
+                      href={src.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs font-semibold text-[#4f46e5] hover:underline flex items-center gap-1 shrink-0"
+                    >
+                      Official Reference <ExternalLink size={12} />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
           {/* Action CTA Banner */}
           <div className="rounded-[32px] bg-gradient-to-br from-[#0f172a] via-[#1e1b4b] to-[#0f172a] p-8 sm:p-12 text-white shadow-xl mb-16 relative overflow-hidden">
             <div className="relative z-10 max-w-2xl">
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#818cf8]">
-                Elevate Your Search Engine Visibility
+                {post.customCTA?.heading ? "Web Engineering Consultation" : "Elevate Your Search Engine Visibility"}
               </span>
               <h3 className="mt-3 text-2xl sm:text-3xl font-extrabold tracking-tight">
-                Want to implement these strategies for your business?
+                {post.customCTA?.heading || "Want to implement these strategies for your business?"}
               </h3>
               <p className="mt-3 text-sm sm:text-base text-[#cbd5e1] leading-relaxed">
-                RankVRA engineers high-speed web platforms, localized Google Maps dominance, and algorithmic SEO funnels that turn searchers into long-term clients.
+                {post.customCTA?.description || "RankVRA engineers high-speed web platforms, localized Google Maps dominance, and algorithmic SEO funnels that turn searchers into long-term clients."}
               </p>
               <div className="mt-6 flex flex-wrap gap-4">
                 <Link
-                  href="/free-growth-audit"
+                  href={post.customCTA?.buttonHref || "/free-growth-audit"}
                   className="inline-flex items-center gap-2 rounded-full bg-[#4f46e5] px-6 py-3 text-sm font-bold text-white shadow-lg shadow-[#4f46e5]/30 hover:bg-[#4338ca] transition-all"
                 >
-                  Claim Free Growth Audit
+                  {post.customCTA?.buttonText || "Claim Free Growth Audit"}
                   <ArrowRight size={15} />
                 </Link>
-                <a
-                  href="https://wa.me/917297875798?text=Hi%20Naveen,%20I%20read%20your%20RankVRA%20article%20and%20would%20like%20to%20discuss%20our%20website%20growth."
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href={post.customCTA?.secondaryHref || "/case-studies"}
                   className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 backdrop-blur-md px-6 py-3 text-sm font-bold text-white hover:bg-white/20 transition-all"
                 >
-                  <MessageSquare size={15} />
-                  Chat with Naveen on WhatsApp
-                </a>
+                  {post.customCTA?.secondaryText || "View RankVRA Case Studies"}
+                </Link>
               </div>
             </div>
           </div>
@@ -605,6 +742,8 @@ export default async function BlogPostPage({ params }: PageProps) {
             </div>
           )}
 
+          {/* Floating Smooth Reading Toolbar */}
+          <FloatingReadingToolbar title={post.title} />
         </article>
       </main>
     </SiteShell>

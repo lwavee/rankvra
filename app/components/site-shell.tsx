@@ -9,7 +9,6 @@ import { Menu, X, ArrowUpRight, MessageCircle, MapPin, Mail, Globe } from "lucid
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
-  { href: "/industries/insurance", label: "Insurance" },
   { href: "/case-studies", label: "Case Studies" },
   { href: "/markets", label: "Markets" },
   { href: "/blogs", label: "Blog" },

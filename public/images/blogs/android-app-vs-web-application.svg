@@ -1,0 +1,80 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+  <defs>
+    <filter id="glow1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="90"/></filter>
+    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="80"/></filter>
+    <linearGradient id="accGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="24" fill="#090d16"/>
+  <!-- Ambient Glow Orbs -->
+  <circle cx="180" cy="160" r="240" fill="#06b6d4" opacity="0.18" filter="url(#glow1)"/>
+  <circle cx="1040" cy="460" r="260" fill="#ec4899" opacity="0.16" filter="url(#glow2)"/>
+  <!-- Subtle Background Grid -->
+  <g opacity="0.05" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="150" y1="0" x2="150" y2="630"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="450" y1="0" x2="450" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="750" y1="0" x2="750" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1050" y1="0" x2="1050" y2="630"/>
+  </g>
+  
+    <!-- Header -->
+    <rect x="80" y="55" width="280" height="34" rx="17" fill="#083344" stroke="#06b6d4" stroke-width="1.2"/>
+    <text x="96" y="77" fill="#67e8f9" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">PLATFORM DECISION FRAMEWORK</text>
+    <text x="80" y="135" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="800" letter-spacing="-1">Android App vs Web Application</text>
+    <text x="80" y="170" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">Hardware Integration vs Universal Browser Reach: Which Fits Your Business?</text>
+
+    <!-- Side-by-Side Devices Layout -->
+    <g transform="translate(80, 215)">
+      <!-- Left: Android Smartphone Mockup -->
+      <g transform="translate(0, 0)">
+        <rect width="495" height="310" rx="18" fill="#0f172a" stroke="#06b6d4" stroke-width="2"/>
+        <rect x="25" y="25" width="165" height="28" rx="8" fill="#083344"/>
+        <text x="35" y="44" fill="#67e8f9" font-family="system-ui, sans-serif" font-size="12" font-weight="700">📱 NATIVE ANDROID APP</text>
+        <text x="25" y="90" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="800">Hardware &amp; Push Triggers</text>
+        <line x1="25" y1="110" x2="470" y2="110" stroke="#1e293b"/>
+        <text x="25" y="145" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="14">Best suited when your product requires:</text>
+        <text x="25" y="180" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">• Background GPS &amp; Bluetooth IoT beacon tracking</text>
+        <text x="25" y="205" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">• Deep camera, biometric face/fingerprint authentication</text>
+        <text x="25" y="230" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">• Offline local SQLite database synchronization</text>
+        <rect x="25" y="260" width="180" height="30" rx="6" fill="#06b6d4" opacity="0.2"/>
+        <text x="35" y="280" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="12" font-weight="700">PLAY STORE DISTRIBUTION</text>
+      </g>
+
+      <!-- Right: Responsive Web App / PWA -->
+      <g transform="translate(545, 0)">
+        <rect width="495" height="310" rx="18" fill="#0f172a" stroke="#ec4899" stroke-width="2"/>
+        <rect x="25" y="25" width="160" height="28" rx="8" fill="#500724"/>
+        <text x="35" y="44" fill="#fbcfe8" font-family="system-ui, sans-serif" font-size="12" font-weight="700">🌐 CLOUD WEB APP / PWA</text>
+        <text x="25" y="90" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="800">Zero-Friction Universal Reach</text>
+        <line x1="25" y1="110" x2="470" y2="110" stroke="#1e293b"/>
+        <text x="25" y="145" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="14">Best suited when your business demands:</text>
+        <text x="25" y="180" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">• Instant access via URL with ZERO app store download barriers</text>
+        <text x="25" y="205" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">• 0% App store commissions on Stripe / Razorpay transactions</text>
+        <text x="25" y="230" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">• Instant code deployments with no 48-hour app reviews</text>
+        <rect x="25" y="260" width="170" height="30" rx="6" fill="#ec4899" opacity="0.2"/>
+        <text x="35" y="280" fill="#f472b6" font-family="system-ui, sans-serif" font-size="12" font-weight="700">MAXIMUM CONVERSION</text>
+      </g>
+    </g>
+    
+  <!-- Footer Branding -->
+  <line x1="80" y1="560" x2="1120" y2="560" stroke="#1e293b" stroke-width="1"/>
+  <text x="80" y="590" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="1">RANKVRA ENGINEERING SERIES</text>
+  <text x="1120" y="590" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" text-anchor="end">WWW.RANKVRA.COM</text>
+  
+  </svg>

@@ -30,7 +30,7 @@
   <text x="80" y="215" fill="#f472b6" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" letter-spacing="-1">Indian eCommerce &amp; D2C</text>
   <text x="80" y="265" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="400">Outranking marketplaces with faceted architecture, product schema &amp; high-intent search.</text>
 
-  <!-- Card 1: Product Schema & Facets -->
+  <!-- Card 1: Product Schema &amp; Facets -->
   <g transform="translate(80, 320)">
     <rect width="320" height="230" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1"/>
     <rect x="24" y="24" width="44" height="44" rx="12" fill="#831843"/>
@@ -42,7 +42,7 @@
     <text x="34" y="196" fill="#f472b6" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">CRAWL EFFICIENCY</text>
   </g>
 
-  <!-- Card 2: Merchant Center & Rich Results -->
+  <!-- Card 2: Merchant Center &amp; Rich Results -->
   <g transform="translate(430, 320)">
     <rect width="320" height="230" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1"/>
     <rect x="24" y="24" width="44" height="44" rx="12" fill="#312e81"/>

@@ -1,0 +1,99 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+  <defs>
+    <filter id="glow1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="90"/></filter>
+    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="80"/></filter>
+    <linearGradient id="accGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="24" fill="#090d16"/>
+  <!-- Ambient Glow Orbs -->
+  <circle cx="180" cy="160" r="240" fill="#10b981" opacity="0.18" filter="url(#glow1)"/>
+  <circle cx="1040" cy="460" r="260" fill="#3b82f6" opacity="0.16" filter="url(#glow2)"/>
+  <!-- Subtle Background Grid -->
+  <g opacity="0.05" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="150" y1="0" x2="150" y2="630"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="450" y1="0" x2="450" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="750" y1="0" x2="750" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1050" y1="0" x2="1050" y2="630"/>
+  </g>
+  
+    <!-- Header -->
+    <rect x="80" y="55" width="280" height="34" rx="17" fill="#064e3b" stroke="#10b981" stroke-width="1.2"/>
+    <text x="96" y="77" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">CUSTOM ENTERPRISE SOFTWARE</text>
+    <text x="80" y="135" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="800" letter-spacing="-1">Custom Web Application Development</text>
+    <text x="80" y="170" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">Tailored B2B Portals, Insurance Systems &amp; Operational Workflows</text>
+
+    <!-- Browser Window Container -->
+    <g transform="translate(80, 215)">
+      <rect width="1040" height="310" rx="18" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+      <!-- Window Controls &amp; URL bar -->
+      <circle cx="28" cy="22" r="5" fill="#ef4444"/>
+      <circle cx="44" cy="22" r="5" fill="#eab308"/>
+      <circle cx="60" cy="22" r="5" fill="#22c55e"/>
+      <rect x="85" y="13" width="340" height="18" rx="6" fill="#1e293b"/>
+      <text x="95" y="26" fill="#64748b" font-family="monospace" font-size="10">https://portal.sterlingwholesaleinsurance.com</text>
+
+      <!-- App Interface Content -->
+      <!-- Left Sidebar -->
+      <rect x="15" y="45" width="180" height="250" rx="10" fill="#1e293b"/>
+      <text x="35" y="78" fill="#10b981" font-family="system-ui, sans-serif" font-size="14" font-weight="800">RankVRA Ops</text>
+      <rect x="25" y="95" width="160" height="28" rx="6" fill="#10b981" opacity="0.2"/>
+      <text x="40" y="113" fill="#34d399" font-family="system-ui, sans-serif" font-size="12" font-weight="700">📊 Dashboard</text>
+      <text x="40" y="145" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">📑 Applications</text>
+      <text x="40" y="175" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">👥 Underwriters</text>
+      <text x="40" y="205" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">⚙️ API Connectors</text>
+      <text x="40" y="260" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Proprietary IP 100%</text>
+
+      <!-- Main Dashboard Content -->
+      <!-- Top 3 Metric Cards -->
+      <g transform="translate(210, 50)">
+        <rect width="255" height="75" rx="10" fill="#1e293b" stroke="#334155"/>
+        <text x="18" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">ACTIVE ACCOUNTS</text>
+        <text x="18" y="58" fill="#ffffff" font-family="system-ui, sans-serif" font-size="24" font-weight="800">4,280</text>
+        <text x="175" y="56" fill="#10b981" font-family="system-ui, sans-serif" font-size="12" font-weight="700">+18.4%</text>
+
+        <rect x="275" y="0" width="255" height="75" rx="10" fill="#1e293b" stroke="#334155"/>
+        <text x="293" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">QUOTES PROCESSED</text>
+        <text x="293" y="58" fill="#ffffff" font-family="system-ui, sans-serif" font-size="24" font-weight="800">$18.6M</text>
+        <text x="450" y="56" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Instant</text>
+
+        <rect x="550" y="0" width="255" height="75" rx="10" fill="#1e293b" stroke="#334155"/>
+        <text x="568" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">AVERAGE RESPONSE</text>
+        <text x="568" y="58" fill="#ffffff" font-family="system-ui, sans-serif" font-size="24" font-weight="800">38ms</text>
+        <text x="730" y="56" fill="#10b981" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Global</text>
+      </g>
+
+      <!-- Bottom Activity Chart &amp; Table -->
+      <g transform="translate(210, 140)">
+        <rect width="805" height="150" rx="10" fill="#1e293b" stroke="#334155"/>
+        <text x="20" y="28" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Real-Time Workflow Pipeline Automation</text>
+        <!-- SVG Sparkline Area Chart -->
+        <path d="M 20 115 L 120 90 L 220 100 L 320 60 L 420 75 L 520 40 L 620 50 L 720 20 L 780 25 L 780 130 L 20 130 Z" fill="#10b981" opacity="0.15"/>
+        <path d="M 20 115 L 120 90 L 220 100 L 320 60 L 420 75 L 520 40 L 620 50 L 720 20 L 780 25" stroke="#10b981" stroke-width="2.5" fill="none"/>
+        <circle cx="720" cy="20" r="5" fill="#34d399"/>
+        <text x="730" y="24" fill="#34d399" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Peak Performance</text>
+      </g>
+    </g>
+    
+  <!-- Footer Branding -->
+  <line x1="80" y1="560" x2="1120" y2="560" stroke="#1e293b" stroke-width="1"/>
+  <text x="80" y="590" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="1">RANKVRA ENGINEERING SERIES</text>
+  <text x="1120" y="590" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" text-anchor="end">WWW.RANKVRA.COM</text>
+  
+  </svg>
