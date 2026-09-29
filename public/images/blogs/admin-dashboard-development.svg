@@ -1,85 +1,117 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
-    
+  
   <defs>
-    <filter id="glow1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="90"/></filter>
-    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="80"/></filter>
-    <linearGradient id="accGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10b981"/>
-      <stop offset="100%" stop-color="#3b82f6"/>
+    <filter id="glow-admin-dash" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="60" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="soft-shadow-admin-dash" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <linearGradient id="bg-admin-dash" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09152b"/>
+      <stop offset="50%" stop-color="#101d3b"/>
+      <stop offset="100%" stop-color="#030712"/>
     </linearGradient>
-    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+    <linearGradient id="glass-admin-dash" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="630" rx="24" fill="#070e17"/>
-  <!-- Ambient Glow Orbs -->
-  <circle cx="180" cy="160" r="240" fill="#10b981" opacity="0.18" filter="url(#glow1)"/>
-  <circle cx="1040" cy="460" r="260" fill="#3b82f6" opacity="0.16" filter="url(#glow2)"/>
-  <!-- Subtle Background Grid -->
-  <g opacity="0.05" stroke="#ffffff" stroke-width="1">
-    <line x1="0" y1="90" x2="1200" y2="90"/>
-    <line x1="0" y1="180" x2="1200" y2="180"/>
-    <line x1="0" y1="270" x2="1200" y2="270"/>
-    <line x1="0" y1="360" x2="1200" y2="360"/>
-    <line x1="0" y1="450" x2="1200" y2="450"/>
-    <line x1="0" y1="540" x2="1200" y2="540"/>
-    <line x1="150" y1="0" x2="150" y2="630"/>
-    <line x1="300" y1="0" x2="300" y2="630"/>
-    <line x1="450" y1="0" x2="450" y2="630"/>
-    <line x1="600" y1="0" x2="600" y2="630"/>
-    <line x1="750" y1="0" x2="750" y2="630"/>
-    <line x1="900" y1="0" x2="900" y2="630"/>
-    <line x1="1050" y1="0" x2="1050" y2="630"/>
+
+  
+  <rect width="1200" height="630" rx="28" fill="url(#bg-admin-dash)"/>
+  <circle cx="220" cy="170" r="280" fill="#0284c7" opacity="0.25" filter="url(#glow-admin-dash)"/>
+  <circle cx="1020" cy="460" r="290" fill="#6366f1" opacity="0.24" filter="url(#glow-admin-dash)"/>
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/><line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/><line x1="0" y1="450" x2="1200" y2="450"/><line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="120" y1="0" x2="120" y2="630"/><line x1="240" y1="0" x2="240" y2="630"/><line x1="360" y1="0" x2="360" y2="630"/>
+    <line x1="480" y1="0" x2="480" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="720" y1="0" x2="720" y2="630"/>
+    <line x1="840" y1="0" x2="840" y2="630"/><line x1="960" y1="0" x2="960" y2="630"/><line x1="1080" y1="0" x2="1080" y2="630"/>
   </g>
+
   
-    <!-- Header -->
-    <rect x="80" y="55" width="280" height="34" rx="17" fill="#064e3b" stroke="#10b981" stroke-width="1.2"/>
-    <text x="96" y="77" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">OPERATIONAL CONTROL</text>
-    <text x="80" y="135" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="800" letter-spacing="-1">Custom Admin Dashboard Development</text>
-    <text x="80" y="170" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">Executive KPI Visualizations, Optimistic CRUD &amp; Immutable Audit Logs</text>
+  <rect x="70" y="45" width="280" height="34" rx="17" fill="#0369a1" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="88" y="67" fill="#bae6fd" font-family="system-ui, sans-serif" font-size="12" font-weight="800" letter-spacing="1.2">OPERATIONAL CONTROL</text>
+  <text x="70" y="125" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="900" letter-spacing="-1">Admin Dashboard Development</text>
+  <text x="70" y="160" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">Real-Time Data Visualizations, Granular Permissions &amp; Rapid Audit Logging</text>
 
-    <!-- Sleek Dashboard Interface -->
-    <g transform="translate(80, 215)">
-      <rect width="1040" height="310" rx="18" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
-      <!-- Top Stats Row -->
-      <g transform="translate(25, 25)">
-        <rect width="235" height="85" rx="12" fill="#1e293b" stroke="#334155"/>
-        <text x="20" y="32" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">TOTAL GROSS VOLUME</text>
-        <text x="20" y="66" fill="#ffffff" font-family="system-ui, sans-serif" font-size="28" font-weight="900">$248,500</text>
-        <text x="165" y="64" fill="#34d399" font-family="system-ui, sans-serif" font-size="12" font-weight="700">+38.4%</text>
-
-        <rect x="250" y="0" width="235" height="85" rx="12" fill="#1e293b" stroke="#334155"/>
-        <text x="270" y="32" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">ACTIVE CONTRACTS</text>
-        <text x="270" y="66" fill="#ffffff" font-family="system-ui, sans-serif" font-size="28" font-weight="900">1,429</text>
-        <text x="415" y="64" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="12" font-weight="700">+12%</text>
-
-        <rect x="500" y="0" width="235" height="85" rx="12" fill="#1e293b" stroke="#334155"/>
-        <text x="520" y="32" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">SYSTEM SLA UPTIME</text>
-        <text x="520" y="66" fill="#ffffff" font-family="system-ui, sans-serif" font-size="28" font-weight="900">99.98%</text>
-        <text x="665" y="64" fill="#34d399" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Healthy</text>
-
-        <rect x="750" y="0" width="240" height="85" rx="12" fill="#1e293b" stroke="#334155"/>
-        <text x="770" y="32" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">AVG TASK LATENCY</text>
-        <text x="770" y="66" fill="#ffffff" font-family="system-ui, sans-serif" font-size="28" font-weight="900">18ms</text>
-        <text x="915" y="64" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Edge</text>
-      </g>
-
-      <!-- Bottom Interactive Area Chart &amp; Audit Table -->
-      <g transform="translate(25, 130)">
-        <rect width="990" height="155" rx="14" fill="#1e293b"/>
-        <text x="25" y="32" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Revenue Growth &amp; Transaction Velocity (Live Stream)</text>
-        <!-- Mountain Area Chart -->
-        <path d="M 25 125 L 140 105 L 260 115 L 380 75 L 500 85 L 620 45 L 740 55 L 860 25 L 965 30 L 965 140 L 25 140 Z" fill="#10b981" opacity="0.18"/>
-        <path d="M 25 125 L 140 105 L 260 115 L 380 75 L 500 85 L 620 45 L 740 55 L 860 25 L 965 30" stroke="#10b981" stroke-width="2.5" fill="none"/>
-        <circle cx="860" cy="25" r="5" fill="#34d399"/>
-        <text x="872" y="28" fill="#34d399" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Peak Month</text>
-      </g>
-    </g>
+  <!-- Interactive Dashboard Frame -->
+  <g transform="translate(70, 205)">
+    <rect width="1060" height="385" rx="20" fill="#0b1326" stroke="#1e293b" stroke-width="2" filter="url(#soft-shadow-admin-dash)"/>
     
-  <!-- Footer Branding -->
-  <line x1="80" y1="560" x2="1120" y2="560" stroke="#1e293b" stroke-width="1"/>
-  <text x="80" y="590" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="1">RANKVRA ENGINEERING SERIES</text>
-  <text x="1120" y="590" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" text-anchor="end">WWW.RANKVRA.COM</text>
-  
-  </svg>
+    <!-- Top Bar inside Dashboard -->
+    <rect x="25" y="20" width="1010" height="42" rx="10" fill="#1e293b"/>
+    <circle cx="50" cy="41" r="6" fill="#ef4444"/><circle cx="70" cy="41" r="6" fill="#f59e0b"/><circle cx="90" cy="41" r="6" fill="#10b981"/>
+    <text x="115" y="46" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" font-weight="700">⚡ RankVRA Ops Command | Enterprise Control Panel</text>
+    <rect x="880" y="28" width="140" height="26" rx="6" fill="#0284c7"/>
+    <text x="898" y="45" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="700">Admin: SuperUser</text>
+
+    <!-- Sidebar -->
+    <rect x="25" y="75" width="200" height="290" rx="12" fill="#0f172a"/>
+    <text x="45" y="105" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="800">CORE NAVIGATION</text>
+    <rect x="35" y="120" width="180" height="32" rx="6" fill="#1e293b"/>
+    <text x="50" y="141" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="12" font-weight="700">📊 Telemetry &amp; KPIs</text>
+    <text x="50" y="180" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">👥 User Permissions</text>
+    <text x="50" y="215" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">💳 Invoicing Hub</text>
+    <text x="50" y="250" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">🛡️ Security Audit Logs</text>
+    <text x="50" y="285" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">⚙️ Server Config</text>
+
+    <!-- 3 Metric Cards in Middle -->
+    <g transform="translate(245, 75)">
+      <rect x="0" y="0" width="245" height="110" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2"/>
+      <text x="20" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="700">MONTHLY RECURRING (MRR)</text>
+      <text x="20" y="65" fill="#ffffff" font-family="system-ui, sans-serif" font-size="28" font-weight="900">$184,200</text>
+      <text x="20" y="92" fill="#34d399" font-family="system-ui, sans-serif" font-size="12" font-weight="700">▲ +18.4% vs last month</text>
+
+      <rect x="265" y="0" width="245" height="110" rx="12" fill="#1e293b" stroke="#10b981" stroke-width="1.2"/>
+      <text x="285" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="700">ACTIVE SESSIONS</text>
+      <text x="285" y="65" fill="#ffffff" font-family="system-ui, sans-serif" font-size="28" font-weight="900">4,812</text>
+      <text x="285" y="92" fill="#34d399" font-family="system-ui, sans-serif" font-size="12" font-weight="700">● 99.98% Healthy Socket</text>
+
+      <rect x="530" y="0" width="260" height="110" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="1.2"/>
+      <text x="550" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="700">API LATENCY (P99)</text>
+      <text x="550" y="65" fill="#ffffff" font-family="system-ui, sans-serif" font-size="28" font-weight="900">38 ms</text>
+      <text x="550" y="92" fill="#fbbf24" font-family="system-ui, sans-serif" font-size="12" font-weight="700">⚡ Global Edge CDN Active</text>
+
+      <!-- Main Chart / Visualization Canvas -->
+      <rect x="0" y="125" width="510" height="165" rx="12" fill="#070f1f" stroke="#1e293b" stroke-width="1"/>
+      <text x="20" y="152" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Revenue &amp; Throughput Real-Time Stream</text>
+      <!-- Simulated Chart Wave -->
+      <path d="M 30 250 Q 120 180 200 220 T 350 170 T 490 190" fill="none" stroke="#38bdf8" stroke-width="3.5"/>
+      <path d="M 30 260 Q 120 220 200 240 T 350 210 T 490 225" fill="none" stroke="#a855f7" stroke-width="2.5" opacity="0.7"/>
+
+      <!-- Mascot Guarding Admin Console -->
+      <rect x="530" y="125" width="260" height="165" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+      
+  <g transform="translate(610, 140) scale(0.95)">
+    <!-- Hover Thruster / Ring -->
+    <ellipse cx="60" cy="118" rx="38" ry="12" fill="#38bdf8" opacity="0.35"/>
+    <ellipse cx="60" cy="118" rx="20" ry="6" fill="#ffffff" opacity="0.75"/>
+    <!-- Bot Body -->
+    <rect x="25" y="42" width="70" height="66" rx="22" fill="#1e293b" stroke="#475569" stroke-width="2.5"/>
+    <rect x="33" y="50" width="54" height="42" rx="14" fill="#0f172a"/>
+    <!-- Core Glow / Heartbeat -->
+    <circle cx="60" cy="71" r="10" fill="#38bdf8"/>
+    <circle cx="60" cy="71" r="4" fill="#ffffff"/>
+    <!-- Bot Head -->
+    <rect x="18" y="6" width="84" height="46" rx="18" fill="#1e293b" stroke="#475569" stroke-width="2.5"/>
+    <!-- Visor -->
+    <rect x="26" y="14" width="68" height="28" rx="12" fill="#090d16" stroke="#38bdf8" stroke-width="1.5"/>
+    <!-- Eyes -->
+    <ellipse cx="44" cy="27" rx="8" ry="6" fill="#38bdf8"/>
+    <circle cx="46" cy="25" r="2.5" fill="#ffffff"/>
+    <ellipse cx="76" cy="27" rx="8" ry="6" fill="#38bdf8"/>
+    <circle cx="78" cy="25" r="2.5" fill="#ffffff"/>
+    <!-- Antennas -->
+    <line x1="60" y1="6" x2="60" y2="-4" stroke="#64748b" stroke-width="3"/>
+    <circle cx="60" cy="-6" r="5" fill="#38bdf8"/>
+    <!-- Little Hands -->
+    <rect x="6" y="55" width="14" height="32" rx="7" fill="#334155"/>
+    <rect x="100" y="55" width="14" height="32" rx="7" fill="#334155"/>
+  </g>
+
+    </g>
+  </g>
+</svg>

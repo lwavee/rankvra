@@ -1,80 +1,108 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
-    
+  
   <defs>
-    <filter id="glow1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="90"/></filter>
-    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="80"/></filter>
-    <linearGradient id="accGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#6366f1"/>
-      <stop offset="100%" stop-color="#ec4899"/>
+    <filter id="glow-web-vs-app" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="60" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="soft-shadow-web-vs-app" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <linearGradient id="bg-web-vs-app" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#081426"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#040711"/>
     </linearGradient>
-    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+    <linearGradient id="glass-web-vs-app" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="630" rx="24" fill="#090d16"/>
-  <!-- Ambient Glow Orbs -->
-  <circle cx="180" cy="160" r="240" fill="#6366f1" opacity="0.18" filter="url(#glow1)"/>
-  <circle cx="1040" cy="460" r="260" fill="#ec4899" opacity="0.16" filter="url(#glow2)"/>
-  <!-- Subtle Background Grid -->
-  <g opacity="0.05" stroke="#ffffff" stroke-width="1">
-    <line x1="0" y1="90" x2="1200" y2="90"/>
-    <line x1="0" y1="180" x2="1200" y2="180"/>
-    <line x1="0" y1="270" x2="1200" y2="270"/>
-    <line x1="0" y1="360" x2="1200" y2="360"/>
-    <line x1="0" y1="450" x2="1200" y2="450"/>
-    <line x1="0" y1="540" x2="1200" y2="540"/>
-    <line x1="150" y1="0" x2="150" y2="630"/>
-    <line x1="300" y1="0" x2="300" y2="630"/>
-    <line x1="450" y1="0" x2="450" y2="630"/>
-    <line x1="600" y1="0" x2="600" y2="630"/>
-    <line x1="750" y1="0" x2="750" y2="630"/>
-    <line x1="900" y1="0" x2="900" y2="630"/>
-    <line x1="1050" y1="0" x2="1050" y2="630"/>
+
+  
+  <rect width="1200" height="630" rx="28" fill="url(#bg-web-vs-app)"/>
+  <circle cx="220" cy="170" r="280" fill="#3b82f6" opacity="0.25" filter="url(#glow-web-vs-app)"/>
+  <circle cx="1020" cy="460" r="290" fill="#10b981" opacity="0.24" filter="url(#glow-web-vs-app)"/>
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/><line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/><line x1="0" y1="450" x2="1200" y2="450"/><line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="120" y1="0" x2="120" y2="630"/><line x1="240" y1="0" x2="240" y2="630"/><line x1="360" y1="0" x2="360" y2="630"/>
+    <line x1="480" y1="0" x2="480" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="720" y1="0" x2="720" y2="630"/>
+    <line x1="840" y1="0" x2="840" y2="630"/><line x1="960" y1="0" x2="960" y2="630"/><line x1="1080" y1="0" x2="1080" y2="630"/>
   </g>
+
   
-    <!-- Header -->
-    <rect x="80" y="55" width="280" height="34" rx="17" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.2"/>
-    <text x="96" y="77" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">ARCHITECTURAL TAXONOMY</text>
-    <text x="80" y="135" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="800" letter-spacing="-1">Website vs Web Application</text>
-    <text x="80" y="170" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">Understanding the Core Differences in User Authentication, Data &amp; Purpose</text>
+  <rect x="70" y="45" width="280" height="34" rx="17" fill="#1e3a8a" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="88" y="67" fill="#dbeafe" font-family="system-ui, sans-serif" font-size="12" font-weight="800" letter-spacing="1.2">DECISION MATRIX</text>
+  <text x="70" y="125" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="900" letter-spacing="-1">Website vs Web Application</text>
+  <text x="70" y="160" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">Static Content Consumption vs Dynamic Interactive Workflow Management</text>
 
-    <!-- Side-by-Side Comparison Panels -->
-    <g transform="translate(80, 215)">
-      <!-- Left: Marketing Website -->
-      <g transform="translate(0, 0)">
-        <rect width="495" height="310" rx="18" fill="#0f172a" stroke="#3b82f6" stroke-width="2"/>
-        <rect x="25" y="25" width="135" height="28" rx="8" fill="#1e3a8a" opacity="0.3"/>
-        <text x="35" y="44" fill="#93c5fd" font-family="system-ui, sans-serif" font-size="12" font-weight="700">📄 PUBLIC WEBSITE</text>
-        <text x="25" y="90" fill="#ffffff" font-family="system-ui, sans-serif" font-size="24" font-weight="800">Content &amp; Lead Funnel</text>
-        <line x1="25" y1="110" x2="470" y2="110" stroke="#1e293b"/>
-        <text x="25" y="145" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="14">🎯 Primary Goal: Organic Search &amp; Discovery</text>
-        <text x="25" y="180" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">• Informational content, case studies, blogs</text>
-        <text x="25" y="205" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">• Globally cached on CDN edge servers (Vercel/Cloudflare)</text>
-        <text x="25" y="230" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">• Read-heavy traffic with high search crawlability</text>
-        <rect x="25" y="260" width="170" height="30" rx="6" fill="#3b82f6" opacity="0.2"/>
-        <text x="35" y="280" fill="#60a5fa" font-family="system-ui, sans-serif" font-size="12" font-weight="700">OPTIMIZED FOR SEO</text>
-      </g>
+  <!-- Left Card: Informational Website -->
+  <g transform="translate(70, 205)">
+    <rect width="510" height="385" rx="20" fill="#0f2b38" stroke="#06b6d4" stroke-width="2" filter="url(#soft-shadow-web-vs-app)"/>
+    <rect x="30" y="25" width="180" height="32" rx="10" fill="#0e7490"/>
+    <text x="45" y="46" fill="#cffafe" font-family="system-ui, sans-serif" font-size="13" font-weight="800">CONTENT-FIRST</text>
+    <text x="30" y="90" fill="#ffffff" font-family="system-ui, sans-serif" font-size="24" font-weight="900">Standard Website</text>
+    <text x="30" y="118" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">Informational, Marketing &amp; Brand Showcase</text>
 
-      <!-- Right: Web Application -->
-      <g transform="translate(545, 0)">
-        <rect width="495" height="310" rx="18" fill="#0f172a" stroke="#ec4899" stroke-width="2"/>
-        <rect x="25" y="25" width="145" height="28" rx="8" fill="#500724" opacity="0.3"/>
-        <text x="35" y="44" fill="#fbcfe8" font-family="system-ui, sans-serif" font-size="12" font-weight="700">💻 WEB APPLICATION</text>
-        <text x="25" y="90" fill="#ffffff" font-family="system-ui, sans-serif" font-size="24" font-weight="800">Interactive Business Portal</text>
-        <line x1="25" y1="110" x2="470" y2="110" stroke="#1e293b"/>
-        <text x="25" y="145" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="14">⚙️ Primary Goal: Task Execution &amp; Operations</text>
-        <text x="25" y="180" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">• User accounts, granular access controls &amp; session tokens</text>
-        <text x="25" y="205" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">• Dynamic CRUD database mutations &amp; background tasks</text>
-        <text x="25" y="230" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">• Integrates with CRMs, payment gateways &amp; ERP systems</text>
-        <rect x="25" y="260" width="190" height="30" rx="6" fill="#ec4899" opacity="0.2"/>
-        <text x="35" y="280" fill="#f472b6" font-family="system-ui, sans-serif" font-size="12" font-weight="700">OPTIMIZED FOR BUSINESS</text>
-      </g>
-    </g>
+    <!-- Checklist -->
+    <rect x="30" y="140" width="450" height="42" rx="8" fill="#164e63"/>
+    <text x="45" y="166" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13">📖 Primary Goal: Read, browse, and inquire</text>
+    <rect x="30" y="192" width="450" height="42" rx="8" fill="#164e63"/>
+    <text x="45" y="218" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13">🌐 State: Largely stateless &amp; cached</text>
+    <rect x="30" y="244" width="450" height="42" rx="8" fill="#164e63"/>
+    <text x="45" y="270" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13">⚡ Tech: SSG, HTML/CSS, Next.js, Headless CMS</text>
+
+    <rect x="30" y="305" width="180" height="48" rx="12" fill="#0e7490"/>
+    <text x="50" y="335" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="800">Low Maintenance</text>
+  </g>
+
+  <!-- Right Card: Web Application -->
+  <g transform="translate(620, 205)">
+    <rect width="510" height="385" rx="20" fill="#1b2a1a" stroke="#22c55e" stroke-width="2" filter="url(#soft-shadow-web-vs-app)"/>
+    <rect x="30" y="25" width="180" height="32" rx="10" fill="#15803d"/>
+    <text x="45" y="46" fill="#dcfce7" font-family="system-ui, sans-serif" font-size="13" font-weight="800">FUNCTION-FIRST</text>
+    <text x="30" y="90" fill="#ffffff" font-family="system-ui, sans-serif" font-size="24" font-weight="900">Custom Web App</text>
+    <text x="30" y="118" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">SaaS Platforms, CRMs &amp; Interactive Portals</text>
+
+    <!-- Checklist -->
+    <rect x="30" y="140" width="450" height="42" rx="8" fill="#166534"/>
+    <text x="45" y="166" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13">⚙️ Primary Goal: Perform tasks, process payments, edit data</text>
+    <rect x="30" y="192" width="450" height="42" rx="8" fill="#166534"/>
+    <text x="45" y="218" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13">🔐 State: Deeply stateful, authenticated user sessions</text>
+    <rect x="30" y="244" width="450" height="42" rx="8" fill="#166534"/>
+    <text x="45" y="270" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13">🚀 Tech: Full-Stack React, Node.js, PostgreSQL, WebSockets</text>
+
+    <!-- Mascot in Right Card -->
     
-  <!-- Footer Branding -->
-  <line x1="80" y1="560" x2="1120" y2="560" stroke="#1e293b" stroke-width="1"/>
-  <text x="80" y="590" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="1">RANKVRA ENGINEERING SERIES</text>
-  <text x="1120" y="590" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" text-anchor="end">WWW.RANKVRA.COM</text>
-  
-  </svg>
+  <g transform="translate(360, 260) scale(0.95)">
+    <!-- Hover Thruster / Ring -->
+    <ellipse cx="60" cy="118" rx="38" ry="12" fill="#22c55e" opacity="0.35"/>
+    <ellipse cx="60" cy="118" rx="20" ry="6" fill="#ffffff" opacity="0.75"/>
+    <!-- Bot Body -->
+    <rect x="25" y="42" width="70" height="66" rx="22" fill="#1e293b" stroke="#475569" stroke-width="2.5"/>
+    <rect x="33" y="50" width="54" height="42" rx="14" fill="#0f172a"/>
+    <!-- Core Glow / Heartbeat -->
+    <circle cx="60" cy="71" r="10" fill="#22c55e"/>
+    <circle cx="60" cy="71" r="4" fill="#ffffff"/>
+    <!-- Bot Head -->
+    <rect x="18" y="6" width="84" height="46" rx="18" fill="#1e293b" stroke="#475569" stroke-width="2.5"/>
+    <!-- Visor -->
+    <rect x="26" y="14" width="68" height="28" rx="12" fill="#090d16" stroke="#22c55e" stroke-width="1.5"/>
+    <!-- Eyes -->
+    <ellipse cx="44" cy="27" rx="8" ry="6" fill="#22c55e"/>
+    <circle cx="46" cy="25" r="2.5" fill="#ffffff"/>
+    <ellipse cx="76" cy="27" rx="8" ry="6" fill="#22c55e"/>
+    <circle cx="78" cy="25" r="2.5" fill="#ffffff"/>
+    <!-- Antennas -->
+    <line x1="60" y1="6" x2="60" y2="-4" stroke="#64748b" stroke-width="3"/>
+    <circle cx="60" cy="-6" r="5" fill="#22c55e"/>
+    <!-- Little Hands -->
+    <rect x="6" y="55" width="14" height="32" rx="7" fill="#334155"/>
+    <rect x="100" y="55" width="14" height="32" rx="7" fill="#334155"/>
+  </g>
+
+    <rect x="30" y="305" width="200" height="48" rx="12" fill="#15803d"/>
+    <text x="50" y="335" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="800">High Business Value</text>
+  </g>
+</svg>

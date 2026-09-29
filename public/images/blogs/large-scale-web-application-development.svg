@@ -1,88 +1,116 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  
   <defs>
-    <filter id="glow1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="90"/></filter>
-    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="80"/></filter>
+    <filter id="glow-large" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="60" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="soft-shadow-large" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <linearGradient id="bg-large" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+    <linearGradient id="acc-large" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="50%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
   </defs>
-  <rect width="1200" height="630" rx="24" fill="#090d16"/>
-  <circle cx="180" cy="160" r="240" fill="#6366f1" opacity="0.18" filter="url(#glow1)"/>
-  <circle cx="1040" cy="460" r="260" fill="#06b6d4" opacity="0.16" filter="url(#glow2)"/>
-  <g opacity="0.05" stroke="#ffffff" stroke-width="1">
-    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/><line x1="0" y1="270" x2="1200" y2="270"/><line x1="0" y1="360" x2="1200" y2="360"/><line x1="0" y1="450" x2="1200" y2="450"/><line x1="0" y1="540" x2="1200" y2="540"/>
-    <line x1="150" y1="0" x2="150" y2="630"/><line x1="300" y1="0" x2="300" y2="630"/><line x1="450" y1="0" x2="450" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="750" y1="0" x2="750" y2="630"/><line x1="900" y1="0" x2="900" y2="630"/><line x1="1050" y1="0" x2="1050" y2="630"/>
+
+  
+  <rect width="1200" height="630" rx="28" fill="url(#bg-large)"/>
+  <circle cx="200" cy="180" r="280" fill="#6366f1" opacity="0.28" filter="url(#glow-large)"/>
+  <circle cx="1020" cy="450" r="300" fill="#38bdf8" opacity="0.25" filter="url(#glow-large)"/>
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/><line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/><line x1="0" y1="450" x2="1200" y2="450"/><line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="120" y1="0" x2="120" y2="630"/><line x1="240" y1="0" x2="240" y2="630"/><line x1="360" y1="0" x2="360" y2="630"/>
+    <line x1="480" y1="0" x2="480" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="720" y1="0" x2="720" y2="630"/>
+    <line x1="840" y1="0" x2="840" y2="630"/><line x1="960" y1="0" x2="960" y2="630"/><line x1="1080" y1="0" x2="1080" y2="630"/>
   </g>
-  <rect x="80" y="55" width="290" height="34" rx="17" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.2"/>
-  <text x="96" y="77" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">ENTERPRISE DISTRIBUTED SYSTEMS</text>
-  <text x="80" y="135" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="800" letter-spacing="-1">Large-Scale Web Application Architecture</text>
-  <text x="80" y="170" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">High Concurrency, Microservices, Multi-Region Caching &amp; Database Sharding</text>
+
+
+  <!-- Header -->
+  <rect x="70" y="45" width="310" height="34" rx="17" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="88" y="67" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="12" font-weight="800" letter-spacing="1.2">ENTERPRISE DISTRIBUTED SYSTEMS</text>
+  <text x="70" y="125" fill="#ffffff" font-family="system-ui, sans-serif" font-size="36" font-weight="900" letter-spacing="-0.8">Large-Scale Web Application Architecture</text>
+  <text x="70" y="160" fill="#93c5fd" font-family="system-ui, sans-serif" font-size="16">High-Concurrency Cloud Clusters, Microservices, Multi-Tier Caching &amp; 99.99% Uptime</text>
 
   <!-- 4 Architecture Tiers -->
-  <g transform="translate(80, 220)">
-    <!-- Tier 1: Edge CDN & Security -->
+  <g transform="translate(70, 195)">
+    <!-- Tier 1: Edge CDN -->
     <g transform="translate(0, 0)">
-      <rect width="240" height="330" rx="14" fill="#0f172a" stroke="#6366f1" stroke-width="1.5"/>
-      <rect x="15" y="15" width="110" height="24" rx="6" fill="#1e1b4b"/>
-      <text x="25" y="32" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="11" font-weight="700">TIER 1: EDGE</text>
-      <text x="15" y="70" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="800">Global Anycast</text>
-      <text x="15" y="92" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Cloudflare / Fastly CDN</text>
-      <line x1="15" y1="110" x2="225" y2="110" stroke="#1e293b"/>
-      <text x="15" y="140" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">🛡️ DDoS &amp; WAF Defense</text>
-      <text x="15" y="170" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">⚡ Edge HTML Caching</text>
-      <text x="15" y="200" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">🔒 SSL/TLS Termination</text>
-      <text x="15" y="230" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">📍 Geo-Routing to Regions</text>
-      <text x="15" y="260" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">🗜️ Brotli Asset Compress</text>
-      <rect x="15" y="285" width="210" height="30" rx="6" fill="#1e1b4b"/>
-      <text x="120" y="305" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">&lt; 30ms Time to First Byte</text>
+      <rect width="250" height="380" rx="20" fill="#0f172a" stroke="#6366f1" stroke-width="2" filter="url(#soft-shadow-large)"/>
+      <rect x="20" y="20" width="120" height="26" rx="8" fill="#1e1b4b"/>
+      <text x="30" y="38" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="11" font-weight="900">TIER 1: EDGE</text>
+      <text x="20" y="80" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="900">Global Anycast</text>
+      <text x="20" y="105" fill="#818cf8" font-family="system-ui, sans-serif" font-size="12">Cloudflare / Fastly CDN</text>
+      <line x1="20" y1="125" x2="230" y2="125" stroke="#1e293b"/>
+      
+      <text x="20" y="160" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">🛡️ DDoS &amp; WAF Defense</text>
+      <text x="20" y="195" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">⚡ Edge HTML Caching</text>
+      <text x="20" y="230" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">🔒 TLS 1.3 Termination</text>
+      <text x="20" y="265" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">📍 Geo-Routing to Regions</text>
+
+      <rect x="20" y="320" width="210" height="34" rx="8" fill="#1e1b4b"/>
+      <text x="125" y="342" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="11" font-weight="800" text-anchor="middle">&lt; 30ms Edge Latency</text>
     </g>
 
-    <!-- Tier 2: Compute & Frontend -->
-    <g transform="translate(265, 0)">
-      <rect width="240" height="330" rx="14" fill="#0f172a" stroke="#06b6d4" stroke-width="1.5"/>
-      <rect x="15" y="15" width="120" height="24" rx="6" fill="#164e63"/>
-      <text x="25" y="32" fill="#67e8f9" font-family="system-ui, sans-serif" font-size="11" font-weight="700">TIER 2: COMPUTE</text>
-      <text x="15" y="70" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="800">Next.js SSR Cluster</text>
-      <text x="15" y="92" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Serverless Auto-Scaling</text>
-      <line x1="15" y1="110" x2="225" y2="110" stroke="#1e293b"/>
-      <text x="15" y="140" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">🚀 React 19 Streaming SSR</text>
-      <text x="15" y="170" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">🔄 ISR Incremental Builds</text>
-      <text x="15" y="200" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">🛡️ Middleware JWT Verify</text>
-      <text x="15" y="230" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">👥 Dynamic Session Auth</text>
-      <text x="15" y="260" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">📊 Telemetry &amp; OpenTelemetry</text>
-      <rect x="15" y="285" width="210" height="30" rx="6" fill="#164e63"/>
-      <text x="120" y="305" fill="#67e8f9" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Horizontal Auto-Scale</text>
+    <!-- Tier 2: Compute -->
+    <g transform="translate(270, 0)">
+      <rect width="250" height="380" rx="20" fill="#082f49" stroke="#06b6d4" stroke-width="2" filter="url(#soft-shadow-large)"/>
+      <rect x="20" y="20" width="130" height="26" rx="8" fill="#0c4a6e"/>
+      <text x="30" y="38" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11" font-weight="900">TIER 2: COMPUTE</text>
+      <text x="20" y="80" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="900">Next.js Clusters</text>
+      <text x="20" y="105" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="12">Serverless Auto-Scaling</text>
+      <line x1="20" y1="125" x2="230" y2="125" stroke="#164e63"/>
+
+      <text x="20" y="160" fill="#e0f2fe" font-family="system-ui, sans-serif" font-size="12">🚀 React 19 Streaming SSR</text>
+      <text x="20" y="195" fill="#e0f2fe" font-family="system-ui, sans-serif" font-size="12">🔄 ISR Incremental Builds</text>
+      <text x="20" y="230" fill="#e0f2fe" font-family="system-ui, sans-serif" font-size="12">🛡️ Middleware JWT Verify</text>
+      <text x="20" y="265" fill="#e0f2fe" font-family="system-ui, sans-serif" font-size="12">👥 Dynamic Session Auth</text>
+
+      <rect x="20" y="320" width="210" height="34" rx="8" fill="#0c4a6e"/>
+      <text x="125" y="342" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11" font-weight="800" text-anchor="middle">Horizontal Auto-Scale</text>
     </g>
 
-    <!-- Tier 3: Backend API & Microservices -->
-    <g transform="translate(530, 0)">
-      <rect width="240" height="330" rx="14" fill="#0f172a" stroke="#8b5cf6" stroke-width="1.5"/>
-      <rect x="15" y="15" width="110" height="24" rx="6" fill="#2e1065"/>
-      <text x="25" y="32" fill="#c4b5fd" font-family="system-ui, sans-serif" font-size="11" font-weight="700">TIER 3: LOGIC</text>
-      <text x="15" y="70" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="800">API &amp; Event Queues</text>
-      <text x="15" y="92" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Node.js / Go Microservices</text>
-      <line x1="15" y1="110" x2="225" y2="110" stroke="#1e293b"/>
-      <text x="15" y="140" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">🧩 REST &amp; GraphQL Endpoints</text>
-      <text x="15" y="170" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">📦 Kafka / BullMQ Queues</text>
-      <text x="15" y="200" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">⚡ Redis Caching (L2/L3)</text>
-      <text x="15" y="230" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">🔐 RBAC Authorization Gate</text>
-      <text x="15" y="260" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">⚙️ Asynchronous Workers</text>
-      <rect x="15" y="285" width="210" height="30" rx="6" fill="#2e1065"/>
-      <text x="120" y="305" fill="#c4b5fd" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Idempotent Transactions</text>
+    <!-- Tier 3: Business Logic -->
+    <g transform="translate(540, 0)">
+      <rect width="250" height="380" rx="20" fill="#1e1b4b" stroke="#8b5cf6" stroke-width="2" filter="url(#soft-shadow-large)"/>
+      <rect x="20" y="20" width="120" height="26" rx="8" fill="#3b0764"/>
+      <text x="30" y="38" fill="#d8b4fe" font-family="system-ui, sans-serif" font-size="11" font-weight="900">TIER 3: LOGIC</text>
+      <text x="20" y="80" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="900">Microservices</text>
+      <text x="20" y="105" fill="#c4b5fd" font-family="system-ui, sans-serif" font-size="12">Node.js / Go Workers</text>
+      <line x1="20" y1="125" x2="230" y2="125" stroke="#312e81"/>
+
+      <text x="20" y="160" fill="#e0e7ff" font-family="system-ui, sans-serif" font-size="12">🧩 REST &amp; GraphQL Endpoints</text>
+      <text x="20" y="195" fill="#e0e7ff" font-family="system-ui, sans-serif" font-size="12">📦 BullMQ / Redis Queues</text>
+      <text x="20" y="230" fill="#e0e7ff" font-family="system-ui, sans-serif" font-size="12">⚡ Redis Memory Caching</text>
+      <text x="20" y="265" fill="#e0e7ff" font-family="system-ui, sans-serif" font-size="12">🔐 Fine-Grained RBAC Gate</text>
+
+      <rect x="20" y="320" width="210" height="34" rx="8" fill="#3b0764"/>
+      <text x="125" y="342" fill="#d8b4fe" font-family="system-ui, sans-serif" font-size="11" font-weight="800" text-anchor="middle">Idempotent Transactions</text>
     </g>
 
-    <!-- Tier 4: Distributed Database -->
-    <g transform="translate(795, 0)">
-      <rect width="245" height="330" rx="14" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
-      <rect x="15" y="15" width="120" height="24" rx="6" fill="#064e3b"/>
-      <text x="25" y="32" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="11" font-weight="700">TIER 4: STORAGE</text>
-      <text x="15" y="70" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="800">High-Availability DB</text>
-      <text x="15" y="92" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">PostgreSQL + Read Replicas</text>
-      <line x1="15" y1="110" x2="230" y2="110" stroke="#1e293b"/>
-      <text x="15" y="140" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">🗄️ Primary Writer Node</text>
-      <text x="15" y="170" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">📖 Horizontal Read Replicas</text>
-      <text x="15" y="200" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">🏊 PgBouncer Conn Pooling</text>
-      <text x="15" y="230" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">🔒 AES-256 Storage at Rest</text>
-      <text x="15" y="260" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">💾 Point-in-Time Recovery</text>
-      <rect x="15" y="285" width="215" height="30" rx="6" fill="#064e3b"/>
-      <text x="122" y="305" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">99.99% Availability SLA</text>
+    <!-- Tier 4: Database Storage -->
+    <g transform="translate(810, 0)">
+      <rect width="250" height="380" rx="20" fill="#042f2e" stroke="#10b981" stroke-width="2" filter="url(#soft-shadow-large)"/>
+      <rect x="20" y="20" width="130" height="26" rx="8" fill="#064e3b"/>
+      <text x="30" y="38" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="11" font-weight="900">TIER 4: STORAGE</text>
+      <text x="20" y="80" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="900">Distributed DB</text>
+      <text x="20" y="105" fill="#34d399" font-family="system-ui, sans-serif" font-size="12">PostgreSQL + Replicas</text>
+      <line x1="20" y1="125" x2="230" y2="125" stroke="#134e4a"/>
+
+      <text x="20" y="160" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="12">🗄️ Primary Master Writer</text>
+      <text x="20" y="195" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="12">📖 Horizontal Read Replicas</text>
+      <text x="20" y="230" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="12">🏊 PgBouncer Connection Pool</text>
+      <text x="20" y="265" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="12">🔒 AES-256 Storage at Rest</text>
+
+      <rect x="20" y="320" width="210" height="34" rx="8" fill="#064e3b"/>
+      <text x="125" y="342" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="11" font-weight="900" text-anchor="middle">99.99% Availability SLA</text>
     </g>
   </g>
 </svg>

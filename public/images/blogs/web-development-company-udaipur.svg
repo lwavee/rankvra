@@ -1,69 +1,144 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="630" rx="24" fill="#0f172a"/>
-  <!-- Subtle Grid -->
-  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
-    <line x1="0" y1="90" x2="1200" y2="90"/>
-    <line x1="0" y1="180" x2="1200" y2="180"/>
-    <line x1="0" y1="270" x2="1200" y2="270"/>
-    <line x1="0" y1="360" x2="1200" y2="360"/>
-    <line x1="0" y1="450" x2="1200" y2="450"/>
-    <line x1="0" y1="540" x2="1200" y2="540"/>
-    <line x1="200" y1="0" x2="200" y2="630"/>
-    <line x1="400" y1="0" x2="400" y2="630"/>
-    <line x1="600" y1="0" x2="600" y2="630"/>
-    <line x1="800" y1="0" x2="800" y2="630"/>
-    <line x1="1000" y1="0" x2="1000" y2="630"/>
-  </g>
+  
   <defs>
-    <filter id="b1" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="80"/>
+    <filter id="glow-wdev-ud" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="60" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
-    <filter id="b2" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="90"/>
+    <filter id="soft-shadow-wdev-ud" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.45"/>
     </filter>
+    <linearGradient id="bg-wdev-ud" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#060913"/>
+    </linearGradient>
+    <linearGradient id="glass-wdev-ud" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03"/>
+    </linearGradient>
   </defs>
-  <!-- Glow Accents -->
-  <circle cx="200" cy="180" r="220" fill="#3b82f6" opacity="0.2" filter="url(#b1)"/>
-  <circle cx="1000" cy="420" r="220" fill="#6366f1" opacity="0.18" filter="url(#b2)"/>
 
-  <!-- Badge -->
-  <rect x="80" y="70" width="230" height="38" rx="19" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="100" y="94" fill="#93c5fd" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" letter-spacing="1">WEB DEVELOPMENT UDAIPUR</text>
-
-  <!-- Title &amp; Subtitle -->
-  <text x="80" y="160" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" letter-spacing="-1">Hiring a Web Development</text>
-  <text x="80" y="215" fill="#60a5fa" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" letter-spacing="-1">Company in Udaipur</text>
-  <text x="80" y="265" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="400">Custom code vs. templates, Core Web Vitals performance, SEO structure &amp; 100% IP ownership.</text>
-
-  <!-- Comparison Architecture -->
-  <g transform="translate(80, 310)">
-    <!-- Column 1: Slow WordPress Template -->
-    <rect width="490" height="240" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1"/>
-    <rect x="24" y="24" width="36" height="36" rx="8" fill="#451a03"/>
-    <text x="36" y="48" fill="#f59e0b" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="800">&#215;</text>
-    <text x="75" y="48" fill="#f59e0b" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700">Generic Template Web Dev</text>
-    <text x="24" y="95" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">4.5s+ Load Speed &amp; Plugin Bloat</text>
-    <text x="24" y="125" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">&#8226; 40+ third-party vulnerable plugins</text>
-    <text x="24" y="150" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">&#8226; Fails Google mobile Core Web Vitals</text>
-    <text x="24" y="175" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">&#8226; Agency holds hosting &amp; source code hostage</text>
-    <rect x="24" y="195" width="130" height="24" rx="6" fill="#f59e0b" opacity="0.15"/>
-    <text x="34" y="211" fill="#fcd34d" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">HIGH BOUNCE RATE</text>
+  
+  <rect width="1200" height="630" rx="28" fill="url(#bg-wdev-ud)"/>
+  <circle cx="220" cy="170" r="280" fill="#6366f1" opacity="0.25" filter="url(#glow-wdev-ud)"/>
+  <circle cx="1020" cy="460" r="290" fill="#06b6d4" opacity="0.24" filter="url(#glow-wdev-ud)"/>
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/><line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/><line x1="0" y1="450" x2="1200" y2="450"/><line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="120" y1="0" x2="120" y2="630"/><line x1="240" y1="0" x2="240" y2="630"/><line x1="360" y1="0" x2="360" y2="630"/>
+    <line x1="480" y1="0" x2="480" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="720" y1="0" x2="720" y2="630"/>
+    <line x1="840" y1="0" x2="840" y2="630"/><line x1="960" y1="0" x2="960" y2="630"/><line x1="1080" y1="0" x2="1080" y2="630"/>
   </g>
 
-  <g transform="translate(610, 310)">
-    <!-- Column 2: Modern Next.js Engineering -->
-    <rect width="510" height="240" rx="18" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
-    <rect x="24" y="24" width="36" height="36" rx="8" fill="#1e3a8a"/>
-    <text x="36" y="48" fill="#60a5fa" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="800">&#10003;</text>
-    <text x="75" y="48" fill="#60a5fa" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700">RankVRA Custom Engineering</text>
-    <text x="24" y="95" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">&lt; 1.0s Load Speed &amp; Clean React Code</text>
-    <text x="24" y="125" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">&#8226; Next.js SSR &amp; 100/100 Core Web Vitals</text>
-    <text x="24" y="150" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">&#8226; Built-in technical SEO &amp; Schema.org graph</text>
-    <text x="24" y="175" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">&#8226; Client owns 100% of IP, GitHub &amp; server accounts</text>
-    <rect x="24" y="195" width="140" height="24" rx="6" fill="#3b82f6" opacity="0.2"/>
-    <text x="34" y="211" fill="#93c5fd" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">MAXIMUM CONVERSIONS</text>
+  
+  <rect x="70" y="45" width="290" height="34" rx="17" fill="#312e81" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="88" y="67" fill="#c7d2fe" font-family="system-ui, sans-serif" font-size="12" font-weight="800" letter-spacing="1.2">FULL-CYCLE WEB AGENCY</text>
+  <text x="70" y="125" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="900" letter-spacing="-1">Web Development Company</text>
+  <text x="70" y="160" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">Next.js Architecture, Cloud Scalability &amp; High-Conversion UI Engineering</text>
+
+  <!-- Left: Service Pillar Cards -->
+  <g transform="translate(70, 205)">
+    <!-- Card 1 -->
+    <rect width="320" height="115" rx="16" fill="#1e1b4b" fill-opacity="0.8" stroke="#6366f1" stroke-width="1.8" filter="url(#soft-shadow-wdev-ud)"/>
+    <circle cx="45" cy="45" r="20" fill="#4338ca"/>
+    <text x="37" y="52" fill="#ffffff" font-size="16">🚀</text>
+    <text x="80" y="42" fill="#ffffff" font-family="system-ui, sans-serif" font-size="17" font-weight="800">Custom Web Apps</text>
+    <text x="80" y="68" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">React, Next.js &amp; Microservices</text>
+    <rect x="80" y="82" width="90" height="20" rx="10" fill="#312e81"/>
+    <text x="94" y="96" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="11" font-weight="700">Sub-1s Speeds</text>
+
+    <!-- Card 2 -->
+    <rect y="135" width="320" height="115" rx="16" fill="#0f2b38" fill-opacity="0.8" stroke="#06b6d4" stroke-width="1.8" filter="url(#soft-shadow-wdev-ud)"/>
+    <circle cx="45" cy="180" r="20" fill="#0e7490"/>
+    <text x="37" y="187" fill="#ffffff" font-size="16">🛒</text>
+    <text x="80" y="177" fill="#ffffff" font-family="system-ui, sans-serif" font-size="17" font-weight="800">Enterprise E-Commerce</text>
+    <text x="80" y="203" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">Headless Cart &amp; Payment Hubs</text>
+    <rect x="80" y="217" width="105" height="20" rx="10" fill="#164e63"/>
+    <text x="93" y="231" fill="#67e8f9" font-family="system-ui, sans-serif" font-size="11" font-weight="700">High Volume Scale</text>
+
+    <!-- Card 3 -->
+    <rect y="270" width="320" height="115" rx="16" fill="#1e293b" fill-opacity="0.8" stroke="#3b82f6" stroke-width="1.8" filter="url(#soft-shadow-wdev-ud)"/>
+    <circle cx="45" cy="315" r="20" fill="#1d4ed8"/>
+    <text x="37" y="322" fill="#ffffff" font-size="16">⚡</text>
+    <text x="80" y="312" fill="#ffffff" font-family="system-ui, sans-serif" font-size="17" font-weight="800">SEO &amp; Performance Core</text>
+    <text x="80" y="338" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">100/100 Lighthouse &amp; SSR</text>
+    <rect x="80" y="352" width="105" height="20" rx="10" fill="#1e3a8a"/>
+    <text x="93" y="366" fill="#93c5fd" font-family="system-ui, sans-serif" font-size="11" font-weight="700">Top Rank Signals</text>
   </g>
 
-  <!-- RankVRA Signature -->
-  <text x="1120" y="585" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" text-anchor="end">RankVRA Research &#8226; Udaipur</text>
+  <!-- Right: Hero Visual Platform with Dev Mascot & Bot -->
+  <g transform="translate(430, 205)">
+    <rect width="700" height="385" rx="20" fill="#0f172a" fill-opacity="0.85" stroke="#334155" stroke-width="2" filter="url(#soft-shadow-wdev-ud)"/>
+    <rect x="30" y="30" width="640" height="42" rx="10" fill="#1e293b"/>
+    <circle cx="55" cy="51" r="6" fill="#ef4444"/><circle cx="75" cy="51" r="6" fill="#f59e0b"/><circle cx="95" cy="51" r="6" fill="#10b981"/>
+    <text x="120" y="56" fill="#94a3b8" font-family="monospace" font-size="13">https://rankvra.com/engineering-suite</text>
+
+    <!-- Internal Code & Visual Canvas -->
+    <rect x="30" y="90" width="400" height="265" rx="12" fill="#090d16" stroke="#1e293b" stroke-width="1.5"/>
+    <text x="50" y="125" fill="#38bdf8" font-family="monospace" font-size="14" font-weight="700">const agency = new WebEngineering({</text>
+    <text x="65" y="152" fill="#a5b4fc" font-family="monospace" font-size="13">stack: ['Next.js 15', 'TypeScript', 'Node.js'],</text>
+    <text x="65" y="177" fill="#34d399" font-family="monospace" font-size="13">performance: 'Core Web Vitals Elite',</text>
+    <text x="65" y="202" fill="#f472b6" font-family="monospace" font-size="13">cloud: 'Vercel + AWS Global CDN',</text>
+    <text x="65" y="227" fill="#facc15" font-family="monospace" font-size="13">delivery: 'Enterprise Scalability 2026'</text>
+    <text x="50" y="255" fill="#38bdf8" font-family="monospace" font-size="14" font-weight="700">});</text>
+    <rect x="50" y="280" width="360" height="48" rx="8" fill="#1e293b"/>
+    <text x="65" y="310" fill="#10b981" font-family="system-ui, sans-serif" font-size="13" font-weight="700">✔ 99.9% Uptime | Sub-800ms LCP | Zero Bloat</text>
+
+    <!-- Mascots on Right Side of Canvas -->
+    
+  <g transform="translate(450, 110) scale(1.25)">
+    <!-- Shadow -->
+    <ellipse cx="65" cy="130" rx="45" ry="12" fill="#000000" opacity="0.4"/>
+    <!-- Hoodie Body -->
+    <path d="M 28 85 Q 65 60 102 85 L 110 125 L 20 125 Z" fill="#3b82f6"/>
+    <!-- Hood Inner -->
+    <path d="M 45 75 Q 65 65 85 75 L 85 85 Q 65 92 45 85 Z" fill="#1d4ed8"/>
+    <!-- Head -->
+    <circle cx="65" cy="46" r="30" fill="#fde047"/>
+    <!-- Cool Hair -->
+    <path d="M 38 42 Q 65 14 92 40 Q 82 22 65 24 Q 48 24 38 42 Z" fill="#92400e"/>
+    <!-- Glasses -->
+    <rect x="42" y="38" width="18" height="14" rx="4" fill="#0f172a" stroke="#ffffff" stroke-width="2"/>
+    <rect x="70" y="38" width="18" height="14" rx="4" fill="#0f172a" stroke="#ffffff" stroke-width="2"/>
+    <line x1="60" y1="44" x2="70" y2="44" stroke="#ffffff" stroke-width="2"/>
+    <!-- Smile -->
+    <path d="M 57 56 Q 65 62 73 56" stroke="#92400e" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <!-- Laptop in hands -->
+    <rect x="36" y="98" width="58" height="26" rx="4" fill="#64748b" stroke="#cbd5e1" stroke-width="1.5"/>
+    <polygon points="30,124 100,124 94,128 36,128" fill="#475569"/>
+    <!-- Screen Glow with code badge -->
+    <rect x="42" y="103" width="46" height="16" rx="2" fill="#0f172a"/>
+    <text x="46" y="115" fill="#38bdf8" font-family="monospace" font-size="8" font-weight="700">&lt;/dev&gt;</text>
+  </g>
+
+    
+  <g transform="translate(570, 180) scale(0.9)">
+    <!-- Hover Thruster / Ring -->
+    <ellipse cx="60" cy="118" rx="38" ry="12" fill="#34d399" opacity="0.35"/>
+    <ellipse cx="60" cy="118" rx="20" ry="6" fill="#ffffff" opacity="0.75"/>
+    <!-- Bot Body -->
+    <rect x="25" y="42" width="70" height="66" rx="22" fill="#1e293b" stroke="#475569" stroke-width="2.5"/>
+    <rect x="33" y="50" width="54" height="42" rx="14" fill="#0f172a"/>
+    <!-- Core Glow / Heartbeat -->
+    <circle cx="60" cy="71" r="10" fill="#34d399"/>
+    <circle cx="60" cy="71" r="4" fill="#ffffff"/>
+    <!-- Bot Head -->
+    <rect x="18" y="6" width="84" height="46" rx="18" fill="#1e293b" stroke="#475569" stroke-width="2.5"/>
+    <!-- Visor -->
+    <rect x="26" y="14" width="68" height="28" rx="12" fill="#090d16" stroke="#34d399" stroke-width="1.5"/>
+    <!-- Eyes -->
+    <ellipse cx="44" cy="27" rx="8" ry="6" fill="#34d399"/>
+    <circle cx="46" cy="25" r="2.5" fill="#ffffff"/>
+    <ellipse cx="76" cy="27" rx="8" ry="6" fill="#34d399"/>
+    <circle cx="78" cy="25" r="2.5" fill="#ffffff"/>
+    <!-- Antennas -->
+    <line x1="60" y1="6" x2="60" y2="-4" stroke="#64748b" stroke-width="3"/>
+    <circle cx="60" cy="-6" r="5" fill="#34d399"/>
+    <!-- Little Hands -->
+    <rect x="6" y="55" width="14" height="32" rx="7" fill="#334155"/>
+    <rect x="100" y="55" width="14" height="32" rx="7" fill="#334155"/>
+  </g>
+
+  </g>
 </svg>

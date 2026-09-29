@@ -1,53 +1,88 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  
   <defs>
-    <filter id="glow1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="90"/></filter>
-    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="80"/></filter>
+    <filter id="glow-pwa" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="60" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="soft-shadow-pwa" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <linearGradient id="bg-pwa" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#083344"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+    <linearGradient id="acc-pwa" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="50%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
   </defs>
-  <rect width="1200" height="630" rx="24" fill="#090d16"/>
-  <circle cx="180" cy="160" r="240" fill="#06b6d4" opacity="0.18" filter="url(#glow1)"/>
-  <circle cx="1040" cy="460" r="260" fill="#a855f7" opacity="0.16" filter="url(#glow2)"/>
-  <g opacity="0.05" stroke="#ffffff" stroke-width="1">
-    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/><line x1="0" y1="270" x2="1200" y2="270"/><line x1="0" y1="360" x2="1200" y2="360"/><line x1="0" y1="450" x2="1200" y2="450"/><line x1="0" y1="540" x2="1200" y2="540"/>
-    <line x1="150" y1="0" x2="150" y2="630"/><line x1="300" y1="0" x2="300" y2="630"/><line x1="450" y1="0" x2="450" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="750" y1="0" x2="750" y2="630"/><line x1="900" y1="0" x2="900" y2="630"/><line x1="1050" y1="0" x2="1050" y2="630"/>
-  </g>
-  <rect x="80" y="55" width="310" height="34" rx="17" fill="#164e63" stroke="#06b6d4" stroke-width="1.2"/>
-  <text x="96" y="77" fill="#67e8f9" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">CROSS-PLATFORM ENGINEERING STRATEGY</text>
-  <text x="80" y="135" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="800" letter-spacing="-1">PWA vs Native Mobile App Comparison</text>
-  <text x="80" y="170" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">Installation Friction, App Store Fees, Push Notifications &amp; Offline Performance</text>
 
-  <g transform="translate(80, 220)">
-    <!-- Column 1: Progressive Web App -->
+  
+  <rect width="1200" height="630" rx="28" fill="url(#bg-pwa)"/>
+  <circle cx="200" cy="180" r="280" fill="#06b6d4" opacity="0.28" filter="url(#glow-pwa)"/>
+  <circle cx="1020" cy="450" r="300" fill="#ec4899" opacity="0.25" filter="url(#glow-pwa)"/>
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/><line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/><line x1="0" y1="450" x2="1200" y2="450"/><line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="120" y1="0" x2="120" y2="630"/><line x1="240" y1="0" x2="240" y2="630"/><line x1="360" y1="0" x2="360" y2="630"/>
+    <line x1="480" y1="0" x2="480" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="720" y1="0" x2="720" y2="630"/>
+    <line x1="840" y1="0" x2="840" y2="630"/><line x1="960" y1="0" x2="960" y2="630"/><line x1="1080" y1="0" x2="1080" y2="630"/>
+  </g>
+
+
+  <!-- Header -->
+  <rect x="70" y="45" width="310" height="34" rx="17" fill="#0e7490" stroke="#06b6d4" stroke-width="1.5"/>
+  <text x="88" y="67" fill="#67e8f9" font-family="system-ui, sans-serif" font-size="12" font-weight="800" letter-spacing="1.2">MOBILE APPLICATION STRATEGY</text>
+  <text x="70" y="125" fill="#ffffff" font-family="system-ui, sans-serif" font-size="36" font-weight="900" letter-spacing="-0.8">Progressive Web App vs Mobile App</text>
+  <text x="70" y="160" fill="#a5f3fc" font-family="system-ui, sans-serif" font-size="16">Frictionless Web Distribution vs Native Android/iOS: Costs, 30% App Store Fees &amp; Hardware</text>
+
+  <!-- Side-by-Side Modern Device Showcase -->
+  <g transform="translate(70, 195)">
+    <!-- LEFT SIDE: PWA (Frictionless Smartphone) -->
     <g transform="translate(0, 0)">
-      <rect width="490" height="340" rx="18" fill="#0f172a" stroke="#06b6d4" stroke-width="1.8"/>
-      <rect x="25" y="25" width="130" height="28" rx="6" fill="#164e63"/>
-      <text x="40" y="44" fill="#67e8f9" font-family="system-ui, sans-serif" font-size="13" font-weight="700">PROGRESSIVE WEB APP</text>
-      <text x="25" y="85" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="800">Browser-Installed App</text>
-      <text x="25" y="110" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">Fast, friction-free distribution via standard URL</text>
-      <line x1="25" y1="130" x2="465" y2="130" stroke="#1e293b" stroke-width="1.5"/>
-      <text x="25" y="160" fill="#34d399" font-family="system-ui, sans-serif" font-size="13">✓ <tspan font-weight="700">Zero App Store Toll:</tspan> 0% commission on digital revenue</text>
-      <text x="25" y="190" fill="#34d399" font-family="system-ui, sans-serif" font-size="13">✓ <tspan font-weight="700">Frictionless Install:</tspan> Add to Home Screen in 1 tap, &lt; 2MB</text>
-      <text x="25" y="220" fill="#34d399" font-family="system-ui, sans-serif" font-size="13">✓ <tspan font-weight="700">Offline Caching:</tspan> Service Worker cache for instant load</text>
-      <text x="25" y="250" fill="#34d399" font-family="system-ui, sans-serif" font-size="13">✓ <tspan font-weight="700">Web Push Notifications:</tspan> Supported on Chrome, Edge &amp; iOS</text>
-      <text x="25" y="280" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">✓ <tspan font-weight="700">Single Codebase:</tspan> 1 engineering team maintains web + PWA</text>
-      <rect x="25" y="300" width="440" height="25" rx="6" fill="#164e63"/>
-      <text x="245" y="317" fill="#67e8f9" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Best: B2B Portals, Media, E-commerce, Global Reach</text>
+      <rect width="500" height="380" rx="24" fill="#082f49" stroke="#06b6d4" stroke-width="2.5" filter="url(#soft-shadow-pwa)"/>
+      <rect x="25" y="25" width="200" height="32" rx="10" fill="#0e7490"/>
+      <text x="38" y="46" fill="#cffafe" font-family="system-ui, sans-serif" font-size="13" font-weight="900">⚡ PROGRESSIVE WEB APP</text>
+      
+      <text x="25" y="95" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="900">Browser-Installed Web App</text>
+      <text x="25" y="120" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13">Zero download friction via standard web URL</text>
+      
+      <line x1="25" y1="145" x2="475" y2="145" stroke="#164e63"/>
+
+      <text x="25" y="180" fill="#e0f2fe" font-family="system-ui, sans-serif" font-size="13">✓ <tspan font-weight="800">Zero App Store Tax:</tspan> 0% commission on digital transactions</text>
+      <text x="25" y="215" fill="#e0f2fe" font-family="system-ui, sans-serif" font-size="13">✓ <tspan font-weight="800">Instant 1-Tap Install:</tspan> Add to Home Screen in 2s, &lt; 3MB size</text>
+      <text x="25" y="250" fill="#e0f2fe" font-family="system-ui, sans-serif" font-size="13">✓ <tspan font-weight="800">Offline Caching:</tspan> Service Worker handles offline sync</text>
+      <text x="25" y="285" fill="#e0f2fe" font-family="system-ui, sans-serif" font-size="13">✓ <tspan font-weight="800">Single Codebase:</tspan> 1 Next.js team serves web, tablet, mobile</text>
+
+      <rect x="25" y="320" width="450" height="38" rx="10" fill="#0c4a6e" stroke="#06b6d4"/>
+      <text x="250" y="344" fill="#a5f3fc" font-family="system-ui, sans-serif" font-size="12" font-weight="800" text-anchor="middle">Best: B2B Portals, Media, E-Commerce, Global Scale</text>
     </g>
 
-    <!-- Column 2: Native Mobile App -->
-    <g transform="translate(550, 0)">
-      <rect width="490" height="340" rx="18" fill="#0f172a" stroke="#a855f7" stroke-width="1.8"/>
-      <rect x="25" y="25" width="150" height="28" rx="6" fill="#3b0764"/>
-      <text x="40" y="44" fill="#d8b4fe" font-family="system-ui, sans-serif" font-size="13" font-weight="700">NATIVE MOBILE APP</text>
-      <text x="25" y="85" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="800">iOS &amp; Android Native</text>
-      <text x="25" y="110" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">Direct binary execution via Apple App Store &amp; Google Play</text>
-      <line x1="25" y1="130" x2="465" y2="130" stroke="#1e293b" stroke-width="1.5"/>
-      <text x="25" y="160" fill="#34d399" font-family="system-ui, sans-serif" font-size="13">✓ <tspan font-weight="700">Deep Hardware Access:</tspan> Bluetooth, NFC, LiDAR, Geofencing</text>
-      <text x="25" y="190" fill="#34d399" font-family="system-ui, sans-serif" font-size="13">✓ <tspan font-weight="700">Ultra-High Frame Rates:</tspan> 120Hz GPU animations &amp; 3D games</text>
-      <text x="25" y="220" fill="#f87171" font-family="system-ui, sans-serif" font-size="13">⚠️ <tspan font-weight="700">Store Friction &amp; Review:</tspan> Days of review delay &amp; rejections</text>
-      <text x="25" y="250" fill="#f87171" font-family="system-ui, sans-serif" font-size="13">⚠️ <tspan font-weight="700">App Store Tax:</tspan> 15%–30% transaction commission</text>
-      <text x="25" y="280" fill="#f87171" font-family="system-ui, sans-serif" font-size="13">⚠️ <tspan font-weight="700">High Overhead:</tspan> 2–3x development &amp; continuous maintenance</text>
-      <rect x="25" y="300" width="440" height="25" rx="6" fill="#3b0764"/>
-      <text x="245" y="317" fill="#d8b4fe" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Best: Consumer Gaming, Hardware Accessories, Heavy Sensors</text>
+    <!-- VS Divider -->
+    <circle cx="530" cy="190" r="32" fill="#0f172a" stroke="#ec4899" stroke-width="3" filter="url(#soft-shadow-pwa)"/>
+    <text x="530" y="198" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="900" text-anchor="middle">VS</text>
+
+    <!-- RIGHT SIDE: Native Mobile App (App Store Crate) -->
+    <g transform="translate(560, 0)">
+      <rect width="500" height="380" rx="24" fill="#1e1b4b" stroke="#ec4899" stroke-width="2" filter="url(#soft-shadow-pwa)"/>
+      <rect x="25" y="25" width="180" height="32" rx="10" fill="#4a044e"/>
+      <text x="38" y="46" fill="#fbcfe8" font-family="system-ui, sans-serif" font-size="13" font-weight="900">📱 NATIVE MOBILE APP</text>
+
+      <text x="25" y="95" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="900">Native iOS &amp; Android</text>
+      <text x="25" y="120" fill="#f472b6" font-family="system-ui, sans-serif" font-size="13">Direct binary execution via Apple &amp; Google stores</text>
+
+      <line x1="25" y1="145" x2="475" y2="145" stroke="#312e81"/>
+
+      <text x="25" y="180" fill="#fce7f3" font-family="system-ui, sans-serif" font-size="13">✓ <tspan font-weight="800">Hardware APIs:</tspan> Bluetooth Low Energy, NFC, LiDAR, USB</text>
+      <text x="25" y="215" fill="#fce7f3" font-family="system-ui, sans-serif" font-size="13">✓ <tspan font-weight="800">Peak GPU Speed:</tspan> 120Hz frame rates for mobile 3D games</text>
+      <text x="25" y="250" fill="#f87171" font-family="system-ui, sans-serif" font-size="13">⚠️ <tspan font-weight="800">App Store Toll:</tspan> 15%–30% revenue commission on sales</text>
+      <text x="25" y="285" fill="#f87171" font-family="system-ui, sans-serif" font-size="13">⚠️ <tspan font-weight="800">High Overhead:</tspan> 2-3x cost; store review delays</text>
+
+      <rect x="25" y="320" width="450" height="38" rx="10" fill="#3b0764" stroke="#ec4899"/>
+      <text x="250" y="344" fill="#fbcfe8" font-family="system-ui, sans-serif" font-size="12" font-weight="800" text-anchor="middle">Best: Consumer Gaming, Medical Sensors, Hardware Accessories</text>
     </g>
   </g>
 </svg>

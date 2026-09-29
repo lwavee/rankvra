@@ -1,53 +1,123 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <filter id="glow1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="90"/></filter>
-    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="80"/></filter>
-  </defs>
-  <rect width="1200" height="630" rx="24" fill="#090d16"/>
-  <circle cx="200" cy="180" r="240" fill="#21759b" opacity="0.2" filter="url(#glow1)"/>
-  <circle cx="1000" cy="460" r="260" fill="#6366f1" opacity="0.2" filter="url(#glow2)"/>
-  <g opacity="0.05" stroke="#ffffff" stroke-width="1">
-    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/><line x1="0" y1="270" x2="1200" y2="270"/><line x1="0" y1="360" x2="1200" y2="360"/><line x1="0" y1="450" x2="1200" y2="450"/><line x1="0" y1="540" x2="1200" y2="540"/>
-    <line x1="150" y1="0" x2="150" y2="630"/><line x1="300" y1="0" x2="300" y2="630"/><line x1="450" y1="0" x2="450" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="750" y1="0" x2="750" y2="630"/><line x1="900" y1="0" x2="900" y2="630"/><line x1="1050" y1="0" x2="1050" y2="630"/>
-  </g>
-  <rect x="80" y="55" width="290" height="34" rx="17" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.2"/>
-  <text x="96" y="77" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">PLATFORM ARCHITECTURE EVALUATION</text>
-  <text x="80" y="135" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="800" letter-spacing="-1">WordPress vs Custom Web Development</text>
-  <text x="80" y="170" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">Objective Comparison: Cost, Plugins, Performance, Security &amp; Long-Term Ownership</text>
   
-  <g transform="translate(80, 215)">
-    <!-- Left: WordPress -->
+  <defs>
+    <filter id="glow-wpvs" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="60" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="soft-shadow-wpvs" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <linearGradient id="bg-wpvs" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#180d24"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#05070e"/>
+    </linearGradient>
+    <linearGradient id="acc-wpvs" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="glass-wpvs" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03"/>
+    </linearGradient>
+  </defs>
+
+  
+  <rect width="1200" height="630" rx="28" fill="url(#bg-wpvs)"/>
+  <!-- Ambient Glow Orbs -->
+  <circle cx="200" cy="180" r="280" fill="#f59e0b" opacity="0.28" filter="url(#glow-wpvs)"/>
+  <circle cx="1020" cy="450" r="300" fill="#6366f1" opacity="0.25" filter="url(#glow-wpvs)"/>
+  <!-- Modern Tech Grid Pattern -->
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/><line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/><line x1="0" y1="450" x2="1200" y2="450"/><line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="120" y1="0" x2="120" y2="630"/><line x1="240" y1="0" x2="240" y2="630"/><line x1="360" y1="0" x2="360" y2="630"/>
+    <line x1="480" y1="0" x2="480" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="720" y1="0" x2="720" y2="630"/>
+    <line x1="840" y1="0" x2="840" y2="630"/><line x1="960" y1="0" x2="960" y2="630"/><line x1="1080" y1="0" x2="1080" y2="630"/>
+  </g>
+
+
+  <!-- Header -->
+  <rect x="70" y="45" width="310" height="34" rx="17" fill="#312e81" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="88" y="67" fill="#c7d2fe" font-family="system-ui, sans-serif" font-size="12" font-weight="800" letter-spacing="1.2">PLATFORM ARCHITECTURE BATTLE</text>
+  <text x="70" y="125" fill="#ffffff" font-family="system-ui, sans-serif" font-size="36" font-weight="900" letter-spacing="-0.8">WordPress vs Custom Web Development</text>
+  <text x="70" y="160" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="16">Unbiased Technical Comparison: Performance, Security, Flexibility &amp; True 5-Year TCO</text>
+
+  <!-- Split Arena Visual -->
+  <g transform="translate(70, 195)">
+    <!-- LEFT SIDE: WordPress CMS (Warm Craft Workshop) -->
     <g transform="translate(0, 0)">
-      <rect width="490" height="340" rx="18" fill="#0f172a" stroke="#21759b" stroke-width="1.5"/>
-      <rect x="25" y="25" width="130" height="28" rx="6" fill="#1e293b"/>
-      <text x="40" y="44" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" font-weight="700">WORDPRESS CMS</text>
-      <text x="25" y="85" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="800">Content-First Websites</text>
-      <text x="25" y="110" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">Best for blogs, news, brochure sites &amp; standard SMBs</text>
-      <line x1="25" y1="130" x2="465" y2="130" stroke="#1e293b" stroke-width="1.5"/>
-      <text x="25" y="160" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">⚡ <tspan font-weight="700">Time-to-Market:</tspan> Fast launch with ready themes</text>
-      <text x="25" y="190" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">📦 <tspan font-weight="700">Ecosystem:</tspan> 60,000+ plugins for instant functionality</text>
-      <text x="25" y="220" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">✏️ <tspan font-weight="700">Content Team:</tspan> Gutenberg visual editor for marketing</text>
-      <text x="25" y="250" fill="#f87171" font-family="system-ui, sans-serif" font-size="13">⚠️ <tspan font-weight="700">Tradeoff:</tspan> Plugin dependency, DB bloat &amp; security patches</text>
-      <text x="25" y="280" fill="#f87171" font-family="system-ui, sans-serif" font-size="13">⚠️ <tspan font-weight="700">Scaling:</tspan> Requires aggressive caching (Redis / Varnish)</text>
-      <rect x="25" y="300" width="440" height="25" rx="6" fill="#1e293b"/>
-      <text x="245" y="317" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Verdict: Ideal when content editing is the primary priority</text>
+      <rect width="500" height="380" rx="24" fill="#1c1917" stroke="#b45309" stroke-width="2" filter="url(#soft-shadow-wpvs)"/>
+      <!-- Header Badge -->
+      <rect x="25" y="25" width="160" height="32" rx="10" fill="#451a03" stroke="#f59e0b"/>
+      <text x="40" y="46" fill="#fde68a" font-family="system-ui, sans-serif" font-size="13" font-weight="900">📦 WORDPRESS CMS</text>
+      
+      <!-- Character: Cartoon Craft Builder with Wooden Plugin Blocks -->
+      <g transform="translate(320, 20)">
+        <circle cx="80" cy="60" r="32" fill="#fed7aa"/>
+        <path d="M 50 56 C 50 25, 110 25, 110 56 Z" fill="#b45309"/>
+        <rect x="55" y="90" width="50" height="70" rx="16" fill="#78350f"/>
+        <!-- Wooden Blocks -->
+        <rect x="20" y="130" width="40" height="35" rx="6" fill="#d97706" stroke="#92400e"/>
+        <text x="28" y="152" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="800">SEO</text>
+        <rect x="65" y="120" width="45" height="45" rx="6" fill="#b45309" stroke="#78350f"/>
+        <text x="72" y="148" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="800">W/P</text>
+      </g>
+
+      <text x="25" y="95" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="800">Editorial &amp; Content Sites</text>
+      <text x="25" y="120" fill="#fbbf24" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Best for blogs, news, brochure sites &amp; standard SMBs</text>
+      
+      <line x1="25" y1="145" x2="475" y2="145" stroke="#292524"/>
+
+      <text x="25" y="180" fill="#e7e5e4" font-family="system-ui, sans-serif" font-size="13">⚡ <tspan font-weight="700">Time-to-Market:</tspan> Fast launch using 60,000+ plugins</text>
+      <text x="25" y="215" fill="#e7e5e4" font-family="system-ui, sans-serif" font-size="13">✏️ <tspan font-weight="700">Authoring:</tspan> Gutenberg visual block editor</text>
+      <text x="25" y="250" fill="#f87171" font-family="system-ui, sans-serif" font-size="13">⚠️ <tspan font-weight="700">Security:</tspan> 90%+ CMS exploits target WP plugins</text>
+      <text x="25" y="285" fill="#f87171" font-family="system-ui, sans-serif" font-size="13">⚠️ <tspan font-weight="700">Performance:</tspan> Sluggish TTFB, database query bloat</text>
+
+      <rect x="25" y="320" width="450" height="38" rx="10" fill="#292524"/>
+      <text x="250" y="344" fill="#fde68a" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Verdict: Ideal when non-technical content creation is priority</text>
     </g>
 
-    <!-- Right: Custom Next.js / Web App -->
-    <g transform="translate(550, 0)">
-      <rect width="490" height="340" rx="18" fill="#0f172a" stroke="#6366f1" stroke-width="2"/>
-      <rect x="25" y="25" width="160" height="28" rx="6" fill="#312e81"/>
-      <text x="40" y="44" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="13" font-weight="700">CUSTOM DEVELOPMENT</text>
-      <text x="25" y="85" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="800">Proprietary Web Applications</text>
-      <text x="25" y="110" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">Best for portals, SaaS, custom workflows &amp; high traffic</text>
-      <line x1="25" y1="130" x2="465" y2="130" stroke="#1e293b" stroke-width="1.5"/>
-      <text x="25" y="160" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">🚀 <tspan font-weight="700">Performance:</tspan> 95+ Core Web Vitals, sub-second LCP</text>
-      <text x="25" y="190" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">🔒 <tspan font-weight="700">Security:</tspan> Zero third-party plugin vulnerabilities</text>
-      <text x="25" y="220" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">🧩 <tspan font-weight="700">Flexibility:</tspan> Unlimited custom business logic &amp; APIs</text>
-      <text x="25" y="250" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">📈 <tspan font-weight="700">Scalability:</tspan> Serverless edge runtime &amp; DB connection pooling</text>
-      <text x="25" y="280" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">💼 <tspan font-weight="700">Ownership:</tspan> Clean IP ownership with no software lock-in</text>
-      <rect x="25" y="300" width="440" height="25" rx="6" fill="#312e81" opacity="0.6"/>
-      <text x="245" y="317" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Verdict: Ideal when the web platform is a core commercial asset</text>
+    <!-- VS Badge Divider -->
+    <circle cx="530" cy="190" r="32" fill="#0f172a" stroke="#818cf8" stroke-width="3" filter="url(#soft-shadow-wpvs)"/>
+    <text x="530" y="198" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="900" text-anchor="middle">VS</text>
+
+    <!-- RIGHT SIDE: Custom Development (Futuristic Neon Lab) -->
+    <g transform="translate(560, 0)">
+      <rect width="500" height="380" rx="24" fill="#0f172a" stroke="#6366f1" stroke-width="2.5" filter="url(#soft-shadow-wpvs)"/>
+      <!-- Header Badge -->
+      <rect x="25" y="25" width="190" height="32" rx="10" fill="#1e1b4b" stroke="#818cf8"/>
+      <text x="40" y="46" fill="#c7d2fe" font-family="system-ui, sans-serif" font-size="13" font-weight="900">🚀 CUSTOM NEXT.JS REACT</text>
+
+      <!-- Character: Cyberpunk Coder with Neon Holograms -->
+      <g transform="translate(320, 20)">
+        <circle cx="80" cy="60" r="32" fill="#fed7aa"/>
+        <path d="M 50 56 C 50 25, 110 25, 110 56 Z" fill="#0284c7"/>
+        <rect x="55" y="90" width="50" height="70" rx="16" fill="#0369a1"/>
+        <!-- Headset -->
+        <path d="M 46 60 A 34 34 0 0 1 114 60" fill="none" stroke="#38bdf8" stroke-width="4"/>
+        <circle cx="46" cy="60" r="7" fill="#38bdf8"/>
+        <circle cx="114" cy="60" r="7" fill="#38bdf8"/>
+        <!-- Hologram Code Box -->
+        <rect x="20" y="125" width="90" height="45" rx="8" fill="#1e1b4b" stroke="#38bdf8" stroke-width="1.5"/>
+        <text x="28" y="145" fill="#34d399" font-family="monospace" font-size="10">&lt;Next.js 15/&gt;</text>
+        <text x="28" y="160" fill="#38bdf8" font-family="monospace" font-size="9">LCP: 0.6s • 99%</text>
+      </g>
+
+      <text x="25" y="95" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="800">Proprietary Web Applications</text>
+      <text x="25" y="120" fill="#818cf8" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Best for SaaS, customer portals, high traffic &amp; custom workflows</text>
+      
+      <line x1="25" y1="145" x2="475" y2="145" stroke="#1e293b"/>
+
+      <text x="25" y="180" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="13">🚀 <tspan font-weight="700">Performance:</tspan> 95+ Core Web Vitals, sub-second LCP</text>
+      <text x="25" y="215" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="13">🔒 <tspan font-weight="700">Security:</tspan> Zero third-party plugin vulnerability surface</text>
+      <text x="25" y="250" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="13">🧩 <tspan font-weight="700">Flexibility:</tspan> Bespoke business logic, RBAC, native APIs</text>
+      <text x="25" y="285" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="13">💼 <tspan font-weight="700">Valuation:</tspan> Permanent proprietary balance-sheet asset</text>
+
+      <rect x="25" y="320" width="450" height="38" rx="10" fill="#1e1b4b"/>
+      <text x="250" y="344" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Verdict: Essential when the web platform drives core revenue</text>
     </g>
   </g>
 </svg>

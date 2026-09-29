@@ -1,103 +1,100 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
-    
+  
   <defs>
-    <filter id="glow1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="90"/></filter>
-    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="80"/></filter>
-    <linearGradient id="accGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ec4899"/>
-      <stop offset="100%" stop-color="#8b5cf6"/>
-    </linearGradient>
-    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+    <filter id="glow-ai-auto" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="60" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="soft-shadow-ai-auto" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <linearGradient id="bg-ai-auto" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#290623"/>
+      <stop offset="50%" stop-color="#3d0a34"/>
+      <stop offset="100%" stop-color="#10020d"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="630" rx="24" fill="#090d16"/>
-  <!-- Ambient Glow Orbs -->
-  <circle cx="180" cy="160" r="240" fill="#ec4899" opacity="0.18" filter="url(#glow1)"/>
-  <circle cx="1040" cy="460" r="260" fill="#8b5cf6" opacity="0.16" filter="url(#glow2)"/>
-  <!-- Subtle Background Grid -->
-  <g opacity="0.05" stroke="#ffffff" stroke-width="1">
-    <line x1="0" y1="90" x2="1200" y2="90"/>
-    <line x1="0" y1="180" x2="1200" y2="180"/>
-    <line x1="0" y1="270" x2="1200" y2="270"/>
-    <line x1="0" y1="360" x2="1200" y2="360"/>
-    <line x1="0" y1="450" x2="1200" y2="450"/>
-    <line x1="0" y1="540" x2="1200" y2="540"/>
-    <line x1="150" y1="0" x2="150" y2="630"/>
-    <line x1="300" y1="0" x2="300" y2="630"/>
-    <line x1="450" y1="0" x2="450" y2="630"/>
-    <line x1="600" y1="0" x2="600" y2="630"/>
-    <line x1="750" y1="0" x2="750" y2="630"/>
-    <line x1="900" y1="0" x2="900" y2="630"/>
-    <line x1="1050" y1="0" x2="1050" y2="630"/>
+
+  
+  <rect width="1200" height="630" rx="28" fill="url(#bg-ai-auto)"/>
+  <circle cx="220" cy="170" r="280" fill="#ec4899" opacity="0.25" filter="url(#glow-ai-auto)"/>
+  <circle cx="1020" cy="460" r="290" fill="#8b5cf6" opacity="0.24" filter="url(#glow-ai-auto)"/>
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/><line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/><line x1="0" y1="450" x2="1200" y2="450"/><line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="120" y1="0" x2="120" y2="630"/><line x1="240" y1="0" x2="240" y2="630"/><line x1="360" y1="0" x2="360" y2="630"/>
+    <line x1="480" y1="0" x2="480" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="720" y1="0" x2="720" y2="630"/>
+    <line x1="840" y1="0" x2="840" y2="630"/><line x1="960" y1="0" x2="960" y2="630"/><line x1="1080" y1="0" x2="1080" y2="630"/>
   </g>
+
   
-    <!-- Header -->
-    <rect x="80" y="55" width="280" height="34" rx="17" fill="#500724" stroke="#ec4899" stroke-width="1.2"/>
-    <text x="96" y="77" fill="#fbcfe8" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">INTELLIGENT SYSTEMS</text>
-    <text x="80" y="135" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="800" letter-spacing="-1">AI Automation for Business</text>
-    <text x="80" y="170" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">LLM Microservices, WhatsApp Agents &amp; Real-Time Lead Qualification</text>
+  <rect x="70" y="45" width="280" height="34" rx="17" fill="#831843" stroke="#f472b6" stroke-width="1.5"/>
+  <text x="88" y="67" fill="#fce7f3" font-family="system-ui, sans-serif" font-size="12" font-weight="800" letter-spacing="1.2">INTELLIGENT SYSTEMS</text>
+  <text x="70" y="125" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="900" letter-spacing="-1">AI Automation for Business</text>
+  <text x="70" y="160" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">LLM Microservices, Autonomous WhatsApp Agents &amp; Real-Time Lead Scoring</text>
 
-    <!-- 3-Stage Pipeline Layout -->
-    <g transform="translate(80, 220)">
-      <!-- Stage 1: Trigger -->
-      <g transform="translate(0, 0)">
-        <rect width="310" height="300" rx="18" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
-        <rect x="25" y="25" width="130" height="28" rx="8" fill="#1e293b"/>
-        <text x="35" y="44" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="700">1. INBOUND TRIGGER</text>
-        <text x="25" y="95" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="800">Lead Event Captured</text>
-        <!-- Trigger items -->
-        <rect x="20" y="115" width="270" height="42" rx="8" fill="#1e293b"/>
-        <text x="35" y="141" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13">💬 WhatsApp Business Inquiry</text>
-        <rect x="20" y="165" width="270" height="42" rx="8" fill="#1e293b"/>
-        <text x="35" y="191" fill="#34d399" font-family="system-ui, sans-serif" font-size="13">📑 Website Quote Request Form</text>
-        <rect x="20" y="215" width="270" height="42" rx="8" fill="#1e293b"/>
-        <text x="35" y="241" fill="#f472b6" font-family="system-ui, sans-serif" font-size="13">📄 PDF Document Upload</text>
-      </g>
-
-      <!-- Arrow 1 -->
-      <path d="M 325 150 L 355 150" stroke="#ec4899" stroke-width="3"/>
-      <polygon points="360,150 350,145 350,155" fill="#ec4899"/>
-
-      <!-- Stage 2: AI Engine -->
-      <g transform="translate(365, 0)">
-        <rect width="310" height="300" rx="18" fill="#180924" stroke="#ec4899" stroke-width="2"/>
-        <rect x="25" y="25" width="120" height="28" rx="8" fill="#500724"/>
-        <text x="35" y="44" fill="#f472b6" font-family="system-ui, sans-serif" font-size="12" font-weight="700">2. AI PROCESSOR</text>
-        <text x="25" y="95" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="800">LLM Reasoning</text>
-        <!-- AI Subtasks -->
-        <rect x="20" y="115" width="270" height="42" rx="8" fill="#2d1242"/>
-        <text x="35" y="141" fill="#fbcfe8" font-family="system-ui, sans-serif" font-size="13">🧠 Intent &amp; Budget Scoring</text>
-        <rect x="20" y="165" width="270" height="42" rx="8" fill="#2d1242"/>
-        <text x="35" y="191" fill="#fbcfe8" font-family="system-ui, sans-serif" font-size="13">⚡ Entity Data Extraction</text>
-        <rect x="20" y="215" width="270" height="42" rx="8" fill="#2d1242"/>
-        <text x="35" y="241" fill="#fbcfe8" font-family="system-ui, sans-serif" font-size="13">⏱️ &lt; 2 Second Execution</text>
-      </g>
-
-      <!-- Arrow 2 -->
-      <path d="M 690 150 L 720 150" stroke="#8b5cf6" stroke-width="3"/>
-      <polygon points="725,150 715,145 715,155" fill="#8b5cf6"/>
-
-      <!-- Stage 3: Automated Actions -->
-      <g transform="translate(730, 0)">
-        <rect width="310" height="300" rx="18" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
-        <rect x="25" y="25" width="130" height="28" rx="8" fill="#1e293b"/>
-        <text x="35" y="44" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="700">3. BUSINESS ACTION</text>
-        <text x="25" y="95" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="800">Instant Execution</text>
-        <!-- Actions -->
-        <rect x="20" y="115" width="270" height="42" rx="8" fill="#1e293b"/>
-        <text x="35" y="141" fill="#34d399" font-family="system-ui, sans-serif" font-size="13">✅ Lead Created in CRM</text>
-        <rect x="20" y="165" width="270" height="42" rx="8" fill="#1e293b"/>
-        <text x="35" y="191" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13">📲 Sales Team Slack Alert</text>
-        <rect x="20" y="215" width="270" height="42" rx="8" fill="#1e293b"/>
-        <text x="35" y="241" fill="#c084fc" font-family="system-ui, sans-serif" font-size="13">✉️ Personalized Follow-up</text>
-      </g>
-    </g>
+  <!-- 3 Stage AI Workflow Pipeline -->
+  <g transform="translate(70, 205)">
+    <!-- Stage 1 -->
+    <rect x="0" y="0" width="320" height="385" rx="18" fill="#2d0b28" stroke="#ec4899" stroke-width="1.8" filter="url(#soft-shadow-ai-auto)"/>
+    <text x="25" y="40" fill="#f472b6" font-family="system-ui, sans-serif" font-size="13" font-weight="800">1. INBOUND TRIGGER</text>
+    <text x="25" y="75" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="800">Omni-Channel Events</text>
+    <rect x="25" y="105" width="270" height="48" rx="8" fill="#4c0519"/>
+    <text x="40" y="134" fill="#fbcfe8" font-family="system-ui, sans-serif" font-size="13">💬 WhatsApp Inquiry Message</text>
+    <rect x="25" y="165" width="270" height="48" rx="8" fill="#4c0519"/>
+    <text x="40" y="194" fill="#fbcfe8" font-family="system-ui, sans-serif" font-size="13">📑 Website Quote Request</text>
+    <rect x="25" y="225" width="270" height="48" rx="8" fill="#4c0519"/>
+    <text x="40" y="254" fill="#fbcfe8" font-family="system-ui, sans-serif" font-size="13">📄 PDF RFP Attachment</text>
     
-  <!-- Footer Branding -->
-  <line x1="80" y1="560" x2="1120" y2="560" stroke="#1e293b" stroke-width="1"/>
-  <text x="80" y="590" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="1">RANKVRA ENGINEERING SERIES</text>
-  <text x="1120" y="590" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" text-anchor="end">WWW.RANKVRA.COM</text>
-  
-  </svg>
+    <circle cx="160" cy="325" r="28" fill="#831843"/>
+    <text x="148" y="333" font-size="22">⚡</text>
+
+    <!-- Connector 1 -->
+    <path d="M 320 190 L 365 190" stroke="#ec4899" stroke-width="3" stroke-dasharray="6 4"/>
+
+    <!-- Stage 2: AI Processing -->
+    <rect x="365" y="0" width="340" height="385" rx="18" fill="#200d3b" stroke="#a855f7" stroke-width="2" filter="url(#soft-shadow-ai-auto)"/>
+    <text x="390" y="40" fill="#c084fc" font-family="system-ui, sans-serif" font-size="13" font-weight="800">2. LLM REASONING</text>
+    <text x="390" y="75" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="800">RAG &amp; Function Calls</text>
+    <rect x="390" y="105" width="290" height="48" rx="8" fill="#3b0764"/>
+    <text x="405" y="134" fill="#e9d5ff" font-family="system-ui, sans-serif" font-size="13">🧠 Vector Search in Company Docs</text>
+    <rect x="390" y="165" width="290" height="48" rx="8" fill="#3b0764"/>
+    <text x="405" y="194" fill="#e9d5ff" font-family="system-ui, sans-serif" font-size="13">📊 Intent &amp; Budget Classification</text>
+    
+  <g transform="translate(480, 225) scale(0.85)">
+    <ellipse cx="60" cy="118" rx="38" ry="12" fill="#ec4899" opacity="0.35"/>
+    <ellipse cx="60" cy="118" rx="20" ry="6" fill="#ffffff" opacity="0.75"/>
+    <rect x="25" y="42" width="70" height="66" rx="22" fill="#1e293b" stroke="#475569" stroke-width="2.5"/>
+    <rect x="33" y="50" width="54" height="42" rx="14" fill="#0f172a"/>
+    <circle cx="60" cy="71" r="10" fill="#ec4899"/>
+    <circle cx="60" cy="71" r="4" fill="#ffffff"/>
+    <rect x="18" y="6" width="84" height="46" rx="18" fill="#1e293b" stroke="#475569" stroke-width="2.5"/>
+    <rect x="26" y="14" width="68" height="28" rx="12" fill="#090d16" stroke="#ec4899" stroke-width="1.5"/>
+    <ellipse cx="44" cy="27" rx="8" ry="6" fill="#ec4899"/>
+    <circle cx="46" cy="25" r="2.5" fill="#ffffff"/>
+    <ellipse cx="76" cy="27" rx="8" ry="6" fill="#ec4899"/>
+    <circle cx="78" cy="25" r="2.5" fill="#ffffff"/>
+    <line x1="60" y1="6" x2="60" y2="-4" stroke="#64748b" stroke-width="3"/>
+    <circle cx="60" cy="-6" r="5" fill="#ec4899"/>
+    <rect x="6" y="55" width="14" height="32" rx="7" fill="#334155"/>
+    <rect x="100" y="55" width="14" height="32" rx="7" fill="#334155"/>
+  </g>
+
+
+    <!-- Connector 2 -->
+    <path d="M 705 190 L 750 190" stroke="#a855f7" stroke-width="3" stroke-dasharray="6 4"/>
+
+    <!-- Stage 3: Autonomous Action -->
+    <rect x="750" y="0" width="310" height="385" rx="18" fill="#08241e" stroke="#10b981" stroke-width="1.8" filter="url(#soft-shadow-ai-auto)"/>
+    <text x="775" y="40" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="800">3. EXECUTION</text>
+    <text x="775" y="75" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="800">Instant Business Action</text>
+    <rect x="775" y="105" width="260" height="48" rx="8" fill="#064e3b" fill-opacity="0.4"/>
+    <text x="790" y="134" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="13">🗓️ Calendly Slot Booked</text>
+    <rect x="775" y="165" width="260" height="48" rx="8" fill="#064e3b" fill-opacity="0.4"/>
+    <text x="790" y="194" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="13">📁 CRM Opportunity Created</text>
+    <rect x="775" y="225" width="260" height="48" rx="8" fill="#064e3b" fill-opacity="0.4"/>
+    <text x="790" y="254" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="13">⚡ WhatsApp Quote Dispatched</text>
+    <rect x="775" y="305" width="260" height="44" rx="10" fill="#047857"/>
+    <text x="815" y="332" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="800">Response Time: 4.2 Seconds</text>
+  </g>
+</svg>

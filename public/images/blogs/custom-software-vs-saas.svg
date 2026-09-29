@@ -1,70 +1,101 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  
   <defs>
-    <filter id="glow1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="90"/></filter>
-    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="80"/></filter>
+    <filter id="glow-csaas" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="60" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="soft-shadow-csaas" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <linearGradient id="bg-csaas" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2e1065"/>
+      <stop offset="50%" stop-color="#4a044e"/>
+      <stop offset="100%" stop-color="#070b14"/>
+    </linearGradient>
+    <linearGradient id="acc-csaas" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="50%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
   </defs>
-  <rect width="1200" height="630" rx="24" fill="#090d16"/>
-  <circle cx="200" cy="180" r="240" fill="#8b5cf6" opacity="0.18" filter="url(#glow1)"/>
-  <circle cx="1000" cy="460" r="260" fill="#ec4899" opacity="0.16" filter="url(#glow2)"/>
-  <g opacity="0.05" stroke="#ffffff" stroke-width="1">
-    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/><line x1="0" y1="270" x2="1200" y2="270"/><line x1="0" y1="360" x2="1200" y2="360"/><line x1="0" y1="450" x2="1200" y2="450"/><line x1="0" y1="540" x2="1200" y2="540"/>
-    <line x1="150" y1="0" x2="150" y2="630"/><line x1="300" y1="0" x2="300" y2="630"/><line x1="450" y1="0" x2="450" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="750" y1="0" x2="750" y2="630"/><line x1="900" y1="0" x2="900" y2="630"/><line x1="1050" y1="0" x2="1050" y2="630"/>
-  </g>
-  <rect x="80" y="55" width="290" height="34" rx="17" fill="#4a044e" stroke="#ec4899" stroke-width="1.2"/>
-  <text x="96" y="77" fill="#f472b6" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">STRATEGIC BUILD VS BUY FRAMEWORK</text>
-  <text x="80" y="135" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="800" letter-spacing="-1">Custom Software vs SaaS Decision Matrix</text>
-  <text x="80" y="170" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">Evaluating Subscription Costs, Workflow Moats, IP Ownership &amp; Scalability</text>
 
-  <g transform="translate(80, 220)">
+  
+  <rect width="1200" height="630" rx="28" fill="url(#bg-csaas)"/>
+  <circle cx="200" cy="180" r="280" fill="#ec4899" opacity="0.28" filter="url(#glow-csaas)"/>
+  <circle cx="1020" cy="450" r="300" fill="#f59e0b" opacity="0.25" filter="url(#glow-csaas)"/>
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/><line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/><line x1="0" y1="450" x2="1200" y2="450"/><line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="120" y1="0" x2="120" y2="630"/><line x1="240" y1="0" x2="240" y2="630"/><line x1="360" y1="0" x2="360" y2="630"/>
+    <line x1="480" y1="0" x2="480" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="720" y1="0" x2="720" y2="630"/>
+    <line x1="840" y1="0" x2="840" y2="630"/><line x1="960" y1="0" x2="960" y2="630"/><line x1="1080" y1="0" x2="1080" y2="630"/>
+  </g>
+
+
+  <!-- Header -->
+  <rect x="70" y="45" width="310" height="34" rx="17" fill="#581c87" stroke="#c084fc" stroke-width="1.5"/>
+  <text x="88" y="67" fill="#e9d5ff" font-family="system-ui, sans-serif" font-size="12" font-weight="800" letter-spacing="1.2">STRATEGIC BUILD VS BUY</text>
+  <text x="70" y="125" fill="#ffffff" font-family="system-ui, sans-serif" font-size="36" font-weight="900" letter-spacing="-0.8">Custom Software vs SaaS Decision Matrix</text>
+  <text x="70" y="160" fill="#f472b6" font-family="system-ui, sans-serif" font-size="16">Evaluating Per-Seat Licensing, Workflow Moats, IP Ownership &amp; Balance-Sheet Equity</text>
+
+  <!-- 3 Strategic Pathways Visual -->
+  <g transform="translate(70, 195)">
     <!-- Option A: Off-the-Shelf SaaS -->
     <g transform="translate(0, 0)">
-      <rect width="320" height="330" rx="16" fill="#0f172a" stroke="#64748b" stroke-width="1.5"/>
-      <rect x="20" y="20" width="120" height="26" rx="6" fill="#1e293b"/>
-      <text x="32" y="38" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="700">BUY OFF-THE-SHELF</text>
-      <text x="20" y="80" fill="#ffffff" font-family="system-ui, sans-serif" font-size="19" font-weight="800">Commercial SaaS</text>
-      <text x="20" y="105" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13">Commodity business processes</text>
-      <line x1="20" y1="125" x2="300" y2="125" stroke="#1e293b"/>
-      <text x="20" y="155" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">⚡ Instant Day-1 Deployment</text>
-      <text x="20" y="185" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">🔒 Vendor handles security &amp; patches</text>
-      <text x="20" y="215" fill="#f87171" font-family="system-ui, sans-serif" font-size="13">⚠️ Per-seat pricing compounds rapidly</text>
-      <text x="20" y="245" fill="#f87171" font-family="system-ui, sans-serif" font-size="13">⚠️ Workflows forced to match vendor</text>
-      <text x="20" y="275" fill="#f87171" font-family="system-ui, sans-serif" font-size="13">⚠️ Data lock-in &amp; API rate limits</text>
-      <rect x="20" y="295" width="280" height="25" rx="6" fill="#1e293b"/>
-      <text x="160" y="312" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Best: Email, Accounting, Chat</text>
+      <rect width="330" height="380" rx="22" fill="#18181b" stroke="#71717a" stroke-width="2" filter="url(#soft-shadow-csaas)"/>
+      <rect x="25" y="25" width="140" height="28" rx="8" fill="#27272a"/>
+      <text x="35" y="44" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="12" font-weight="900">BUY OFF-THE-SHELF</text>
+      
+      <text x="25" y="90" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="900">Commercial SaaS</text>
+      <text x="25" y="115" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13">Commodity business utilities</text>
+      <line x1="25" y1="135" x2="305" y2="135" stroke="#27272a"/>
+
+      <text x="25" y="170" fill="#e4e4e7" font-family="system-ui, sans-serif" font-size="13">⚡ <tspan font-weight="700">Immediate Setup:</tspan> Day-1 onboarding</text>
+      <text x="25" y="205" fill="#e4e4e7" font-family="system-ui, sans-serif" font-size="13">🔒 <tspan font-weight="700">Maintenance:</tspan> Vendor handles patching</text>
+      <text x="25" y="240" fill="#f87171" font-family="system-ui, sans-serif" font-size="13">⚠️ <tspan font-weight="700">Per-Seat Rent:</tspan> Compounds with staff</text>
+      <text x="25" y="275" fill="#f87171" font-family="system-ui, sans-serif" font-size="13">⚠️ <tspan font-weight="700">Workflow Lock-In:</tspan> Inflexible models</text>
+
+      <rect x="25" y="315" width="280" height="36" rx="10" fill="#27272a"/>
+      <text x="165" y="338" fill="#d4d4d8" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Best: Email, Chat, Accounting</text>
     </g>
 
-    <!-- Option B: Custom Internal Software -->
-    <g transform="translate(360, 0)">
-      <rect width="320" height="330" rx="16" fill="#0f172a" stroke="#8b5cf6" stroke-width="2"/>
-      <rect x="20" y="20" width="140" height="26" rx="6" fill="#2e1065"/>
-      <text x="32" y="38" fill="#c4b5fd" font-family="system-ui, sans-serif" font-size="12" font-weight="700">BUILD PROPRIETARY</text>
-      <text x="20" y="80" fill="#ffffff" font-family="system-ui, sans-serif" font-size="19" font-weight="800">Custom Software</text>
-      <text x="20" y="105" fill="#34d399" font-family="system-ui, sans-serif" font-size="13">Tailored operational advantage</text>
-      <line x1="20" y1="125" x2="300" y2="125" stroke="#1e293b"/>
-      <text x="20" y="155" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">🎯 100% Exact Workflow Alignment</text>
-      <text x="20" y="185" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">💼 Zero Monthly Seat License Fees</text>
-      <text x="20" y="215" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">🛡️ Complete Data Sovereignty &amp; IP</text>
-      <text x="20" y="245" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">🔌 Seamless Legacy System APIs</text>
-      <text x="20" y="275" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13">📈 Becomes a Tangible Balance Asset</text>
-      <rect x="20" y="295" width="280" height="25" rx="6" fill="#2e1065"/>
-      <text x="160" y="312" fill="#c4b5fd" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Best: Core Moats, Portals, Ops</text>
+    <!-- Option B: Custom Software (WINNER FOR MOAT) -->
+    <g transform="translate(365, 0)">
+      <rect width="350" height="380" rx="22" fill="#2e1065" stroke="#a855f7" stroke-width="2.5" filter="url(#soft-shadow-csaas)"/>
+      <rect x="25" y="25" width="165" height="28" rx="8" fill="#581c87"/>
+      <text x="35" y="44" fill="#f0abfc" font-family="system-ui, sans-serif" font-size="12" font-weight="900">⭐ BUILD PROPRIETARY</text>
+      
+      <text x="25" y="90" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="900">Custom Software</text>
+      <text x="25" y="115" fill="#34d399" font-family="system-ui, sans-serif" font-size="13">Tailored competitive operational moat</text>
+      <line x1="25" y1="135" x2="325" y2="135" stroke="#3b0764"/>
+
+      <text x="25" y="170" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="700">🎯 <tspan font-weight="900">100% Exact Workflow Alignment</tspan></text>
+      <text x="25" y="205" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="700">💼 <tspan font-weight="900">Zero Monthly User License Fees</tspan></text>
+      <text x="25" y="240" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="700">🛡️ <tspan font-weight="900">Complete Data Sovereignty &amp; IP</tspan></text>
+      <text x="25" y="275" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="700">🏆 <tspan font-weight="900">Tangible Balance Sheet Valuation</tspan></text>
+
+      <rect x="25" y="315" width="300" height="36" rx="10" fill="#581c87" stroke="#c084fc"/>
+      <text x="175" y="338" fill="#e9d5ff" font-family="system-ui, sans-serif" font-size="12" font-weight="800" text-anchor="middle">Best: Core Operations &amp; Portals</text>
     </g>
 
     <!-- Option C: Commercial SaaS Product -->
-    <g transform="translate(720, 0)">
-      <rect width="320" height="330" rx="16" fill="#0f172a" stroke="#ec4899" stroke-width="1.5"/>
-      <rect x="20" y="20" width="130" height="26" rx="6" fill="#500724"/>
-      <text x="32" y="38" fill="#f472b6" font-family="system-ui, sans-serif" font-size="12" font-weight="700">BUILD TO SELL</text>
-      <text x="20" y="80" fill="#ffffff" font-family="system-ui, sans-serif" font-size="19" font-weight="800">Commercial SaaS</text>
-      <text x="20" y="105" fill="#f472b6" font-family="system-ui, sans-serif" font-size="13">Multi-tenant recurring revenue</text>
-      <line x1="20" y1="125" x2="300" y2="125" stroke="#1e293b"/>
-      <text x="20" y="155" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">💰 High Margin Recurring Revenue</text>
-      <text x="20" y="185" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">🏢 Multi-Tenant DB Partitioning</text>
-      <text x="20" y="215" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">💳 Automated Stripe Billing / Tiers</text>
-      <text x="20" y="245" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">📈 Venture / Private Equity Multiple</text>
-      <text x="20" y="275" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">🌐 Global B2B Distribution</text>
-      <rect x="20" y="295" width="280" height="25" rx="6" fill="#500724"/>
-      <text x="160" y="312" fill="#f472b6" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Best: Digital Products &amp; Startups</text>
+    <g transform="translate(745, 0)">
+      <rect width="330" height="380" rx="22" fill="#1e1b4b" stroke="#38bdf8" stroke-width="2" filter="url(#soft-shadow-csaas)"/>
+      <rect x="25" y="25" width="130" height="28" rx="8" fill="#0369a1"/>
+      <text x="35" y="44" fill="#bae6fd" font-family="system-ui, sans-serif" font-size="12" font-weight="900">BUILD TO SELL</text>
+      
+      <text x="25" y="90" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="900">Commercial SaaS</text>
+      <text x="25" y="115" fill="#f472b6" font-family="system-ui, sans-serif" font-size="13">Multi-tenant recurring revenue</text>
+      <line x1="25" y1="135" x2="305" y2="135" stroke="#1e293b"/>
+
+      <text x="25" y="170" fill="#e0e7ff" font-family="system-ui, sans-serif" font-size="13">💰 <tspan font-weight="700">High-Margin MRR/ARR Engine</tspan></text>
+      <text x="25" y="205" fill="#e0e7ff" font-family="system-ui, sans-serif" font-size="13">🏢 <tspan font-weight="700">Multi-Tenant Cloud Databases</tspan></text>
+      <text x="25" y="240" fill="#e0e7ff" font-family="system-ui, sans-serif" font-size="13">💳 <tspan font-weight="700">Automated Stripe Subscription</tspan></text>
+      <text x="25" y="275" fill="#e0e7ff" font-family="system-ui, sans-serif" font-size="13">📈 <tspan font-weight="700">Venture / PE Valuation Multiple</tspan></text>
+
+      <rect x="25" y="315" width="280" height="36" rx="10" fill="#0369a1" stroke="#38bdf8"/>
+      <text x="165" y="338" fill="#bae6fd" font-family="system-ui, sans-serif" font-size="12" font-weight="800" text-anchor="middle">Best: Industry Software Ventures</text>
     </g>
   </g>
 </svg>

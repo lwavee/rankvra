@@ -1,77 +1,92 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="630" rx="24" fill="#0f172a"/>
-  <!-- Subtle Grid -->
-  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
-    <line x1="0" y1="90" x2="1200" y2="90"/>
-    <line x1="0" y1="180" x2="1200" y2="180"/>
-    <line x1="0" y1="270" x2="1200" y2="270"/>
-    <line x1="0" y1="360" x2="1200" y2="360"/>
-    <line x1="0" y1="450" x2="1200" y2="450"/>
-    <line x1="0" y1="540" x2="1200" y2="540"/>
-    <line x1="200" y1="0" x2="200" y2="630"/>
-    <line x1="400" y1="0" x2="400" y2="630"/>
-    <line x1="600" y1="0" x2="600" y2="630"/>
-    <line x1="800" y1="0" x2="800" y2="630"/>
-    <line x1="1000" y1="0" x2="1000" y2="630"/>
-  </g>
+  
   <defs>
-    <filter id="b1" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="80"/>
+    <filter id="glow-cost-ud" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="60" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
-    <filter id="b2" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="90"/>
+    <filter id="soft-shadow-cost-ud" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.45"/>
     </filter>
+    <linearGradient id="bg-cost-ud" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08261e"/>
+      <stop offset="50%" stop-color="#0d3b2e"/>
+      <stop offset="100%" stop-color="#030d0a"/>
+    </linearGradient>
   </defs>
-  <!-- Glow Accents -->
-  <circle cx="150" cy="180" r="200" fill="#059669" opacity="0.18" filter="url(#b1)"/>
-  <circle cx="950" cy="400" r="220" fill="#4f46e5" opacity="0.18" filter="url(#b2)"/>
 
-  <!-- Badge -->
-  <rect x="80" y="70" width="180" height="38" rx="19" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
-  <text x="100" y="94" fill="#6ee7b7" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" letter-spacing="1">PRICING INTELLIGENCE</text>
-
-  <!-- Title &amp; Subtitle -->
-  <text x="80" y="160" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" letter-spacing="-1">How Much Does SEO</text>
-  <text x="80" y="215" fill="#34d399" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" letter-spacing="-1">Cost in Udaipur?</text>
-  <text x="80" y="265" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="400">A practical breakdown of investment drivers, deliverable tiers &amp; the hidden risks of cheap SEO.</text>
-
-  <!-- Pricing Comparison Cards -->
-  <!-- Card 1: Cheap SEO Trap -->
-  <g transform="translate(80, 310)">
-    <rect width="320" height="240" rx="18" fill="#1e293b" stroke="#ef4444" stroke-width="1" stroke-dasharray="4 4"/>
-    <text x="24" y="45" fill="#ef4444" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700">₹3,000 – ₹7,000 / mo</text>
-    <text x="24" y="80" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800">The "Cheap SEO" Trap</text>
-    <text x="24" y="115" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">&#8226; Automated bot backlinks</text>
-    <text x="24" y="140" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">&#8226; AI spun thin content</text>
-    <text x="24" y="165" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">&#8226; Zero technical or code fixes</text>
-    <rect x="24" y="190" width="120" height="24" rx="6" fill="#ef4444" opacity="0.2"/>
-    <text x="34" y="206" fill="#fca5a5" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">HIGH PENALTY RISK</text>
+  
+  <rect width="1200" height="630" rx="28" fill="url(#bg-cost-ud)"/>
+  <circle cx="220" cy="170" r="280" fill="#10b981" opacity="0.25" filter="url(#glow-cost-ud)"/>
+  <circle cx="1020" cy="460" r="290" fill="#f59e0b" opacity="0.24" filter="url(#glow-cost-ud)"/>
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/><line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/><line x1="0" y1="450" x2="1200" y2="450"/><line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="120" y1="0" x2="120" y2="630"/><line x1="240" y1="0" x2="240" y2="630"/><line x1="360" y1="0" x2="360" y2="630"/>
+    <line x1="480" y1="0" x2="480" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="720" y1="0" x2="720" y2="630"/>
+    <line x1="840" y1="0" x2="840" y2="630"/><line x1="960" y1="0" x2="960" y2="630"/><line x1="1080" y1="0" x2="1080" y2="630"/>
   </g>
 
-  <!-- Card 2: Local Growth -->
-  <g transform="translate(430, 310)">
-    <rect width="320" height="240" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1"/>
-    <text x="24" y="45" fill="#34d399" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700">₹15,000 – ₹30,000 / mo</text>
-    <text x="24" y="80" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800">Local Udaipur SEO</text>
-    <text x="24" y="115" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">&#8226; Maps 3-Pack optimization</text>
-    <text x="24" y="140" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">&#8226; Local citation clean-up</text>
-    <text x="24" y="165" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">&#8226; Mobile speed &amp; schema tags</text>
-    <rect x="24" y="190" width="130" height="24" rx="6" fill="#10b981" opacity="0.2"/>
-    <text x="34" y="206" fill="#6ee7b7" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">TARGETED LOCAL ROI</text>
-  </g>
+  
+  <rect x="70" y="45" width="280" height="34" rx="17" fill="#065f46" stroke="#34d399" stroke-width="1.5"/>
+  <text x="88" y="67" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="12" font-weight="800" letter-spacing="1.2">TRANSPARENT PRICING</text>
+  <text x="70" y="125" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="900" letter-spacing="-1">SEO Cost in Udaipur 2026</text>
+  <text x="70" y="160" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">Real Investment Packages, Expected ROI Horizons &amp; Avoiding ₹5,000 Cheap Pitfalls</text>
 
-  <!-- Card 3: Competitive &amp; National -->
-  <g transform="translate(780, 310)">
-    <rect width="340" height="240" rx="18" fill="#1e293b" stroke="#4f46e5" stroke-width="1.5"/>
-    <text x="24" y="45" fill="#818cf8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700">₹35,000 – ₹70,000+ / mo</text>
-    <text x="24" y="80" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800">National &amp; Export B2B</text>
-    <text x="24" y="115" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">&#8226; Full technical re-architecting</text>
-    <text x="24" y="140" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">&#8226; Deep topical authority clusters</text>
-    <text x="24" y="165" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">&#8226; Multi-region buyer funnels</text>
-    <rect x="24" y="190" width="130" height="24" rx="6" fill="#4f46e5" opacity="0.2"/>
-    <text x="34" y="206" fill="#a5b4fc" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">SCALABLE PIPELINE</text>
-  </g>
+  <!-- 3 Retainer Tiers -->
+  <g transform="translate(70, 205)">
+    <!-- Tier 1 -->
+    <rect x="0" y="0" width="330" height="385" rx="18" fill="#0a261c" stroke="#10b981" stroke-width="1.8" filter="url(#soft-shadow-cost-ud)"/>
+    <rect x="25" y="25" width="130" height="26" rx="8" fill="#047857"/>
+    <text x="35" y="42" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="800">STARTER LOCAL</text>
+    <text x="25" y="85" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="800">Local SEO Package</text>
+    <text x="25" y="125" fill="#34d399" font-family="system-ui, sans-serif" font-size="28" font-weight="900">₹12,000 – ₹20,000</text>
+    <text x="25" y="150" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Per month retainer</text>
+    
+    <rect x="25" y="175" width="280" height="38" rx="8" fill="#064e3b" fill-opacity="0.4"/>
+    <text x="35" y="199" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12">✔ Google Map 3-Pack Optimization</text>
+    <rect x="25" y="220" width="280" height="38" rx="8" fill="#064e3b" fill-opacity="0.4"/>
+    <text x="35" y="244" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12">✔ Local Citation Cleanup &amp; NAP</text>
+    <rect x="25" y="265" width="280" height="38" rx="8" fill="#064e3b" fill-opacity="0.4"/>
+    <text x="35" y="289" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12">✔ 15 City-Specific Target Keywords</text>
+    
+    <rect x="25" y="320" width="280" height="42" rx="10" fill="#047857"/>
+    <text x="75" y="346" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="800">Local Footfall Focus</text>
 
-  <!-- RankVRA Signature -->
-  <text x="1120" y="585" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" text-anchor="end">RankVRA Research &#8226; Udaipur</text>
+    <!-- Tier 2 -->
+    <rect x="365" y="0" width="330" height="385" rx="18" fill="#2d1c07" stroke="#f59e0b" stroke-width="2" filter="url(#soft-shadow-cost-ud)"/>
+    <rect x="390" y="25" width="140" height="26" rx="8" fill="#b45309"/>
+    <text x="400" y="42" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="800">GROWTH (POPULAR)</text>
+    <text x="390" y="85" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="800">State / Pan-India SEO</text>
+    <text x="390" y="125" fill="#fbbf24" font-family="system-ui, sans-serif" font-size="28" font-weight="900">₹25,000 – ₹45,000</text>
+    <text x="390" y="150" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Per month retainer</text>
+    
+    <rect x="390" y="175" width="280" height="38" rx="8" fill="#78350f"/>
+    <text x="400" y="199" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12">✔ Technical Core Web Vitals Fixes</text>
+    <rect x="390" y="220" width="280" height="38" rx="8" fill="#78350f"/>
+    <text x="400" y="244" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12">✔ 4 High-Authority Backlinks / mo</text>
+    <rect x="390" y="265" width="280" height="38" rx="8" fill="#78350f"/>
+    <text x="400" y="289" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12">✔ Commercial Keyword Domination</text>
+    
+    <rect x="390" y="320" width="280" height="42" rx="10" fill="#d97706"/>
+    <text x="445" y="346" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="800">Rapid Organic Growth</text>
+
+    <!-- Tier 3 -->
+    <rect x="730" y="0" width="330" height="385" rx="18" fill="#1b122e" stroke="#c084fc" stroke-width="1.8" filter="url(#soft-shadow-cost-ud)"/>
+    <rect x="755" y="25" width="130" height="26" rx="8" fill="#6b21a8"/>
+    <text x="765" y="42" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="800">GLOBAL EXPORTER</text>
+    <text x="755" y="85" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="800">International / SaaS</text>
+    <text x="755" y="125" fill="#e879f9" font-family="system-ui, sans-serif" font-size="28" font-weight="900">₹60,000 – ₹1.2L+</text>
+    <text x="755" y="150" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Per month retainer</text>
+    
+    <rect x="755" y="175" width="280" height="38" rx="8" fill="#4c1d95"/>
+    <text x="765" y="199" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12">✔ Global Multi-Region Hreflang SEO</text>
+    <rect x="755" y="220" width="280" height="38" rx="8" fill="#4c1d95"/>
+    <text x="765" y="244" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12">✔ Digital PR &amp; Global Tech Outlets</text>
+    <rect x="755" y="265" width="280" height="38" rx="8" fill="#4c1d95"/>
+    <text x="765" y="289" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12">✔ Dedicated Growth Squad &amp; CRO</text>
+    
+    <rect x="755" y="320" width="280" height="42" rx="10" fill="#7e22ce"/>
+    <text x="815" y="346" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="800">High-Ticket Contracts</text>
+  </g>
 </svg>

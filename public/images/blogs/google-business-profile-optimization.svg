@@ -1,68 +1,102 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="630" rx="24" fill="#0f172a"/>
-  <!-- Subtle Grid -->
-  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
-    <line x1="0" y1="90" x2="1200" y2="90"/>
-    <line x1="0" y1="180" x2="1200" y2="180"/>
-    <line x1="0" y1="270" x2="1200" y2="270"/>
-    <line x1="0" y1="360" x2="1200" y2="360"/>
-    <line x1="0" y1="450" x2="1200" y2="450"/>
-    <line x1="0" y1="540" x2="1200" y2="540"/>
-    <line x1="200" y1="0" x2="200" y2="630"/>
-    <line x1="400" y1="0" x2="400" y2="630"/>
-    <line x1="600" y1="0" x2="600" y2="630"/>
-    <line x1="800" y1="0" x2="800" y2="630"/>
-    <line x1="1000" y1="0" x2="1000" y2="630"/>
-  </g>
+  
   <defs>
-    <filter id="b1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="80"/></filter>
-    <filter id="b2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="90"/></filter>
+    <filter id="glow-gbp-opt" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="60" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="soft-shadow-gbp-opt" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <linearGradient id="bg-gbp-opt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08241b"/>
+      <stop offset="50%" stop-color="#0d382b"/>
+      <stop offset="100%" stop-color="#030f0b"/>
+    </linearGradient>
   </defs>
-  <circle cx="200" cy="180" r="220" fill="#f59e0b" opacity="0.18" filter="url(#b1)"/>
-  <circle cx="1020" cy="450" r="250" fill="#ef4444" opacity="0.18" filter="url(#b2)"/>
 
-  <!-- Badge -->
-  <rect x="80" y="70" width="240" height="38" rx="19" fill="#451a03" stroke="#f59e0b" stroke-width="1.5"/>
-  <text x="100" y="94" fill="#fcd34d" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" letter-spacing="1">GOOGLE BUSINESS PROFILE</text>
-
-  <!-- Titles -->
-  <text x="80" y="160" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" letter-spacing="-1">Dominate the Google 3-Pack</text>
-  <text x="80" y="215" fill="#fbbf24" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" letter-spacing="-1">&amp; Local Map Rankings</text>
-  <text x="80" y="265" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="400">Proximity signals, review velocity, geo-tagged assets &amp; category optimization.</text>
-
-  <!-- Card 1: 3-Pack Ranking -->
-  <g transform="translate(80, 320)">
-    <rect width="320" height="230" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1"/>
-    <rect x="24" y="24" width="44" height="44" rx="12" fill="#78350f"/>
-    <text x="46" y="52" fill="#fde68a" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" text-anchor="middle">📍</text>
-    <text x="24" y="105" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">Map 3-Pack Positions</text>
-    <text x="24" y="132" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">Winning top 3 spots on Google</text>
-    <text x="24" y="154" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">Maps searches in your local service area.</text>
-    <rect x="24" y="180" width="125" height="24" rx="6" fill="#f59e0b" opacity="0.2"/>
-    <text x="34" y="196" fill="#fcd34d" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">LOCAL PACK #1</text>
+  
+  <rect width="1200" height="630" rx="28" fill="url(#bg-gbp-opt)"/>
+  <circle cx="220" cy="170" r="280" fill="#10b981" opacity="0.25" filter="url(#glow-gbp-opt)"/>
+  <circle cx="1020" cy="460" r="290" fill="#38bdf8" opacity="0.24" filter="url(#glow-gbp-opt)"/>
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/><line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/><line x1="0" y1="450" x2="1200" y2="450"/><line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="120" y1="0" x2="120" y2="630"/><line x1="240" y1="0" x2="240" y2="630"/><line x1="360" y1="0" x2="360" y2="630"/>
+    <line x1="480" y1="0" x2="480" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="720" y1="0" x2="720" y2="630"/>
+    <line x1="840" y1="0" x2="840" y2="630"/><line x1="960" y1="0" x2="960" y2="630"/><line x1="1080" y1="0" x2="1080" y2="630"/>
   </g>
 
-  <!-- Card 2: Review Engine -->
-  <g transform="translate(430, 320)">
-    <rect width="320" height="230" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1"/>
-    <rect x="24" y="24" width="44" height="44" rx="12" fill="#7f1d1d"/>
-    <text x="46" y="52" fill="#fca5a5" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" text-anchor="middle">⭐</text>
-    <text x="24" y="105" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">Review Velocity &amp; Keywords</text>
-    <text x="24" y="132" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">Generating genuine 5-star reviews</text>
-    <text x="24" y="154" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">containing targeted service keywords.</text>
-    <rect x="24" y="180" width="130" height="24" rx="6" fill="#ef4444" opacity="0.2"/>
-    <text x="34" y="196" fill="#fca5a5" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">TRUST SIGNALS</text>
+  
+  <rect x="70" y="45" width="280" height="34" rx="17" fill="#065f46" stroke="#34d399" stroke-width="1.5"/>
+  <text x="88" y="67" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="12" font-weight="800" letter-spacing="1.2">LOCAL LISTINGS MASTERY</text>
+  <text x="70" y="125" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="900" letter-spacing="-1">Google Business Profile Optimization</text>
+  <text x="70" y="160" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">The Complete Playbook to Rank in the Top 3 Map Pack &amp; Triple Local Inquiries</text>
+
+  <!-- Left: Profile Preview Mockup -->
+  <g transform="translate(70, 205)">
+    <rect width="580" height="385" rx="20" fill="#0f172a" stroke="#334155" stroke-width="2" filter="url(#soft-shadow-gbp-opt)"/>
+    <rect x="30" y="25" width="180" height="28" rx="8" fill="#1e293b"/>
+    <text x="42" y="44" fill="#34d399" font-family="system-ui, sans-serif" font-size="12" font-weight="700">VERIFIED PROFILE BADGE</text>
+
+    <rect x="30" y="70" width="520" height="120" rx="14" fill="#064e3b" stroke="#10b981" stroke-width="2"/>
+    <text x="50" y="105" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="900">RankVRA Software &amp; SEO Agency</text>
+    <text x="50" y="130" fill="#facc15" font-family="system-ui, sans-serif" font-size="14">★★★★★ 4.9 <tspan fill="#a7f3d0">(128 Google Reviews)</tspan></text>
+    <text x="50" y="155" fill="#d1fae5" font-family="system-ui, sans-serif" font-size="13">Website Designer · Software Company · Internet Marketing</text>
+    <rect x="420" y="90" width="110" height="40" rx="8" fill="#10b981"/>
+    <text x="445" y="115" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="800">Call Now</text>
+
+    <!-- Checklist Rows -->
+    <rect x="30" y="210" width="520" height="42" rx="8" fill="#1e293b"/>
+    <text x="45" y="236" fill="#34d399" font-family="system-ui, sans-serif" font-size="13">✔ Primary category aligned with highest search intent</text>
+    <rect x="30" y="260" width="520" height="42" rx="8" fill="#1e293b"/>
+    <text x="45" y="286" fill="#34d399" font-family="system-ui, sans-serif" font-size="13">✔ 100+ Geo-tagged real work images with EXIF data</text>
+    <rect x="30" y="310" width="520" height="42" rx="8" fill="#1e293b"/>
+    <text x="45" y="336" fill="#34d399" font-family="system-ui, sans-serif" font-size="13">✔ Review responses with semantic keyword naturally placed</text>
   </g>
 
-  <!-- Card 3: Geo Signals -->
-  <g transform="translate(780, 320)">
-    <rect width="340" height="230" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1"/>
-    <rect x="24" y="24" width="44" height="44" rx="12" fill="#065f46"/>
-    <text x="46" y="52" fill="#6ee7b7" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" text-anchor="middle">🗺️</text>
-    <text x="24" y="105" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">Expanding Radius</text>
-    <text x="24" y="132" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">Geo-tagged photos, regular posts,</text>
-    <text x="24" y="154" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400">and city-wide local authority building.</text>
-    <rect x="24" y="180" width="135" height="24" rx="6" fill="#10b981" opacity="0.2"/>
-    <text x="34" y="196" fill="#6ee7b7" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">RADIUS EXPANSION</text>
+  <!-- Right Visual Stage with Dev Mascot & Ranking Dial -->
+  <g transform="translate(680, 205)">
+    <rect width="450" height="385" rx="20" fill="#08241d" stroke="#10b981" stroke-width="2" filter="url(#soft-shadow-gbp-opt)"/>
+    <text x="30" y="45" fill="#34d399" font-family="system-ui, sans-serif" font-size="16" font-weight="800">LOCAL PACK IMPACT</text>
+    
+  <g transform="translate(60, 75) scale(1.25)">
+    <ellipse cx="65" cy="130" rx="45" ry="12" fill="#000000" opacity="0.4"/>
+    <path d="M 28 85 Q 65 60 102 85 L 110 125 L 20 125 Z" fill="#3b82f6"/>
+    <path d="M 45 75 Q 65 65 85 75 L 85 85 Q 65 92 45 85 Z" fill="#1d4ed8"/>
+    <circle cx="65" cy="46" r="30" fill="#fde047"/>
+    <path d="M 38 42 Q 65 14 92 40 Q 82 22 65 24 Q 48 24 38 42 Z" fill="#92400e"/>
+    <rect x="42" y="38" width="18" height="14" rx="4" fill="#0f172a" stroke="#ffffff" stroke-width="2"/>
+    <rect x="70" y="38" width="18" height="14" rx="4" fill="#0f172a" stroke="#ffffff" stroke-width="2"/>
+    <line x1="60" y1="44" x2="70" y2="44" stroke="#ffffff" stroke-width="2"/>
+    <path d="M 57 56 Q 65 62 73 56" stroke="#92400e" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <rect x="36" y="98" width="58" height="26" rx="4" fill="#64748b" stroke="#cbd5e1" stroke-width="1.5"/>
+    <polygon points="30,124 100,124 94,128 36,128" fill="#475569"/>
+    <rect x="42" y="103" width="46" height="16" rx="2" fill="#0f172a"/>
+    <text x="46" y="115" fill="#10b981" font-family="monospace" font-size="8" font-weight="700">&lt;/dev&gt;</text>
+  </g>
+
+    
+  <g transform="translate(260, 140) scale(0.95)">
+    <ellipse cx="60" cy="118" rx="38" ry="12" fill="#38bdf8" opacity="0.35"/>
+    <ellipse cx="60" cy="118" rx="20" ry="6" fill="#ffffff" opacity="0.75"/>
+    <rect x="25" y="42" width="70" height="66" rx="22" fill="#1e293b" stroke="#475569" stroke-width="2.5"/>
+    <rect x="33" y="50" width="54" height="42" rx="14" fill="#0f172a"/>
+    <circle cx="60" cy="71" r="10" fill="#38bdf8"/>
+    <circle cx="60" cy="71" r="4" fill="#ffffff"/>
+    <rect x="18" y="6" width="84" height="46" rx="18" fill="#1e293b" stroke="#475569" stroke-width="2.5"/>
+    <rect x="26" y="14" width="68" height="28" rx="12" fill="#090d16" stroke="#38bdf8" stroke-width="1.5"/>
+    <ellipse cx="44" cy="27" rx="8" ry="6" fill="#38bdf8"/>
+    <circle cx="46" cy="25" r="2.5" fill="#ffffff"/>
+    <ellipse cx="76" cy="27" rx="8" ry="6" fill="#38bdf8"/>
+    <circle cx="78" cy="25" r="2.5" fill="#ffffff"/>
+    <line x1="60" y1="6" x2="60" y2="-4" stroke="#64748b" stroke-width="3"/>
+    <circle cx="60" cy="-6" r="5" fill="#38bdf8"/>
+    <rect x="6" y="55" width="14" height="32" rx="7" fill="#334155"/>
+    <rect x="100" y="55" width="14" height="32" rx="7" fill="#334155"/>
+  </g>
+
+    <rect x="30" y="310" width="390" height="50" rx="12" fill="#047857"/>
+    <text x="80" y="341" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="800">#1 Proximity &amp; Trust Score</text>
   </g>
 </svg>
