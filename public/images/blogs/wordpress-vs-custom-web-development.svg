@@ -1,0 +1,53 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="90"/></filter>
+    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="80"/></filter>
+  </defs>
+  <rect width="1200" height="630" rx="24" fill="#090d16"/>
+  <circle cx="200" cy="180" r="240" fill="#21759b" opacity="0.2" filter="url(#glow1)"/>
+  <circle cx="1000" cy="460" r="260" fill="#6366f1" opacity="0.2" filter="url(#glow2)"/>
+  <g opacity="0.05" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/><line x1="0" y1="270" x2="1200" y2="270"/><line x1="0" y1="360" x2="1200" y2="360"/><line x1="0" y1="450" x2="1200" y2="450"/><line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="150" y1="0" x2="150" y2="630"/><line x1="300" y1="0" x2="300" y2="630"/><line x1="450" y1="0" x2="450" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="750" y1="0" x2="750" y2="630"/><line x1="900" y1="0" x2="900" y2="630"/><line x1="1050" y1="0" x2="1050" y2="630"/>
+  </g>
+  <rect x="80" y="55" width="290" height="34" rx="17" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.2"/>
+  <text x="96" y="77" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">PLATFORM ARCHITECTURE EVALUATION</text>
+  <text x="80" y="135" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="800" letter-spacing="-1">WordPress vs Custom Web Development</text>
+  <text x="80" y="170" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">Objective Comparison: Cost, Plugins, Performance, Security &amp; Long-Term Ownership</text>
+  
+  <g transform="translate(80, 215)">
+    <!-- Left: WordPress -->
+    <g transform="translate(0, 0)">
+      <rect width="490" height="340" rx="18" fill="#0f172a" stroke="#21759b" stroke-width="1.5"/>
+      <rect x="25" y="25" width="130" height="28" rx="6" fill="#1e293b"/>
+      <text x="40" y="44" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" font-weight="700">WORDPRESS CMS</text>
+      <text x="25" y="85" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="800">Content-First Websites</text>
+      <text x="25" y="110" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">Best for blogs, news, brochure sites &amp; standard SMBs</text>
+      <line x1="25" y1="130" x2="465" y2="130" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="25" y="160" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">⚡ <tspan font-weight="700">Time-to-Market:</tspan> Fast launch with ready themes</text>
+      <text x="25" y="190" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">📦 <tspan font-weight="700">Ecosystem:</tspan> 60,000+ plugins for instant functionality</text>
+      <text x="25" y="220" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">✏️ <tspan font-weight="700">Content Team:</tspan> Gutenberg visual editor for marketing</text>
+      <text x="25" y="250" fill="#f87171" font-family="system-ui, sans-serif" font-size="13">⚠️ <tspan font-weight="700">Tradeoff:</tspan> Plugin dependency, DB bloat &amp; security patches</text>
+      <text x="25" y="280" fill="#f87171" font-family="system-ui, sans-serif" font-size="13">⚠️ <tspan font-weight="700">Scaling:</tspan> Requires aggressive caching (Redis / Varnish)</text>
+      <rect x="25" y="300" width="440" height="25" rx="6" fill="#1e293b"/>
+      <text x="245" y="317" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Verdict: Ideal when content editing is the primary priority</text>
+    </g>
+
+    <!-- Right: Custom Next.js / Web App -->
+    <g transform="translate(550, 0)">
+      <rect width="490" height="340" rx="18" fill="#0f172a" stroke="#6366f1" stroke-width="2"/>
+      <rect x="25" y="25" width="160" height="28" rx="6" fill="#312e81"/>
+      <text x="40" y="44" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="13" font-weight="700">CUSTOM DEVELOPMENT</text>
+      <text x="25" y="85" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="800">Proprietary Web Applications</text>
+      <text x="25" y="110" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">Best for portals, SaaS, custom workflows &amp; high traffic</text>
+      <line x1="25" y1="130" x2="465" y2="130" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="25" y="160" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">🚀 <tspan font-weight="700">Performance:</tspan> 95+ Core Web Vitals, sub-second LCP</text>
+      <text x="25" y="190" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">🔒 <tspan font-weight="700">Security:</tspan> Zero third-party plugin vulnerabilities</text>
+      <text x="25" y="220" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">🧩 <tspan font-weight="700">Flexibility:</tspan> Unlimited custom business logic &amp; APIs</text>
+      <text x="25" y="250" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">📈 <tspan font-weight="700">Scalability:</tspan> Serverless edge runtime &amp; DB connection pooling</text>
+      <text x="25" y="280" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">💼 <tspan font-weight="700">Ownership:</tspan> Clean IP ownership with no software lock-in</text>
+      <rect x="25" y="300" width="440" height="25" rx="6" fill="#312e81" opacity="0.6"/>
+      <text x="245" y="317" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Verdict: Ideal when the web platform is a core commercial asset</text>
+    </g>
+  </g>
+</svg>

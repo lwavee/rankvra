@@ -1,0 +1,88 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="90"/></filter>
+    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="80"/></filter>
+  </defs>
+  <rect width="1200" height="630" rx="24" fill="#090d16"/>
+  <circle cx="180" cy="160" r="240" fill="#6366f1" opacity="0.18" filter="url(#glow1)"/>
+  <circle cx="1040" cy="460" r="260" fill="#06b6d4" opacity="0.16" filter="url(#glow2)"/>
+  <g opacity="0.05" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/><line x1="0" y1="270" x2="1200" y2="270"/><line x1="0" y1="360" x2="1200" y2="360"/><line x1="0" y1="450" x2="1200" y2="450"/><line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="150" y1="0" x2="150" y2="630"/><line x1="300" y1="0" x2="300" y2="630"/><line x1="450" y1="0" x2="450" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="750" y1="0" x2="750" y2="630"/><line x1="900" y1="0" x2="900" y2="630"/><line x1="1050" y1="0" x2="1050" y2="630"/>
+  </g>
+  <rect x="80" y="55" width="290" height="34" rx="17" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.2"/>
+  <text x="96" y="77" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">ENTERPRISE DISTRIBUTED SYSTEMS</text>
+  <text x="80" y="135" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="800" letter-spacing="-1">Large-Scale Web Application Architecture</text>
+  <text x="80" y="170" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">High Concurrency, Microservices, Multi-Region Caching &amp; Database Sharding</text>
+
+  <!-- 4 Architecture Tiers -->
+  <g transform="translate(80, 220)">
+    <!-- Tier 1: Edge CDN & Security -->
+    <g transform="translate(0, 0)">
+      <rect width="240" height="330" rx="14" fill="#0f172a" stroke="#6366f1" stroke-width="1.5"/>
+      <rect x="15" y="15" width="110" height="24" rx="6" fill="#1e1b4b"/>
+      <text x="25" y="32" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="11" font-weight="700">TIER 1: EDGE</text>
+      <text x="15" y="70" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="800">Global Anycast</text>
+      <text x="15" y="92" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Cloudflare / Fastly CDN</text>
+      <line x1="15" y1="110" x2="225" y2="110" stroke="#1e293b"/>
+      <text x="15" y="140" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">🛡️ DDoS &amp; WAF Defense</text>
+      <text x="15" y="170" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">⚡ Edge HTML Caching</text>
+      <text x="15" y="200" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">🔒 SSL/TLS Termination</text>
+      <text x="15" y="230" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">📍 Geo-Routing to Regions</text>
+      <text x="15" y="260" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">🗜️ Brotli Asset Compress</text>
+      <rect x="15" y="285" width="210" height="30" rx="6" fill="#1e1b4b"/>
+      <text x="120" y="305" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">&lt; 30ms Time to First Byte</text>
+    </g>
+
+    <!-- Tier 2: Compute & Frontend -->
+    <g transform="translate(265, 0)">
+      <rect width="240" height="330" rx="14" fill="#0f172a" stroke="#06b6d4" stroke-width="1.5"/>
+      <rect x="15" y="15" width="120" height="24" rx="6" fill="#164e63"/>
+      <text x="25" y="32" fill="#67e8f9" font-family="system-ui, sans-serif" font-size="11" font-weight="700">TIER 2: COMPUTE</text>
+      <text x="15" y="70" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="800">Next.js SSR Cluster</text>
+      <text x="15" y="92" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Serverless Auto-Scaling</text>
+      <line x1="15" y1="110" x2="225" y2="110" stroke="#1e293b"/>
+      <text x="15" y="140" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">🚀 React 19 Streaming SSR</text>
+      <text x="15" y="170" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">🔄 ISR Incremental Builds</text>
+      <text x="15" y="200" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">🛡️ Middleware JWT Verify</text>
+      <text x="15" y="230" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">👥 Dynamic Session Auth</text>
+      <text x="15" y="260" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">📊 Telemetry &amp; OpenTelemetry</text>
+      <rect x="15" y="285" width="210" height="30" rx="6" fill="#164e63"/>
+      <text x="120" y="305" fill="#67e8f9" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Horizontal Auto-Scale</text>
+    </g>
+
+    <!-- Tier 3: Backend API & Microservices -->
+    <g transform="translate(530, 0)">
+      <rect width="240" height="330" rx="14" fill="#0f172a" stroke="#8b5cf6" stroke-width="1.5"/>
+      <rect x="15" y="15" width="110" height="24" rx="6" fill="#2e1065"/>
+      <text x="25" y="32" fill="#c4b5fd" font-family="system-ui, sans-serif" font-size="11" font-weight="700">TIER 3: LOGIC</text>
+      <text x="15" y="70" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="800">API &amp; Event Queues</text>
+      <text x="15" y="92" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Node.js / Go Microservices</text>
+      <line x1="15" y1="110" x2="225" y2="110" stroke="#1e293b"/>
+      <text x="15" y="140" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">🧩 REST &amp; GraphQL Endpoints</text>
+      <text x="15" y="170" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">📦 Kafka / BullMQ Queues</text>
+      <text x="15" y="200" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">⚡ Redis Caching (L2/L3)</text>
+      <text x="15" y="230" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">🔐 RBAC Authorization Gate</text>
+      <text x="15" y="260" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">⚙️ Asynchronous Workers</text>
+      <rect x="15" y="285" width="210" height="30" rx="6" fill="#2e1065"/>
+      <text x="120" y="305" fill="#c4b5fd" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Idempotent Transactions</text>
+    </g>
+
+    <!-- Tier 4: Distributed Database -->
+    <g transform="translate(795, 0)">
+      <rect width="245" height="330" rx="14" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+      <rect x="15" y="15" width="120" height="24" rx="6" fill="#064e3b"/>
+      <text x="25" y="32" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="11" font-weight="700">TIER 4: STORAGE</text>
+      <text x="15" y="70" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="800">High-Availability DB</text>
+      <text x="15" y="92" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">PostgreSQL + Read Replicas</text>
+      <line x1="15" y1="110" x2="230" y2="110" stroke="#1e293b"/>
+      <text x="15" y="140" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">🗄️ Primary Writer Node</text>
+      <text x="15" y="170" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">📖 Horizontal Read Replicas</text>
+      <text x="15" y="200" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">🏊 PgBouncer Conn Pooling</text>
+      <text x="15" y="230" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">🔒 AES-256 Storage at Rest</text>
+      <text x="15" y="260" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">💾 Point-in-Time Recovery</text>
+      <rect x="15" y="285" width="215" height="30" rx="6" fill="#064e3b"/>
+      <text x="122" y="305" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">99.99% Availability SLA</text>
+    </g>
+  </g>
+</svg>

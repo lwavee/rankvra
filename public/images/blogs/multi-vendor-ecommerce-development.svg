@@ -1,0 +1,74 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="90"/></filter>
+    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="80"/></filter>
+  </defs>
+  <rect width="1200" height="630" rx="24" fill="#090d16"/>
+  <circle cx="180" cy="160" r="240" fill="#f59e0b" opacity="0.18" filter="url(#glow1)"/>
+  <circle cx="1040" cy="460" r="260" fill="#3b82f6" opacity="0.16" filter="url(#glow2)"/>
+  <g opacity="0.05" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/><line x1="0" y1="270" x2="1200" y2="270"/><line x1="0" y1="360" x2="1200" y2="360"/><line x1="0" y1="450" x2="1200" y2="450"/><line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="150" y1="0" x2="150" y2="630"/><line x1="300" y1="0" x2="300" y2="630"/><line x1="450" y1="0" x2="450" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="750" y1="0" x2="750" y2="630"/><line x1="900" y1="0" x2="900" y2="630"/><line x1="1050" y1="0" x2="1050" y2="630"/>
+  </g>
+  <rect x="80" y="55" width="310" height="34" rx="17" fill="#78350f" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="96" y="77" fill="#fde68a" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">MARKETPLACE PLATFORM ENGINEERING</text>
+  <text x="80" y="135" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="800" letter-spacing="-1">Multi-Vendor Marketplace Architecture</text>
+  <text x="80" y="170" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">Seller Dashboards, Automated Split Escrow, Inventory &amp; Order Routing</text>
+
+  <g transform="translate(80, 220)">
+    <!-- Sellers / Vendors -->
+    <g transform="translate(0, 0)">
+      <rect width="290" height="330" rx="16" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+      <rect x="20" y="20" width="120" height="26" rx="6" fill="#451a03"/>
+      <text x="32" y="38" fill="#fde68a" font-family="system-ui, sans-serif" font-size="12" font-weight="700">VENDOR PORTAL</text>
+      <text x="20" y="80" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="800">Multi-Seller Network</text>
+      <text x="20" y="105" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Independent seller consoles</text>
+      <line x1="20" y1="125" x2="270" y2="125" stroke="#1e293b"/>
+      <text x="20" y="155" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">📦 Catalog &amp; SKU Ingestion</text>
+      <text x="20" y="185" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">📊 Dynamic Pricing &amp; Stock Sync</text>
+      <text x="20" y="215" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">🚚 Fulfillment &amp; Label Generation</text>
+      <text x="20" y="245" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">💳 Stripe Connect Onboarding (KYC)</text>
+      <text x="20" y="275" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">📈 Seller Analytics &amp; Payouts</text>
+      <rect x="20" y="295" width="250" height="25" rx="6" fill="#451a03"/>
+      <text x="145" y="312" fill="#fde68a" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Self-Service Onboarding</text>
+    </g>
+
+    <!-- Marketplace Orchestrator (Middle) -->
+    <g transform="translate(320, 0)">
+      <rect width="400" height="330" rx="16" fill="#0f172a" stroke="#3b82f6" stroke-width="2"/>
+      <rect x="20" y="20" width="160" height="26" rx="6" fill="#1e3a8a"/>
+      <text x="32" y="38" fill="#93c5fd" font-family="system-ui, sans-serif" font-size="12" font-weight="700">CENTRAL PLATFORM</text>
+      <text x="20" y="80" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="800">Marketplace Core Engine</text>
+      <text x="20" y="105" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Automated governance &amp; commission logic</text>
+      <line x1="20" y1="125" x2="380" y2="125" stroke="#1e293b"/>
+      
+      <rect x="20" y="140" width="360" height="42" rx="8" fill="#1e293b"/>
+      <text x="35" y="166" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" font-weight="600">⚡ Split Payment Escrow (Platform % vs Vendor %)</text>
+
+      <rect x="20" y="195" width="360" height="42" rx="8" fill="#1e293b"/>
+      <text x="35" y="221" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="600">🛡️ Automated Catalog Quality &amp; Spam Filters</text>
+
+      <rect x="20" y="250" width="360" height="42" rx="8" fill="#1e293b"/>
+      <text x="35" y="276" fill="#c084fc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">📦 Multi-Origin Split Order Routing &amp; Tracking</text>
+
+      <text x="200" y="315" fill="#93c5fd" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Central Super-Admin Governance</text>
+    </g>
+
+    <!-- Buyers / Customers -->
+    <g transform="translate(750, 0)">
+      <rect width="290" height="330" rx="16" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+      <rect x="20" y="20" width="130" height="26" rx="6" fill="#064e3b"/>
+      <text x="32" y="38" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="12" font-weight="700">BUYER EXPERIENCE</text>
+      <text x="20" y="80" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="800">Unified Storefront</text>
+      <text x="20" y="105" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Seamless single shopping cart</text>
+      <line x1="20" y1="125" x2="270" y2="125" stroke="#1e293b"/>
+      <text x="20" y="155" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">🛒 Multi-Seller Unified Cart</text>
+      <text x="20" y="185" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">💳 1-Click Checkout (Apple/Card)</text>
+      <text x="20" y="215" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">⭐ Verified Buyer Reviews &amp; Ratings</text>
+      <text x="20" y="245" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">📍 Combined Shipment Telemetry</text>
+      <text x="20" y="275" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">💬 Direct Vendor Dispute System</text>
+      <rect x="20" y="295" width="250" height="25" rx="6" fill="#064e3b"/>
+      <text x="145" y="312" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Zero-Friction Customer Journey</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,112 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="90"/></filter>
+    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="80"/></filter>
+  </defs>
+  <rect width="1200" height="630" rx="24" fill="#090d16"/>
+  <circle cx="180" cy="160" r="240" fill="#f97316" opacity="0.18" filter="url(#glow1)"/>
+  <circle cx="1040" cy="460" r="260" fill="#3b82f6" opacity="0.16" filter="url(#glow2)"/>
+  <g opacity="0.05" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/><line x1="0" y1="270" x2="1200" y2="270"/><line x1="0" y1="360" x2="1200" y2="360"/><line x1="0" y1="450" x2="1200" y2="450"/><line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="150" y1="0" x2="150" y2="630"/><line x1="300" y1="0" x2="300" y2="630"/><line x1="450" y1="0" x2="450" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="750" y1="0" x2="750" y2="630"/><line x1="900" y1="0" x2="900" y2="630"/><line x1="1050" y1="0" x2="1050" y2="630"/>
+  </g>
+  <rect x="80" y="55" width="290" height="34" rx="17" fill="#7c2d12" stroke="#f97316" stroke-width="1.2"/>
+  <text x="96" y="77" fill="#fdba74" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">AUTOMATED PIPELINE ORCHESTRATION</text>
+  <text x="80" y="135" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="800" letter-spacing="-1">Website to CRM Integration Architecture</text>
+  <text x="80" y="170" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">Inbound Lead Capture, Webhook Validation, Idempotent Queues &amp; Instant Sales Routing</text>
+
+  <!-- Flowchart Diagram: 5 Sequential Steps -->
+  <g transform="translate(80, 230)">
+    <!-- Step 1: Web Form -->
+    <g transform="translate(0, 0)">
+      <rect width="180" height="300" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+      <circle cx="90" cy="45" r="24" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+      <text x="90" y="52" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="18" text-anchor="middle">📝</text>
+      <text x="90" y="95" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="800" text-anchor="middle">1. Web Form</text>
+      <text x="90" y="118" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">Client Submission</text>
+      <line x1="20" y1="135" x2="160" y2="135" stroke="#1e293b"/>
+      <text x="90" y="160" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Client-side sanitization</text>
+      <text x="90" y="185" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">UTM Tracking tags</text>
+      <text x="90" y="210" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Cloudflare Turnstile</text>
+      <text x="90" y="235" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Zero layout shift</text>
+      <rect x="15" y="260" width="150" height="24" rx="4" fill="#1e293b"/>
+      <text x="90" y="276" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="10" font-weight="600" text-anchor="middle">POST /api/leads</text>
+    </g>
+
+    <!-- Arrow 1 -->
+    <path d="M 185 150 L 210 150" stroke="#f97316" stroke-width="2"/>
+
+    <!-- Step 2: API Validation -->
+    <g transform="translate(215, 0)">
+      <rect width="180" height="300" rx="14" fill="#0f172a" stroke="#f97316" stroke-width="1.5"/>
+      <circle cx="90" cy="45" r="24" fill="#1e293b" stroke="#f97316" stroke-width="1.5"/>
+      <text x="90" y="52" fill="#f97316" font-family="system-ui, sans-serif" font-size="18" text-anchor="middle">⚡</text>
+      <text x="90" y="95" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="800" text-anchor="middle">2. API Gateway</text>
+      <text x="90" y="118" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">Serverless Runtime</text>
+      <line x1="20" y1="135" x2="160" y2="135" stroke="#1e293b"/>
+      <text x="90" y="160" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Zod schema validate</text>
+      <text x="90" y="185" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">IP rate-limiting</text>
+      <text x="90" y="210" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Duplicate check</text>
+      <text x="90" y="235" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Idempotency UUID</text>
+      <rect x="15" y="260" width="150" height="24" rx="4" fill="#7c2d12"/>
+      <text x="90" y="276" fill="#fdba74" font-family="system-ui, sans-serif" font-size="10" font-weight="600" text-anchor="middle">Queue Message</text>
+    </g>
+
+    <!-- Arrow 2 -->
+    <path d="M 400 150 L 425 150" stroke="#f97316" stroke-width="2"/>
+
+    <!-- Step 3: Resilient Queue -->
+    <g transform="translate(430, 0)">
+      <rect width="180" height="300" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+      <circle cx="90" cy="45" r="24" fill="#1e293b" stroke="#a855f7" stroke-width="1.5"/>
+      <text x="90" y="52" fill="#a855f7" font-family="system-ui, sans-serif" font-size="18" text-anchor="middle">🔄</text>
+      <text x="90" y="95" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="800" text-anchor="middle">3. Event Queue</text>
+      <text x="90" y="118" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">Redis / BullMQ</text>
+      <line x1="20" y1="135" x2="160" y2="135" stroke="#1e293b"/>
+      <text x="90" y="160" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Zero lead drops</text>
+      <text x="90" y="185" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Exponential backoff</text>
+      <text x="90" y="210" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">5x auto retry</text>
+      <text x="90" y="235" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Dead letter queue</text>
+      <rect x="15" y="260" width="150" height="24" rx="4" fill="#1e293b"/>
+      <text x="90" y="276" fill="#c084fc" font-family="system-ui, sans-serif" font-size="10" font-weight="600" text-anchor="middle">Worker Consumer</text>
+    </g>
+
+    <!-- Arrow 3 -->
+    <path d="M 615 150 L 640 150" stroke="#f97316" stroke-width="2"/>
+
+    <!-- Step 4: CRM Ingestion -->
+    <g transform="translate(645, 0)">
+      <rect width="180" height="300" rx="14" fill="#0f172a" stroke="#3b82f6" stroke-width="1.5"/>
+      <circle cx="90" cy="45" r="24" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+      <text x="90" y="52" fill="#3b82f6" font-family="system-ui, sans-serif" font-size="18" text-anchor="middle">🎯</text>
+      <text x="90" y="95" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="800" text-anchor="middle">4. CRM Sync</text>
+      <text x="90" y="118" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">HubSpot / Salesforce</text>
+      <line x1="20" y1="135" x2="160" y2="135" stroke="#1e293b"/>
+      <text x="90" y="160" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Contact creation</text>
+      <text x="90" y="185" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Deal pipeline stage</text>
+      <text x="90" y="210" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Rep auto-assignment</text>
+      <text x="90" y="235" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Lead scoring</text>
+      <rect x="15" y="260" width="150" height="24" rx="4" fill="#1e293b"/>
+      <text x="90" y="276" fill="#60a5fa" font-family="system-ui, sans-serif" font-size="10" font-weight="600" text-anchor="middle">Webhook Dispatch</text>
+    </g>
+
+    <!-- Arrow 4 -->
+    <path d="M 830 150 L 855 150" stroke="#f97316" stroke-width="2"/>
+
+    <!-- Step 5: Sales Telemetry & Follow-up -->
+    <g transform="translate(860, 0)">
+      <rect width="180" height="300" rx="14" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+      <circle cx="90" cy="45" r="24" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+      <text x="90" y="52" fill="#10b981" font-family="system-ui, sans-serif" font-size="18" text-anchor="middle">🚀</text>
+      <text x="90" y="95" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="800" text-anchor="middle">5. Instant Action</text>
+      <text x="90" y="118" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">&lt; 60 Sec Response</text>
+      <line x1="20" y1="135" x2="160" y2="135" stroke="#1e293b"/>
+      <text x="90" y="160" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Slack/SMS alert</text>
+      <text x="90" y="185" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Automated email drip</text>
+      <text x="90" y="210" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Calendar book link</text>
+      <text x="90" y="235" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Attribution closed</text>
+      <rect x="15" y="260" width="150" height="24" rx="4" fill="#064e3b"/>
+      <text x="90" y="276" fill="#34d399" font-family="system-ui, sans-serif" font-size="10" font-weight="600" text-anchor="middle">Conversion Complete</text>
+    </g>
+  </g>
+</svg>
