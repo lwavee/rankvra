@@ -1,0 +1,80 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow-tech-chk" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="60" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="shadow-card" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <linearGradient id="bg-tech-chk" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a192f"/>
+      <stop offset="50%" stop-color="#112240"/>
+      <stop offset="100%" stop-color="#020c1b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" rx="28" fill="url(#bg-tech-chk)"/>
+  <circle cx="230" cy="170" r="270" fill="#64ffda" opacity="0.16" filter="url(#glow-tech-chk)"/>
+  <circle cx="1020" cy="460" r="280" fill="#38bdf8" opacity="0.22" filter="url(#glow-tech-chk)"/>
+
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/><line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/><line x1="0" y1="450" x2="1200" y2="450"/><line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="120" y1="0" x2="120" y2="630"/><line x1="240" y1="0" x2="240" y2="630"/><line x1="360" y1="0" x2="360" y2="630"/>
+    <line x1="480" y1="0" x2="480" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="720" y1="0" x2="720" y2="630"/>
+    <line x1="840" y1="0" x2="840" y2="630"/><line x1="960" y1="0" x2="960" y2="630"/><line x1="1080" y1="0" x2="1080" y2="630"/>
+  </g>
+
+  <rect x="70" y="45" width="280" height="34" rx="17" fill="#0d9488" stroke="#5eead4" stroke-width="1.5"/>
+  <text x="88" y="67" fill="#ccfbf1" font-family="system-ui, sans-serif" font-size="12" font-weight="800" letter-spacing="1.2">ENGINEERING AUDIT BLUEPRINT</text>
+  <text x="70" y="125" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="900" letter-spacing="-1">Technical SEO Checklist: 25 Crucial Fixes</text>
+  <text x="70" y="160" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="17">Crawlability, Core Web Vitals, Schema.org, Indexation, Canonicalization &amp; Architecture</text>
+
+  <g transform="translate(70, 205)">
+    <!-- Column 1 -->
+    <rect x="0" y="0" width="320" height="385" rx="18" fill="#0c2d38" stroke="#14b8a6" stroke-width="1.8" filter="url(#shadow-card)"/>
+    <circle cx="45" cy="45" r="20" fill="#0f766e"/>
+    <text x="36" y="52" fill="#ffffff" font-size="16">⚙️</text>
+    <text x="25" y="95" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="800">Crawl &amp; Indexation</text>
+    <g transform="translate(25, 125)">
+      <text x="0" y="15" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12 font-weight="600">✓ robots.txt &amp; XML sitemap</text>
+      <text x="0" y="40" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12" font-weight="600">✓ Canonical tags &amp; noindex checks</text>
+      <text x="0" y="65" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12" font-weight="600">✓ 301 Redirect loops &amp; soft-404s</text>
+      <text x="0" y="90" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12" font-weight="600">✓ Orphan page discovery</text>
+      <text x="0" y="115" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12" font-weight="600">✓ Hreflang &amp; pagination tags</text>
+    </g>
+    <rect x="25" y="275" width="270" height="40" rx="8" fill="#134e4a"/>
+    <text x="40" y="300" fill="#99f6e4" font-family="system-ui, sans-serif" font-size="12" font-weight="700">100% Crawl Coverage</text>
+
+    <!-- Column 2 -->
+    <rect x="360" y="0" width="320" height="385" rx="18" fill="#0a2540" stroke="#0284c7" stroke-width="1.8" filter="url(#shadow-card)"/>
+    <circle cx="405" cy="45" r="20" fill="#0369a1"/>
+    <text x="396" y="52" fill="#ffffff" font-size="16">⚡</text>
+    <text x="385" y="95" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="800">Core Web Vitals</text>
+    <g transform="translate(385, 125)">
+      <text x="0" y="15" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12" font-weight="600">✓ LCP &lt; 2.5s hero optimization</text>
+      <text x="0" y="40" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12" font-weight="600">✓ INP &lt; 200ms main-thread tuning</text>
+      <text x="0" y="65" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12" font-weight="600">✓ CLS &lt; 0.1 layout shift stability</text>
+      <text x="0" y="90" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12" font-weight="600">✓ Server TTFB &lt; 800ms response</text>
+      <text x="0" y="115" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12" font-weight="600">✓ Next-gen AVIF/WebP images</text>
+    </g>
+    <rect x="385" y="275" width="270" height="40" rx="8" fill="#075985"/>
+    <text x="400" y="300" fill="#bae6fd" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Sub-Second Performance</text>
+
+    <!-- Column 3 -->
+    <rect x="720" y="0" width="320" height="385" rx="18" fill="#1b1238" stroke="#8b5cf6" stroke-width="1.8" filter="url(#shadow-card)"/>
+    <circle cx="765" cy="45" r="20" fill="#6d28d9"/>
+    <text x="756" y="52" fill="#ffffff" font-size="16">🛡️</text>
+    <text x="745" y="95" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="800">Structured Data &amp; UX</text>
+    <g transform="translate(745, 125)">
+      <text x="0" y="15" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12" font-weight="600">✓ Schema.org JSON-LD graph</text>
+      <text x="0" y="40" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12" font-weight="600">✓ BreadcrumbList integration</text>
+      <text x="0" y="65" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12" font-weight="600">✓ Mobile-first viewport &amp; taps</text>
+      <text x="0" y="90" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12" font-weight="600">✓ HTTPS, TLS 1.3 &amp; HSTS security</text>
+      <text x="0" y="115" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12" font-weight="600">✓ Search Console coverage sync</text>
+    </g>
+    <rect x="745" y="275" width="270" height="40" rx="8" fill="#5b21b6"/>
+    <text x="760" y="300" fill="#ddd6fe" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Zero Rich Snippet Errors</text>
+  </g>
+</svg>

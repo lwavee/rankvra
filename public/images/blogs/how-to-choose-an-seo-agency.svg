@@ -1,0 +1,62 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow-agency-ch" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="60" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="shadow-card" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <linearGradient id="bg-agency-ch" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b172a"/>
+      <stop offset="50%" stop-color="#13233f"/>
+      <stop offset="100%" stop-color="#020817"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" rx="28" fill="url(#bg-agency-ch)"/>
+  <circle cx="210" cy="170" r="270" fill="#3b82f6" opacity="0.22" filter="url(#glow-agency-ch)"/>
+  <circle cx="1010" cy="460" r="280" fill="#a855f7" opacity="0.22" filter="url(#glow-agency-ch)"/>
+
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/><line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/><line x1="0" y1="450" x2="1200" y2="450"/><line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="120" y1="0" x2="120" y2="630"/><line x1="240" y1="0" x2="240" y2="630"/><line x1="360" y1="0" x2="360" y2="630"/>
+    <line x1="480" y1="0" x2="480" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="720" y1="0" x2="720" y2="630"/>
+    <line x1="840" y1="0" x2="840" y2="630"/><line x1="960" y1="0" x2="960" y2="630"/><line x1="1080" y1="0" x2="1080" y2="630"/>
+  </g>
+
+  <rect x="70" y="45" width="280" height="34" rx="17" fill="#1d4ed8" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="88" y="67" fill="#dbeafe" font-family="system-ui, sans-serif" font-size="12" font-weight="800" letter-spacing="1.2">BUYER SELECTION FRAMEWORK</text>
+  <text x="70" y="125" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="900" letter-spacing="-1">How to Choose the Right SEO Agency</text>
+  <text x="70" y="160" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="17">Evaluating Technical Depth, Red Flags, Transparent Attribution, Timelines &amp; True ROI</text>
+
+  <g transform="translate(70, 205)">
+    <!-- Column 1 -->
+    <rect x="0" y="0" width="320" height="385" rx="18" fill="#0b2244" stroke="#2563eb" stroke-width="1.8" filter="url(#shadow-card)"/>
+    <circle cx="45" cy="45" r="20" fill="#1d4ed8"/>
+    <text x="36" y="52" fill="#ffffff" font-size="16">🔍</text>
+    <text x="25" y="95" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="800">What to Look For</text>
+    <text x="25" y="125" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">In-house technical capability to edit code, custom search architecture, verifiable case studies, and pipeline revenue focus.</text>
+    <rect x="25" y="220" width="270" height="42" rx="8" fill="#1e3a8a"/>
+    <text x="40" y="246" fill="#bfdbfe" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Engineering-First SEO</text>
+
+    <!-- Column 2 -->
+    <rect x="360" y="0" width="320" height="385" rx="18" fill="#2d1217" stroke="#e11d48" stroke-width="1.8" filter="url(#shadow-card)"/>
+    <circle cx="405" cy="45" r="20" fill="#be123c"/>
+    <text x="396" y="52" fill="#ffffff" font-size="16">⚠️</text>
+    <text x="385" y="95" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="800">Dangerous Red Flags</text>
+    <text x="385" y="125" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">"Guaranteed #1 ranks in 30 days", cheap ₹5,000 monthly packs, secret link networks (PBNs), and withholding Search Console access.</text>
+    <rect x="385" y="220" width="270" height="42" rx="8" fill="#881337"/>
+    <text x="400" y="246" fill="#fecdd3" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Zero Black-Hat Tactics</text>
+
+    <!-- Column 3 -->
+    <rect x="720" y="0" width="320" height="385" rx="18" fill="#1b123a" stroke="#9333ea" stroke-width="1.8" filter="url(#shadow-card)"/>
+    <circle cx="765" cy="45" r="20" fill="#7e22ce"/>
+    <text x="756" y="52" fill="#ffffff" font-size="16">📋</text>
+    <text x="745" y="95" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="800">The 7-Question Test</text>
+    <text x="745" y="125" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">Audit depth, Core Web Vitals proficiency, attribution modeling, link acquisition ethics, and direct access to senior architects.</text>
+    <rect x="745" y="220" width="270" height="42" rx="8" fill="#581c87"/>
+    <text x="760" y="246" fill="#f3e8ff" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Full Commercial Clarity</text>
+  </g>
+</svg>

@@ -1,0 +1,62 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow-smb-seo" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="60" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="shadow-card" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <linearGradient id="bg-smb-seo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#091c1d"/>
+      <stop offset="50%" stop-color="#0e2f30"/>
+      <stop offset="100%" stop-color="#020d0e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" rx="28" fill="url(#bg-smb-seo)"/>
+  <circle cx="210" cy="170" r="270" fill="#14b8a6" opacity="0.22" filter="url(#glow-smb-seo)"/>
+  <circle cx="1010" cy="460" r="280" fill="#3b82f6" opacity="0.22" filter="url(#glow-smb-seo)"/>
+
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/><line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/><line x1="0" y1="450" x2="1200" y2="450"/><line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="120" y1="0" x2="120" y2="630"/><line x1="240" y1="0" x2="240" y2="630"/><line x1="360" y1="0" x2="360" y2="630"/>
+    <line x1="480" y1="0" x2="480" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="720" y1="0" x2="720" y2="630"/>
+    <line x1="840" y1="0" x2="840" y2="630"/><line x1="960" y1="0" x2="960" y2="630"/><line x1="1080" y1="0" x2="1080" y2="630"/>
+  </g>
+
+  <rect x="70" y="45" width="280" height="34" rx="17" fill="#0f766e" stroke="#2dd4bf" stroke-width="1.5"/>
+  <text x="88" y="67" fill="#ccfbf1" font-family="system-ui, sans-serif" font-size="12" font-weight="800" letter-spacing="1.2">SMALL BUSINESS GROWTH</text>
+  <text x="70" y="125" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="900" letter-spacing="-1">SEO for Small Businesses</text>
+  <text x="70" y="160" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="17">Practical Roadmap: High-Intent Keywords, Local Maps 3-Pack, Service Pages &amp; 90-Day Plan</text>
+
+  <g transform="translate(70, 205)">
+    <!-- Phase 1 -->
+    <rect x="0" y="0" width="320" height="385" rx="18" fill="#092728" stroke="#0d9488" stroke-width="1.8" filter="url(#shadow-card)"/>
+    <rect x="25" y="25" width="100" height="28" rx="14" fill="#0f766e"/>
+    <text x="40" y="44" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="800">MONTH 1</text>
+    <text x="25" y="95" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="800">Foundation &amp; Maps</text>
+    <text x="25" y="125" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">Complete Google Business Profile overhaul, technical speed fixes, SSL setup, and primary geo-keyword mapping.</text>
+    <rect x="25" y="220" width="270" height="42" rx="8" fill="#115e59"/>
+    <text x="40" y="246" fill="#99f6e4" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Days 1 - 30: Tech &amp; GBP Core</text>
+
+    <!-- Phase 2 -->
+    <rect x="360" y="0" width="320" height="385" rx="18" fill="#0d243a" stroke="#0284c7" stroke-width="1.8" filter="url(#shadow-card)"/>
+    <rect x="385" y="25" width="100" height="28" rx="14" fill="#0369a1"/>
+    <text x="400" y="44" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="800">MONTH 2</text>
+    <text x="385" y="95" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="800">Service Pages &amp; CRO</text>
+    <text x="385" y="125" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">Build high-converting dedicated service landing pages, click-to-WhatsApp hooks, and an automated review request pipeline.</text>
+    <rect x="385" y="220" width="270" height="42" rx="8" fill="#075985"/>
+    <text x="400" y="246" fill="#bae6fd" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Days 31 - 60: Conversion Funnels</text>
+
+    <!-- Phase 3 -->
+    <rect x="720" y="0" width="320" height="385" rx="18" fill="#1b1238" stroke="#8b5cf6" stroke-width="1.8" filter="url(#shadow-card)"/>
+    <rect x="745" y="25" width="100" height="28" rx="14" fill="#6d28d9"/>
+    <text x="760" y="44" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="800">MONTH 3</text>
+    <text x="745" y="95" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="800">Authority &amp; Content</text>
+    <text x="745" y="125" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">Publish intent-driven buyer question blogs, secure local citations and directory partnerships, and scale lead generation.</text>
+    <rect x="745" y="220" width="270" height="42" rx="8" fill="#4c1d95"/>
+    <text x="760" y="246" fill="#ddd6fe" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Days 61 - 90: Inbound Lead Surge</text>
+  </g>
+</svg>

@@ -1,0 +1,62 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow-spd-seo" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="60" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="shadow-card" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <linearGradient id="bg-spd-seo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09182b"/>
+      <stop offset="50%" stop-color="#0e2a47"/>
+      <stop offset="100%" stop-color="#020914"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" rx="28" fill="url(#bg-spd-seo)"/>
+  <circle cx="210" cy="170" r="270" fill="#38bdf8" opacity="0.22" filter="url(#glow-spd-seo)"/>
+  <circle cx="1010" cy="460" r="280" fill="#22c55e" opacity="0.22" filter="url(#glow-spd-seo)"/>
+
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/><line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/><line x1="0" y1="450" x2="1200" y2="450"/><line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="120" y1="0" x2="120" y2="630"/><line x1="240" y1="0" x2="240" y2="630"/><line x1="360" y1="0" x2="360" y2="630"/>
+    <line x1="480" y1="0" x2="480" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="720" y1="0" x2="720" y2="630"/>
+    <line x1="840" y1="0" x2="840" y2="630"/><line x1="960" y1="0" x2="960" y2="630"/><line x1="1080" y1="0" x2="1080" y2="630"/>
+  </g>
+
+  <rect x="70" y="45" width="280" height="34" rx="17" fill="#0284c7" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="88" y="67" fill="#bae6fd" font-family="system-ui, sans-serif" font-size="12" font-weight="800" letter-spacing="1.2">WEB PERFORMANCE ENGINE</text>
+  <text x="70" y="125" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="900" letter-spacing="-1">Website Speed, SEO &amp; Conversions</text>
+  <text x="70" y="160" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="17">Core Web Vitals (LCP, INP, CLS), TTFB Optimization, Edge Caching &amp; Revenue Lift</text>
+
+  <g transform="translate(70, 205)">
+    <!-- Metric 1: LCP -->
+    <rect x="0" y="0" width="320" height="385" rx="18" fill="#0a2540" stroke="#0284c7" stroke-width="1.8" filter="url(#shadow-card)"/>
+    <rect x="25" y="25" width="70" height="28" rx="14" fill="#0369a1"/>
+    <text x="45" y="44" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="800">LCP</text>
+    <text x="25" y="95" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="800">Largest Contentful Paint</text>
+    <text x="25" y="125" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">Target: &lt; 2.5s. Optimized hero images (WebP/AVIF), edge CDN caching, priority hints, and elimination of render-blocking CSS.</text>
+    <rect x="25" y="220" width="270" height="42" rx="8" fill="#075985"/>
+    <text x="40" y="246" fill="#bae6fd" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Google Good Threshold: &lt;2.5s</text>
+
+    <!-- Metric 2: INP -->
+    <rect x="360" y="0" width="320" height="385" rx="18" fill="#142c1b" stroke="#16a34a" stroke-width="1.8" filter="url(#shadow-card)"/>
+    <rect x="385" y="25" width="70" height="28" rx="14" fill="#15803d"/>
+    <text x="406" y="44" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="800">INP</text>
+    <text x="385" y="95" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="800">Interaction to Next Paint</text>
+    <text x="385" y="125" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">Target: &lt; 200ms. Replaced FID in 2024. Main-thread responsiveness, JavaScript chunking, web workers, and zero task lag.</text>
+    <rect x="385" y="220" width="270" height="42" rx="8" fill="#166534"/>
+    <text x="400" y="246" fill="#bbf7d0" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Google Good Threshold: &lt;200ms</text>
+
+    <!-- Metric 3: CLS -->
+    <rect x="720" y="0" width="320" height="385" rx="18" fill="#1b1238" stroke="#9333ea" stroke-width="1.8" filter="url(#shadow-card)"/>
+    <rect x="745" y="25" width="70" height="28" rx="14" fill="#7e22ce"/>
+    <text x="765" y="44" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="800">CLS</text>
+    <text x="745" y="95" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="800">Cumulative Layout Shift</text>
+    <text x="745" y="125" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">Target: &lt; 0.1. Explicit image dimensions, reserved font aspect-ratios, zero layout jumping, and stabilized dynamic DOM nodes.</text>
+    <rect x="745" y="220" width="270" height="42" rx="8" fill="#6b21a8"/>
+    <text x="760" y="246" fill="#f3e8ff" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Google Good Threshold: &lt;0.1</text>
+  </g>
+</svg>

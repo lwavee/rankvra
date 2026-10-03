@@ -38,6 +38,16 @@ const nextConfig: NextConfig = {
         destination: "/free-growth-audit",
         permanent: true,
       },
+      {
+        source: "/blog",
+        destination: "/blogs",
+        permanent: true,
+      },
+      {
+        source: "/blog/:slug*",
+        destination: "/blogs/:slug*",
+        permanent: true,
+      },
     ];
   },
 };

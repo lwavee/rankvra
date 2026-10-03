@@ -1,0 +1,62 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow-cnt-strat" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="60" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="shadow-card" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <linearGradient id="bg-cnt-strat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#110d29"/>
+      <stop offset="50%" stop-color="#1f1442"/>
+      <stop offset="100%" stop-color="#060212"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" rx="28" fill="url(#bg-cnt-strat)"/>
+  <circle cx="210" cy="170" r="270" fill="#a855f7" opacity="0.25" filter="url(#glow-cnt-strat)"/>
+  <circle cx="1010" cy="460" r="280" fill="#ec4899" opacity="0.22" filter="url(#glow-cnt-strat)"/>
+
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/><line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/><line x1="0" y1="450" x2="1200" y2="450"/><line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="120" y1="0" x2="120" y2="630"/><line x1="240" y1="0" x2="240" y2="630"/><line x1="360" y1="0" x2="360" y2="630"/>
+    <line x1="480" y1="0" x2="480" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="720" y1="0" x2="720" y2="630"/>
+    <line x1="840" y1="0" x2="840" y2="630"/><line x1="960" y1="0" x2="960" y2="630"/><line x1="1080" y1="0" x2="1080" y2="630"/>
+  </g>
+
+  <rect x="70" y="45" width="270" height="34" rx="17" fill="#7e22ce" stroke="#c084fc" stroke-width="1.5"/>
+  <text x="88" y="67" fill="#f3e8ff" font-family="system-ui, sans-serif" font-size="12" font-weight="800" letter-spacing="1.2">TOPICAL AUTHORITY MATRIX</text>
+  <text x="70" y="125" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="900" letter-spacing="-1">SEO Content Strategy That Actually Ranks</text>
+  <text x="70" y="160" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="17">Topic Clusters, Pillar Pages, Search Intent Mapping, E-E-A-T &amp; Featured Snippet Wins</text>
+
+  <g transform="translate(70, 205)">
+    <!-- Column 1 -->
+    <rect x="0" y="0" width="320" height="385" rx="18" fill="#20113b" stroke="#9333ea" stroke-width="1.8" filter="url(#shadow-card)"/>
+    <circle cx="45" cy="45" r="20" fill="#7e22ce"/>
+    <text x="36" y="52" fill="#ffffff" font-size="16">🏛️</text>
+    <text x="25" y="95" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="800">Pillar &amp; Cluster Model</text>
+    <text x="25" y="125" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">High-level authoritative pillar guide connected via contextual two-way links to specialized spoke articles targeting long-tail searches.</text>
+    <rect x="25" y="220" width="270" height="42" rx="8" fill="#581c87"/>
+    <text x="40" y="246" fill="#f3e8ff" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Topical Dominance</text>
+
+    <!-- Column 2 -->
+    <rect x="360" y="0" width="320" height="385" rx="18" fill="#310e2f" stroke="#db2777" stroke-width="1.8" filter="url(#shadow-card)"/>
+    <circle cx="405" cy="45" r="20" fill="#be185d"/>
+    <text x="396" y="52" fill="#ffffff" font-size="16">🎯</text>
+    <text x="385" y="95" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="800">Search Intent Mapping</text>
+    <text x="385" y="125" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">Aligning every asset with Informational, Commercial, or Transactional intent. Eliminates bounce rates and satisfies Google SERP criteria.</text>
+    <rect x="385" y="220" width="270" height="42" rx="8" fill="#831843"/>
+    <text x="400" y="246" fill="#fce7f3" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Zero Mismatched Content</text>
+
+    <!-- Column 3 -->
+    <rect x="720" y="0" width="320" height="385" rx="18" fill="#0c233c" stroke="#0284c7" stroke-width="1.8" filter="url(#shadow-card)"/>
+    <circle cx="765" cy="45" r="20" fill="#0369a1"/>
+    <text x="756" y="52" fill="#ffffff" font-size="16">⭐</text>
+    <text x="745" y="95" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="800">E-E-A-T &amp; Snippets</text>
+    <text x="745" y="125" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">Structured tables, concise definitions, expert authorship, verifiable data, and step-by-step lists engineered for Featured Snippets &amp; PAA.</text>
+    <rect x="745" y="220" width="270" height="42" rx="8" fill="#075985"/>
+    <text x="760" y="246" fill="#bae6fd" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Rank #0 Snippet Capture</text>
+  </g>
+</svg>

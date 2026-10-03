@@ -96,6 +96,7 @@ export interface BlogPost {
 }
 
 import { WEB_DEV_POSTS } from "./web-dev-data";
+import { SEO_PILLAR_POSTS } from "./seo-pillar-data";
 
 const MARKETING_POSTS: BlogPost[] = [
   {
@@ -3370,6 +3371,7 @@ const MARKETING_POSTS: BlogPost[] = [
 ];
 
 export const BLOG_POSTS: BlogPost[] = [
+  ...SEO_PILLAR_POSTS,
   ...MARKETING_POSTS,
   ...WEB_DEV_POSTS,
 ];

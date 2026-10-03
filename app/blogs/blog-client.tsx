@@ -22,8 +22,10 @@ interface BlogClientProps {
 const CATEGORIES = [
   "All Guides",
   "Search Strategy",
-  "Local & Udaipur",
+  "Digital Marketing",
+  "AI & Automation",
   "Web Engineering",
+  "Local & Udaipur",
   "Paid Advertising",
   "Hospitality",
   "B2B & Industrial",
@@ -34,14 +36,30 @@ export function BlogClient({ initialPosts }: BlogClientProps) {
   const [selectedCategory, setSelectedCategory] = useState("All Guides");
   const [searchQuery, setSearchQuery] = useState("");
 
-  // Featured flagship post is Post 2 (SEO Cost & ROI) or Post 1 (SEO Agency)
-  const featuredPost = initialPosts[1] || initialPosts[0];
+  // Featured flagship post is Post 1 (How to Improve Google Rankings)
+  const featuredPost = initialPosts[0];
 
   const filteredPosts = useMemo(() => {
     return initialPosts.filter((post) => {
       // Category match
       let matchesCategory = true;
-      if (selectedCategory === "Local & Udaipur") {
+      if (selectedCategory === "Digital Marketing") {
+        matchesCategory =
+          post.category === "Digital Marketing" ||
+          post.category.includes("Marketing") ||
+          post.slug.includes("digital-marketing");
+      } else if (selectedCategory === "AI & Automation") {
+        matchesCategory =
+          post.category.includes("AI") ||
+          post.category.includes("Automation") ||
+          post.slug.includes("automation");
+      } else if (selectedCategory === "Search Strategy") {
+        matchesCategory =
+          post.category.includes("Search") ||
+          post.category.includes("SEO") ||
+          post.slug.includes("seo") ||
+          post.slug.includes("ranking");
+      } else if (selectedCategory === "Local & Udaipur") {
         matchesCategory =
           post.slug.includes("udaipur") ||
           post.category.includes("Local") ||
